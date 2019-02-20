@@ -7,17 +7,19 @@ pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-patDir <- tempfile("patRoon"); patPkgDir <- tempfile("patRoonPkg")
+patDir <- tempfile("patRoon"); patDDir <- tempfile("patRoonData"); patPkgDir <- tempfile("patRoonPkg")
 git2r::clone("https://github.com/rickhelmus/patRoon", patDir)
+git2r::clone("https://github.com/rickhelmus/patRoonData", patDDir)
 dir.create(patPkgDir)
 devtools::build(patDir, patPkgDir, binary = TRUE, vignettes = FALSE)
-
+devtools::build(patDDir, patPkgDir, binary = TRUE, vignettes = FALSE)
 
 pkgList <- pkgDep("patRoon", availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
 unlink("bin", recursive = TRUE)
 makeRepo(pkgList, path = ".", repos = repos, type = c("win.binary"))
 addLocalPackage("patRoon", patPkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
+addLocalPackage("patRoonData", patPkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 addPackage(c("installr", "BiocManager", "rJava", "remotes", "pkgbuild"), ".", type = "win.binary") # needed for install script    
 
 # updatePackages(".", repos = repos, type = "win.binary", ask = FALSE)
