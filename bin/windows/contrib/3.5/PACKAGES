@@ -1123,6 +1123,13 @@ Depends: R (>= 3.0)
 Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
 License: MIT + file LICENSE
 
+Package: RAMClustR
+Version: 1.0.5
+Imports: dynamicTreeCut, fastcluster, ff, InterpretMSSpectrum, BiocManager, httr, jsonlite, preprocessCore, xcms, e1071, gplots,
+              pcaMethods, stringr, xml2, utils, webchem, stringi
+Suggests: knitr, rmarkdown
+License: GPL (>= 2)
+
 Package: RANN
 Version: 2.6.1
 Suggests: testthat
@@ -1167,6 +1174,11 @@ Depends: R (>= 3.0.0)
 Imports: methods, utils
 Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
+Archs: i386, x64
+
+Package: RDCOMClient
+Version: 0.93-0
+License: GPL-2
 Archs: i386, x64
 
 Package: Rdpack
