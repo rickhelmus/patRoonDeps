@@ -7,20 +7,26 @@ pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-patDir <- tempfile("patRoon"); patDDir <- tempfile("patRoonData"); patPkgDir <- tempfile("patRoonPkg")
-git2r::clone("https://github.com/rickhelmus/patRoon", patDir)
-git2r::clone("https://github.com/rickhelmus/patRoonData", patDDir)
-dir.create(patPkgDir)
-devtools::build(patDir, patPkgDir, binary = TRUE, vignettes = FALSE)
-devtools::build(patDDir, patPkgDir, binary = TRUE, vignettes = FALSE)
-
 pkgList <- pkgDep("patRoon", availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
+
+makeGHPackage <- function(repos, pkgDir)
+{
+    cloneDir <- tempfile("ghclone");
+    git2r::clone(paste0("https://github.com/", repos), cloneDir)
+    dir.create(pkgDir, recursive = TRUE)
+    devtools::build(cloneDir, pkgDir, binary = TRUE, vignettes = FALSE)
+}
+
+pkgDir <- tempfile("ghpkgs")
+makeGHPackage("rickhelmus/patRoon", pkgDir)
+makeGHPackage("rickhelmus/patRoonData", pkgDir)
+makeGHPackage("cbroeckl/RAMClustR", pkgDir)
 
 unlink("bin", recursive = TRUE)
 makeRepo(pkgList, path = ".", repos = repos, type = c("win.binary"))
-addLocalPackage("patRoon", patPkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
-addLocalPackage("patRoonData", patPkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
+addLocalPackage(c("patRoon", "patRoonData", "RAMClustR"), pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 addPackage(c("installr", "BiocManager", "rJava", "remotes", "pkgbuild"), ".", type = "win.binary") # needed for install script    
+addPackage("RDCOMClient", ".", repos = c("http://www.omegahat.net/R", repos), type = "win.binary")
 
 # updatePackages(".", repos = repos, type = "win.binary", ask = FALSE)
 
