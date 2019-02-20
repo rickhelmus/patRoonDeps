@@ -174,6 +174,11 @@ Imports: utils
 Suggests: covr, rstudioapi (>= 0.5), testthat (>= 2.0.0)
 License: GPL-3
 
+Package: clisymbols
+Version: 1.2.0
+Suggests: testthat
+License: MIT + file LICENSE
+
 Package: cluster
 Version: 2.0.7-1
 Priority: recommended
@@ -202,6 +207,14 @@ Package: commonmark
 Version: 1.7
 Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
+Archs: i386, x64
+
+Package: covr
+Version: 3.2.1
+Depends: R (>= 3.1.0), methods
+Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>= 1.0.2)
+Suggests: R6, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise, mockery
+License: GPL-3
 Archs: i386, x64
 
 Package: cowplot
@@ -277,6 +290,17 @@ Depends: R (>= 3.1.0)
 Imports: assertthat, utils, R6, crayon, rprojroot
 Suggests: covr, testthat, whoami, withr
 License: MIT + file LICENSE
+
+Package: devtools
+Version: 2.0.1
+Depends: R (>= 3.0.2)
+Imports: callr, cli, digest, git2r (>= 0.23.0), httr (>= 0.4), jsonlite, memoise (>= 1.0.0), pkgbuild (>= 1.0.2), pkgload (>=
+              1.0.1), rcmdcheck (>= 1.3.0), remotes (>= 2.0.0), rstudioapi (>= 0.6.0.9000), sessioninfo, stats, tools, usethis (>=
+              1.4.0), utils, withr
+Suggests: BiocInstaller, BiocManager, bitops, covr (>= 3.2.0), crayon, curl (>= 0.9), evaluate, foghorn (>= 1.0.1), gmailr (>
+              0.7.0), knitr, lintr (>= 0.2.1), mockery, pingr, MASS, pkgdown, Rcpp (>= 0.10.0), rhub, rmarkdown, roxygen2 (>=
+              6.1.0), rversions, spelling (>= 1.1), testthat (>= 1.0.2), whisker
+License: GPL (>= 2)
 
 Package: digest
 Version: 0.6.18
@@ -416,6 +440,15 @@ Imports: MASS, cluster, mclust, flexmix, prabclus, class, diptest, mvtnorm, robu
 Suggests: tclust, pdfCluster
 License: GPL
 
+Package: fs
+Version: 1.2.6
+Depends: R (>= 3.1)
+Imports: methods, Rcpp
+LinkingTo: Rcpp
+Suggests: testthat, covr, pillar (>= 1.0.0), crayon, withr
+License: GPL-3
+Archs: i386, x64
+
 Package: fst
 Version: 0.8.10
 Depends: R (>= 3.0.0)
@@ -459,6 +492,20 @@ Imports: grid, Rcpp, scales (>= 0.3.0)
 LinkingTo: Rcpp
 Suggests: knitr, rmarkdown, testthat, gridExtra, devtools, prettydoc
 License: GPL-3 | file LICENSE
+Archs: i386, x64
+
+Package: gh
+Version: 1.0.1
+Imports: ini, jsonlite, httr
+Suggests: covr, pingr, testthat
+License: MIT + file LICENSE
+
+Package: git2r
+Version: 0.24.0
+Depends: R (>= 3.1)
+Imports: graphics, utils
+Suggests: getPass
+License: GPL-2
 Archs: i386, x64
 
 Package: GlobalOptions
@@ -528,6 +575,13 @@ Imports: methods, pkgconfig, rlang
 Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
 
+Package: htmltab
+Version: 0.7.1
+Depends: R (>= 3.0.0)
+Imports: XML (>= 3.98.1.3), httr (>= 1.0.0)
+Suggests: testthat, knitr, tidyr
+License: MIT + file LICENSE
+
 Package: htmlTable
 Version: 1.13.1
 Imports: stringr, knitr (>= 1.6), magrittr (>= 1.5), methods, checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)
@@ -581,6 +635,18 @@ Version: 1.56.0
 Depends: R (>= 2.10)
 License: GPL-2
 Archs: i386, x64
+
+Package: ini
+Version: 0.3.1
+Suggests: testthat
+License: GPL-3
+
+Package: installr
+Version: 0.21.0
+Depends: R (>= 2.14.0), stringr, utils
+Suggests: curl, XML, htmltab, devtools, rjson, data.table, plyr, ggplot2, sp, tools
+License: GPL-2
+OS_type: windows
 
 Package: IRanges
 Version: 2.16.0
@@ -778,6 +844,12 @@ Version: 0.1.1.1
 Imports: shiny (>= 0.13), htmltools (>= 0.3), utils
 License: GPL-3
 
+Package: mockery
+Version: 0.4.1.1
+Imports: testthat
+Suggests: knitr, rmarkdown (>= 1.0), R6
+License: MIT + file LICENSE
+
 Package: modeltools
 Version: 0.2-22
 Depends: stats, stats4
@@ -900,6 +972,12 @@ Imports: cli (>= 1.0.0), crayon (>= 1.3.4), fansi (>= 0.4.0), methods, rlang (>=
 Suggests: knitr (>= 1.19), lubridate (>= 1.7.4), testthat (>= 2.0.0), withr (>= 2.1.2)
 License: GPL-3
 
+Package: pingr
+Version: 1.1.2
+Suggests: testthat
+License: MIT + file LICENSE
+Archs: i386, x64
+
 Package: pkgbuild
 Version: 1.0.2
 Depends: R (>= 3.1)
@@ -954,6 +1032,11 @@ Version: 2.2-7
 Depends: R (>= 2.10), MASS, mclust
 Suggests: spdep, maptools, foreign, mvtnorm
 License: GPL
+
+Package: praise
+Version: 1.0.0
+Suggests: testthat
+License: MIT + file LICENSE
 
 Package: preprocessCore
 Version: 1.44.0
@@ -1061,6 +1144,13 @@ Version: 2.0
 Depends: R (>= 2.0.0), rJava (>= 0.9-8)
 License: LGPL
 
+Package: rcmdcheck
+Version: 1.3.1
+Imports: callr (>= 2.0.0), cli, crayon, desc (>= 1.2.0), digest, pkgbuild, prettyunits, R6, rprojroot, sessioninfo (>= 1.1.1),
+              utils, withr, xopen
+Suggests: covr, knitr, mockery, rmarkdown, testthat
+License: MIT + file LICENSE
+
 Package: RColorBrewer
 Version: 1.1-2
 Depends: R (>= 2.0.0)
@@ -1096,6 +1186,13 @@ Suggests: curl, testthat, knitr, rmarkdown, stringi, covr, spelling
 License: GPL (>= 2) | file LICENSE
 Archs: i386, x64
 
+Package: remotes
+Version: 2.0.2
+Depends: R (>= 3.0.0)
+Imports: methods, utils
+Suggests: curl, covr, git2r (>= 0.23.0), knitr, mockery, pkgbuild (>= 1.0.1), pingr, rmarkdown, testthat, withr
+License: GPL (>= 2)
+
 Package: reshape2
 Version: 1.4.3
 Depends: R (>= 3.1)
@@ -1104,6 +1201,12 @@ LinkingTo: Rcpp
 Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
+
+Package: rex
+Version: 1.1.2
+Imports: magrittr, lazyeval
+Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, Hmisc, stringr, rvest, roxygen2, covr
+License: MIT + file LICENSE
 
 Package: rhandsontable
 Version: 0.3.7
@@ -1120,6 +1223,12 @@ Archs: i386, x64
 Package: rJava
 Version: 0.9-10
 Depends: R (>= 2.5.0), methods
+License: GPL-2
+Archs: i386, x64
+
+Package: rjson
+Version: 0.2.20
+Depends: R (>= 3.1.0)
 License: GPL-2
 Archs: i386, x64
 
@@ -1222,6 +1331,12 @@ Imports: methods, stringr, R6
 Suggests: testthat, XML, xml2
 License: BSD_3_clause + file LICENCE
 
+Package: sessioninfo
+Version: 1.1.1
+Imports: cli, tools, utils, withr
+Suggests: callr, covr, mockery, testthat
+License: GPL-2
+
 Package: shape
 Version: 1.4.4
 Depends: R (>= 2.01)
@@ -1247,6 +1362,14 @@ Version: 0.1.7
 Depends: R (>= 3.0.2)
 Suggests: testthat
 License: MIT + file LICENSE
+Archs: i386, x64
+
+Package: sp
+Version: 1.3-1
+Depends: R (>= 3.0.0), methods
+Imports: utils, stats, graphics, grDevices, lattice, grid
+Suggests: RColorBrewer, rgdal (>= 0.8-7), rgeos (>= 0.3-13), gstat, maptools, deldir
+License: GPL (>= 2)
 Archs: i386, x64
 
 Package: stringi
@@ -1284,6 +1407,14 @@ Depends: R (>= 3.4.0)
 Imports: stringr, dat, magrittr
 Suggests: testthat, knitr, rmarkdown, covr
 License: MIT + file LICENSE
+
+Package: testthat
+Version: 2.0.1
+Depends: R (>= 3.1)
+Imports: cli, crayon, digest, magrittr, methods, praise, R6 (>= 2.2.0), rlang, withr (>= 2.0.0)
+Suggests: covr, devtools, knitr, rmarkdown, usethis, xml2
+License: MIT + file LICENSE
+Archs: i386, x64
 
 Package: tibble
 Version: 2.0.1
@@ -1331,6 +1462,14 @@ Depends: R (>= 3.0)
 Imports: ggplot2, gridExtra, plyr, utils, stats, methods, grDevices, scales
 Suggests: knitr
 License: MIT + file LICENSE
+
+Package: usethis
+Version: 1.4.0
+Depends: R (>= 3.1)
+Imports: clipr (>= 0.3.0), clisymbols, crayon, curl (>= 2.7), desc, fs (>= 1.2.0), gh, git2r (>= 0.23), glue, rlang, rprojroot (>=
+              1.2), rstudioapi, utils, whisker
+Suggests: covr, knitr, magick, rmarkdown, roxygen2, spelling (>= 1.2), styler (>= 1.0.2), testthat (>= 2.0.0), withr
+License: GPL-3
 
 Package: utf8
 Version: 1.1.4
@@ -1424,6 +1563,13 @@ LinkingTo: Rcpp (>= 0.12.12)
 Suggests: testthat, curl, covr, knitr, rmarkdown, magrittr, httr
 License: GPL (>= 2)
 Archs: i386, x64
+
+Package: xopen
+Version: 1.0.0
+Depends: R (>= 3.1)
+Imports: processx
+Suggests: ps, testthat
+License: MIT + file LICENSE
 
 Package: xtable
 Version: 1.8-3
