@@ -66,6 +66,14 @@ Suggests: testthat
 License: GPL (>= 2)
 Archs: i386, x64
 
+Package: biglm
+Version: 0.9-1
+Depends: DBI, methods
+Suggests: RSQLite, RODBC
+Enhances: leaps
+License: GPL
+Archs: i386, x64
+
 Package: Biobase
 Version: 2.42.0
 Depends: R (>= 2.10), BiocGenerics (>= 0.27.1), utils
@@ -112,6 +120,11 @@ Depends: R (>= 3.0.1), bit (>= 1.1-12), utils, methods, stats
 License: GPL-2
 Archs: i386, x64
 
+Package: bitops
+Version: 1.0-6
+License: GPL (>= 2)
+Archs: i386, x64
+
 Package: blob
 Version: 1.1.1
 Imports: methods, prettyunits
@@ -135,6 +148,14 @@ Imports: methods, xcms, RBGL, graph, graphics, grDevices, stats, utils, Hmisc, i
 Suggests: faahKO, RUnit, BiocGenerics
 Enhances: Rmpi, snow
 License: GPL (>= 2)
+Archs: i386, x64
+
+Package: caTools
+Version: 1.17.1.1
+Depends: R (>= 2.2.0)
+Imports: bitops
+Suggests: MASS, rpart
+License: GPL-3
 Archs: i386, x64
 
 Package: checkmate
@@ -346,6 +367,13 @@ Version: 1.63-1
 Depends: R (>= 2.3.0), stats
 License: GPL (>= 2)
 
+Package: e1071
+Version: 1.7-0.1
+Imports: graphics, grDevices, class, stats, methods, utils
+Suggests: cluster, mlbench, nnet, randomForest, rpart, SparseM, xtable, Matrix, MASS
+License: GPL-2
+Archs: i386, x64
+
 Package: enviPat
 Version: 2.2
 License: GPL-2
@@ -381,6 +409,13 @@ Version: 1.1.25
 Depends: R (>= 3.0.0)
 Enhances: stats, flashClust
 License: FreeBSD | GPL-2 | file LICENSE
+Archs: i386, x64
+
+Package: ff
+Version: 2.2-14
+Depends: R (>= 2.10.1), bit (>= 1.1-13), utils
+Suggests: biglm
+License: GPL-2 | file LICENSE
 Archs: i386, x64
 
 Package: fingerprint
@@ -475,6 +510,13 @@ Version: 0.4-11
 Depends: tools
 License: GPL (>= 2)
 
+Package: gdata
+Version: 2.18.0
+Depends: R (>= 2.3.0)
+Imports: gtools, stats, methods, utils
+Suggests: RUnit
+License: GPL-2
+
 Package: ggplot2
 Version: 3.1.0
 Depends: R (>= 3.1)
@@ -524,6 +566,13 @@ Suggests: testthat, covr, magrittr, crayon, knitr, rmarkdown, DBI, RSQLite, R.ut
 License: MIT + file LICENSE
 Archs: i386, x64
 
+Package: gplots
+Version: 3.0.1.1
+Depends: R (>= 3.0)
+Imports: gtools, gdata, stats, caTools, KernSmooth
+Suggests: grid, MASS
+License: GPL-2
+
 Package: graph
 Version: 1.60.0
 Depends: R (>= 2.10), methods, BiocGenerics (>= 0.13.11)
@@ -545,6 +594,12 @@ Depends: R (>= 2.14)
 Imports: grid
 Suggests: testthat, covr
 License: GPL-2
+
+Package: gtools
+Version: 3.8.1
+Depends: methods, stats, utils
+License: GPL-2
+Archs: i386, x64
 
 Package: hexbin
 Version: 1.27.2
@@ -648,6 +703,12 @@ Suggests: curl, XML, htmltab, devtools, rjson, data.table, plyr, ggplot2, sp, to
 License: GPL-2
 OS_type: windows
 
+Package: InterpretMSSpectrum
+Version: 1.2
+Depends: R(>= 2.10.0)
+Imports: Rdisop, enviPat, plyr, utils, foreach, doParallel, DBI, graphics, grDevices, RSQLite
+License: GPL-3
+
 Package: IRanges
 Version: 2.16.0
 Depends: R (>= 3.1.0), methods, utils, stats, BiocGenerics (>= 0.25.3), S4Vectors (>= 0.19.11)
@@ -691,6 +752,14 @@ Version: 0.9-27
 Depends: R (>= 2.10)
 Imports: methods, stats, grDevices, graphics
 License: GPL-2
+Archs: i386, x64
+
+Package: KernSmooth
+Version: 2.23-15
+Priority: recommended
+Depends: R (>= 2.5.0), stats
+Suggests: MASS
+License: Unlimited
 Archs: i386, x64
 
 Package: knitr
@@ -843,6 +912,13 @@ Package: miniUI
 Version: 0.1.1.1
 Imports: shiny (>= 0.13), htmltools (>= 0.3), utils
 License: GPL-3
+
+Package: mlbench
+Version: 2.1-1
+Depends: R (>= 2.10)
+Suggests: lattice
+License: GPL-2
+Archs: i386, x64
 
 Package: mockery
 Version: 0.4.1.1
@@ -1130,6 +1206,13 @@ Imports: dynamicTreeCut, fastcluster, ff, InterpretMSSpectrum, BiocManager, httr
 Suggests: knitr, rmarkdown
 License: GPL (>= 2)
 
+Package: randomForest
+Version: 4.6-14
+Depends: R (>= 3.2.2), stats
+Suggests: RColorBrewer, MASS
+License: GPL (>= 2)
+Archs: i386, x64
+
 Package: RANN
 Version: 2.6.1
 Suggests: testthat
@@ -1174,6 +1257,13 @@ Depends: R (>= 3.0.0)
 Imports: methods, utils
 Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
+Archs: i386, x64
+
+Package: RCurl
+Version: 1.95-4.11
+Depends: R (>= 3.0.0), methods, bitops
+Suggests: Rcompression, XML
+License: BSD
 Archs: i386, x64
 
 Package: RDCOMClient
@@ -1389,6 +1479,13 @@ Suggests: RColorBrewer, rgdal (>= 0.8-7), rgeos (>= 0.3-13), gstat, maptools, de
 License: GPL (>= 2)
 Archs: i386, x64
 
+Package: SparseM
+Version: 1.77
+Depends: R (>= 2.15), methods
+Imports: graphics, stats, utils
+License: GPL (>= 2)
+Archs: i386, x64
+
 Package: stringi
 Version: 1.3.1
 Depends: R (>= 2.14)
@@ -1529,6 +1626,13 @@ Depends: R (>= 2.11.0), graphics, grDevices, stats, utils
 Suggests: fftw
 License: BSD_3_clause + file LICENSE
 Archs: i386, x64
+
+Package: webchem
+Version: 0.4.0
+Depends: R (>= 3.0)
+Imports: xml2, httr, rvest, RCurl, jsonlite, stringr, methods
+Suggests: testthat, rcdk
+License: MIT + file LICENSE
 
 Package: webshot
 Version: 0.5.1

@@ -5,9 +5,10 @@ repos <- BiocManager::repositories()
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
+pdb <- addPackageListingGithub(pdb = pdb, "cbroeckl/RAMClustR")
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-pkgList <- pkgDep("patRoon", availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
+pkgList <- pkgDep("patRoon", availPkgs = pdb, repos = repos, type = "win.binary", suggests = TRUE)
 
 makeGHPackage <- function(repos, pkgDir)
 {
