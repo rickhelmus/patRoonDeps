@@ -957,6 +957,11 @@ Suggests: RDCOMClient, metfRag, RAMClustR, testthat, vdiffr, patRoonData, devtoo
 License: GPL-3
 Archs: i386, x64
 
+Package: patRoonData
+Version: 0.1
+Suggests: patRoon
+License: CC0
+
 Package: pcaMethods
 Version: 1.74.0
 Depends: Biobase, methods
