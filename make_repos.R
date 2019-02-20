@@ -18,7 +18,7 @@ pkgList <- pkgDep("patRoon", availPkgs = pdb, repos = repos, type = "win.binary"
 unlink("bin", recursive = TRUE)
 makeRepo(pkgList, path = ".", repos = repos, type = c("win.binary"))
 addLocalPackage("patRoon", patPkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
-    
+addPackage(c("installr", "BiocManager", "rJava", "remotes", "pkgbuild"), ".", type = "win.binary") # needed for install script    
 
 # updatePackages(".", repos = repos, type = "win.binary", ask = FALSE)
 
