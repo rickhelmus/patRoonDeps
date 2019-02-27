@@ -42,6 +42,6 @@ on_success:
   - git config --global user.name "AppVeyor auto build"
   #- git checkout master
   - git add bin/
-  - git commit -m 'automatic update [skip ci]'
-  #- git push origin master
+  - git commit -m "automatic update [skip ci]"
+  - git push origin master
   
