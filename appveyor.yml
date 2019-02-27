@@ -32,7 +32,8 @@ build_script:
 test_script:
   #- travis-tool.sh run_tests
   - Rscript make_repos.R
-  - Rscript -e '.libPaths(c(normalizePath("~/Rpkgs")), .libPaths()); install.packages(c("patRoon", "patRoonData"), repos = ".", type = "binary")'
+  - mkdir c:\Projects\Rpkgs
+  - Rscript -e '.libPaths(c("C:\\Projects\\Rpkgs", .libPaths())); install.packages(c("patRoon", "patRoonData"), repos = ".", type = "binary")'
 
 on_success:
   - git config --global credential.helper store
