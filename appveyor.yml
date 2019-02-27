@@ -1,0 +1,42 @@
+# DO NOT CHANGE the "init" and "install" sections below
+
+# Download script file from GitHub
+init:
+  ps: |
+        $ErrorActionPreference = "Stop"
+        Invoke-WebRequest http://raw.github.com/krlmlr/r-appveyor/master/scripts/appveyor-tool.ps1 -OutFile "..\appveyor-tool.ps1"
+        Import-Module '..\appveyor-tool.ps1'
+
+install:
+  ps: Bootstrap
+
+cache:
+  #- C:\RLibrary
+
+# Adapt as necessary starting from here
+
+platform: x64
+environment:
+    R_ARCH: x64
+    BIOC_USE_DEVEL: FALSE
+    access_token:
+      secure: xfAjJeVdFHYHtpdnjCfZDlJPgEkn+tSBaNNFYNZTk+ttxONOIKpV7NIeZWfa4TIf
+
+build_script:
+  #- travis-tool.sh install_deps
+  - travis-tool.sh install_r miniCRAN git2r devtools
+
+test_script:
+  #- travis-tool.sh run_tests
+  - Rscript make_repos.R
+
+on_success:
+  - git config --global credential.helper store
+  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "something@email.com"
+  - git config --global user.name "AppVeyor auto build"
+  #- git checkout master
+  - git add bin/
+  - git commit -m 'automatic update [skip ci]'
+  - git push origin master
+  
