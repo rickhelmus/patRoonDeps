@@ -25,8 +25,9 @@ environment:
 
 build_script:
   #- travis-tool.sh install_deps
+  - ps: .\get_artifact.ps1
   - travis-tool.sh install_r miniCRAN git2r devtools BiocManager
-  - ps: get_artifact.ps1
+  - travis-tool.sh install_github cbroeckl/RAMClustR
 
 test_script:
   #- travis-tool.sh run_tests
