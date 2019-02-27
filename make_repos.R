@@ -17,11 +17,12 @@ makeGHPackage <- function(repos, pkgDir)
     cloneDir <- tempfile("ghclone");
     git2r::clone(paste0("https://github.com/", repos), cloneDir)
     dir.create(pkgDir, recursive = TRUE)
-    devtools::build(cloneDir, pkgDir, binary = TRUE, vignettes = FALSE)
+    devtools::build(cloneDir, pkgDir, binary = TRUE, vignettes = FALSE,
+                    args = c("--no-test-load", ""))
 }
 
 pkgDir <- tempfile("ghpkgs")
-makeGHPackage("rickhelmus/patRoon", pkgDir)
+#makeGHPackage("rickhelmus/patRoon", pkgDir)
 makeGHPackage("rickhelmus/patRoonData", pkgDir)
 makeGHPackage("cbroeckl/RAMClustR", pkgDir)
 
@@ -49,7 +50,12 @@ if (TRUE)
         addPackage(newPackages, ".", repos = repos, type = "win.binary")
     
     updatePackages(".", repos = repos, ask = FALSE, type = "win.binary")
-    addLocalPackage("patRoon|patRoonData|RAMClustR", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
+    
+    # should be downloaded as artifact from AppVeyor
+    addLocalPackage("patRoon", "C:/Projects", ".", "win.binary", build = FALSE, deps = TRUE)
+    
+    addLocalPackage("patRoonData", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
+    addLocalPackage("RAMClustR", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
     
 } else
 {
