@@ -24,7 +24,7 @@ environment:
 
 build_script:
   #- travis-tool.sh install_deps
-  - travis-tool.sh install_r miniCRAN git2r devtools
+  - travis-tool.sh install_r miniCRAN git2r devtools BiocManager
 
 test_script:
   #- travis-tool.sh run_tests
