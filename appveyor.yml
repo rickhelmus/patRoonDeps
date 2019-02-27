@@ -19,6 +19,7 @@ platform: x64
 environment:
     R_ARCH: x64
     BIOC_USE_DEVEL: FALSE
+    USE_RTOOLS=true
     access_token:
       secure: xfAjJeVdFHYHtpdnjCfZDlJPgEkn+tSBaNNFYNZTk+ttxONOIKpV7NIeZWfa4TIf
 
@@ -38,5 +39,5 @@ on_success:
   #- git checkout master
   - git add bin/
   - git commit -m 'automatic update [skip ci]'
-  - git push origin master
+  #- git push origin master
   
