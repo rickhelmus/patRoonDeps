@@ -937,8 +937,8 @@ Suggests: ggplot2, testthat
 License: MIT + file LICENSE
 
 Package: mvtnorm
-Version: 1.0-8
-Depends: R(>= 1.9.0)
+Version: 1.0-9
+Depends: R(>= 3.5.0)
 Imports: stats, methods
 License: GPL-2
 Archs: i386, x64
