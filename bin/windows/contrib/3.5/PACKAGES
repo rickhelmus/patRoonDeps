@@ -937,7 +937,7 @@ Suggests: ggplot2, testthat
 License: MIT + file LICENSE
 
 Package: mvtnorm
-Version: 1.0-9
+Version: 1.0-10
 Depends: R(>= 3.5.0)
 Imports: stats, methods
 License: GPL-2
@@ -952,7 +952,7 @@ Suggests: knitr, testthat
 License: GPL (>= 2)
 
 Package: mzR
-Version: 2.16.1
+Version: 2.16.2
 Depends: Rcpp (>= 0.10.1), methods, utils
 Imports: Biobase, BiocGenerics (>= 0.13.6), ProtGenerics (>= 1.9.1),
         ncdf4
@@ -996,7 +996,7 @@ Depends: R (>= 2.10)
 License: GPL-3
 
 Package: openssl
-Version: 1.2.1
+Version: 1.2.2
 Imports: askpass
 Suggests: testthat, digest, knitr, rmarkdown, jsonlite, jose
 License: MIT + file LICENSE
@@ -1243,10 +1243,11 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: RCurl
-Version: 1.95-4.11
-Depends: R (>= 3.0.0), methods, bitops
+Version: 1.98-0
+Depends: R (>= 2.7.0)
+Imports: methods, bitops
 Suggests: Rcompression, XML
-License: BSD
+License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: RDCOMClient
@@ -1508,10 +1509,10 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: tidyr
-Version: 0.8.2
+Version: 0.8.3
 Depends: R (>= 3.1)
 Imports: dplyr (>= 0.7.0), glue, magrittr, purrr, Rcpp, rlang, stringi,
-        tibble, tidyselect (>= 0.2.5)
+        tibble, tidyselect (>= 0.2.5), utils
 LinkingTo: Rcpp
 Suggests: covr, gapminder, knitr, rmarkdown, testthat
 License: MIT + file LICENSE
@@ -1637,10 +1638,11 @@ Suggests: testit, parallel, rstudioapi, tinytex, mime, markdown, knitr,
 License: MIT + file LICENSE
 
 Package: XML
-Version: 3.98-1.17
-Depends: R (>= 2.13.0), methods, utils
+Version: 4.0-0
+Depends: R (>= 1.2.0)
+Imports: methods, utils, grDevices
 Suggests: bitops, RCurl
-License: BSD_2_clause + file LICENSE
+License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: xml2
