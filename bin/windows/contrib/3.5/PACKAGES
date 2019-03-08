@@ -148,7 +148,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: caTools
-Version: 1.17.1.1
+Version: 1.17.1.2
 Depends: R (>= 2.2.0)
 Imports: bitops
 Suggests: MASS, rpart
@@ -455,7 +455,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: formatR
-Version: 1.5
+Version: 1.6
 Depends: R (>= 3.0.2)
 Suggests: codetools, shiny, testit, rmarkdown, knitr
 License: GPL
@@ -1151,7 +1151,7 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: purrr
-Version: 0.3.0
+Version: 0.3.1
 Depends: R (>= 3.1)
 Imports: magrittr (>= 1.5), rlang (>= 0.3.1)
 Suggests: covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
