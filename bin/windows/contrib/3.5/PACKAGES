@@ -537,7 +537,7 @@ Suggests: testthat (>= 1.0.0), knitr, markdown
 License: MIT + file LICENSE
 
 Package: glue
-Version: 1.3.0
+Version: 1.3.1
 Depends: R (>= 3.1)
 Imports: methods
 Suggests: testthat, covr, magrittr, crayon, knitr, rmarkdown, DBI,
@@ -743,15 +743,15 @@ License: Unlimited
 Archs: i386, x64
 
 Package: knitr
-Version: 1.21
+Version: 1.22
 Depends: R (>= 3.1.0)
 Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
         (>= 2.1.19), methods, xfun, tools
 Suggests: formatR, testit, digest, rgl (>= 0.95.1201), codetools,
         rmarkdown, htmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10),
-        tinytex, reticulate (>= 1.4), JuliaCall (>= 0.11.1), png, jpeg,
-        gifski, xml2 (>= 1.2.0), httr, DBI (>= 0.4-1), showtext,
-        tibble, styler
+        tinytex, reticulate (>= 1.4), JuliaCall (>= 0.11.1), magick,
+        png, jpeg, gifski, xml2 (>= 1.2.0), httr, DBI (>= 0.4-1),
+        showtext, tibble, styler
 License: GPL
 
 Package: labeling
@@ -823,7 +823,7 @@ Suggests: testthat, knitr
 License: MIT + file LICENSE
 
 Package: MALDIquant
-Version: 1.18
+Version: 1.19.2
 Depends: R (>= 3.2.0), methods
 Imports: parallel
 Suggests: knitr, testthat (>= 0.8)
@@ -855,7 +855,7 @@ License: LGPL (>= 2)
 Archs: i386, x64
 
 Package: Matrix
-Version: 1.2-15
+Version: 1.2-16
 Priority: recommended
 Depends: R (>= 3.2.0)
 Imports: methods, graphics, grid, stats, utils, lattice
@@ -963,7 +963,7 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: ncdf4
-Version: 1.16
+Version: 1.16.1
 License: GPL (>= 3)
 Archs: i386, x64
 
@@ -1116,8 +1116,8 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.2.1
-Imports: ps, R6, utils
+Version: 3.3.0
+Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr, covr, crayon, debugme, parallel, testthat, withr
 License: MIT + file LICENSE
 Archs: i386, x64
@@ -1460,7 +1460,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: stringi
-Version: 1.3.1
+Version: 1.4.3
 Depends: R (>= 2.14)
 Imports: tools, utils, stats
 License: file LICENSE
@@ -1483,7 +1483,7 @@ License: LGPL (>= 2)
 Archs: i386, x64
 
 Package: sys
-Version: 3.0
+Version: 3.1
 Suggests: unix (>= 1.4), spelling, testthat
 License: MIT + file LICENSE
 Archs: i386, x64
@@ -1528,8 +1528,8 @@ License: GPL-3
 Archs: i386, x64
 
 Package: tinytex
-Version: 0.10
-Imports: xfun (>= 0.3)
+Version: 0.11
+Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
 
