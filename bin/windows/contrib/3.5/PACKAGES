@@ -132,8 +132,8 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.1.1
-Imports: processx (>= 3.2.1), R6, utils
+Version: 3.2.0
+Imports: processx (>= 3.3.0), R6, utils
 Suggests: cliapp, covr, crayon, pingr, ps, testthat, withr
 License: MIT + file LICENSE
 
@@ -639,11 +639,11 @@ Enhances: shiny (>= 1.1)
 License: MIT + file LICENSE
 
 Package: httpuv
-Version: 1.4.5.1
-Depends: R (>= 2.15.1), methods
-Imports: Rcpp (>= 0.11.0), utils, promises, later (>= 0.7.3)
+Version: 1.5.0
+Depends: R (>= 2.15.1)
+Imports: Rcpp (>= 0.11.0), utils, R6, promises, later (>= 0.8.0)
 LinkingTo: Rcpp, BH, later
-Suggests: testthat, callr
+Suggests: testthat, callr, curl
 License: GPL (>= 2) | file LICENSE
 Archs: i386, x64
 
@@ -791,7 +791,7 @@ Suggests: maps, mapproj, deldir, tripack, zoo, MASS, quantreg, mgcv
 License: GPL (>= 2)
 
 Package: lazyeval
-Version: 0.2.1
+Version: 0.2.2
 Depends: R (>= 3.1.0)
 Suggests: knitr, rmarkdown (>= 0.2.65), testthat, covr
 License: GPL-3
@@ -865,7 +865,7 @@ License: GPL (>= 2) | file LICENCE
 Archs: i386, x64
 
 Package: mclust
-Version: 5.4.2
+Version: 5.4.3
 Depends: R (>= 3.0)
 Imports: stats, utils, graphics, grDevices
 Suggests: knitr (>= 1.12), rmarkdown (>= 0.9), mix (>= 1.0), geometry
@@ -1151,7 +1151,7 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: purrr
-Version: 0.3.1
+Version: 0.3.2
 Depends: R (>= 3.1)
 Imports: magrittr (>= 1.5), rlang (>= 0.3.1)
 Suggests: covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
@@ -1225,7 +1225,7 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.0
+Version: 1.0.1
 Depends: R (>= 3.0.0)
 Imports: methods, utils
 Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
@@ -1496,7 +1496,7 @@ Suggests: testthat, knitr, rmarkdown, covr
 License: MIT + file LICENSE
 
 Package: tibble
-Version: 2.0.1
+Version: 2.1.1
 Depends: R (>= 3.1.0)
 Imports: cli (>= 1.0.1), crayon (>= 1.3.4), fansi (>= 0.4.0), methods,
         pillar (>= 1.3.1), pkgconfig (>= 2.0.2), rlang (>= 0.3.1),
