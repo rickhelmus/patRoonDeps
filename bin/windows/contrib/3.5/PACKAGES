@@ -285,7 +285,7 @@ Suggests: blob, covr, hms, knitr, magrittr, rprojroot, rmarkdown,
 License: LGPL (>= 2)
 
 Package: dendextend
-Version: 1.9.0
+Version: 1.10.0
 Depends: R (>= 3.0.0)
 Imports: utils, stats, datasets, magrittr (>= 1.0.1), ggplot2, fpc,
         whisker, viridis
@@ -719,7 +719,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: kableExtra
-Version: 1.0.1
+Version: 1.1.0
 Depends: R (>= 3.1.0)
 Imports: knitr (>= 1.16), magrittr, stringr (>= 1.0), xml2 (>= 1.1.1),
         rvest, rmarkdown (>= 1.6.0), readr, scales, viridisLite, stats,
@@ -1330,13 +1330,13 @@ License: GPL-3
 Archs: i386, x64
 
 Package: rmarkdown
-Version: 1.11
+Version: 1.12
 Depends: R (>= 3.0)
-Imports: tools, utils, knitr (>= 1.18), yaml (>= 2.1.19), htmltools (>=
-        0.3.5), evaluate (>= 0.8), base64enc, jsonlite, mime, tinytex
-        (>= 0.3), methods, stringr (>= 1.2.0)
+Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
+        0.3.5), evaluate (>= 0.13), base64enc, jsonlite, mime, tinytex
+        (>= 0.11), methods, stringr (>= 1.2.0)
 Suggests: shiny (>= 0.11), tufte, testthat, digest, dygraphs, tibble,
-        callr (>= 2.0.0)
+        fs, callr (>= 2.0.0)
 License: GPL-3
 
 Package: robustbase
