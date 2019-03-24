@@ -36,9 +36,9 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: assertthat
-Version: 0.2.0
+Version: 0.2.1
 Imports: tools
-Suggests: testthat
+Suggests: testthat, covr
 License: GPL-3
 
 Package: backports
@@ -183,7 +183,7 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: cli
-Version: 1.0.1
+Version: 1.1.0
 Depends: R (>= 2.10)
 Imports: assertthat, crayon (>= 1.3.4), methods, utils
 Suggests: covr, fansi, mockery, testthat, webshot, withr
@@ -211,12 +211,13 @@ Depends: R (>= 2.1)
 License: GPL
 
 Package: colorspace
-Version: 1.4-0
+Version: 1.4-1
 Depends: R (>= 3.0.0), methods
 Imports: graphics, grDevices, stats
 Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
         tcltk, shiny, shinyjs, ggplot2, dplyr, scales, grid, png, jpeg,
-        knitr, rmarkdown, RColorBrewer, rcartocolor, scico, viridis
+        knitr, rmarkdown, RColorBrewer, rcartocolor, scico, viridis,
+        wesanderson
 License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
@@ -362,10 +363,10 @@ Depends: R (>= 2.3.0), stats
 License: GPL (>= 2)
 
 Package: e1071
-Version: 1.7-0.1
+Version: 1.7-1
 Imports: graphics, grDevices, class, stats, methods, utils
 Suggests: cluster, mlbench, nnet, randomForest, rpart, SparseM, xtable,
-        Matrix, MASS
+        Matrix, MASS, slam
 License: GPL-2
 Archs: i386, x64
 
@@ -590,8 +591,8 @@ License: GPL-2
 Archs: i386, x64
 
 Package: highr
-Version: 0.7
-Depends: R (>= 3.0.2)
+Version: 0.8
+Depends: R (>= 3.2.3)
 Suggests: knitr, testit
 License: GPL
 
@@ -855,7 +856,7 @@ License: LGPL (>= 2)
 Archs: i386, x64
 
 Package: Matrix
-Version: 1.2-16
+Version: 1.2-17
 Priority: recommended
 Depends: R (>= 3.2.0)
 Imports: methods, graphics, grid, stats, utils, lattice
@@ -880,7 +881,7 @@ Suggests: testthat, aws.s3, httr, covr
 License: MIT + file LICENSE
 
 Package: mgcv
-Version: 1.8-27
+Version: 1.8-28
 Priority: recommended
 Depends: R (>= 2.14.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
@@ -996,7 +997,7 @@ Depends: R (>= 2.10)
 License: GPL-3
 
 Package: openssl
-Version: 1.2.2
+Version: 1.3
 Imports: askpass
 Suggests: testthat, digest, knitr, rmarkdown, jsonlite, jose
 License: MIT + file LICENSE
@@ -1042,7 +1043,7 @@ Suggests: knitr (>= 1.19), lubridate (>= 1.7.4), testthat (>= 2.0.0),
 License: GPL-3
 
 Package: pkgbuild
-Version: 1.0.2
+Version: 1.0.3
 Depends: R (>= 3.1)
 Imports: callr (>= 2.0.0), cli, crayon, desc, prettyunits, R6,
         rprojroot, withr (>= 2.1.2)
@@ -1200,7 +1201,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: RBGL
-Version: 1.58.1
+Version: 1.58.2
 Depends: graph, methods
 Imports: methods
 Suggests: Rgraphviz, XML, RUnit, BiocGenerics
@@ -1323,7 +1324,7 @@ License: GPL-2
 Archs: i386, x64
 
 Package: rlang
-Version: 0.3.1
+Version: 0.3.2
 Depends: R (>= 3.1.0)
 Suggests: crayon, magrittr, methods, pillar, testthat (>= 2.0.0), covr
 License: GPL-3
@@ -1340,7 +1341,7 @@ Suggests: shiny (>= 0.11), tufte, testthat, digest, dygraphs, tibble,
 License: GPL-3
 
 Package: robustbase
-Version: 0.93-3
+Version: 0.93-4
 Depends: R (>= 3.1.0)
 Imports: stats, graphics, utils, methods, DEoptimR
 Suggests: grid, MASS, lattice, boot, cluster, Matrix, robust,
@@ -1392,7 +1393,7 @@ License: LGPL (>= 2)
 Archs: i386, x64
 
 Package: rstudioapi
-Version: 0.9.0
+Version: 0.10
 Suggests: testthat, knitr, rmarkdown
 License: MIT + file LICENSE
 
