@@ -29,7 +29,11 @@ fromArtifact <- !is.na(Sys.getenv("APPVEYOR", unset = NA)) &&
 pkgDir <- tempfile("ghpkgs")
 
 if (!fromArtifact)
+{
+    if (!requireNamespace("patRoon", quietly = TRUE))
+        remotes::install_github("rickhelmus/patRoon") # UNDONE: could this be combined with making the package?
     makeGHPackage("rickhelmus/patRoon", pkgDir)
+}
     
 makeGHPackage("rickhelmus/patRoonData", pkgDir)
 makeGHPackage("cbroeckl/RAMClustR", pkgDir)
