@@ -952,6 +952,7 @@ Archs: i386, x64
 
 Package: patRoon
 Version: 0.1.0
+Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
         data.table, withr, digest, enviPick, XML, DBI, RSQLite, fst,
