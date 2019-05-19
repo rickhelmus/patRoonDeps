@@ -22,11 +22,17 @@ environment:
     USE_RTOOLS: true
     access_token:
       secure: xfAjJeVdFHYHtpdnjCfZDlJPgEkn+tSBaNNFYNZTk+ttxONOIKpV7NIeZWfa4TIf
+    matrix:
+      - R_VERSION: stable
+      - R_VERSION: oldrel
+
+matrix:
+  fast_finish: true
 
 build_script:
   #- travis-tool.sh install_deps
   - ps: .\get_artifact.ps1
-  - travis-tool.sh install_r miniCRAN git2r devtools BiocManager
+  - travis-tool.sh install_r miniCRAN git2r devtools BiocManager rversions
   #- Rscript -e "install.packages('RAMClustR', repos = 'file:.', type = 'binary')"
   - travis-tool.sh install_github cbroeckl/RAMClustR
 
