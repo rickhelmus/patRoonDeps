@@ -23,11 +23,12 @@ makeGHPackage <- function(repos, pkgDir)
                     args = c("--no-test-load", ""))
 }
 
-onAppV <- !is.na(Sys.getenv("APPVEYOR", unset = NA))
+fromArtifact <- !is.na(Sys.getenv("APPVEYOR", unset = NA)) &&
+    rversions::r_release()$version == paste(R.Version()$major, R.Version()$minor, sep = ".")
 
 pkgDir <- tempfile("ghpkgs")
 
-if (!onAppV)
+if (!fromArtifact)
     makeGHPackage("rickhelmus/patRoon", pkgDir)
     
 makeGHPackage("rickhelmus/patRoonData", pkgDir)
@@ -72,7 +73,7 @@ if (file.exists(packagesFile))
     # addPackage("RDCOMClient", ".", repos = c("http://www.omegahat.net/R", repos), type = "win.binary")
 }
 
-if (onAppV)
+if (fromArtifact)
 {
     # should be downloaded as artifact from AppVeyor
     addLocalPackage("patRoon", "C:/Projects", ".", "win.binary", build = FALSE, deps = TRUE)
