@@ -31,7 +31,11 @@ pkgDir <- tempfile("ghpkgs")
 if (!fromArtifact)
 {
     if (!requireNamespace("patRoon", quietly = TRUE))
-        remotes::install_github("rickhelmus/patRoon") # UNDONE: could this be combined with making the package?
+    {
+        BiocManager::install("CAMERA")
+        # UNDONE: could this be combined with making the package?
+        remotes::install_github("rickhelmus/patRoon")
+    }
     makeGHPackage("rickhelmus/patRoon", pkgDir)
 }
     
