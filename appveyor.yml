@@ -27,8 +27,8 @@ build_script:
   #- travis-tool.sh install_deps
   - ps: .\get_artifact.ps1
   - travis-tool.sh install_r miniCRAN git2r devtools BiocManager
-  - Rscript -e "install.packages('RAMClustR', repos = 'file:.', type = 'binary')"
-  #- travis-tool.sh install_github cbroeckl/RAMClustR
+  #- Rscript -e "install.packages('RAMClustR', repos = 'file:.', type = 'binary')"
+  - travis-tool.sh install_github cbroeckl/RAMClustR
 
 test_script:
   #- travis-tool.sh run_tests
