@@ -222,6 +222,14 @@ Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
 License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
+Package: colourpicker
+Version: 1.0
+Depends: R (>= 3.1.0)
+Imports: ggplot2, htmltools, htmlwidgets (>= 0.7), jsonlite, miniUI (>=
+        0.1.1), shiny (>= 0.11.1), shinyjs, utils
+Suggests: knitr (>= 1.7), rmarkdown, rstudioapi (>= 0.5)
+License: MIT + file LICENSE
+
 Package: commonmark
 Version: 1.7
 Suggests: curl, testthat, xml2
@@ -382,7 +390,7 @@ Depends: stats
 License: GPL (>= 3)
 
 Package: evaluate
-Version: 0.13
+Version: 0.14
 Depends: R (>= 3.0.2)
 Imports: methods
 Suggests: testthat, lattice, ggplot2
@@ -393,6 +401,14 @@ Version: 0.4.0
 Depends: R (>= 3.1.0)
 Suggests: unitizer, knitr, rmarkdown
 License: GPL (>= 2)
+Archs: i386, x64
+
+Package: farver
+Version: 1.1.0
+Imports: Rcpp (>= 0.12.15)
+LinkingTo: Rcpp
+Suggests: testthat, covr
+License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: fastcluster
@@ -414,6 +430,12 @@ Version: 3.5.7
 Depends: methods
 Suggests: RUnit
 License: GPL
+Archs: i386, x64
+
+Package: flashClust
+Version: 1.01-2
+Depends: R (>= 2.3.0)
+License: GPL (>= 2)
 Archs: i386, x64
 
 Package: flexdashboard
@@ -484,6 +506,17 @@ Imports: gtools, stats, methods, utils
 Suggests: RUnit
 License: GPL-2
 
+Package: ggforce
+Version: 0.2.2
+Depends: ggplot2 (>= 3.0.0), R (>= 3.3.0)
+Imports: Rcpp (>= 0.12.2), grid, scales, MASS, tweenr (>= 0.1.5),
+        gtable, rlang, polyclip, stats, grDevices
+LinkingTo: Rcpp, RcppEigen
+Suggests: knitr, rmarkdown, sessioninfo, concaveman, deldir, reshape2,
+        units (>= 0.4-6)
+License: MIT + file LICENSE
+Archs: i386, x64
+
 Package: ggplot2
 Version: 3.1.1
 Depends: R (>= 3.1)
@@ -496,6 +529,17 @@ Suggests: covr, dplyr, ggplot2movies, hexbin, Hmisc, lattice, mapproj,
         0.3-4), svglite (>= 1.2.0.9001)
 Enhances: sp
 License: GPL-2 | file LICENSE
+
+Package: ggraph
+Version: 1.0.2
+Depends: R (>= 2.10), ggplot2 (>= 2.0.0)
+Imports: Rcpp (>= 0.12.2), dplyr, plyr, ggforce, grid, igraph (>=
+        1.0.0), scales, MASS, digest, gtable, ggrepel, utils, stats,
+        viridis
+LinkingTo: Rcpp
+Suggests: network, knitr, rmarkdown
+License: GPL-3
+Archs: i386, x64
 
 Package: ggrepel
 Version: 0.8.1
@@ -957,11 +1001,12 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
         data.table, withr, digest, enviPick, XML, DBI, RSQLite, fst,
         processx, tools, xcms, cluster, fastcluster, gplots, d3heatmap,
-        dynamicTreeCut, dendextend, rJava, rcdk, fingerprint, mzR,
-        circlize, miniUI, plotly, rhandsontable, rstudioapi,
-        htmlwidgets, shiny, templates, CAMERA, enviPat, nontarget,
-        knitr, rmarkdown, flexdashboard, DT, kableExtra, R.utils,
-        magick, glue, ggplot2, ggrepel, cowplot, jsonlite, Rdpack, rsm
+        dynamicTreeCut, dendextend, igraph, visNetwork, rJava, rcdk,
+        fingerprint, mzR, circlize, miniUI, plotly, rhandsontable,
+        rstudioapi, htmlwidgets, shiny, templates, CAMERA, enviPat,
+        nontarget, knitr, rmarkdown, flexdashboard, DT, kableExtra,
+        R.utils, magick, glue, ggplot2, ggrepel, cowplot, jsonlite,
+        Rdpack, rsm
 LinkingTo: Rcpp
 Suggests: RDCOMClient, metfRag, RAMClustR, testthat, vdiffr,
         patRoonData, devtools, covr, DiagrammeR
@@ -983,11 +1028,10 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: pillar
-Version: 1.4.0
-Imports: cli (>= 1.1.0), crayon (>= 1.3.4), fansi (>= 0.4.0), methods,
-        rlang (>= 0.3.4), utf8 (>= 1.1.4), vctrs (>= 0.1.0)
-Suggests: knitr (>= 1.22), lubridate (>= 1.7.4), testthat (>= 2.1.1),
-        withr (>= 2.1.2)
+Version: 1.4.1
+Imports: cli, crayon (>= 1.3.4), fansi, rlang (>= 0.3.0), utf8 (>=
+        1.1.0), vctrs
+Suggests: knitr, lubridate, testthat, withr
 License: GPL-3
 
 Package: pkgbuild
@@ -1045,6 +1089,12 @@ Package: png
 Version: 0.1-7
 Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
+Archs: i386, x64
+
+Package: polyclip
+Version: 1.10-0
+Depends: R (>= 3.0.0)
+License: BSL
 Archs: i386, x64
 
 Package: preprocessCore
@@ -1177,6 +1227,15 @@ Imports: methods, utils
 Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
         (>= 0.1.2)
 License: GPL (>= 2)
+Archs: i386, x64
+
+Package: RcppEigen
+Version: 0.3.3.5.0
+Depends: R (>= 2.15.1)
+Imports: Matrix (>= 1.1-0), Rcpp (>= 0.11.0), stats, utils
+LinkingTo: Rcpp
+Suggests: inline, RUnit, pkgKitten, microbenchmark
+License: GPL (>= 2) | file LICENSE
 Archs: i386, x64
 
 Package: RCurl
@@ -1385,6 +1444,23 @@ Suggests: datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),
         markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0), magrittr
 License: GPL-3 | file LICENSE
 
+Package: shinyjs
+Version: 1.0
+Depends: R (>= 3.1.0)
+Imports: digest (>= 0.6.8), htmltools (>= 0.2.9), jsonlite, shiny (>=
+        1.0.0)
+Suggests: knitr (>= 1.7), rmarkdown, shinyAce, testthat (>= 0.9.1), V8
+        (>= 0.6)
+License: AGPL-3
+
+Package: shinyWidgets
+Version: 0.4.8
+Depends: R (>= 3.1.0)
+Imports: shiny (>= 0.14), htmltools, jsonlite, grDevices, scales
+Suggests: shinydashboard, viridisLite, RColorBrewer, testthat, covr,
+        shinydashboardPlus, bs4Dash, argonR, argonDash
+License: GPL-3 | file LICENSE
+
 Package: snow
 Version: 0.4-3
 Depends: R (>= 2.13.1), utils
@@ -1397,6 +1473,12 @@ Depends: R (>= 3.0.2)
 Suggests: testthat
 License: MIT + file LICENSE
 Archs: i386, x64
+
+Package: sparkline
+Version: 2.0
+Imports: htmltools, htmlwidgets (>= 0.8)
+Suggests: formattable, knitr, rmarkdown, shiny
+License: MIT + file LICENSE
 
 Package: stringi
 Version: 1.4.3
@@ -1472,6 +1554,15 @@ Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
 
+Package: tweenr
+Version: 1.0.1
+Depends: R (>= 3.2.0)
+Imports: Rcpp (>= 0.12.3), grDevices, farver, magrittr, rlang
+LinkingTo: Rcpp
+Suggests: testthat, covr
+License: MIT + file LICENSE
+Archs: i386, x64
+
 Package: UpSetR
 Version: 1.4.0
 Depends: R (>= 3.0)
@@ -1515,6 +1606,15 @@ Package: viridisLite
 Version: 0.3.0
 Depends: R (>= 2.10)
 Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr
+License: MIT + file LICENSE
+
+Package: visNetwork
+Version: 2.0.7
+Depends: R (>= 3.0)
+Imports: htmlwidgets, htmltools, jsonlite, magrittr, utils, methods,
+        grDevices, stats
+Suggests: knitr, rmarkdown, webshot, igraph, rpart, shiny,
+        shinyWidgets, colourpicker, sparkline, ggraph, flashClust
 License: MIT + file LICENSE
 
 Package: vsn
