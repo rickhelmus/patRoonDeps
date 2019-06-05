@@ -959,13 +959,13 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         processx, tools, xcms, cluster, fastcluster, gplots, d3heatmap,
         dynamicTreeCut, dendextend, igraph, visNetwork, rJava, rcdk,
         fingerprint, mzR, circlize, miniUI, plotly, rhandsontable,
-        rstudioapi, htmlwidgets, shiny, templates, CAMERA, RAMClustR,
-        enviPat, nontarget, knitr, rmarkdown, flexdashboard, DT,
-        kableExtra, R.utils, magick, glue, ggplot2, ggrepel, cowplot,
-        jsonlite, Rdpack, rsm
+        rstudioapi, htmlwidgets, shiny, templates, CAMERA, enviPat,
+        nontarget, knitr, rmarkdown, flexdashboard, DT, kableExtra,
+        R.utils, magick, glue, ggplot2, ggrepel, cowplot, jsonlite,
+        Rdpack, rsm
 LinkingTo: Rcpp
-Suggests: RDCOMClient, metfRag, testthat, vdiffr, patRoonData,
-        devtools, covr, DiagrammeR
+Suggests: RDCOMClient, metfRag, RAMClustR, testthat, vdiffr,
+        patRoonData, devtools, covr, DiagrammeR
 License: GPL-3
 Archs: x64
 
