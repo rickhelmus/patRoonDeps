@@ -649,10 +649,10 @@ License: GPL-2
 Archs: i386, x64
 
 Package: installr
-Version: 0.21.0
+Version: 0.21.3
 Depends: R (>= 2.14.0), stringr, utils
 Suggests: curl, XML, htmltab, devtools, rjson, data.table, plyr,
-        ggplot2, sp, tools
+        ggplot2, sp, tools, pkgbuild
 License: GPL-2
 OS_type: windows
 
@@ -801,7 +801,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: markdown
-Version: 0.9
+Version: 1.0
 Depends: R (>= 2.11.1)
 Imports: utils, mime (>= 0.3)
 Suggests: knitr, RCurl
