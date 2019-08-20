@@ -122,9 +122,9 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: blob
-Version: 1.1.1
-Imports: methods, prettyunits
-Suggests: covr, pillar (>= 1.2.1), testthat
+Version: 1.2.0
+Imports: methods, prettyunits, rlang, vctrs (>= 0.2.0)
+Suggests: covr, crayon, pillar (>= 1.2.1), testthat
 License: GPL-3
 
 Package: brew
@@ -132,7 +132,7 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.3.0
+Version: 3.3.1
 Imports: processx (>= 3.4.0), R6, utils
 Suggests: cliapp, covr, crayon, knitr, pingr, ps, rmarkdown, rprojroot,
         spelling, testthat, tibble, withr
@@ -191,7 +191,7 @@ Suggests: covr, fansi, mockery, testthat, webshot, withr
 License: MIT + file LICENSE
 
 Package: clipr
-Version: 0.6.0
+Version: 0.7.0
 Imports: utils
 Suggests: covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=
         2.0.0)
@@ -229,24 +229,14 @@ Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: i386, x64
 
-Package: covr
-Version: 3.2.1
-Depends: R (>= 3.1.0), methods
-Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
-        1.0.2)
-Suggests: R6, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
-        rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
-        mockery
-License: GPL-3
-Archs: i386, x64
-
 Package: cowplot
-Version: 0.9.4
-Depends: R (>= 3.3.0), ggplot2 (>= 2.1.0),
-Imports: grid (>= 3.0.0), gtable (>= 0.1.2), plyr (>= 1.8.2),
-        grDevices, methods, scales, utils
-Suggests: covr, gridGraphics, knitr, rmarkdown, magick, maps, dplyr,
-        tidyr, testthat, vdiffr, viridis
+Version: 1.0.0
+Depends: R (>= 3.5.0)
+Imports: ggplot2 (> 2.2.1), grid, gtable, grDevices, methods, rlang,
+        scales, utils
+Suggests: Cairo, covr, dplyr, forcats, gridGraphics (>= 0.4-0), knitr,
+        lattice, magick, maps, PASWR, rmarkdown, testthat (>= 1.0.0),
+        tidyr, vdiffr (>= 0.3.0), VennDiagram
 License: GPL-2
 
 Package: crayon
@@ -262,10 +252,10 @@ Imports: htmltools (>= 0.3.5), jsonlite, lazyeval, R6, shiny (>= 0.11),
 License: MIT + file LICENSE
 
 Package: curl
-Version: 3.3
+Version: 4.0
 Depends: R (>= 3.0.0)
-Suggests: spelling, testthat (>= 1.0.0), knitr, jsonlite, rmarkdown,
-        magrittr, httpuv (>= 1.4.4), webutils
+Suggests: askpass, spelling, testthat (>= 1.0.0), knitr, jsonlite,
+        rmarkdown, magrittr, httpuv (>= 1.4.4), webutils
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -330,7 +320,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: doParallel
-Version: 1.0.14
+Version: 1.0.15
 Depends: R (>= 2.14.0), foreach(>= 1.2.0), iterators(>= 1.0.0),
         parallel, utils
 Suggests: caret, mlbench, rpart, RUnit
@@ -352,11 +342,10 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: DT
-Version: 0.7
-Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), magrittr,
-        crosstalk, promises
-Suggests: jsonlite (>= 0.9.16), knitr (>= 1.8), rmarkdown, shiny (>=
-        1.1.0)
+Version: 0.8
+Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), jsonlite (>=
+        0.9.16), magrittr, crosstalk, promises
+Suggests: knitr (>= 1.8), rmarkdown, shiny (>= 1.1.0)
 License: GPL-3 | file LICENSE
 
 Package: dynamicTreeCut
@@ -440,7 +429,7 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: foreach
-Version: 1.4.4
+Version: 1.4.7
 Depends: R (>= 2.5.0)
 Imports: codetools, utils, iterators
 Suggests: randomForest
@@ -448,7 +437,7 @@ Enhances: compiler, doMC, RUnit, doParallel
 License: Apache License (== 2.0)
 
 Package: foreign
-Version: 0.8-71
+Version: 0.8-72
 Priority: recommended
 Depends: R (>= 3.0.0)
 Imports: methods, utils, stats
@@ -500,7 +489,7 @@ Suggests: RUnit
 License: GPL-2
 
 Package: ggplot2
-Version: 3.2.0
+Version: 3.2.1
 Depends: R (>= 3.2)
 Imports: digest, grDevices, grid, gtable (>= 0.1.1), lazyeval, MASS,
         mgcv, reshape2, rlang (>= 0.3.0), scales (>= 0.5.0), stats,
@@ -599,8 +588,8 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: hms
-Version: 0.4.2
-Imports: methods, pkgconfig, rlang
+Version: 0.5.0
+Imports: methods, pkgconfig, rlang, vctrs (>= 0.2.0)
 Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
 
@@ -640,9 +629,9 @@ License: GPL (>= 2) | file LICENSE
 Archs: i386, x64
 
 Package: httr
-Version: 1.4.0
-Depends: R (>= 3.1)
-Imports: curl (>= 0.9.1), jsonlite, mime, openssl (>= 0.8), R6
+Version: 1.4.1
+Depends: R (>= 3.2)
+Imports: curl (>= 3.0.0), jsonlite, mime, openssl (>= 0.8), R6
 Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
         (>= 0.8.0), xml2
 License: MIT + file LICENSE
@@ -664,7 +653,7 @@ License: GPL-2
 Archs: i386, x64
 
 Package: installr
-Version: 0.21.3
+Version: 0.22.0
 Depends: R (>= 2.14.0), stringr, utils
 Suggests: curl, XML, htmltab, devtools, rjson, data.table, plyr,
         ggplot2, sp, tools, pkgbuild
@@ -691,7 +680,7 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: iterators
-Version: 1.0.10
+Version: 1.0.12
 Depends: R (>= 2.5.0), utils
 Suggests: RUnit, foreach
 License: Apache License (== 2.0)
@@ -728,7 +717,7 @@ License: Unlimited
 Archs: i386, x64
 
 Package: knitr
-Version: 1.23
+Version: 1.24
 Depends: R (>= 3.2.3)
 Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
         (>= 2.1.19), methods, xfun, tools
@@ -793,7 +782,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: magick
-Version: 2.0
+Version: 2.1
 Imports: Rcpp (>= 0.12.12), magrittr, curl
 LinkingTo: Rcpp
 Suggests: av, spelling, jsonlite, methods, knitr, rmarkdown, rsvg,
@@ -816,9 +805,9 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: markdown
-Version: 1.0
+Version: 1.1
 Depends: R (>= 2.11.1)
-Imports: utils, mime (>= 0.3)
+Imports: utils, xfun, mime (>= 0.3)
 Suggests: knitr, RCurl
 License: GPL-2
 Archs: i386, x64
@@ -959,7 +948,7 @@ Depends: R (>= 2.10)
 License: GPL-3
 
 Package: openssl
-Version: 1.4
+Version: 1.4.1
 Imports: askpass
 Suggests: testthat, digest, knitr, rmarkdown, jsonlite, jose, sodium
 License: MIT + file LICENSE
@@ -1005,9 +994,9 @@ Suggests: knitr, lubridate, testthat, withr
 License: GPL-3
 
 Package: pkgbuild
-Version: 1.0.3
+Version: 1.0.4
 Depends: R (>= 3.1)
-Imports: callr (>= 2.0.0), cli, crayon, desc, prettyunits, R6,
+Imports: callr (>= 3.2.0), cli, crayon, desc, prettyunits, R6,
         rprojroot, withr (>= 2.1.2)
 Suggests: Rcpp, testthat, covr
 License: GPL-3
@@ -1061,11 +1050,6 @@ Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: i386, x64
 
-Package: praise
-Version: 1.0.0
-Suggests: testthat
-License: MIT + file LICENSE
-
 Package: preprocessCore
 Version: 1.44.0
 Imports: stats
@@ -1079,7 +1063,7 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.4.0
+Version: 3.4.1
 Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
         parallel, testthat, withr
@@ -1190,7 +1174,7 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.1
+Version: 1.0.2
 Depends: R (>= 3.0.0)
 Imports: methods, utils
 Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
@@ -1269,13 +1253,6 @@ Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
 
-Package: rex
-Version: 1.1.2
-Imports: magrittr, lazyeval
-Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, Hmisc, stringr,
-        rvest, roxygen2, covr
-License: MIT + file LICENSE
-
 Package: rhandsontable
 Version: 0.3.7
 Imports: jsonlite, htmlwidgets (>= 0.3.3), magrittr, methods
@@ -1304,13 +1281,13 @@ License: GPL-3
 Archs: i386, x64
 
 Package: rmarkdown
-Version: 1.13
+Version: 1.14
 Depends: R (>= 3.0)
 Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
         0.3.5), evaluate (>= 0.13), base64enc, jsonlite, mime, tinytex
         (>= 0.11), xfun, methods, stringr (>= 1.2.0)
 Suggests: shiny (>= 0.11), tufte, testthat, digest, dygraphs, tibble,
-        fs, callr (>= 2.0.0)
+        fs, pkgdown, callr (>= 2.0.0)
 License: GPL-3
 
 Package: robustbase
@@ -1356,9 +1333,9 @@ Suggests: emmeans, Vdgraph, conf.design, DoE.base, FrF2
 License: GPL (>= 2)
 
 Package: RSQLite
-Version: 2.1.1
+Version: 2.1.2
 Depends: R (>= 3.1.0)
-Imports: bit64, blob (>= 1.1.1), DBI (>= 1.0.0), memoise, methods,
+Imports: bit64, blob (>= 1.2.0), DBI (>= 1.0.0), memoise, methods,
         pkgconfig, Rcpp (>= 0.12.7)
 LinkingTo: BH, plogr (>= 0.2.0), Rcpp
 Suggests: DBItest, knitr, rmarkdown, testthat
@@ -1470,16 +1447,6 @@ Imports: stringr, dat, magrittr
 Suggests: testthat, knitr, rmarkdown, covr
 License: MIT + file LICENSE
 
-Package: testthat
-Version: 2.1.1
-Depends: R (>= 3.1)
-Imports: cli, crayon (>= 1.3.4), digest, magrittr, methods, praise, R6
-        (>= 2.2.0), rlang (>= 0.3.0), withr (>= 2.0.0)
-Suggests: covr, curl (>= 0.9.5), devtools, knitr, rmarkdown, usethis,
-        vctrs (>= 0.1.0), xml2
-License: MIT + file LICENSE
-Archs: i386, x64
-
 Package: tibble
 Version: 2.1.3
 Depends: R (>= 3.1.0)
@@ -1510,7 +1477,7 @@ License: GPL-3
 Archs: i386, x64
 
 Package: tinytex
-Version: 0.14
+Version: 0.15
 Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
@@ -1636,11 +1603,12 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: xml2
-Version: 1.2.0
+Version: 1.2.2
 Depends: R (>= 3.1.0)
-Imports: Rcpp
+Imports: Rcpp, methods
 LinkingTo: Rcpp (>= 0.12.12)
-Suggests: testthat, curl, covr, knitr, rmarkdown, magrittr, httr
+Suggests: covr, curl, httr, knitr, magrittr, mockery, rmarkdown,
+        testthat (>= 2.1.0)
 License: GPL (>= 2)
 Archs: i386, x64
 
