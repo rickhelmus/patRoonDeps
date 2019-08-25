@@ -167,11 +167,11 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: circlize
-Version: 0.4.6
+Version: 0.4.7
 Depends: R (>= 3.0.0), graphics
 Imports: GlobalOptions (>= 0.1.0), shape, grDevices, utils, stats,
         colorspace, methods, grid
-Suggests: knitr, dendextend (>= 1.0.1), ComplexHeatmap (>= 1.13.2),
+Suggests: knitr, dendextend (>= 1.0.1), ComplexHeatmap (>= 1.99.0),
         gridBase, png
 License: MIT + file LICENSE
 
@@ -588,7 +588,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: hms
-Version: 0.5.0
+Version: 0.5.1
 Imports: methods, pkgconfig, rlang, vctrs (>= 0.2.0)
 Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
@@ -668,7 +668,7 @@ Imports: Rdisop, enviPat, plyr, utils, foreach, doParallel, DBI,
 License: GPL-3
 
 Package: IRanges
-Version: 2.18.1
+Version: 2.18.2
 Depends: R (>= 3.1.0), methods, utils, stats, BiocGenerics (>= 0.25.3),
         S4Vectors (>= 0.21.9)
 Imports: stats4
@@ -960,13 +960,13 @@ Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
         data.table, withr, digest, enviPick, XML, DBI, RSQLite, fst,
-        processx, tools, xcms, cluster, fastcluster, gplots, d3heatmap,
-        dynamicTreeCut, dendextend, igraph, visNetwork, rJava, rcdk,
-        fingerprint, mzR, circlize, miniUI, plotly, rhandsontable,
-        rstudioapi, htmlwidgets, shiny, templates, CAMERA, enviPat,
-        nontarget, knitr, rmarkdown, flexdashboard, DT, kableExtra,
-        R.utils, magick, glue, ggplot2, ggrepel, cowplot, jsonlite,
-        Rdpack, rsm
+        processx, tools, MSnbase, xcms, cluster, fastcluster, gplots,
+        d3heatmap, dynamicTreeCut, dendextend, igraph, visNetwork,
+        rJava, rcdk, fingerprint, mzR, circlize, miniUI, plotly,
+        rhandsontable, rstudioapi, htmlwidgets, shiny, templates,
+        CAMERA, enviPat, nontarget, knitr, rmarkdown, flexdashboard,
+        DT, kableExtra, R.utils, magick, glue, ggplot2, ggrepel,
+        cowplot, jsonlite, Rdpack, rsm
 LinkingTo: Rcpp
 Suggests: RDCOMClient, metfRag, RAMClustR, testthat, vdiffr,
         patRoonData, devtools, covr, DiagrammeR
@@ -1273,7 +1273,7 @@ License: GPL-3
 Archs: i386, x64
 
 Package: rmarkdown
-Version: 1.14
+Version: 1.15
 Depends: R (>= 3.0)
 Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
         0.3.5), evaluate (>= 0.13), base64enc, jsonlite, mime, tinytex
@@ -1427,7 +1427,7 @@ License: LGPL (>= 2)
 Archs: i386, x64
 
 Package: sys
-Version: 3.2
+Version: 3.3
 Suggests: unix (>= 1.4), spelling, testthat
 License: MIT + file LICENSE
 Archs: i386, x64
@@ -1581,7 +1581,7 @@ License: GPL (>= 2) + file LICENSE
 Archs: i386, x64
 
 Package: xfun
-Version: 0.8
+Version: 0.9
 Imports: stats, tools
 Suggests: testit, parallel, rstudioapi, tinytex, mime, markdown, knitr,
         htmltools, base64enc, remotes, rmarkdown
