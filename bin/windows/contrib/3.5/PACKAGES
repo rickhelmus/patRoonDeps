@@ -588,7 +588,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: hms
-Version: 0.5.0
+Version: 0.5.1
 Imports: methods, pkgconfig, rlang, vctrs (>= 0.2.0)
 Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
@@ -782,12 +782,12 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: magick
-Version: 2.1
+Version: 2.2
 Imports: Rcpp (>= 0.12.12), magrittr, curl
 LinkingTo: Rcpp
-Suggests: av, spelling, jsonlite, methods, knitr, rmarkdown, rsvg,
-        webp, pdftools, ggplot2, raster, rgdal, gapminder, IRdisplay,
-        tesseract (>= 2.0), gifski
+Suggests: av (>= 0.3), spelling, jsonlite, methods, knitr, rmarkdown,
+        rsvg, webp, pdftools, ggplot2, raster, rgdal, gapminder,
+        IRdisplay, tesseract (>= 2.0), gifski
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -994,7 +994,7 @@ Suggests: knitr, lubridate, testthat, withr
 License: GPL-3
 
 Package: pkgbuild
-Version: 1.0.4
+Version: 1.0.5
 Depends: R (>= 3.1)
 Imports: callr (>= 3.2.0), cli, crayon, desc, prettyunits, R6,
         rprojroot, withr (>= 2.1.2)
@@ -1134,7 +1134,7 @@ Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
 License: MIT + file LICENSE
 
 Package: RAMClustR
-Version: 1.0.7
+Version: 1.0.8
 Imports: dynamicTreeCut, fastcluster, ff, InterpretMSSpectrum,
         BiocManager, httr, jsonlite, preprocessCore, xcms, e1071,
         gplots, pcaMethods, stringr, xml2, utils, webchem, stringi,
@@ -1529,12 +1529,13 @@ Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr
 License: MIT + file LICENSE
 
 Package: visNetwork
-Version: 2.0.7
+Version: 2.0.8
 Depends: R (>= 3.0)
 Imports: htmlwidgets, htmltools, jsonlite, magrittr, utils, methods,
         grDevices, stats
 Suggests: knitr, rmarkdown, webshot, igraph, rpart, shiny,
-        shinyWidgets, colourpicker, sparkline, ggraph, flashClust
+        shinyWidgets, colourpicker, sparkline, ggraph, tidygraph,
+        flashClust
 License: MIT + file LICENSE
 
 Package: vsn
