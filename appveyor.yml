@@ -21,6 +21,7 @@ environment:
     BIOC_USE_DEVEL: FALSE
     USE_RTOOLS: true
     R_REMOTES_STANDALONE: true
+    R_REMOTES_UPGRADE: never
     access_token:
       secure: xfAjJeVdFHYHtpdnjCfZDlJPgEkn+tSBaNNFYNZTk+ttxONOIKpV7NIeZWfa4TIf
     matrix:
