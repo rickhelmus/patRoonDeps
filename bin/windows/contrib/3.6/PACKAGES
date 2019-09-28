@@ -132,10 +132,10 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.3.1
+Version: 3.3.2
 Imports: processx (>= 3.4.0), R6, utils
-Suggests: cliapp, covr, crayon, knitr, pingr, ps, rmarkdown, rprojroot,
-        spelling, testthat, tibble, withr
+Suggests: cliapp, covr, crayon, fansi, knitr, pingr, ps, rmarkdown,
+        rprojroot, spelling, testthat, tibble, withr
 License: MIT + file LICENSE
 
 Package: CAMERA
@@ -594,7 +594,7 @@ Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
 
 Package: htmlTable
-Version: 1.13.1
+Version: 1.13.2
 Imports: stringr, knitr (>= 1.6), magrittr (>= 1.5), methods,
         checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)
 Suggests: testthat, XML, xtable, ztable, Hmisc, reshape, rmarkdown,
@@ -1010,7 +1010,7 @@ Suggests: Rcpp, testthat, covr
 License: GPL-3
 
 Package: pkgconfig
-Version: 2.0.2
+Version: 2.0.3
 Imports: utils
 Suggests: covr, testthat, disposables (>= 1.0.3)
 License: MIT + file LICENSE
