@@ -42,10 +42,10 @@ Suggests: testthat, covr
 License: GPL-3
 
 Package: backports
-Version: 1.1.4
+Version: 1.1.5
 Depends: R (>= 3.0.0)
 Imports: utils
-License: GPL-2
+License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: base64enc
@@ -274,10 +274,10 @@ Suggests: lintr, knitr, rbenchmark, nycflights13, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: data.table
-Version: 1.12.2
+Version: 1.12.4
 Depends: R (>= 3.1.0)
 Imports: methods
-Suggests: bit64, curl, R.utils, knitr, xts, nanotime, zoo
+Suggests: bit64, curl, R.utils, knitr, xts, nanotime, zoo, yaml
 License: MPL-2.0 | file LICENSE
 Archs: i386, x64
 
@@ -511,7 +511,7 @@ License: GPL-3 | file LICENSE
 Archs: i386, x64
 
 Package: GlobalOptions
-Version: 0.1.0
+Version: 0.1.1
 Depends: R (>= 3.3.0), methods
 Imports: utils
 Suggests: testthat (>= 1.0.0), knitr, markdown
@@ -603,17 +603,17 @@ Suggests: testthat, XML, xtable, ztable, Hmisc, reshape, rmarkdown,
 License: GPL (>= 3)
 
 Package: htmltools
-Version: 0.3.6
+Version: 0.4.0
 Depends: R (>= 2.14.1)
-Imports: utils, digest, Rcpp
+Imports: utils, digest, Rcpp, rlang
 LinkingTo: Rcpp
-Suggests: markdown, testthat
+Suggests: markdown, testthat, withr
 Enhances: knitr
 License: GPL (>= 2)
 Archs: i386, x64
 
 Package: htmlwidgets
-Version: 1.3
+Version: 1.5
 Imports: grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml
 Suggests: knitr (>= 1.8)
 Enhances: shiny (>= 1.1)
@@ -740,7 +740,7 @@ Suggests: testit
 License: LGPL-3
 
 Package: later
-Version: 0.8.0
+Version: 1.0.0
 Imports: Rcpp (>= 0.12.9), rlang
 LinkingTo: Rcpp, BH
 Suggests: knitr, rmarkdown, testthat
@@ -1084,7 +1084,7 @@ Suggests: Rcpp, testthat, withr
 License: MIT + file LICENSE
 
 Package: promises
-Version: 1.0.1
+Version: 1.1.0
 Imports: R6, Rcpp, later, rlang, stats, magrittr
 LinkingTo: later, Rcpp
 Suggests: testthat, future, knitr, rmarkdown
@@ -1287,7 +1287,7 @@ License: GPL-3
 Archs: i386, x64
 
 Package: rmarkdown
-Version: 1.15
+Version: 1.16
 Depends: R (>= 3.0)
 Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
         0.3.5), evaluate (>= 0.13), base64enc, jsonlite, mime, tinytex
@@ -1597,7 +1597,7 @@ License: GPL (>= 2) + file LICENSE
 Archs: i386, x64
 
 Package: xfun
-Version: 0.9
+Version: 0.10
 Imports: stats, tools
 Suggests: testit, parallel, rstudioapi, tinytex, mime, markdown, knitr,
         htmltools, base64enc, remotes, rmarkdown
