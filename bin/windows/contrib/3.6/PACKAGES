@@ -1259,7 +1259,7 @@ Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
 License: MIT + file LICENSE
 
 Package: Rhdf5lib
-Version: 1.6.1
+Version: 1.6.2
 Suggests: BiocStyle, knitr, rmarkdown
 License: Artistic-2.0
 Archs: i386, x64
@@ -1576,7 +1576,7 @@ Suggests: testthat, covr, lattice, DBI, RSQLite, methods, knitr,
 License: GPL (>= 2)
 
 Package: xcms
-Version: 3.6.1
+Version: 3.6.2
 Depends: R (>= 2.14.0), methods, Biobase, BiocParallel (>= 1.8.0),
         MSnbase (>= 2.9.3)
 Imports: mzR (>= 2.13.3), BiocGenerics, ProtGenerics, lattice,
