@@ -85,10 +85,9 @@ Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, Rsamtools,
 License: Artistic-2.0
 
 Package: BiocManager
-Version: 1.30.4
-Depends: R (>= 3.5.0)
+Version: 1.30.9
 Imports: utils
-Suggests: BiocStyle, BiocVersion, remotes, testthat, knitr, withr
+Suggests: BiocStyle, BiocVersion, remotes, testthat, withr, curl, knitr
 License: Artistic-2.0
 
 Package: BiocParallel
@@ -274,7 +273,7 @@ Suggests: lintr, knitr, rbenchmark, nycflights13, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: data.table
-Version: 1.12.4
+Version: 1.12.6
 Depends: R (>= 3.1.0)
 Imports: methods
 Suggests: bit64, curl, R.utils, knitr, xts, nanotime, zoo, yaml
@@ -404,6 +403,12 @@ Version: 1.1.25
 Depends: R (>= 3.0.0)
 Enhances: stats, flashClust
 License: FreeBSD | GPL-2 | file LICENSE
+Archs: i386, x64
+
+Package: fastmap
+Version: 1.0.1
+Suggests: testthat (>= 2.1.1)
+License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: ff
@@ -613,7 +618,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: htmlwidgets
-Version: 1.5
+Version: 1.5.1
 Imports: grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml
 Suggests: knitr (>= 1.8)
 Enhances: shiny (>= 1.1)
@@ -709,7 +714,7 @@ Suggests: testthat, magick, formattable, dplyr
 License: MIT + file LICENSE
 
 Package: KernSmooth
-Version: 2.23-15
+Version: 2.23-16
 Priority: recommended
 Depends: R (>= 2.5.0), stats
 Suggests: MASS
@@ -852,7 +857,7 @@ Suggests: testthat, aws.s3, httr, covr
 License: MIT + file LICENSE
 
 Package: mgcv
-Version: 1.8-29
+Version: 1.8-30
 Priority: recommended
 Depends: R (>= 2.14.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
@@ -922,7 +927,7 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: ncdf4
-Version: 1.16.1
+Version: 1.17
 License: GPL (>= 3)
 Archs: i386, x64
 
@@ -1002,7 +1007,7 @@ Suggests: knitr, lubridate, testthat, withr
 License: GPL-3
 
 Package: pkgbuild
-Version: 1.0.5
+Version: 1.0.6
 Depends: R (>= 3.1)
 Imports: callr (>= 3.2.0), cli, crayon, desc, prettyunits, R6,
         rprojroot, withr (>= 2.1.2)
@@ -1058,6 +1063,11 @@ Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: i386, x64
 
+Package: praise
+Version: 1.0.0
+Suggests: testthat
+License: MIT + file LICENSE
+
 Package: preprocessCore
 Version: 1.46.0
 Imports: stats
@@ -1107,8 +1117,8 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: purrr
-Version: 0.3.2
-Depends: R (>= 3.1)
+Version: 0.3.3
+Depends: R (>= 3.2)
 Imports: magrittr (>= 1.5), rlang (>= 0.3.1)
 Suggests: covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
         tibble, tidyselect
@@ -1259,7 +1269,7 @@ Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
 License: MIT + file LICENSE
 
 Package: Rhdf5lib
-Version: 1.6.2
+Version: 1.6.3
 Suggests: BiocStyle, knitr, rmarkdown
 License: Artistic-2.0
 Archs: i386, x64
@@ -1386,14 +1396,15 @@ Imports: stats, graphics, grDevices
 License: GPL (>= 3)
 
 Package: shiny
-Version: 1.3.2
+Version: 1.4.0
 Depends: R (>= 3.0.2), methods
-Imports: utils, grDevices, httpuv (>= 1.5.0), mime (>= 0.3), jsonlite
-        (>= 0.9.16), xtable, digest, htmltools (>= 0.3.6), R6 (>= 2.0),
-        sourcetools, later (>= 0.7.2), promises (>= 1.0.1), tools,
-        crayon, rlang
-Suggests: datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),
-        markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0), magrittr
+Imports: utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite
+        (>= 0.9.16), xtable, digest, htmltools (>= 0.4.0), R6 (>= 2.0),
+        sourcetools, later (>= 1.0.0), promises (>= 1.1.0), tools,
+        crayon, rlang (>= 0.4.0), fastmap (>= 1.0.0)
+Suggests: datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>=
+        1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),
+        magrittr, yaml
 License: GPL-3 | file LICENSE
 
 Package: snow
@@ -1444,6 +1455,16 @@ Depends: R (>= 3.4.0)
 Imports: stringr, dat, magrittr
 Suggests: testthat, knitr, rmarkdown, covr
 License: MIT + file LICENSE
+
+Package: testthat
+Version: 2.2.1
+Depends: R (>= 3.1)
+Imports: cli, crayon (>= 1.3.4), digest, evaluate, magrittr, methods,
+        praise, R6 (>= 2.2.0), rlang (>= 0.3.0), withr (>= 2.0.0)
+Suggests: covr, curl (>= 0.9.5), devtools, knitr, rmarkdown, usethis,
+        vctrs (>= 0.1.0), xml2
+License: MIT + file LICENSE
+Archs: i386, x64
 
 Package: tibble
 Version: 2.1.3
