@@ -593,7 +593,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: hms
-Version: 0.5.1
+Version: 0.5.2
 Imports: methods, pkgconfig, rlang, vctrs (>= 0.2.0)
 Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
@@ -857,7 +857,7 @@ Suggests: testthat, aws.s3, httr, covr
 License: MIT + file LICENSE
 
 Package: mgcv
-Version: 1.8-29
+Version: 1.8-30
 Priority: recommended
 Depends: R (>= 2.14.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
@@ -1491,7 +1491,7 @@ License: GPL-3
 Archs: i386, x64
 
 Package: tinytex
-Version: 0.16
+Version: 0.17
 Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
