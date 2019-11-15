@@ -341,7 +341,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: DT
-Version: 0.9
+Version: 0.10
 Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), jsonlite (>=
         0.9.16), magrittr, crosstalk, promises
 Suggests: knitr (>= 1.8), rmarkdown, shiny (>= 1.1.0)
@@ -568,7 +568,7 @@ License: GPL-2
 Archs: i386, x64
 
 Package: hexbin
-Version: 1.27.3
+Version: 1.28.0
 Depends: R (>= 2.0.1), methods
 Imports: lattice, grid, graphics, grDevices, stats, utils
 Suggests: marray, affy, Biobase, limma
@@ -582,7 +582,7 @@ Suggests: knitr, testit
 License: GPL
 
 Package: Hmisc
-Version: 4.2-0
+Version: 4.3-0
 Depends: lattice, survival (>= 2.40-1), Formula, ggplot2 (>= 2.2)
 Imports: methods, latticeExtra, cluster, rpart, nnet, acepack, foreign,
         gtable, grid, gridExtra, data.table, htmlTable (>= 1.11.0),
@@ -722,7 +722,7 @@ License: Unlimited
 Archs: i386, x64
 
 Package: knitr
-Version: 1.25
+Version: 1.26
 Depends: R (>= 3.2.3)
 Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
         (>= 2.1.19), methods, xfun, tools
@@ -730,7 +730,7 @@ Suggests: formatR, testit, digest, rgl (>= 0.95.1201), codetools,
         rmarkdown, htmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10),
         tinytex, reticulate (>= 1.4), JuliaCall (>= 0.11.1), magick,
         png, jpeg, gifski, xml2 (>= 1.2.0), httr, DBI (>= 0.4-1),
-        showtext, tibble, sass, styler
+        showtext, tibble, sass, styler (>= 1.2.0)
 License: GPL
 
 Package: labeling
@@ -857,7 +857,7 @@ Suggests: testthat, aws.s3, httr, covr
 License: MIT + file LICENSE
 
 Package: mgcv
-Version: 1.8-30
+Version: 1.8-31
 Priority: recommended
 Depends: R (>= 2.14.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
@@ -967,7 +967,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: patRoon
-Version: 0.1.0
+Version: 0.9.0.9000
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
         data.table, withr, digest, enviPick, XML, DBI, RSQLite, fst,
@@ -979,7 +979,7 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         DT, magrittr, kableExtra, R.utils, magick, glue, ggplot2,
         ggrepel, cowplot, jsonlite, Rdpack, rsm
 LinkingTo: Rcpp
-Suggests: RDCOMClient, metfRag, RAMClustR, testthat, vdiffr,
+Suggests: RDCOMClient, metfRag, RAMClustR, testthat, rlang, vdiffr,
         patRoonData, devtools, covr, DiagrammeR
 License: GPL-3
 Archs: i386, x64
@@ -1033,7 +1033,7 @@ Suggests: Rcpp
 License: MIT + file LICENSE
 
 Package: plotly
-Version: 4.9.0
+Version: 4.9.1
 Depends: R (>= 3.2.0), ggplot2 (>= 3.0.0)
 Imports: tools, scales, httr, jsonlite (>= 1.6), magrittr, digest,
         viridisLite, base64enc, htmltools (>= 0.3.6), htmlwidgets (>=
@@ -1126,7 +1126,7 @@ Imports: utils
 License: LGPL (>= 2.1)
 
 Package: R.oo
-Version: 1.22.0
+Version: 1.23.0
 Depends: R (>= 2.13.0), R.methodsS3 (>= 1.7.1)
 Imports: methods, utils
 Suggests: tools
@@ -1140,7 +1140,7 @@ Suggests: digest (>= 0.6.10)
 License: LGPL (>= 2.1)
 
 Package: R6
-Version: 2.4.0
+Version: 2.4.1
 Depends: R (>= 3.0)
 Suggests: knitr, microbenchmark, pryr, testthat, ggplot2, scales
 License: MIT + file LICENSE
@@ -1185,7 +1185,7 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.2
+Version: 1.0.3
 Depends: R (>= 3.0.0)
 Imports: methods, utils
 Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
@@ -1292,7 +1292,7 @@ License: GPL-3
 Archs: i386, x64
 
 Package: rmarkdown
-Version: 1.16
+Version: 1.17
 Depends: R (>= 3.0)
 Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
         0.3.5), evaluate (>= 0.13), base64enc, jsonlite, mime, tinytex
@@ -1312,13 +1312,14 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: roxygen2
-Version: 6.1.1
-Depends: R (>= 3.1)
+Version: 7.0.0
+Depends: R (>= 3.2)
 Imports: brew, commonmark, desc (>= 1.2.0), digest, methods, pkgload
-        (>= 1.0.2), purrr, R6 (>= 2.1.2), Rcpp (>= 0.11.0), stringi,
-        stringr (>= 1.0.0), utils, xml2
+        (>= 1.0.2), purrr, R6 (>= 2.1.2), Rcpp (>= 0.11.0), rlang,
+        stringi, stringr (>= 1.0.0), utils, xml2
 LinkingTo: Rcpp
-Suggests: covr, devtools, knitr, rmarkdown, testthat (>= 0.8.0)
+Suggests: covr, devtools, knitr, rmarkdown, testthat (>= 2.1.0),
+        R.methodsS3, R.oo
 License: GPL (>= 2)
 Archs: i386, x64
 
@@ -1359,7 +1360,7 @@ Suggests: testthat, knitr, rmarkdown
 License: MIT + file LICENSE
 
 Package: rvest
-Version: 0.3.4
+Version: 0.3.5
 Depends: R (>= 3.2), xml2
 Imports: httr (>= 0.5), magrittr, selectr
 Suggests: covr, knitr, png, rmarkdown, spelling, stringi (>= 0.3.1),
@@ -1439,9 +1440,9 @@ Suggests: covr, htmltools, htmlwidgets, knitr, rmarkdown, testthat
 License: GPL-2 | file LICENSE
 
 Package: survival
-Version: 2.44-1.1
+Version: 3.1-7
 Priority: recommended
-Depends: R (>= 2.13.0)
+Depends: R (>= 3.4.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
 License: LGPL (>= 2)
 Archs: i386, x64
@@ -1603,7 +1604,7 @@ License: GPL (>= 2) + file LICENSE
 Archs: i386, x64
 
 Package: xfun
-Version: 0.10
+Version: 0.11
 Imports: stats, tools
 Suggests: testit, parallel, rstudioapi, tinytex, mime, markdown, knitr,
         htmltools, base64enc, remotes, rmarkdown
