@@ -568,7 +568,7 @@ License: GPL-2
 Archs: i386, x64
 
 Package: hexbin
-Version: 1.27.3
+Version: 1.28.0
 Depends: R (>= 2.0.1), methods
 Imports: lattice, grid, graphics, grDevices, stats, utils
 Suggests: marray, affy, Biobase, limma
@@ -582,7 +582,7 @@ Suggests: knitr, testit
 License: GPL
 
 Package: Hmisc
-Version: 4.2-0
+Version: 4.3-0
 Depends: lattice, survival (>= 2.40-1), Formula, ggplot2 (>= 2.2)
 Imports: methods, latticeExtra, cluster, rpart, nnet, acepack, foreign,
         gtable, grid, gridExtra, data.table, htmlTable (>= 1.11.0),
@@ -857,7 +857,7 @@ Suggests: testthat, aws.s3, httr, covr
 License: MIT + file LICENSE
 
 Package: mgcv
-Version: 1.8-30
+Version: 1.8-31
 Priority: recommended
 Depends: R (>= 2.14.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
@@ -932,7 +932,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: nlme
-Version: 3.1-141
+Version: 3.1-142
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, stats, utils, lattice
@@ -967,7 +967,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: patRoon
-Version: 0.1.0
+Version: 0.9.0.9000
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
@@ -980,7 +980,7 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         DT, magrittr, kableExtra, R.utils, magick, glue, ggplot2,
         ggrepel, cowplot, jsonlite, Rdpack, rsm
 LinkingTo: Rcpp
-Suggests: RDCOMClient, metfRag, RAMClustR, testthat, vdiffr,
+Suggests: RDCOMClient, metfRag, RAMClustR, testthat, rlang, vdiffr,
         patRoonData, devtools, covr, DiagrammeR
 License: GPL-3
 Archs: x64
@@ -1034,7 +1034,7 @@ Suggests: Rcpp
 License: MIT + file LICENSE
 
 Package: plotly
-Version: 4.9.0
+Version: 4.9.1
 Depends: R (>= 3.2.0), ggplot2 (>= 3.0.0)
 Imports: tools, scales, httr, jsonlite (>= 1.6), magrittr, digest,
         viridisLite, base64enc, htmltools (>= 0.3.6), htmlwidgets (>=
@@ -1187,7 +1187,7 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.2
+Version: 1.0.3
 Depends: R (>= 3.0.0)
 Imports: methods, utils
 Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
@@ -1351,7 +1351,7 @@ Suggests: testthat, knitr, rmarkdown
 License: MIT + file LICENSE
 
 Package: rvest
-Version: 0.3.4
+Version: 0.3.5
 Depends: R (>= 3.2), xml2
 Imports: httr (>= 0.5), magrittr, selectr
 Suggests: covr, knitr, png, rmarkdown, spelling, stringi (>= 0.3.1),
@@ -1431,9 +1431,9 @@ Suggests: covr, htmltools, htmlwidgets, knitr, rmarkdown, testthat
 License: GPL-2 | file LICENSE
 
 Package: survival
-Version: 2.44-1.1
+Version: 3.1-7
 Priority: recommended
-Depends: R (>= 2.13.0)
+Depends: R (>= 3.4.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
 License: LGPL (>= 2)
 Archs: i386, x64
