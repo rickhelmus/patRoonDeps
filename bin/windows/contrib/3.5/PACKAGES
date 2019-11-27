@@ -85,7 +85,7 @@ Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, Rsamtools,
 License: Artistic-2.0
 
 Package: BiocManager
-Version: 1.30.9
+Version: 1.30.10
 Imports: utils
 Suggests: BiocStyle, BiocVersion, remotes, testthat, withr, curl, knitr
 License: Artistic-2.0
@@ -228,6 +228,17 @@ Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: i386, x64
 
+Package: covr
+Version: 3.3.2
+Depends: R (>= 3.1.0), methods
+Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
+        1.0.2), yaml
+Suggests: R6, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
+        rlang, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
+        mockery
+License: GPL-3
+Archs: i386, x64
+
 Package: cowplot
 Version: 1.0.0
 Depends: R (>= 3.5.0)
@@ -312,8 +323,9 @@ Suggests: covr, testthat, whoami, withr
 License: MIT + file LICENSE
 
 Package: digest
-Version: 0.6.22
+Version: 0.6.23
 Depends: R (>= 3.1.0)
+Imports: utils
 Suggests: tinytest, knitr, rmarkdown
 License: GPL (>= 2)
 Archs: i386, x64
@@ -396,6 +408,12 @@ Version: 0.4.0
 Depends: R (>= 3.1.0)
 Suggests: unitizer, knitr, rmarkdown
 License: GPL (>= 2)
+Archs: i386, x64
+
+Package: farver
+Version: 2.0.1
+Suggests: testthat (>= 2.1.0), covr
+License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: fastcluster
@@ -1062,6 +1080,11 @@ Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: i386, x64
 
+Package: praise
+Version: 1.0.0
+Suggests: testthat
+License: MIT + file LICENSE
+
 Package: preprocessCore
 Version: 1.44.0
 Imports: stats
@@ -1264,6 +1287,13 @@ Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
 
+Package: rex
+Version: 1.1.2
+Imports: magrittr, lazyeval
+Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, Hmisc, stringr,
+        rvest, roxygen2, covr
+License: MIT + file LICENSE
+
 Package: rhandsontable
 Version: 0.3.7
 Imports: jsonlite, htmlwidgets (>= 0.3.3), magrittr, methods
@@ -1284,10 +1314,10 @@ License: GPL-2
 Archs: i386, x64
 
 Package: rlang
-Version: 0.4.1
+Version: 0.4.2
 Depends: R (>= 3.2.0)
 Suggests: cli, covr, crayon, magrittr, methods, pillar, rmarkdown,
-        testthat (>= 2.0.0)
+        testthat (>= 2.3.0)
 License: GPL-3
 Archs: i386, x64
 
@@ -1312,11 +1342,11 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: roxygen2
-Version: 7.0.0
+Version: 7.0.1
 Depends: R (>= 3.2)
 Imports: brew, commonmark, desc (>= 1.2.0), digest, methods, pkgload
-        (>= 1.0.2), purrr, R6 (>= 2.1.2), Rcpp (>= 0.11.0), rlang,
-        stringi, stringr (>= 1.0.0), utils, xml2
+        (>= 1.0.2), purrr (>= 0.3.3), R6 (>= 2.1.2), Rcpp (>= 0.11.0),
+        rlang, stringi, stringr (>= 1.0.0), utils, xml2
 LinkingTo: Rcpp
 Suggests: covr, devtools, knitr, rmarkdown, testthat (>= 2.1.0),
         R.methodsS3, R.oo
@@ -1377,17 +1407,15 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: scales
-Version: 1.0.0
-Depends: R (>= 3.1)
-Imports: labeling, munsell (>= 0.5), R6, RColorBrewer, Rcpp,
-        viridisLite
-LinkingTo: Rcpp
-Suggests: dichromat, bit64, covr, hms, testthat (>= 2.0)
+Version: 1.1.0
+Depends: R (>= 3.2)
+Imports: farver (>= 2.0.0), labeling, munsell (>= 0.5), R6,
+        RColorBrewer, viridisLite, lifecycle
+Suggests: bit64, covr, dichromat, hms, testthat (>= 2.1.0), ggplot2
 License: MIT + file LICENSE
-Archs: i386, x64
 
 Package: selectr
-Version: 0.4-1
+Version: 0.4-2
 Depends: R (>= 3.0)
 Imports: methods, stringr, R6
 Suggests: testthat, XML, xml2
@@ -1459,6 +1487,17 @@ Depends: R (>= 3.4.0)
 Imports: stringr, dat, magrittr
 Suggests: testthat, knitr, rmarkdown, covr
 License: MIT + file LICENSE
+
+Package: testthat
+Version: 2.3.0
+Depends: R (>= 3.1)
+Imports: cli, crayon (>= 1.3.4), digest, ellipsis, evaluate, magrittr,
+        methods, pkgload, praise, R6 (>= 2.2.0), rlang (>= 0.4.1),
+        withr (>= 2.0.0)
+Suggests: covr, curl (>= 0.9.5), devtools, knitr, rmarkdown, usethis,
+        vctrs (>= 0.1.0), xml2
+License: MIT + file LICENSE
+Archs: i386, x64
 
 Package: tibble
 Version: 2.1.3
@@ -1576,7 +1615,7 @@ Suggests: testthat, rcdk
 License: MIT + file LICENSE
 
 Package: webshot
-Version: 0.5.1
+Version: 0.5.2
 Depends: R (>= 3.0)
 Imports: magrittr, jsonlite, callr
 Suggests: httpuv, knitr, rmarkdown, shiny
