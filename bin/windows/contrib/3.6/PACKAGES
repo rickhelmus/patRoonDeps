@@ -148,7 +148,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: caTools
-Version: 1.17.1.2
+Version: 1.17.1.3
 Depends: R (>= 2.2.0)
 Imports: bitops
 Suggests: MASS, rpart
@@ -251,10 +251,10 @@ Imports: htmltools (>= 0.3.5), jsonlite, lazyeval, R6, shiny (>= 0.11),
 License: MIT + file LICENSE
 
 Package: curl
-Version: 4.2
+Version: 4.3
 Depends: R (>= 3.0.0)
-Suggests: askpass, spelling, testthat (>= 1.0.0), knitr, jsonlite,
-        rmarkdown, magrittr, httpuv (>= 1.4.4), webutils
+Suggests: spelling, testthat (>= 1.0.0), knitr, jsonlite, rmarkdown,
+        magrittr, httpuv (>= 1.4.4), webutils
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -288,7 +288,7 @@ Suggests: blob, covr, hms, knitr, magrittr, rprojroot, rmarkdown,
 License: LGPL (>= 2)
 
 Package: dendextend
-Version: 1.12.0
+Version: 1.13.2
 Depends: R (>= 3.0.0)
 Imports: utils, stats, datasets, magrittr (>= 1.0.1), ggplot2, viridis
 Suggests: knitr, rmarkdown, testthat, seriation, colorspace, ape,
@@ -606,7 +606,7 @@ Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
 
 Package: htmlTable
-Version: 1.13.2
+Version: 1.13.3
 Imports: stringr, knitr (>= 1.6), magrittr (>= 1.5), methods,
         checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)
 Suggests: testthat, XML, xtable, ztable, Hmisc, reshape, rmarkdown,
@@ -1141,8 +1141,8 @@ Suggests: tools
 License: LGPL (>= 2.1)
 
 Package: R.utils
-Version: 2.9.0
-Depends: R (>= 2.14.0), R.oo (>= 1.22.0)
+Version: 2.9.1
+Depends: R (>= 2.14.0), R.oo (>= 1.23.0)
 Imports: methods, utils, tools, R.methodsS3 (>= 1.7.1)
 Suggests: digest (>= 0.6.10)
 License: LGPL (>= 2.1)
@@ -1311,7 +1311,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: roxygen2
-Version: 7.0.1
+Version: 7.0.2
 Depends: R (>= 3.2)
 Imports: brew, commonmark, desc (>= 1.2.0), digest, methods, pkgload
         (>= 1.0.2), purrr (>= 0.3.3), R6 (>= 2.1.2), Rcpp (>= 0.11.0),
@@ -1344,7 +1344,7 @@ Suggests: emmeans, Vdgraph, conf.design, DoE.base, FrF2
 License: GPL (>= 2)
 
 Package: RSQLite
-Version: 2.1.2
+Version: 2.1.4
 Depends: R (>= 3.1.0)
 Imports: bit64, blob (>= 1.2.0), DBI (>= 1.0.0), memoise, methods,
         pkgconfig, Rcpp (>= 0.12.7)
@@ -1437,7 +1437,7 @@ Suggests: covr, htmltools, htmlwidgets, knitr, rmarkdown, testthat
 License: GPL-2 | file LICENSE
 
 Package: survival
-Version: 3.1-7
+Version: 3.1-8
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
@@ -1541,7 +1541,7 @@ Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr
 License: MIT + file LICENSE
 
 Package: visNetwork
-Version: 2.0.8
+Version: 2.0.9
 Depends: R (>= 3.0)
 Imports: htmlwidgets, htmltools, jsonlite, magrittr, utils, methods,
         grDevices, stats
