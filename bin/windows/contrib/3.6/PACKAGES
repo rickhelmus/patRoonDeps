@@ -131,7 +131,7 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.3.2
+Version: 3.4.0
 Imports: processx (>= 3.4.0), R6, utils
 Suggests: cliapp, covr, crayon, fansi, knitr, pingr, ps, rmarkdown,
         rprojroot, spelling, testthat, tibble, withr
@@ -183,10 +183,11 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: cli
-Version: 1.1.0
+Version: 2.0.0
 Depends: R (>= 2.10)
-Imports: assertthat, crayon (>= 1.3.4), methods, utils
-Suggests: covr, fansi, mockery, testthat, webshot, withr
+Imports: assertthat, crayon (>= 1.3.4), glue, methods, utils, fansi
+Suggests: callr, covr, htmlwidgets, knitr, mockery, rmarkdown,
+        rstudioapi, prettycode, testthat, withr
 License: MIT + file LICENSE
 
 Package: clipr
@@ -273,7 +274,7 @@ Suggests: lintr, knitr, rbenchmark, nycflights13, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: data.table
-Version: 1.12.6
+Version: 1.12.8
 Depends: R (>= 3.1.0)
 Imports: methods
 Suggests: bit64, curl, R.utils, knitr, xts, nanotime, zoo, yaml
@@ -939,7 +940,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: nlme
-Version: 3.1-142
+Version: 3.1-143
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, stats, utils, lattice
@@ -1055,12 +1056,12 @@ Suggests: MASS, maps, ggthemes, GGally, testthat, knitr, devtools,
 License: MIT + file LICENSE
 
 Package: plyr
-Version: 1.8.4
+Version: 1.8.5
 Depends: R (>= 3.1.0)
 Imports: Rcpp (>= 0.11.0)
 LinkingTo: Rcpp
-Suggests: abind, testthat, tcltk, foreach, doParallel, itertools,
-        iterators, covr
+Suggests: abind, covr, doParallel, foreach, iterators, itertools,
+        tcltk, testthat
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1141,7 +1142,7 @@ Suggests: tools
 License: LGPL (>= 2.1)
 
 Package: R.utils
-Version: 2.9.1
+Version: 2.9.2
 Depends: R (>= 2.14.0), R.oo (>= 1.23.0)
 Imports: methods, utils, tools, R.methodsS3 (>= 1.7.1)
 Suggests: digest (>= 0.6.10)
@@ -1489,7 +1490,7 @@ License: GPL-3
 Archs: i386, x64
 
 Package: tinytex
-Version: 0.17
+Version: 0.18
 Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
