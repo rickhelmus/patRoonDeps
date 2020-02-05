@@ -576,10 +576,10 @@ License: GPL-2
 Archs: i386, x64
 
 Package: hexbin
-Version: 1.28.0
+Version: 1.28.1
 Depends: R (>= 2.0.1), methods
 Imports: lattice, grid, graphics, grDevices, stats, utils
-Suggests: marray, affy, Biobase, limma
+Suggests: marray, affy, Biobase, limma, knitr
 License: GPL-2
 Archs: i386, x64
 
@@ -712,7 +712,7 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: jsonlite
-Version: 1.6
+Version: 1.6.1
 Depends: methods
 Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp
 License: MIT + file LICENSE
@@ -798,7 +798,7 @@ Suggests: covr, crayon, knitr, rmarkdown, testthat (>= 2.1.0)
 License: GPL-3
 
 Package: limma
-Version: 3.42.1
+Version: 3.42.2
 Depends: R (>= 3.6.0)
 Imports: grDevices, graphics, stats, utils, methods
 Suggests: affy, AnnotationDbi, BiasedUrn, Biobase, ellipse, GO.db,
@@ -1638,7 +1638,7 @@ Suggests: knitr, plm, zoo, survival
 License: GPL (>= 2)
 
 Package: yaml
-Version: 2.2.0
+Version: 2.2.1
 Suggests: RUnit
 License: BSD_3_clause + file LICENSE
 Archs: i386, x64
