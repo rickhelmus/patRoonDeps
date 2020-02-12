@@ -589,8 +589,8 @@ Suggests: knitr, testit
 License: GPL
 
 Package: Hmisc
-Version: 4.3-0
-Depends: lattice, survival (>= 2.40-1), Formula, ggplot2 (>= 2.2)
+Version: 4.3-1
+Depends: lattice, survival (>= 3.1-6), Formula, ggplot2 (>= 2.2)
 Imports: methods, latticeExtra, cluster, rpart, nnet, acepack, foreign,
         gtable, grid, gridExtra, data.table, htmlTable (>= 1.11.0),
         viridis, htmltools, base64enc
