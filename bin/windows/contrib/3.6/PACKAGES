@@ -104,7 +104,7 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: bit
-Version: 1.1-15.1
+Version: 1.1-15.2
 Depends: R (>= 2.9.2)
 License: GPL-2
 Archs: i386, x64
@@ -156,12 +156,12 @@ License: GPL-3
 Archs: i386, x64
 
 Package: checkmate
-Version: 1.9.4
+Version: 2.0.0
 Depends: R (>= 3.0.0)
 Imports: backports (>= 1.1.0), utils
-Suggests: R6, bit, fastmatch, data.table (>= 1.9.8), devtools, ggplot2,
+Suggests: R6, fastmatch, data.table (>= 1.9.8), devtools, ggplot2,
         knitr, magrittr, microbenchmark, rmarkdown, testthat (>=
-        0.11.0), tibble
+        0.11.0), tinytest (>= 1.1.0), tibble
 License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
@@ -289,7 +289,7 @@ Suggests: blob, covr, hms, knitr, magrittr, rmarkdown, rprojroot,
 License: LGPL (>= 2.1)
 
 Package: dendextend
-Version: 1.13.2
+Version: 1.13.3
 Depends: R (>= 3.0.0)
 Imports: utils, stats, datasets, magrittr (>= 1.0.1), ggplot2, viridis
 Suggests: knitr, rmarkdown, testthat, seriation, colorspace, ape,
@@ -329,11 +329,11 @@ Enhances: compiler
 License: GPL-2
 
 Package: dplyr
-Version: 0.8.3
+Version: 0.8.4
 Depends: R (>= 3.2.0)
-Imports: assertthat (>= 0.2.0), glue (>= 1.3.0), magrittr (>= 1.5),
-        methods, pkgconfig, R6, Rcpp (>= 1.0.1), rlang (>= 0.4.0),
-        tibble (>= 2.0.0), tidyselect (>= 0.2.5), utils
+Imports: ellipsis, assertthat (>= 0.2.0), glue (>= 1.3.0), magrittr (>=
+        1.5), methods, pkgconfig, R6, Rcpp (>= 1.0.1), rlang (>=
+        0.4.0), tibble (>= 2.0.0), tidyselect (>= 0.2.5), utils
 LinkingTo: BH, plogr (>= 0.2.0), Rcpp (>= 1.0.1)
 Suggests: bit64, callr, covr, crayon (>= 1.3.4), DBI, dbplyr, dtplyr,
         ggplot2, hms, knitr, Lahman, lubridate, MASS, mgcv,
@@ -343,7 +343,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: DT
-Version: 0.11
+Version: 0.12
 Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), jsonlite (>=
         0.9.16), magrittr, crosstalk, promises
 Suggests: knitr (>= 1.8), rmarkdown, shiny (>= 1.2.0)
@@ -442,11 +442,10 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: foreach
-Version: 1.4.7
+Version: 1.4.8
 Depends: R (>= 2.5.0)
 Imports: codetools, utils, iterators
-Suggests: randomForest
-Enhances: compiler, doMC, RUnit, doParallel
+Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
 License: Apache License (== 2.0)
 
 Package: foreign
@@ -736,7 +735,7 @@ License: Unlimited
 Archs: i386, x64
 
 Package: knitr
-Version: 1.27
+Version: 1.28
 Depends: R (>= 3.2.3)
 Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
         (>= 2.1.19), methods, xfun, tools
@@ -880,7 +879,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: mime
-Version: 0.8
+Version: 0.9
 Imports: tools
 License: GPL
 Archs: i386, x64
@@ -946,7 +945,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: nlme
-Version: 3.1-143
+Version: 3.1-144
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, stats, utils, lattice
@@ -1089,7 +1088,7 @@ Suggests: codetools, covr, testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.4.1
+Version: 3.4.2
 Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
         parallel, testthat, withr
@@ -1290,7 +1289,7 @@ License: GPL-2
 Archs: i386, x64
 
 Package: rlang
-Version: 0.4.3
+Version: 0.4.4
 Depends: R (>= 3.2.0)
 Suggests: cli, covr, crayon, glue, magrittr, methods, pillar,
         rmarkdown, testthat (>= 2.3.0)
@@ -1361,8 +1360,8 @@ License: LGPL (>= 2.1)
 Archs: i386, x64
 
 Package: rstudioapi
-Version: 0.10
-Suggests: testthat, knitr, rmarkdown
+Version: 0.11
+Suggests: testthat, knitr, rmarkdown, clipr
 License: MIT + file LICENSE
 
 Package: rvest
@@ -1486,13 +1485,13 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: tidyselect
-Version: 0.2.5
-Depends: R (>= 3.1)
-Imports: glue (>= 1.3.0), purrr, rlang (>= 0.2.2), Rcpp (>= 0.12.0)
-LinkingTo: Rcpp (>= 0.12.0),
-Suggests: covr, dplyr, testthat
+Version: 1.0.0
+Depends: R (>= 3.2)
+Imports: ellipsis, glue (>= 1.3.0), purrr (>= 0.3.2), rlang (>= 0.4.3),
+        vctrs (>= 0.2.2)
+Suggests: covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
+        2.3.0), tibble (>= 2.1.3), withr
 License: GPL-3
-Archs: i386, x64
 
 Package: tinytex
 Version: 0.19
