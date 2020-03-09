@@ -131,7 +131,7 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.4.1
+Version: 3.4.2
 Imports: processx (>= 3.4.0), R6, utils
 Suggests: cliapp, covr, crayon, fansi, pingr, ps, rprojroot, spelling,
         testthat, tibble, withr
@@ -183,7 +183,7 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: cli
-Version: 2.0.1
+Version: 2.0.2
 Depends: R (>= 2.10)
 Imports: assertthat, crayon (>= 1.3.4), glue, methods, utils, fansi
 Suggests: callr, covr, htmlwidgets, knitr, mockery, rmarkdown,
@@ -289,13 +289,13 @@ Suggests: blob, covr, hms, knitr, magrittr, rmarkdown, rprojroot,
 License: LGPL (>= 2.1)
 
 Package: dendextend
-Version: 1.13.3
+Version: 1.13.4
 Depends: R (>= 3.0.0)
 Imports: utils, stats, datasets, magrittr (>= 1.0.1), ggplot2, viridis
 Suggests: knitr, rmarkdown, testthat, seriation, colorspace, ape,
-        profdpm, microbenchmark, gplots, heatmaply, d3heatmap,
-        dynamicTreeCut, pvclust, corrplot, DendSer, MASS, cluster, fpc,
-        circlize (>= 0.2.5), covr
+        microbenchmark, gplots, heatmaply, d3heatmap, dynamicTreeCut,
+        pvclust, corrplot, DendSer, MASS, cluster, fpc, circlize (>=
+        0.2.5), covr
 Enhances: ggdendro, dendroextras, Hmisc, data.table, rpart
 License: GPL-2 | GPL-3
 
@@ -313,7 +313,7 @@ Suggests: covr, testthat, whoami, withr
 License: MIT + file LICENSE
 
 Package: digest
-Version: 0.6.23
+Version: 0.6.25
 Depends: R (>= 3.1.0)
 Imports: utils
 Suggests: tinytest, knitr, rmarkdown
@@ -540,10 +540,10 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: gplots
-Version: 3.0.1.2
+Version: 3.0.3
 Depends: R (>= 3.0)
 Imports: gtools, gdata, stats, caTools, KernSmooth
-Suggests: grid, MASS
+Suggests: grid, MASS, knitr
 License: GPL-2
 
 Package: graph
@@ -766,7 +766,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: lattice
-Version: 0.20-38
+Version: 0.20-40
 Priority: recommended
 Depends: R (>= 3.0.0)
 Imports: grid, grDevices, graphics, stats, utils
@@ -954,9 +954,9 @@ License: GPL (>= 2) | file LICENCE
 Archs: i386, x64
 
 Package: nnet
-Version: 7.3-12
+Version: 7.3-13
 Priority: recommended
-Depends: R (>= 2.14.0), stats, utils
+Depends: R (>= 3.0.0), stats, utils
 Suggests: MASS
 License: GPL-2 | GPL-3
 Archs: i386, x64
@@ -1047,7 +1047,7 @@ Suggests: Rcpp
 License: MIT + file LICENSE
 
 Package: plotly
-Version: 4.9.1
+Version: 4.9.2
 Depends: R (>= 3.2.0), ggplot2 (>= 3.0.0)
 Imports: tools, scales, httr, jsonlite (>= 1.6), magrittr, digest,
         viridisLite, base64enc, htmltools (>= 0.3.6), htmlwidgets (>=
@@ -1115,7 +1115,7 @@ Depends: methods
 License: Artistic-2.0
 
 Package: ps
-Version: 1.3.0
+Version: 1.3.2
 Depends: R (>= 3.1)
 Imports: utils
 Suggests: callr, covr, curl, pingr, processx (>= 3.1.0), R6, rlang,
@@ -1133,9 +1133,10 @@ License: GPL-3 | file LICENSE
 Archs: i386, x64
 
 Package: R.methodsS3
-Version: 1.7.1
+Version: 1.8.0
 Depends: R (>= 2.13.0)
 Imports: utils
+Suggests: codetools
 License: LGPL (>= 2.1)
 
 Package: R.oo
@@ -1252,7 +1253,7 @@ License: GPL (>= 2) | file LICENSE
 Archs: i386, x64
 
 Package: remotes
-Version: 2.1.0
+Version: 2.1.1
 Depends: R (>= 3.0.0)
 Imports: methods, stats, tools, utils
 Suggests: brew, callr, codetools, curl, covr, git2r (>= 0.23.0), knitr,
@@ -1289,10 +1290,10 @@ License: GPL-2
 Archs: i386, x64
 
 Package: rlang
-Version: 0.4.4
+Version: 0.4.5
 Depends: R (>= 3.2.0)
 Suggests: cli, covr, crayon, glue, magrittr, methods, pillar,
-        rmarkdown, testthat (>= 2.3.0)
+        rmarkdown, testthat (>= 2.3.0), vctrs (>= 0.2.3)
 License: GPL-3
 Archs: i386, x64
 
@@ -1428,10 +1429,11 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: stringi
-Version: 1.4.4
+Version: 1.4.6
 Depends: R (>= 2.14)
 Imports: tools, utils, stats
 License: file LICENSE
+License_is_FOSS: yes
 Archs: i386, x64
 
 Package: stringr
@@ -1494,7 +1496,7 @@ Suggests: covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
 License: GPL-3
 
 Package: tinytex
-Version: 0.19
+Version: 0.20
 Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
@@ -1515,7 +1517,7 @@ License: Apache License (== 2.0) | file LICENSE
 Archs: i386, x64
 
 Package: vctrs
-Version: 0.2.2
+Version: 0.2.3
 Depends: R (>= 3.2)
 Imports: ellipsis (>= 0.2.0), digest, glue, rlang (>= 0.4.2)
 Suggests: bit64, covr, crayon, generics, knitr, pillar (>= 1.4.1),
@@ -1563,16 +1565,17 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: waveslim
-Version: 1.7.5.1
+Version: 1.7.5.2
 Depends: R (>= 2.11.0), graphics, grDevices, stats, utils
 Suggests: fftw
 License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: webchem
-Version: 0.4.0
+Version: 0.5.0
 Depends: R (>= 3.0)
-Imports: xml2, httr, rvest, RCurl, jsonlite, stringr, methods
+Imports: xml2, httr, rvest, RCurl, jsonlite, stringr, methods, dplyr,
+        purrr
 Suggests: testthat, rcdk
 License: MIT + file LICENSE
 
@@ -1592,7 +1595,7 @@ Suggests: testthat, covr, lattice, DBI, RSQLite, methods, knitr,
 License: GPL (>= 2)
 
 Package: xcms
-Version: 3.8.1
+Version: 3.8.2
 Depends: R (>= 2.14.0), methods, Biobase, BiocParallel (>= 1.8.0),
         MSnbase (>= 2.9.3)
 Imports: mzR (>= 2.19.5), BiocGenerics, ProtGenerics (>= 1.17.2),
