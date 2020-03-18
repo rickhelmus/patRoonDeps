@@ -7,11 +7,10 @@ repos <- c(BiocManager::repositories()) # omegahat RDCOMClient doesn't work yet 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoonData")
-pdb <- addPackageListingGithub(pdb = pdb, "cbroeckl/RAMClustR")
 pdb <- addPackageListingGithub(pdb = pdb, "omegahat/RDCOMClient")
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-pkgList <- pkgDep(c("patRoon", "patRoonData", "RAMClustR", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", "RDCOMClient"),
+pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", "RDCOMClient"),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
 makeGHPackage <- function(repos, pkgDir)
@@ -40,7 +39,6 @@ if (!fromArtifact)
 }
     
 makeGHPackage("rickhelmus/patRoonData", pkgDir)
-makeGHPackage("cbroeckl/RAMClustR", pkgDir)
 makeGHPackage("omegahat/RDCOMClient", pkgDir)
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
@@ -57,7 +55,7 @@ if (file.exists(packagesFile))
     newPackages <- pkgList[!pkgList %in% packages]
     
     # will be re-added
-    removedPackages <- union(removedPackages, c("patRoon", "patRoonData", "RAMClustR", "RDCOMClient"))
+    removedPackages <- union(removedPackages, c("patRoon", "patRoonData", "RDCOMClient"))
     
     if (file.exists(packagesFile) && length(removedPackages) > 0)
     {
@@ -89,7 +87,6 @@ if (fromArtifact)
     addLocalPackage("patRoon", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 
 addLocalPackage("patRoonData", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
-addLocalPackage("RAMClustR", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 addLocalPackage("RDCOMClient", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 
 
