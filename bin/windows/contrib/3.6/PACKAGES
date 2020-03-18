@@ -182,14 +182,6 @@ Imports: MASS
 License: GPL-2 | GPL-3
 Archs: i386, x64
 
-Package: classInt
-Version: 0.4-2
-Depends: R (>= 2.2)
-Imports: grDevices, stats, graphics, e1071, class, KernSmooth
-Suggests: spData (>= 0.2.6.2), units
-License: GPL (>= 2)
-Archs: i386, x64
-
 Package: cli
 Version: 2.0.2
 Depends: R (>= 2.10)
@@ -204,11 +196,6 @@ Imports: utils
 Suggests: covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=
         2.0.0)
 License: GPL-3
-
-Package: clisymbols
-Version: 1.2.0
-Suggests: testthat
-License: MIT + file LICENSE
 
 Package: cluster
 Version: 2.1.0
@@ -240,17 +227,6 @@ Package: commonmark
 Version: 1.7
 Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
-Archs: i386, x64
-
-Package: covr
-Version: 3.5.0
-Depends: R (>= 3.1.0), methods
-Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
-        1.0.2), yaml
-Suggests: R6, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
-        rlang, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
-        mockery
-License: GPL-3
 Archs: i386, x64
 
 Package: cowplot
@@ -335,22 +311,6 @@ Depends: R (>= 3.1.0)
 Imports: assertthat, utils, R6, crayon, rprojroot
 Suggests: covr, testthat, whoami, withr
 License: MIT + file LICENSE
-
-Package: devtools
-Version: 2.2.2
-Depends: R (>= 3.0.2), usethis (>= 1.5.0)
-Imports: callr, cli, covr (>= 3.2.0), crayon, desc, digest, DT,
-        ellipsis (>= 0.3.0), glue, git2r (>= 0.23.0), httr (>= 0.4),
-        jsonlite, memoise (>= 1.0.0), pkgbuild (>= 1.0.3), pkgload (>=
-        1.0.2), rcmdcheck (>= 1.3.3), remotes (>= 2.1.1), rlang,
-        roxygen2 (>= 6.1.1), rstudioapi (>= 0.7), rversions,
-        sessioninfo (>= 1.1.1), stats, testthat (>= 2.1.1), tools,
-        utils, withr
-Suggests: BiocManager, bitops, curl (>= 0.9), evaluate, foghorn (>=
-        1.1.0), gmailr (> 0.7.0), knitr, lintr (>= 0.2.1), mockery,
-        pingr, MASS, pkgdown, Rcpp (>= 0.10.0), rhub (>= 1.0.2),
-        rmarkdown, spelling (>= 1.1), whisker
-License: GPL (>= 2)
 
 Package: digest
 Version: 0.6.25
@@ -507,16 +467,6 @@ Version: 1.2-3
 Depends: R (>= 2.0.0), stats
 License: GPL-2 | GPL-3
 
-Package: fs
-Version: 1.3.2
-Depends: R (>= 3.1)
-Imports: methods, Rcpp
-LinkingTo: Rcpp
-Suggests: testthat, covr, pillar (>= 1.0.0), tibble (>= 1.1.0), crayon,
-        rmarkdown, knitr, withr, spelling
-License: GPL-3
-Archs: i386, x64
-
 Package: fst
 Version: 0.9.0
 Depends: R (>= 3.0.0)
@@ -572,20 +522,6 @@ Suggests: knitr, rmarkdown, testthat, gridExtra, devtools, prettydoc
 License: GPL-3 | file LICENSE
 Archs: i386, x64
 
-Package: gh
-Version: 1.1.0
-Imports: cli, ini, jsonlite, httr (>= 1.2)
-Suggests: covr, keyring, pingr, testthat, withr
-License: MIT + file LICENSE
-
-Package: git2r
-Version: 0.26.1
-Depends: R (>= 3.1)
-Imports: graphics, utils
-Suggests: getPass
-License: GPL-2
-Archs: i386, x64
-
 Package: GlobalOptions
 Version: 0.1.1
 Depends: R (>= 3.3.0), methods
@@ -594,12 +530,12 @@ Suggests: testthat (>= 1.0.0), knitr, markdown
 License: MIT + file LICENSE
 
 Package: glue
-Version: 1.3.1
+Version: 1.3.2
 Depends: R (>= 3.1)
 Imports: methods
 Suggests: testthat, covr, magrittr, crayon, knitr, rmarkdown, DBI,
         RSQLite, R.utils, forcats, microbenchmark, rprintf, stringr,
-        ggplot2, dplyr, withr
+        ggplot2, dplyr, withr, vctrs (>= 0.2.2)
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -727,11 +663,6 @@ Version: 1.60.0
 Depends: R (>= 2.10)
 License: GPL-2
 Archs: i386, x64
-
-Package: ini
-Version: 0.3.1
-Suggests: testthat
-License: GPL-3
 
 Package: installr
 Version: 0.22.0
@@ -884,15 +815,6 @@ Suggests: affy, AnnotationDbi, BiasedUrn, Biobase, ellipse, GO.db,
 License: GPL (>= 2)
 Archs: i386, x64
 
-Package: lwgeom
-Version: 0.2-1
-Depends: R (>= 3.3.0)
-Imports: Rcpp, units, sf (>= 0.6-0)
-LinkingTo: Rcpp, sf (>= 0.6-0)
-Suggests: covr, sp, geosphere, testthat
-License: GPL-2
-Archs: i386, x64
-
 Package: magick
 Version: 2.3
 Imports: Rcpp (>= 0.12.12), magrittr, curl
@@ -963,13 +885,6 @@ Depends: R (>= 2.14.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
 Suggests: parallel, survival, MASS
 License: GPL (>= 2)
-Archs: i386, x64
-
-Package: microbenchmark
-Version: 1.4-7
-Imports: graphics, stats
-Suggests: ggplot2, multcomp, RUnit
-License: BSD_2_clause + file LICENSE
 Archs: i386, x64
 
 Package: mime
@@ -1293,14 +1208,6 @@ Version: 2.3
 Depends: R (>= 2.0.0), rJava (>= 0.9-8)
 License: LGPL
 
-Package: rcmdcheck
-Version: 1.3.3
-Imports: callr (>= 3.1.1.9000), cli (>= 1.1.0), crayon, desc (>=
-        1.2.0), digest, pkgbuild, prettyunits, R6, rprojroot,
-        sessioninfo (>= 1.1.1), utils, withr, xopen
-Suggests: covr, knitr, mockery, rmarkdown, testthat
-License: MIT + file LICENSE
-
 Package: RColorBrewer
 Version: 1.1-2
 Depends: R (>= 2.0.0)
@@ -1367,13 +1274,6 @@ Suggests: brew, callr, codetools, curl, covr, git2r (>= 0.23.0), knitr,
         mockery, pkgbuild (>= 1.0.1), pingr, rmarkdown, rprojroot,
         testthat, withr
 License: GPL (>= 2)
-
-Package: rex
-Version: 1.1.2
-Imports: magrittr, lazyeval
-Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, Hmisc, stringr,
-        rvest, roxygen2, covr
-License: MIT + file LICENSE
 
 Package: rhandsontable
 Version: 0.3.7
@@ -1470,12 +1370,6 @@ Version: 0.11
 Suggests: testthat, knitr, rmarkdown, clipr
 License: MIT + file LICENSE
 
-Package: rversions
-Version: 2.0.1
-Imports: curl, utils, xml2 (>= 1.0.0)
-Suggests: mockery, testthat
-License: MIT + file LICENSE
-
 Package: rvest
 Version: 0.3.5
 Depends: R (>= 3.2), xml2
@@ -1507,28 +1401,6 @@ Depends: R (>= 3.0)
 Imports: methods, stringr, R6
 Suggests: testthat, XML, xml2
 License: BSD_3_clause + file LICENCE
-
-Package: sessioninfo
-Version: 1.1.1
-Imports: cli, tools, utils, withr
-Suggests: callr, covr, mockery, testthat
-License: GPL-2
-
-Package: sf
-Version: 0.8-1
-Depends: methods, R (>= 3.3.0)
-Imports: classInt (>= 0.4-1), DBI (>= 0.8), graphics, grDevices, grid,
-        magrittr, Rcpp (>= 0.12.18), stats, tools, units (>= 0.6-0),
-        utils
-LinkingTo: Rcpp
-Suggests: blob, covr, dplyr (>= 0.8-3), ggplot2, knitr, lwgeom (>=
-        0.1-5), maps, mapview, microbenchmark, odbc, pillar, pool,
-        raster, rgdal, rgeos, rlang, rmarkdown, RPostgres (>= 1.1.0),
-        RPostgreSQL, RSQLite, sp (>= 1.2-4), spatstat, spatstat.utils,
-        stars (>= 0.2-0), testthat, tibble (>= 1.4.1), tidyr (>=
-        1.0-0), tmap (>= 2.0), vctrs
-License: GPL-2 | MIT + file LICENSE
-Archs: i386, x64
 
 Package: shape
 Version: 1.4.4
@@ -1645,16 +1517,6 @@ Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
 
-Package: units
-Version: 0.6-5
-Depends: R (>= 3.0.2)
-Imports: Rcpp
-LinkingTo: Rcpp (>= 0.12.10)
-Suggests: udunits2, NISTunits, measurements, xml2, tibble, pillar (>=
-        1.3.0), knitr, testthat, ggforce, rmarkdown, magrittr
-License: GPL-2
-Archs: i386, x64
-
 Package: UpSetR
 Version: 1.4.0
 Depends: R (>= 3.0)
@@ -1662,17 +1524,6 @@ Imports: ggplot2, gridExtra, plyr, utils, stats, methods, grDevices,
         scales
 Suggests: knitr
 License: MIT + file LICENSE
-
-Package: usethis
-Version: 1.5.1
-Depends: R (>= 3.2)
-Imports: clipr (>= 0.3.0), clisymbols, crayon, curl (>= 2.7), desc, fs
-        (>= 1.3.0), gh, git2r (>= 0.23), glue (>= 1.3.0), purrr, rlang,
-        rprojroot (>= 1.2), rstudioapi, stats, utils, whisker, withr,
-        yaml
-Suggests: covr, knitr, magick, pkgdown (>= 1.1.0), rmarkdown, roxygen2,
-        spelling (>= 1.2), styler (>= 1.0.2), testthat (>= 2.1.0)
-License: GPL-3
 
 Package: utf8
 Version: 1.1.4
@@ -1751,11 +1602,6 @@ Imports: magrittr, jsonlite, callr
 Suggests: httpuv, knitr, rmarkdown, shiny
 License: GPL-2
 
-Package: whisker
-Version: 0.4
-Suggests: markdown
-License: GPL-3
-
 Package: withr
 Version: 2.1.2
 Depends: R (>= 3.0.2)
@@ -1801,13 +1647,6 @@ Suggests: covr, curl, httr, knitr, magrittr, mockery, rmarkdown,
         testthat (>= 2.1.0)
 License: GPL (>= 2)
 Archs: i386, x64
-
-Package: xopen
-Version: 1.0.0
-Depends: R (>= 3.1)
-Imports: processx
-Suggests: ps, testthat
-License: MIT + file LICENSE
 
 Package: xtable
 Version: 1.8-4
