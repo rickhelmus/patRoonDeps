@@ -343,7 +343,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: DT
-Version: 0.12
+Version: 0.13
 Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), jsonlite (>=
         0.9.16), magrittr, crosstalk, promises
 Suggests: knitr (>= 1.8), rmarkdown, shiny (>= 1.2.0)
@@ -589,7 +589,7 @@ Suggests: knitr, testit
 License: GPL
 
 Package: Hmisc
-Version: 4.3-1
+Version: 4.4-0
 Depends: lattice, survival (>= 3.1-6), Formula, ggplot2 (>= 2.2)
 Imports: methods, latticeExtra, cluster, rpart, nnet, acepack, foreign,
         gtable, grid, gridExtra, data.table, htmlTable (>= 1.11.0),
@@ -649,12 +649,12 @@ Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: igraph
-Version: 1.2.4.2
+Version: 1.2.5
 Depends: methods
 Imports: graphics, grDevices, magrittr, Matrix, pkgconfig (>= 2.0.0),
         stats, utils
 Suggests: ape, digest, graph, igraphdata, rgl, scales, stats4, tcltk,
-        testthat
+        testthat, withr
 License: GPL (>= 2)
 Archs: i386, x64
 
@@ -1214,11 +1214,10 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.3
+Version: 1.0.4
 Depends: R (>= 3.0.0)
 Imports: methods, utils
-Suggests: RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten
-        (>= 0.1.2)
+Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
 Archs: i386, x64
 
@@ -1313,7 +1312,7 @@ Suggests: shiny (>= 0.11), tufte, testthat, digest, dygraphs, tibble,
 License: GPL-3
 
 Package: robustbase
-Version: 0.93-5
+Version: 0.93-6
 Depends: R (>= 3.1.0)
 Imports: stats, graphics, utils, methods, DEoptimR
 Suggests: grid, MASS, lattice, boot, cluster, Matrix, robust,
