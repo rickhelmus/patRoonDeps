@@ -131,7 +131,7 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.4.2
+Version: 3.4.3
 Imports: processx (>= 3.4.0), R6, utils
 Suggests: cliapp, covr, crayon, fansi, pingr, ps, rprojroot, spelling,
         testthat, tibble, withr
@@ -175,7 +175,7 @@ Suggests: knitr, dendextend (>= 1.0.1), ComplexHeatmap (>= 1.99.0),
 License: MIT + file LICENSE
 
 Package: class
-Version: 7.3-15
+Version: 7.3-16
 Priority: recommended
 Depends: R (>= 3.0.0), stats, utils
 Imports: MASS
@@ -1003,12 +1003,13 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         ggplot2, ggrepel, cowplot, jsonlite, Rdpack, rsm
 LinkingTo: Rcpp
 Suggests: RDCOMClient, metfRag, testthat, rlang, vdiffr, patRoonData,
-        devtools, covr, DiagrammeR
+        devtools, covr, DiagrammeR, pkgload
 License: GPL-3
 Archs: x64
 
 Package: patRoonData
-Version: 0.1
+Version: 1.0
+Depends: R (>= 2.10)
 Suggests: patRoon
 License: CC0
 
@@ -1288,7 +1289,7 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: rJava
-Version: 0.9-11
+Version: 0.9-12
 Depends: R (>= 2.5.0), methods
 License: GPL-2
 Archs: i386, x64
