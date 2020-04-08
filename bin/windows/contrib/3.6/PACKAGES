@@ -442,7 +442,7 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: foreach
-Version: 1.4.8
+Version: 1.5.0
 Depends: R (>= 2.5.0)
 Imports: codetools, utils, iterators
 Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
@@ -468,7 +468,7 @@ Depends: R (>= 2.0.0), stats
 License: GPL-2 | GPL-3
 
 Package: fst
-Version: 0.9.0
+Version: 0.9.2
 Depends: R (>= 3.0.0)
 Imports: Rcpp
 LinkingTo: Rcpp
@@ -569,7 +569,7 @@ Suggests: covr, testthat, knitr, rmarkdown, ggplot2, profvis
 License: GPL-2
 
 Package: gtools
-Version: 3.8.1
+Version: 3.8.2
 Depends: methods, stats, utils
 License: GPL-2
 Archs: i386, x64
@@ -775,7 +775,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: lattice
-Version: 0.20-40
+Version: 0.20-41
 Priority: recommended
 Depends: R (>= 3.0.0)
 Imports: grid, grDevices, graphics, stats, utils
@@ -1003,12 +1003,12 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         ggplot2, ggrepel, cowplot, jsonlite, Rdpack, rsm
 LinkingTo: Rcpp
 Suggests: RDCOMClient, metfRag, testthat, rlang, vdiffr, patRoonData,
-        devtools, covr, DiagrammeR, pkgload
+        devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg, pkgload
 License: GPL-3
 Archs: x64
 
 Package: patRoonData
-Version: 1.0
+Version: 1.0.0
 Depends: R (>= 2.10)
 Suggests: patRoon
 License: CC0
@@ -1481,12 +1481,14 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: tibble
-Version: 2.1.3
+Version: 3.0.0
 Depends: R (>= 3.1.0)
-Imports: cli, crayon (>= 1.3.4), fansi (>= 0.4.0), methods, pillar (>=
-        1.3.1), pkgconfig, rlang (>= 0.3.0), utils
-Suggests: bench, covr, dplyr, htmltools, import, knitr, mockr,
-        nycflights13, rmarkdown, testthat, withr
+Imports: cli, crayon (>= 1.3.4), ellipsis (>= 0.2.0), fansi (>= 0.4.0),
+        lifecycle (>= 0.2.0), magrittr, methods, pillar (>= 1.4.3),
+        pkgconfig, rlang (>= 0.4.3), utils, vctrs (>= 0.2.4)
+Suggests: bench, bit64, blob, covr, dplyr, evaluate, hms, htmltools,
+        import, knitr, mockr, nycflights13, purrr, rmarkdown, testthat
+        (>= 2.1.0), tidyr, withr
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1512,7 +1514,7 @@ Suggests: covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
 License: GPL-3
 
 Package: tinytex
-Version: 0.20
+Version: 0.21
 Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
@@ -1639,10 +1641,9 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: xml2
-Version: 1.2.5
+Version: 1.3.0
 Depends: R (>= 3.1.0)
-Imports: Rcpp, methods
-LinkingTo: Rcpp (>= 0.12.12)
+Imports: methods
 Suggests: covr, curl, httr, knitr, magrittr, mockery, rmarkdown,
         testthat (>= 2.1.0)
 License: GPL (>= 2)
