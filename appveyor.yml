@@ -26,7 +26,7 @@ environment:
       secure: xfAjJeVdFHYHtpdnjCfZDlJPgEkn+tSBaNNFYNZTk+ttxONOIKpV7NIeZWfa4TIf
     matrix:
       - R_VERSION: stable
-      #- R_VERSION: oldrel # doesn't work at the moment as latticeExtra dependency is gone
+      - R_VERSION: oldrel
 
 matrix:
   fast_finish: true
