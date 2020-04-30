@@ -35,6 +35,7 @@ build_script:
   #- travis-tool.sh install_deps
   - ps: .\get_artifact.ps1
   - travis-tool.sh install_r miniCRAN git2r devtools BiocManager rversions
+  - install_bioc Rdisop # sometimes needed as dependency may not be picked up... 
 
 test_script:
   #- travis-tool.sh run_tests
