@@ -175,7 +175,7 @@ Suggests: knitr, dendextend (>= 1.0.1), ComplexHeatmap (>= 1.99.0),
 License: MIT + file LICENSE
 
 Package: class
-Version: 7.3-16
+Version: 7.3-17
 Priority: recommended
 Depends: R (>= 3.0.0), stats, utils
 Imports: MASS
@@ -420,7 +420,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: ff
-Version: 2.2-14
+Version: 2.2-14.2
 Depends: R (>= 2.10.1), bit (>= 1.1-13), utils
 Suggests: biglm
 License: GPL-2 | file LICENSE
@@ -692,11 +692,11 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: isoband
-Version: 0.2.0
+Version: 0.2.1
 Imports: Rcpp, grid, utils
 LinkingTo: Rcpp, testthat
-Suggests: covr, ggplot2, knitr, lwgeom, magick, microbenchmark,
-        rmarkdown, sf, testthat
+Suggests: covr, ggplot2, knitr, magick, microbenchmark, rmarkdown, sf,
+        testthat
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -736,7 +736,7 @@ Suggests: testthat, magick, formattable, dplyr
 License: MIT + file LICENSE
 
 Package: KernSmooth
-Version: 2.23-16
+Version: 2.23-17
 Priority: recommended
 Depends: R (>= 2.5.0), stats
 Suggests: MASS
@@ -954,7 +954,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: nlme
-Version: 3.1-145
+Version: 3.1-147
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, stats, utils, lattice
@@ -963,7 +963,7 @@ License: GPL (>= 2) | file LICENCE
 Archs: i386, x64
 
 Package: nnet
-Version: 7.3-13
+Version: 7.3-14
 Priority: recommended
 Depends: R (>= 3.0.0), stats, utils
 Suggests: MASS
@@ -989,7 +989,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: patRoon
-Version: 0.9.0.9000
+Version: 1.0.0
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
@@ -1005,7 +1005,7 @@ LinkingTo: Rcpp
 Suggests: RDCOMClient, metfRag, testthat, rlang, vdiffr, patRoonData,
         devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg, pkgload
 License: GPL-3
-Archs: x64
+Archs: i386, x64
 
 Package: patRoonData
 Version: 1.0.0
@@ -1030,7 +1030,7 @@ Suggests: knitr, lubridate, testthat (>= 2.0.0), withr
 License: GPL-3
 
 Package: pkgbuild
-Version: 1.0.6
+Version: 1.0.7
 Depends: R (>= 3.1)
 Imports: callr (>= 3.2.0), cli, crayon, desc, prettyunits, R6,
         rprojroot, withr (>= 2.1.2)
@@ -1139,7 +1139,7 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: purrr
-Version: 0.3.3
+Version: 0.3.4
 Depends: R (>= 3.2)
 Imports: magrittr (>= 1.5), rlang (>= 0.3.1)
 Suggests: covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
@@ -1222,7 +1222,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: RCurl
-Version: 1.98-1.1
+Version: 1.98-1.2
 Depends: R (>= 3.4.0), methods
 Imports: bitops
 Suggests: XML
@@ -1448,7 +1448,7 @@ Suggests: covr, htmltools, htmlwidgets, knitr, rmarkdown, testthat
 License: GPL-2 | file LICENSE
 
 Package: survival
-Version: 3.1-11
+Version: 3.1-12
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
@@ -1480,7 +1480,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: tibble
-Version: 3.0.0
+Version: 3.0.1
 Depends: R (>= 3.1.0)
 Imports: cli, crayon (>= 1.3.4), ellipsis (>= 0.2.0), fansi (>= 0.4.0),
         lifecycle (>= 0.2.0), magrittr, methods, pillar (>= 1.4.3),
@@ -1513,7 +1513,7 @@ Suggests: covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
 License: GPL-3
 
 Package: tinytex
-Version: 0.21
+Version: 0.22
 Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
@@ -1604,11 +1604,11 @@ Suggests: httpuv, knitr, rmarkdown, shiny
 License: GPL-2
 
 Package: withr
-Version: 2.1.2
-Depends: R (>= 3.0.2)
-Imports: stats, graphics, grDevices
-Suggests: testthat, covr, lattice, DBI, RSQLite, methods, knitr,
-        rmarkdown
+Version: 2.2.0
+Depends: R (>= 3.2.0)
+Imports: graphics, grDevices, stats
+Suggests: covr, DBI, knitr, lattice, methods, rmarkdown, RSQLite,
+        testthat (>= 2.1.0)
 License: GPL (>= 2)
 
 Package: xcms
@@ -1626,7 +1626,7 @@ License: GPL (>= 2) + file LICENSE
 Archs: i386, x64
 
 Package: xfun
-Version: 0.12
+Version: 0.13
 Imports: stats, tools
 Suggests: testit, parallel, rstudioapi, tinytex, mime, markdown, knitr,
         htmltools, base64enc, remotes, rmarkdown
@@ -1640,7 +1640,7 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: xml2
-Version: 1.3.1
+Version: 1.3.2
 Depends: R (>= 3.1.0)
 Imports: methods
 Suggests: covr, curl, httr, knitr, magrittr, mockery, rmarkdown,
