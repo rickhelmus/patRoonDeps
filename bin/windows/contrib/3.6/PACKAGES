@@ -4,11 +4,6 @@ Suggests: testthat
 License: MIT + file LICENSE
 Archs: i386, x64
 
-Package: additivityTests
-Version: 1.1-4
-Suggests: knitr
-License: GPL-3
-
 Package: affy
 Version: 1.64.0
 Depends: R (>= 2.8.0), BiocGenerics (>= 0.1.12), Biobase (>= 2.5.5)
@@ -70,14 +65,6 @@ Depends: R (>= 3.0.2)
 Imports: stringr, utils
 Suggests: testthat
 License: GPL (>= 2)
-Archs: i386, x64
-
-Package: biclust
-Version: 2.0.2
-Depends: R (>= 2.10), MASS, grid, colorspace, lattice
-Imports: methods, flexclust, additivityTests, tidyr, ggplot2
-Suggests: isa2
-License: GPL-3
 Archs: i386, x64
 
 Package: Biobase
@@ -242,17 +229,6 @@ Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: i386, x64
 
-Package: covr
-Version: 3.5.0
-Depends: R (>= 3.1.0), methods
-Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
-        1.0.2), yaml
-Suggests: R6, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
-        rlang, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
-        mockery
-License: GPL-3
-Archs: i386, x64
-
 Package: cowplot
 Version: 1.0.0
 Depends: R (>= 3.5.0)
@@ -316,12 +292,6 @@ Suggests: knitr, rmarkdown, testthat, seriation, colorspace, ape,
         0.2.5), covr
 Enhances: ggdendro, dendroextras, Hmisc, data.table, rpart
 License: GPL-2 | GPL-3
-
-Package: DendSer
-Version: 1.0.1
-Depends: gclus,seriation
-License: GPL-2
-Archs: i386, x64
 
 Package: DEoptimR
 Version: 1.0-8
@@ -464,14 +434,6 @@ Suggests: RUnit
 License: GPL
 Archs: i386, x64
 
-Package: flexclust
-Version: 1.4-0
-Depends: R (>= 2.14.0), graphics, grid, lattice, modeltools
-Imports: methods, parallel, stats, stats4, class
-Suggests: ellipse, clue, cluster, seriation, skmeans
-License: GPL-2
-Archs: i386, x64
-
 Package: flexdashboard
 Version: 0.5.1.1
 Depends: R (>= 3.0.2)
@@ -526,15 +488,6 @@ Package: futile.options
 Version: 1.0.1
 Depends: R (>= 2.8.0)
 License: LGPL-3
-
-Package: GA
-Version: 3.2
-Depends: R (>= 3.4), methods, foreach, iterators
-Imports: stats, graphics, grDevices, utils, cli, crayon, Rcpp
-LinkingTo: Rcpp, RcppArmadillo
-Suggests: parallel, doParallel, doRNG (>= 1.6), knitr (>= 1.8)
-License: GPL (>= 2)
-Archs: i386, x64
 
 Package: gbRd
 Version: 0.4-11
@@ -902,26 +855,6 @@ Suggests: knitr, testthat (>= 0.8)
 License: GPL (>= 3)
 Archs: i386, x64
 
-Package: maps
-Version: 3.3.0
-Depends: R (>= 3.0.0)
-Imports: graphics, utils
-Suggests: mapproj (>= 1.2-0), mapdata (>= 2.3.0), sp, maptools,
-        rnaturalearth
-License: GPL-2
-Archs: i386, x64
-
-Package: maptools
-Version: 1.0-1
-Depends: R (>= 2.10), sp (>= 1.0-11)
-Imports: foreign (>= 0.8), methods, grid, lattice, stats, utils,
-        grDevices
-Suggests: rgeos (>= 0.1-8), spatstat (>= 1.60), PBSmapping, maps,
-        RColorBrewer, raster, polyclip, spatstat.utils
-Enhances: gpclib
-License: GPL (>= 2)
-Archs: i386, x64
-
 Package: markdown
 Version: 1.1
 Depends: R (>= 2.11.1)
@@ -981,12 +914,6 @@ Package: miniUI
 Version: 0.1.1.1
 Imports: shiny (>= 0.13), htmltools (>= 0.3), utils
 License: GPL-3
-
-Package: modeltools
-Version: 0.2-23
-Depends: stats, stats4
-Imports: methods
-License: GPL-2
 
 Package: MSnbase
 Version: 2.12.0
@@ -1317,15 +1244,6 @@ Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
 Archs: i386, x64
 
-Package: RcppArmadillo
-Version: 0.9.880.1.0
-Depends: R (>= 3.3.0)
-Imports: Rcpp (>= 0.11.0), stats, utils, methods
-LinkingTo: Rcpp
-Suggests: tinytest, Matrix, pkgKitten, reticulate, slam
-License: GPL (>= 2)
-Archs: i386, x64
-
 Package: RCurl
 Version: 1.98-1.2
 Depends: R (>= 3.4.0), methods
@@ -1393,13 +1311,6 @@ LinkingTo: Rcpp
 Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
-
-Package: rex
-Version: 1.2.0
-Imports: lazyeval
-Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, magrittr, Hmisc,
-        stringr, rvest, roxygen2, covr
-License: MIT + file LICENSE
 
 Package: rhandsontable
 Version: 0.3.7
@@ -1567,15 +1478,6 @@ Version: 0.1.7
 Depends: R (>= 3.0.2)
 Suggests: testthat
 License: MIT + file LICENSE
-Archs: i386, x64
-
-Package: sp
-Version: 1.4-2
-Depends: R (>= 3.0.0), methods
-Imports: utils, stats, graphics, grDevices, lattice, grid
-Suggests: RColorBrewer, rgdal (>= 1.2-3), rgeos (>= 0.3-13), gstat,
-        maptools, deldir
-License: GPL (>= 2)
 Archs: i386, x64
 
 Package: stringi
