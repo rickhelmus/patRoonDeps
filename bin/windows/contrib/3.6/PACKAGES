@@ -751,9 +751,9 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: jsonlite
-Version: 1.6.1
+Version: 1.7.0
 Depends: methods
-Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp
+Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sf, sp
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1013,9 +1013,10 @@ Depends: R (>= 2.10)
 License: GPL-3
 
 Package: openssl
-Version: 1.4.1
+Version: 1.4.2
 Imports: askpass
-Suggests: testthat, digest, knitr, rmarkdown, jsonlite, jose, sodium
+Suggests: testthat (>= 2.1.0), digest, knitr, rmarkdown, jsonlite,
+        jose, sodium
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1374,7 +1375,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: roxygen2
-Version: 7.1.0
+Version: 7.1.1
 Depends: R (>= 3.2)
 Imports: brew, commonmark, desc (>= 1.2.0), digest, knitr, methods,
         pkgload (>= 1.0.2), purrr (>= 0.3.3), R6 (>= 2.1.2), Rcpp (>=
