@@ -562,7 +562,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: gplots
-Version: 3.0.3
+Version: 3.0.4
 Depends: R (>= 3.0)
 Imports: gtools, gdata, stats, caTools, KernSmooth
 Suggests: grid, MASS, knitr
@@ -638,7 +638,7 @@ Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
 
 Package: htmlTable
-Version: 2.0.0
+Version: 2.0.1
 Imports: stringr, knitr (>= 1.6), magrittr (>= 1.5), methods,
         checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)
 Suggests: testthat, XML, xml2, Hmisc, reshape, rmarkdown, chron,
@@ -1013,9 +1013,10 @@ Depends: R (>= 2.10)
 License: GPL-3
 
 Package: openssl
-Version: 1.4.1
+Version: 1.4.2
 Imports: askpass
-Suggests: testthat, digest, knitr, rmarkdown, jsonlite, jose, sodium
+Suggests: testthat (>= 2.1.0), digest, knitr, rmarkdown, jsonlite,
+        jose, sodium
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1134,7 +1135,7 @@ Suggests: codetools, covr, testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.4.2
+Version: 3.4.3
 Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
         parallel, testthat, withr
@@ -1252,7 +1253,7 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.4.6
+Version: 1.0.5
 Imports: methods, utils
 Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
@@ -1280,10 +1281,10 @@ License: GPL-2
 Archs: i386, x64
 
 Package: Rdpack
-Version: 0.11-1
+Version: 1.0.0
 Depends: R (>= 2.15.0), methods
-Imports: tools, utils, grDevices, bibtex (>= 0.4.0), gbRd
-Suggests: testthat, rstudioapi, rprojroot
+Imports: tools, utils, bibtex (>= 0.4.0), gbRd
+Suggests: grDevices, testthat, rstudioapi, rprojroot
 License: GPL (>= 2)
 
 Package: readMzXmlData
@@ -1334,14 +1335,14 @@ Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
 License: MIT + file LICENSE
 
 Package: Rhdf5lib
-Version: 1.10.0
+Version: 1.10.1
 Depends: R (>= 3.3.0)
 Suggests: BiocStyle, knitr, rmarkdown, tinytest
 License: Artistic-2.0
 Archs: i386, x64
 
 Package: rJava
-Version: 0.9-12
+Version: 0.9-13
 Depends: R (>= 2.5.0), methods
 License: GPL-2
 Archs: i386, x64
@@ -1375,7 +1376,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: roxygen2
-Version: 7.1.0
+Version: 7.1.1
 Depends: R (>= 3.2)
 Imports: brew, commonmark, desc (>= 1.2.0), digest, knitr, methods,
         pkgload (>= 1.0.2), purrr (>= 0.3.3), R6 (>= 2.1.2), Rcpp (>=
@@ -1544,14 +1545,14 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: tibble
-Version: 3.0.1
+Version: 3.0.2
 Depends: R (>= 3.1.0)
 Imports: cli, crayon (>= 1.3.4), ellipsis (>= 0.2.0), fansi (>= 0.4.0),
         lifecycle (>= 0.2.0), magrittr, methods, pillar (>= 1.4.3),
         pkgconfig, rlang (>= 0.4.3), utils, vctrs (>= 0.2.4)
-Suggests: bench, bit64, blob, covr, dplyr, evaluate, hms, htmltools,
-        import, knitr, mockr, nycflights13, purrr, rmarkdown, testthat
-        (>= 2.1.0), tidyr, withr
+Suggests: bench, bit64, blob, covr, dplyr, evaluate, formattable, hms,
+        htmltools, import, knitr, lubridate, mockr, nycflights13,
+        purrr, rmarkdown, testthat (>= 2.1.0), tidyr, withr
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1707,8 +1708,8 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: XML
-Version: 3.99-0.3
-Depends: R (>= 2.13.0), methods, utils
+Version: 3.99-0.4
+Depends: R (>= 4.0.0), methods, utils
 Suggests: bitops, RCurl
 License: BSD_3_clause + file LICENSE
 Archs: i386, x64
