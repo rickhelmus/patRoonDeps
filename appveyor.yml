@@ -22,6 +22,7 @@ environment:
     USE_RTOOLS: true
     R_REMOTES_STANDALONE: true
     R_REMOTES_UPGRADE: never
+    R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
     access_token:
       secure: xfAjJeVdFHYHtpdnjCfZDlJPgEkn+tSBaNNFYNZTk+ttxONOIKpV7NIeZWfa4TIf
     matrix:
