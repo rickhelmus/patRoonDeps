@@ -36,7 +36,8 @@ build_script:
   #- travis-tool.sh install_deps
   - ps: .\get_artifact.ps1
   - travis-tool.sh install_r miniCRAN git2r devtools BiocManager rversions
-  - travis-tool.sh install_bioc Rdisop # sometimes needed as dependency may not be picked up... 
+  - travis-tool.sh install_bioc Rdisop # sometimes needed as dependency may not be picked up...
+  - travis-tool.sh install_github cbroeckl/RAMClustR # pull-in necessary deps
 
 test_script:
   #- travis-tool.sh run_tests
