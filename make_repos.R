@@ -2,9 +2,7 @@ library("miniCRAN")
 
 # get regular and BioC repositories, omegahat for XML
 # repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
-# repos <- c(BiocManager::repositories())
-# add MRAN for XML for R 3.6
-repos <- c(BiocManager::repositories(), "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
+repos <- c(BiocManager::repositories())
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
@@ -36,6 +34,8 @@ if (!fromArtifact)
     if (!requireNamespace("patRoon", quietly = TRUE))
     {
         BiocManager::install("CAMERA")
+        if (R.Version()$major < 4)
+            install.packages("XML", repos = "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
         # UNDONE: could this be combined with making the package?
         remotes::install_github("rickhelmus/patRoon")
     }
@@ -62,6 +62,8 @@ if (file.exists(packagesFile))
     
     # will be re-added
     removedPackages <- union(removedPackages, c("patRoon", "patRoonData", "RDCOMClient", "RAMClustR"))
+    if (R.Version()$major < 4)
+        removedPackages <- union(removedPackages, "XML")
     
     if (file.exists(packagesFile) && length(removedPackages) > 0)
     {
@@ -95,6 +97,9 @@ if (fromArtifact)
 addLocalPackage("patRoonData", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 addLocalPackage("RDCOMClient", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 addLocalPackage("RAMClustR", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
+
+if (R.Version()$major < 4)
+    addPackage("XML", ".", "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
 
 # updatePackages(".", repos = repos, type = "win.binary", ask = FALSE)
 
