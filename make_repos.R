@@ -1,13 +1,15 @@
 library("miniCRAN")
 
-# get regular and BioC repositories, omegahat for RDCOMClient
-#repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
-repos <- c(BiocManager::repositories()) # omegahat RDCOMClient doesn't work yet for R3.6, get it from GH
+# get regular and BioC repositories, omegahat for XML
+repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
+# repos <- c(BiocManager::repositories()) # omegahat RDCOMClient doesn't work yet for R3.6, get it from GH
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoonData")
-pdb <- addPackageListingGithub(pdb = pdb, "omegahat/RDCOMClient")
+# pdb <- addPackageListingGithub(pdb = pdb, "omegahat/RDCOMClient")
+pdb <- addPackageListingGithub(pdb = pdb, "dkyleward/RDCOMClient") # fixes for recent R versions
+pdb <- addPackageListingGithub(pdb = pdb, "cbroeckl/RAMClustR") # CRAN version sometimes disappears...
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
 pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", "RDCOMClient"),
@@ -39,7 +41,9 @@ if (!fromArtifact)
 }
     
 makeGHPackage("rickhelmus/patRoonData", pkgDir)
-makeGHPackage("omegahat/RDCOMClient", pkgDir)
+# makeGHPackage("omegahat/RDCOMClient", pkgDir)
+makeGHPackage("dkyleward/RDCOMClient", pkgDir)
+makeGHPackage("cbroeckl/RAMClustR", pkgDir)
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
