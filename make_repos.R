@@ -59,7 +59,7 @@ if (file.exists(packagesFile))
     newPackages <- pkgList[!pkgList %in% packages]
     
     # will be re-added
-    removedPackages <- union(removedPackages, c("patRoon", "patRoonData", "RDCOMClient"))
+    removedPackages <- union(removedPackages, c("patRoon", "patRoonData", "RDCOMClient", "RAMClustR"))
     
     if (file.exists(packagesFile) && length(removedPackages) > 0)
     {
@@ -92,6 +92,7 @@ if (fromArtifact)
 
 addLocalPackage("patRoonData", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 addLocalPackage("RDCOMClient", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
+addLocalPackage("RAMClustR", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
 
 
 # updatePackages(".", repos = repos, type = "win.binary", ask = FALSE)
