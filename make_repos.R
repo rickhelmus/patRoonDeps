@@ -35,7 +35,7 @@ if (!fromArtifact)
     {
         BiocManager::install("CAMERA")
         if (R.Version()$major < 4)
-            remotes::install_version("XML", "3.99-0.3")
+            remotes::install_version("XML", "3.99-0.3", repos = "http://cran.us.r-project.org")
         # UNDONE: could this be combined with making the package?
         remotes::install_github("rickhelmus/patRoon")
     }
