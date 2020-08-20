@@ -12,7 +12,7 @@ pdb <- addPackageListingGithub(pdb = pdb, "dkyleward/RDCOMClient") # fixes for r
 pdb <- addPackageListingGithub(pdb = pdb, "cbroeckl/RAMClustR") # CRAN version sometimes disappears...
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", "RDCOMClient"),
+pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", "RDCOMClient", "RAMClustR"),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
 makeGHPackage <- function(repos, pkgDir)
