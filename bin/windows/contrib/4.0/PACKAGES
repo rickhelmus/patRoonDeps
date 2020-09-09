@@ -36,7 +36,7 @@ Suggests: testthat, covr
 License: GPL-3
 
 Package: backports
-Version: 1.1.7
+Version: 1.1.9
 Depends: R (>= 3.0.0)
 Imports: utils
 License: GPL-2 | GPL-3
@@ -106,7 +106,7 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: bit64
-Version: 4.0.2
+Version: 4.0.5
 Depends: R (>= 3.0.1), bit (>= 4.0.0), utils, methods, stats
 License: GPL-2 | GPL-3
 Archs: i386, x64
@@ -185,13 +185,6 @@ Imports: assertthat, crayon (>= 1.3.4), glue, methods, utils, fansi
 Suggests: callr, covr, htmlwidgets, knitr, mockery, rmarkdown,
         rstudioapi, prettycode (>= 1.1.0), testthat, withr
 License: MIT + file LICENSE
-
-Package: clipr
-Version: 0.7.0
-Imports: utils
-Suggests: covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=
-        2.0.0)
-License: GPL-3
 
 Package: cluster
 Version: 2.1.0
@@ -297,13 +290,13 @@ Suggests: blob, covr, hms, knitr, magrittr, rmarkdown, rprojroot,
 License: LGPL (>= 2.1)
 
 Package: dendextend
-Version: 1.13.4
+Version: 1.14.0
 Depends: R (>= 3.0.0)
 Imports: utils, stats, datasets, magrittr (>= 1.0.1), ggplot2, viridis
 Suggests: knitr, rmarkdown, testthat, seriation, colorspace, ape,
-        microbenchmark, gplots, heatmaply, d3heatmap, dynamicTreeCut,
-        pvclust, corrplot, DendSer, MASS, cluster, fpc, circlize (>=
-        0.2.5), covr
+        microbenchmark, gplots, heatmaply, dynamicTreeCut, pvclust,
+        corrplot, DendSer, MASS, cluster, fpc, circlize (>= 0.2.5),
+        covr
 Enhances: ggdendro, dendroextras, Hmisc, data.table, rpart
 License: GPL-2 | GPL-3
 
@@ -337,7 +330,7 @@ Enhances: compiler
 License: GPL-2
 
 Package: dplyr
-Version: 1.0.1
+Version: 1.0.2
 Depends: R (>= 3.2.0)
 Imports: ellipsis, generics, glue (>= 1.3.2), lifecycle (>= 0.2.0),
         magrittr (>= 1.5), methods, R6, rlang (>= 0.4.7), tibble (>=
@@ -481,7 +474,7 @@ Depends: R (>= 2.0.0), stats
 License: GPL-2 | GPL-3
 
 Package: fst
-Version: 0.9.2
+Version: 0.9.4
 Depends: R (>= 3.0.0)
 Imports: Rcpp
 LinkingTo: Rcpp
@@ -556,8 +549,8 @@ Suggests: testthat (>= 1.0.0), knitr, markdown, GetoptLong
 License: MIT + file LICENSE
 
 Package: glue
-Version: 1.4.1
-Depends: R (>= 3.1)
+Version: 1.4.2
+Depends: R (>= 3.2)
 Imports: methods
 Suggests: testthat, covr, magrittr, crayon, knitr, rmarkdown, DBI,
         RSQLite, R.utils, forcats, microbenchmark, rprintf, stringr,
@@ -601,7 +594,7 @@ License: GPL-2
 Archs: i386, x64
 
 Package: heatmaply
-Version: 1.1.0
+Version: 1.1.1
 Depends: R (>= 3.0.0), plotly (>= 4.7.1), viridis
 Imports: ggplot2 (>= 2.2.0), dendextend (>= 1.12.0), magrittr (>=
         1.0.1), reshape2, scales, seriation, utils, stats, grDevices,
@@ -762,12 +755,13 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: kableExtra
-Version: 1.1.0
+Version: 1.2.1
 Depends: R (>= 3.1.0)
 Imports: knitr (>= 1.16), magrittr, stringr (>= 1.0), xml2 (>= 1.1.1),
-        rvest, rmarkdown (>= 1.6.0), readr, scales, viridisLite, stats,
-        grDevices, htmltools, rstudioapi, glue, tools, webshot, digest
-Suggests: testthat, magick, formattable, dplyr
+        rvest, rmarkdown (>= 1.6.0), scales, viridisLite, stats,
+        grDevices, htmltools, rstudioapi, glue, tools, webshot, digest,
+        graphics
+Suggests: testthat, magick, formattable, sparkline
 License: MIT + file LICENSE
 
 Package: KernSmooth
@@ -914,7 +908,7 @@ Suggests: testthat, aws.s3, httr, covr
 License: MIT + file LICENSE
 
 Package: mgcv
-Version: 1.8-31
+Version: 1.8-33
 Priority: recommended
 Depends: R (>= 2.14.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
@@ -989,7 +983,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: nlme
-Version: 3.1-148
+Version: 3.1-149
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, stats, utils, lattice
@@ -1139,7 +1133,7 @@ Suggests: codetools, covr, testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.4.3
+Version: 3.4.4
 Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
         parallel, testthat, withr
@@ -1190,23 +1184,23 @@ License: GPL-3
 Archs: i386, x64
 
 Package: R.methodsS3
-Version: 1.8.0
+Version: 1.8.1
 Depends: R (>= 2.13.0)
 Imports: utils
 Suggests: codetools
 License: LGPL (>= 2.1)
 
 Package: R.oo
-Version: 1.23.0
-Depends: R (>= 2.13.0), R.methodsS3 (>= 1.7.1)
+Version: 1.24.0
+Depends: R (>= 2.13.0), R.methodsS3 (>= 1.8.0)
 Imports: methods, utils
 Suggests: tools
 License: LGPL (>= 2.1)
 
 Package: R.utils
-Version: 2.9.2
+Version: 2.10.1
 Depends: R (>= 2.14.0), R.oo (>= 1.23.0)
-Imports: methods, utils, tools, R.methodsS3 (>= 1.7.1)
+Imports: methods, utils, tools, R.methodsS3 (>= 1.8.0)
 Suggests: digest (>= 0.6.10)
 License: LGPL (>= 2.1)
 
@@ -1297,16 +1291,6 @@ Version: 2.8.1
 Depends: R (>= 2.15.0)
 Imports: base64enc, digest, XML
 License: GPL (>= 3)
-
-Package: readr
-Version: 1.3.1
-Depends: R (>= 3.1)
-Imports: Rcpp (>= 0.12.0.5), tibble, hms (>= 0.4.1), R6, clipr, crayon,
-        methods
-LinkingTo: Rcpp, BH
-Suggests: curl, testthat, knitr, rmarkdown, stringi, covr, spelling
-License: GPL (>= 2) | file LICENSE
-Archs: i386, x64
 
 Package: registry
 Version: 0.5-1
@@ -1408,9 +1392,9 @@ Suggests: testthat, mockr, knitr, withr, rmarkdown
 License: GPL-3
 
 Package: rsm
-Version: 2.10
+Version: 2.10.2
 Imports: estimability
-Suggests: emmeans, Vdgraph, conf.design, DoE.base, FrF2
+Suggests: emmeans (> 1.3.5.1), Vdgraph, conf.design, DoE.base, FrF2
 License: GPL (>= 2)
 
 Package: RSQLite
@@ -1562,12 +1546,12 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: tidyr
-Version: 1.1.1
+Version: 1.1.2
 Depends: R (>= 3.1)
 Imports: dplyr (>= 0.8.2), ellipsis (>= 0.1.0), glue, magrittr, purrr,
         rlang, tibble (>= 2.1.1), tidyselect (>= 1.1.0), utils, vctrs
         (>= 0.3.0), lifecycle
-LinkingTo: cpp11
+LinkingTo: cpp11 (>= 0.2.1)
 Suggests: covr, jsonlite, knitr, repurrrsive (>= 1.0.0), rmarkdown,
         readr, testthat (>= 2.1.0)
 License: MIT + file LICENSE
@@ -1612,12 +1596,12 @@ License: Apache License (== 2.0) | file LICENSE
 Archs: i386, x64
 
 Package: vctrs
-Version: 0.3.2
+Version: 0.3.4
 Depends: R (>= 3.2)
 Imports: ellipsis (>= 0.2.0), digest, glue, rlang (>= 0.4.7)
 Suggests: bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
         pillar (>= 1.4.4), pkgdown, rmarkdown, testthat (>= 2.3.0),
-        tibble, withr, xml2, zeallot
+        tibble, withr, xml2, waldo (>= 0.2.0), zeallot
 License: GPL-3
 Archs: i386, x64
 
