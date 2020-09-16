@@ -127,7 +127,7 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.4.3
+Version: 3.4.4
 Imports: processx (>= 3.4.0), R6, utils
 Suggests: cliapp, covr, crayon, fansi, pingr, ps, rprojroot, spelling,
         testthat, tibble, withr
@@ -219,13 +219,13 @@ License: BSD_2_clause + file LICENSE
 Archs: i386, x64
 
 Package: cowplot
-Version: 1.0.0
+Version: 1.1.0
 Depends: R (>= 3.5.0)
 Imports: ggplot2 (> 2.2.1), grid, gtable, grDevices, methods, rlang,
-        scales, utils
+        scales
 Suggests: Cairo, covr, dplyr, forcats, gridGraphics (>= 0.4-0), knitr,
-        lattice, magick, maps, PASWR, rmarkdown, testthat (>= 1.0.0),
-        tidyr, vdiffr (>= 0.3.0), VennDiagram
+        lattice, magick, maps, PASWR, patchwork, rmarkdown, ragg,
+        testthat (>= 1.0.0), tidyr, vdiffr (>= 0.3.0), VennDiagram
 License: GPL-2
 
 Package: cpp11
@@ -748,9 +748,9 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: jsonlite
-Version: 1.7.0
+Version: 1.7.1
 Depends: methods
-Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sf, sp
+Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sf
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -876,7 +876,7 @@ License: GPL-2
 Archs: i386, x64
 
 Package: MASS
-Version: 7.3-52
+Version: 7.3-53
 Priority: recommended
 Depends: R (>= 3.1.0), grDevices, graphics, stats, utils
 Imports: methods
@@ -1688,11 +1688,18 @@ License: GPL (>= 2) + file LICENSE
 Archs: i386, x64
 
 Package: xfun
-Version: 0.16
+Version: 0.17
 Imports: stats, tools
 Suggests: testit, parallel, codetools, rstudioapi, tinytex, mime,
-        markdown, knitr, htmltools, remotes, rmarkdown
+        markdown, knitr, htmltools, remotes, pak, rmarkdown
 License: MIT + file LICENSE
+Archs: i386, x64
+
+Package: XML
+Version: 3.99-0.3
+Depends: R (>= 2.13.0), methods, utils
+Suggests: bitops, RCurl
+License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: xml2
