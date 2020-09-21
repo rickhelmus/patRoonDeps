@@ -36,7 +36,7 @@ Suggests: testthat, covr
 License: GPL-3
 
 Package: backports
-Version: 1.1.9
+Version: 1.1.10
 Depends: R (>= 3.0.0)
 Imports: utils
 License: GPL-2 | GPL-3
@@ -635,7 +635,7 @@ Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat
 License: GPL-3
 
 Package: htmlTable
-Version: 2.0.1
+Version: 2.1.0
 Imports: stringr, knitr (>= 1.6), magrittr (>= 1.5), methods,
         checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)
 Suggests: testthat, XML, xml2, Hmisc, reshape, rmarkdown, chron,
@@ -1454,7 +1454,7 @@ License: GPL-3
 Archs: i386, x64
 
 Package: shape
-Version: 1.4.4
+Version: 1.4.5
 Depends: R (>= 2.01)
 Imports: stats, graphics, grDevices
 License: GPL (>= 3)
@@ -1693,13 +1693,6 @@ Imports: stats, tools
 Suggests: testit, parallel, codetools, rstudioapi, tinytex, mime,
         markdown, knitr, htmltools, remotes, pak, rmarkdown
 License: MIT + file LICENSE
-Archs: i386, x64
-
-Package: XML
-Version: 3.99-0.3
-Depends: R (>= 2.13.0), methods, utils
-Suggests: bitops, RCurl
-License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: xml2
