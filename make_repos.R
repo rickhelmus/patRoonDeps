@@ -10,6 +10,7 @@ pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoonData")
 # pdb <- addPackageListingGithub(pdb = pdb, "omegahat/RDCOMClient")
 pdb <- addPackageListingGithub(pdb = pdb, "dkyleward/RDCOMClient") # fixes for recent R versions
 pdb <- addPackageListingGithub(pdb = pdb, "cbroeckl/RAMClustR") # CRAN version sometimes disappears...
+pdb <- addPackageListingGithub(pdb = pdb, "Bioconductor/GenomeInfoDbData") # dep that doesn't have binaries
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
 pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", "RDCOMClient", "RAMClustR"),
@@ -19,7 +20,7 @@ makeGHPackage <- function(repos, pkgDir)
 {
     cloneDir <- tempfile("ghclone");
     git2r::clone(paste0("https://github.com/", repos), cloneDir)
-    dir.create(pkgDir, recursive = TRUE)
+    dir.create(pkgDir, recursive = TRUE, showWarnings = FALSE)
     devtools::build(cloneDir, pkgDir, binary = TRUE, vignettes = FALSE,
                     args = c("--no-test-load", ""))
 }
@@ -46,9 +47,15 @@ makeGHPackage("rickhelmus/patRoonData", pkgDir)
 # makeGHPackage("omegahat/RDCOMClient", pkgDir)
 makeGHPackage("dkyleward/RDCOMClient", pkgDir)
 makeGHPackage("cbroeckl/RAMClustR", pkgDir)
+makeGHPackage("Bioconductor/GenomeInfoDbData", pkgDir)
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
+
+localPackages <- c("patRoon", "patRoonData", "RDCOMClient", "RAMClustR",
+                   "GenomeInfoDbData")
+if (R.Version()$major < 4)
+    localPackages <- c(localPackages, "XML")
 
 if (file.exists(packagesFile))
 {
@@ -59,11 +66,10 @@ if (file.exists(packagesFile))
     
     removedPackages <- packages[!packages %in% pkgList]
     newPackages <- pkgList[!pkgList %in% packages]
+    newPackages <- setdiff(newPackages, localPackages)
     
     # will be re-added
-    removedPackages <- union(removedPackages, c("patRoon", "patRoonData", "RDCOMClient", "RAMClustR"))
-    if (R.Version()$major < 4)
-        removedPackages <- union(removedPackages, "XML")
+    removedPackages <- union(removedPackages, localPackages)
     
     if (file.exists(packagesFile) && length(removedPackages) > 0)
     {
@@ -87,19 +93,19 @@ if (file.exists(packagesFile))
     # addPackage("RDCOMClient", ".", repos = c("http://www.omegahat.net/R", repos), type = "win.binary")
 }
 
-if (fromArtifact)
+for (pkg in localPackages)
 {
-    # should be downloaded as artifact from AppVeyor
-    addLocalPackage("patRoon", "C:/Projects", ".", "win.binary", build = FALSE, deps = TRUE)
-} else
-    addLocalPackage("patRoon", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
-
-addLocalPackage("patRoonData", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
-addLocalPackage("RDCOMClient", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
-addLocalPackage("RAMClustR", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
-
-if (R.Version()$major < 4)
-    addPackage("XML", ".", "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
+    if (fromArtifact && pkg == "patRoon")
+    {
+        # should be downloaded as artifact from AppVeyor
+        addLocalPackage("patRoon", "C:/Projects", ".", "win.binary", build = FALSE, deps = TRUE)
+    }
+    else if (pkg == "XML")
+        addPackage("XML", ".", "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
+    else
+        addLocalPackage(pkg, pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
+    
+}
 
 # updatePackages(".", repos = repos, type = "win.binary", ask = FALSE)
 
