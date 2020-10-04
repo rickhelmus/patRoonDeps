@@ -54,7 +54,7 @@ Version: 1.72.0-3
 License: BSL-1.0
 
 Package: bibtex
-Version: 0.4.2.2
+Version: 0.4.2.3
 Depends: R (>= 3.0.2)
 Imports: stringr, utils
 Suggests: testthat
@@ -505,19 +505,17 @@ Depends: R (>= 2.10), cluster
 Suggests: knitr, rmarkdown
 License: GPL (>= 2)
 
-Package: gdata
-Version: 2.18.0
-Depends: R (>= 2.3.0)
-Imports: gtools, stats, methods, utils
-Suggests: RUnit
-License: GPL-2
-
 Package: generics
 Version: 0.0.2
 Depends: R (>= 3.1)
 Imports: methods
 Suggests: covr, pkgload, testthat, tibble
 License: GPL-2
+
+Package: GenomeInfoDbData
+Version: 1.2.2
+Depends: R (>= 3.3)
+License: Artistic-2.0
 
 Package: ggplot2
 Version: 3.3.2
@@ -559,9 +557,9 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: gplots
-Version: 3.0.4
+Version: 3.1.0
 Depends: R (>= 3.0)
-Imports: gtools, gdata, stats, caTools, KernSmooth
+Imports: gtools, stats, caTools, KernSmooth
 Suggests: grid, MASS, knitr
 License: GPL-2
 
@@ -773,7 +771,7 @@ License: Unlimited
 Archs: i386, x64
 
 Package: knitr
-Version: 1.29
+Version: 1.30
 Depends: R (>= 3.2.3)
 Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
         (>= 2.1.19), methods, xfun (>= 0.15), tools
@@ -1011,7 +1009,7 @@ Depends: R (>= 2.10)
 License: GPL-3
 
 Package: openssl
-Version: 1.4.2
+Version: 1.4.3
 Imports: askpass
 Suggests: testthat (>= 2.1.0), digest, knitr, rmarkdown, jsonlite,
         jose, sodium
@@ -1501,7 +1499,7 @@ Suggests: covr, htmltools, htmlwidgets, knitr, rmarkdown, testthat
 License: GPL-2 | file LICENSE
 
 Package: survival
-Version: 3.2-3
+Version: 3.2-7
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
@@ -1566,7 +1564,7 @@ Suggests: covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
 License: GPL-3
 
 Package: tinytex
-Version: 0.25
+Version: 0.26
 Imports: xfun (>= 0.5)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
@@ -1666,7 +1664,7 @@ Suggests: httpuv, knitr, rmarkdown, shiny
 License: GPL-2
 
 Package: withr
-Version: 2.2.0
+Version: 2.3.0
 Depends: R (>= 3.2.0)
 Imports: graphics, grDevices, stats
 Suggests: covr, DBI, knitr, lattice, methods, rmarkdown, RSQLite,
