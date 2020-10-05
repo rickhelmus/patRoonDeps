@@ -535,7 +535,7 @@ Suggests: GenomicRanges, Rsamtools, GenomicAlignments, GenomicFeatures,
 License: Artistic-2.0
 
 Package: GenomeInfoDbData
-Version: 1.2.2
+Version: 1.2.4
 Depends: R (>= 3.3)
 License: Artistic-2.0
 
