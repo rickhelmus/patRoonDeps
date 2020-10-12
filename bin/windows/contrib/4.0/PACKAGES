@@ -53,14 +53,6 @@ Package: BH
 Version: 1.72.0-3
 License: BSL-1.0
 
-Package: bibtex
-Version: 0.4.2.3
-Depends: R (>= 3.0.2)
-Imports: stringr, utils
-Suggests: testthat
-License: GPL (>= 2)
-Archs: i386, x64
-
 Package: Biobase
 Version: 2.48.0
 Depends: R (>= 2.10), BiocGenerics (>= 0.27.1), utils
@@ -696,9 +688,9 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: htmlwidgets
-Version: 1.5.1
+Version: 1.5.2
 Imports: grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml
-Suggests: knitr (>= 1.8)
+Suggests: knitr (>= 1.8), rmarkdown
 Enhances: shiny (>= 1.1)
 License: MIT + file LICENSE
 
@@ -720,7 +712,7 @@ Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: igraph
-Version: 1.2.5
+Version: 1.2.6
 Depends: methods
 Imports: graphics, grDevices, magrittr, Matrix, pkgconfig (>= 2.0.0),
         stats, utils
@@ -1202,12 +1194,12 @@ Depends: methods
 License: Artistic-2.0
 
 Package: ps
-Version: 1.3.4
+Version: 1.4.0
 Depends: R (>= 3.1)
 Imports: utils
 Suggests: callr, covr, curl, pingr, processx (>= 3.1.0), R6, rlang,
         testthat, tibble
-License: BSD_3_clause + file LICENSE
+License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: purrr
@@ -1275,6 +1267,14 @@ Suggests: Rgraphviz, XML, RUnit, BiocGenerics
 License: Artistic-2.0
 Archs: i386, x64
 
+Package: rbibutils
+Version: 1.3
+Depends: R (>= 2.10)
+Imports: utils, tools, xml2
+Suggests: testthat
+License: GPL-2
+Archs: i386, x64
+
 Package: rcdk
 Version: 3.5.0
 Depends: rcdklibs (>= 2.3)
@@ -1322,9 +1322,9 @@ License: GPL-2
 Archs: i386, x64
 
 Package: Rdpack
-Version: 1.0.0
+Version: 2.0
 Depends: R (>= 2.15.0), methods
-Imports: tools, utils, bibtex (>= 0.4.0), gbRd
+Imports: tools, utils, gbRd, rbibutils (>= 1.3)
 Suggests: grDevices, testthat, rstudioapi, rprojroot
 License: GPL (>= 2)
 
