@@ -357,7 +357,7 @@ Depends: R (>= 2.3.0), stats
 License: GPL (>= 2)
 
 Package: e1071
-Version: 1.7-3
+Version: 1.7-4
 Imports: graphics, grDevices, class, stats, methods, utils
 Suggests: cluster, mlbench, nnet, randomForest, rpart, SparseM, xtable,
         Matrix, MASS, slam
@@ -451,7 +451,7 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: foreach
-Version: 1.5.0
+Version: 1.5.1
 Depends: R (>= 2.5.0)
 Imports: codetools, utils, iterators
 Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
@@ -764,7 +764,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: iterators
-Version: 1.0.12
+Version: 1.0.13
 Depends: R (>= 2.5.0), utils
 Suggests: RUnit, foreach
 License: Apache License (== 2.0)
