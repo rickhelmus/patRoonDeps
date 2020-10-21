@@ -119,7 +119,7 @@ Version: 1.0-6
 License: GPL-2
 
 Package: callr
-Version: 3.5.0
+Version: 3.5.1
 Imports: processx (>= 3.4.4), R6, utils
 Suggests: cli, covr, crayon, fansi, pingr, ps, rprojroot, spelling,
         testthat, tibble, withr (>= 2.3.0)
@@ -221,7 +221,7 @@ Suggests: Cairo, covr, dplyr, forcats, gridGraphics (>= 0.4-0), knitr,
 License: GPL-2
 
 Package: cpp11
-Version: 0.2.2
+Version: 0.2.3
 Suggests: bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
         knitr, lobstr, mockery, progress, rmarkdown, scales, testthat,
         tibble, utils, vctrs, withr
@@ -306,15 +306,15 @@ Suggests: covr, testthat, whoami, withr
 License: MIT + file LICENSE
 
 Package: digest
-Version: 0.6.25
-Depends: R (>= 3.1.0)
+Version: 0.6.26
+Depends: R (>= 3.3.0)
 Imports: utils
-Suggests: tinytest, knitr, rmarkdown
+Suggests: tinytest, knitr, rmarkdown, minidown
 License: GPL (>= 2)
 Archs: i386, x64
 
 Package: doParallel
-Version: 1.0.15
+Version: 1.0.16
 Depends: R (>= 2.14.0), foreach(>= 1.2.0), iterators(>= 1.0.0),
         parallel, utils
 Suggests: caret, mlbench, rpart, RUnit
@@ -334,7 +334,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: DT
-Version: 0.15
+Version: 0.16
 Imports: htmltools (>= 0.3.6), htmlwidgets (>= 1.3), jsonlite (>=
         0.9.16), magrittr, crosstalk, promises
 Suggests: knitr (>= 1.8), rmarkdown, shiny (>= 1.2.0), testit
@@ -418,7 +418,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: ff
-Version: 4.0.2
+Version: 4.0.4
 Depends: R (>= 2.10.1), bit (>= 4.0.0), utils
 Suggests: biglm, testthat (>= 0.11.0)
 License: GPL-2 | GPL-3 | file LICENSE
@@ -440,7 +440,7 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: foreach
-Version: 1.5.0
+Version: 1.5.1
 Depends: R (>= 2.5.0)
 Imports: codetools, utils, iterators
 Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
@@ -461,7 +461,7 @@ Suggests: codetools, shiny, testit, rmarkdown, knitr
 License: GPL
 
 Package: Formula
-Version: 1.2-3
+Version: 1.2-4
 Depends: R (>= 2.0.0), stats
 License: GPL-2 | GPL-3
 
@@ -719,7 +719,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: iterators
-Version: 1.0.12
+Version: 1.0.13
 Depends: R (>= 2.5.0), utils
 Suggests: RUnit, foreach
 License: Apache License (== 2.0)
@@ -835,7 +835,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: magick
-Version: 2.4.0
+Version: 2.5.0
 Imports: Rcpp (>= 0.12.12), magrittr, curl
 LinkingTo: Rcpp
 Suggests: av (>= 0.3), spelling, jsonlite, methods, knitr, rmarkdown,
