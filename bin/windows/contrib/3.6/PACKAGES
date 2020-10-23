@@ -346,7 +346,7 @@ Depends: R (>= 2.3.0), stats
 License: GPL (>= 2)
 
 Package: e1071
-Version: 1.7-3
+Version: 1.7-4
 Imports: graphics, grDevices, class, stats, methods, utils
 Suggests: cluster, mlbench, nnet, randomForest, rpart, SparseM, xtable,
         Matrix, MASS, slam
@@ -1009,7 +1009,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: patRoon
-Version: 1.0.2
+Version: 1.0.3
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
