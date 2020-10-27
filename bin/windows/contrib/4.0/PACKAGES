@@ -317,7 +317,7 @@ Suggests: covr, testthat, whoami, withr
 License: MIT + file LICENSE
 
 Package: digest
-Version: 0.6.26
+Version: 0.6.27
 Depends: R (>= 3.3.0)
 Imports: utils
 Suggests: tinytest, knitr, rmarkdown, minidown
@@ -1018,7 +1018,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: nlme
-Version: 3.1-149
+Version: 3.1-150
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, stats, utils, lattice
