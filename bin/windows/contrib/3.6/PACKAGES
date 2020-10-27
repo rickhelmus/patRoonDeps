@@ -1344,13 +1344,13 @@ License: GPL-3
 Archs: i386, x64
 
 Package: rmarkdown
-Version: 2.4
+Version: 2.5
 Depends: R (>= 3.0)
 Imports: tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
-        0.3.5), evaluate (>= 0.13), jsonlite, mime, tinytex (>= 0.11),
-        xfun, methods, stringr (>= 1.2.0)
-Suggests: shiny (>= 0.11), tufte, testthat, digest, dygraphs, tibble,
-        fs, rsconnect
+        0.3.5), evaluate (>= 0.13), jsonlite, tinytex (>= 0.11), xfun
+        (>= 0.15), methods, stringr (>= 1.2.0)
+Suggests: shiny (>= 0.11), tufte, testthat, digest, dygraphs, vctrs,
+        tibble, fs, rsconnect
 License: GPL-3
 
 Package: robustbase
