@@ -88,13 +88,6 @@ Suggests: BiocGenerics, tools, foreach, BatchJobs, BBmisc, doParallel,
 License: GPL-2 | GPL-3
 Archs: i386, x64
 
-Package: BiocStyle
-Version: 2.18.0
-Imports: bookdown, knitr (>= 1.30), rmarkdown (>= 1.2), stats, utils,
-        yaml, BiocManager
-Suggests: BiocGenerics, RUnit, htmltools
-License: Artistic-2.0
-
 Package: bit
 Version: 4.0.4
 Depends: R (>= 2.9.2)
@@ -118,14 +111,6 @@ Package: blob
 Version: 1.2.1
 Imports: methods, rlang, vctrs (>= 0.2.1)
 Suggests: covr, crayon, pillar (>= 1.2.1), testthat
-License: GPL-3
-
-Package: bookdown
-Version: 0.21
-Imports: htmltools (>= 0.3.6), knitr (>= 1.22), rmarkdown (>= 2.4),
-        xfun (>= 0.13), tinytex (>= 0.12), yaml (>= 2.1.19)
-Suggests: htmlwidgets, rstudioapi, miniUI, rsconnect (>= 0.4.3), servr
-        (>= 0.13), shiny, testit (>= 0.9), tufte, webshot
 License: GPL-3
 
 Package: brew
@@ -214,7 +199,7 @@ Depends: R (>= 2.1)
 License: GPL
 
 Package: colorspace
-Version: 1.4-1
+Version: 2.0-0
 Depends: R (>= 3.0.0), methods
 Imports: graphics, grDevices, stats
 Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
@@ -228,17 +213,6 @@ Package: commonmark
 Version: 1.7
 Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
-Archs: i386, x64
-
-Package: covr
-Version: 3.5.1
-Depends: R (>= 3.1.0), methods
-Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
-        1.0.2), yaml
-Suggests: R6, curl, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
-        rlang, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
-        mockery
-License: GPL-3
 Archs: i386, x64
 
 Package: cowplot
@@ -324,16 +298,6 @@ Suggests: BiocParallel, HDF5Array (>= 1.17.12), genefilter,
         BiocStyle, RUnit
 License: Artistic-2.0
 Archs: i386, x64
-
-Package: DelayedMatrixStats
-Version: 1.12.0
-Depends: MatrixGenerics, DelayedArray (>= 0.15.3)
-Imports: methods, matrixStats (>= 0.56.0), sparseMatrixStats, Matrix,
-        S4Vectors (>= 0.17.5), IRanges, HDF5Array (>= 1.17.2),
-        BiocParallel
-Suggests: testthat, knitr, rmarkdown, covr, BiocStyle, microbenchmark,
-        profmem
-License: MIT + file LICENSE
 
 Package: dendextend
 Version: 1.14.0
@@ -644,14 +608,6 @@ Suggests: testthat, covr, magrittr, crayon, knitr, rmarkdown, DBI,
 License: MIT + file LICENSE
 Archs: i386, x64
 
-Package: gmm
-Version: 1.6-5
-Depends: R (>= 2.10.0), sandwich
-Imports: stats, methods, grDevices, graphics
-Suggests: mvtnorm, car, stabledist, MASS, timeDate, timeSeries
-License: GPL (>= 2)
-Archs: i386, x64
-
 Package: gplots
 Version: 3.1.0
 Depends: R (>= 3.0)
@@ -685,19 +641,6 @@ Package: gtools
 Version: 3.8.2
 Depends: methods, stats, utils
 License: GPL-2
-Archs: i386, x64
-
-Package: HDF5Array
-Version: 1.18.0
-Depends: R (>= 3.4), methods, DelayedArray (>= 0.15.16), rhdf5 (>=
-        2.31.6)
-Imports: utils, stats, tools, Matrix, BiocGenerics (>= 0.31.5),
-        S4Vectors, IRanges
-LinkingTo: S4Vectors (>= 0.27.13), Rhdf5lib
-Suggests: BiocParallel, GenomicRanges, SummarizedExperiment (>=
-        1.15.1), h5vcData, ExperimentHub, TENxBrainData,
-        GenomicFeatures, BiocStyle
-License: Artistic-2.0
 Archs: i386, x64
 
 Package: heatmaply
@@ -798,11 +741,6 @@ Version: 1.64.0
 Depends: R (>= 2.10)
 License: GPL-2
 Archs: i386, x64
-
-Package: imputeLCMD
-Version: 2.0
-Depends: R (>= 2.10), tmvtnorm, norm, pcaMethods, impute
-License: GPL (>= 2)
 
 Package: installr
 Version: 0.22.0
@@ -1088,13 +1026,6 @@ Imports: colorspace, methods
 Suggests: ggplot2, testthat
 License: MIT + file LICENSE
 
-Package: mvtnorm
-Version: 1.1-1
-Depends: R(>= 3.5.0)
-Imports: stats, methods
-License: GPL-2
-Archs: i386, x64
-
 Package: mzID
 Version: 1.28.0
 Depends: methods
@@ -1146,11 +1077,6 @@ Package: nontargetData
 Version: 1.1
 Depends: R (>= 2.10)
 License: GPL-3
-
-Package: norm
-Version: 1.0-9.5
-License: file LICENSE
-Archs: i386, x64
 
 Package: openssl
 Version: 1.4.3
@@ -1472,36 +1398,12 @@ Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
 
-Package: rex
-Version: 1.2.0
-Imports: lazyeval
-Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, magrittr, Hmisc,
-        stringr, rvest, roxygen2, covr
-License: MIT + file LICENSE
-
 Package: rhandsontable
 Version: 0.3.7
 Imports: jsonlite, htmlwidgets (>= 0.3.3), magrittr, methods
 Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
         rstudioapi (>= 0.6), htmltools
 License: MIT + file LICENSE
-
-Package: rhdf5
-Version: 2.34.0
-Depends: R (>= 3.5.0), methods
-Imports: Rhdf5lib (>= 1.11.0), rhdf5filters
-LinkingTo: Rhdf5lib
-Suggests: bit64, BiocStyle, knitr, rmarkdown, testthat, microbenchmark,
-        dplyr, ggplot2
-License: Artistic-2.0
-Archs: i386, x64
-
-Package: rhdf5filters
-Version: 1.2.0
-LinkingTo: Rhdf5lib
-Suggests: BiocStyle, knitr, rmarkdown, testthat (>= 2.1.0)
-License: BSD_2_clause + file LICENSE
-Archs: i386, x64
 
 Package: Rhdf5lib
 Version: 1.12.0
@@ -1610,15 +1512,6 @@ Suggests: IRanges, GenomicRanges, SummarizedExperiment, Matrix,
 License: Artistic-2.0
 Archs: i386, x64
 
-Package: sandwich
-Version: 3.0-0
-Depends: R (>= 3.0.0)
-Imports: stats, utils, zoo
-Suggests: AER, car, geepack, lattice, lmtest, MASS, multiwayvcov,
-        parallel, pcse, plm, pscl, scatterplot3d, stats4, strucchange,
-        survival
-License: GPL-2 | GPL-3
-
 Package: scales
 Version: 1.1.1
 Depends: R (>= 3.2)
@@ -1673,15 +1566,6 @@ Package: sourcetools
 Version: 0.1.7
 Depends: R (>= 3.0.2)
 Suggests: testthat
-License: MIT + file LICENSE
-Archs: i386, x64
-
-Package: sparseMatrixStats
-Version: 1.2.0
-Depends: MatrixGenerics
-Imports: Rcpp, Matrix, matrixStats, methods
-LinkingTo: Rcpp
-Suggests: testthat (>= 2.1.0), knitr, bench, rmarkdown, BiocStyle
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1784,14 +1668,6 @@ Version: 0.27
 Imports: xfun (>= 0.19)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
-
-Package: tmvtnorm
-Version: 1.4-10
-Depends: R (>= 1.9.0), mvtnorm, utils, Matrix, stats4, gmm
-Imports: stats, methods
-Suggests: lattice
-License: GPL (>= 2)
-Archs: i386, x64
 
 Package: TSP
 Version: 1.1-10
@@ -1968,13 +1844,4 @@ Archs: i386, x64
 Package: zlibbioc
 Version: 1.36.0
 License: Artistic-2.0 + file LICENSE
-Archs: i386, x64
-
-Package: zoo
-Version: 1.8-8
-Depends: R (>= 3.1.0), stats
-Imports: utils, graphics, grDevices, lattice (>= 0.20-27)
-Suggests: AER, coda, chron, fts, ggplot2 (>= 3.0.0), mondate, scales,
-        strucchange, timeDate, timeSeries, tis, tseries, xts
-License: GPL-2 | GPL-3
 Archs: i386, x64
