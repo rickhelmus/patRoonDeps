@@ -35,12 +35,6 @@ Imports: tools
 Suggests: testthat, covr
 License: GPL-3
 
-Package: audio
-Version: 0.1-7
-Depends: R (>= 2.0.0)
-License: MIT + file LICENSE
-Archs: i386, x64
-
 Package: backports
 Version: 1.2.0
 Depends: R (>= 3.0.0)
@@ -53,11 +47,6 @@ Depends: R (>= 2.9.0)
 Enhances: png
 License: GPL-2 | GPL-3
 Archs: i386, x64
-
-Package: beepr
-Version: 1.3
-Imports: stringr (>= 1.0.0), audio
-License: GPL-3
 
 Package: BH
 Version: 1.72.0-3
@@ -337,13 +326,6 @@ Suggests: tinytest, knitr, rmarkdown, minidown
 License: GPL (>= 2)
 Archs: i386, x64
 
-Package: doFuture
-Version: 0.10.0
-Depends: foreach (>= 1.5.0), future (>= 1.18.0)
-Imports: globals (>= 0.12.5), iterators (>= 1.0.12), parallel, utils
-Suggests: doRNG (>= 1.8.2), markdown, R.rsp
-License: LGPL (>= 2.1)
-
 Package: doParallel
 Version: 1.0.16
 Depends: R (>= 2.14.0), foreach(>= 1.2.0), iterators(>= 1.0.0),
@@ -504,15 +486,6 @@ LinkingTo: Rcpp
 Suggests: testthat, bit64, data.table, lintr, nanotime, crayon
 License: AGPL-3 | file LICENSE
 Archs: i386, x64
-
-Package: furrr
-Version: 0.2.1
-Depends: future (>= 1.19.1), R (>= 3.2.0)
-Imports: ellipsis, globals (>= 0.13.1), lifecycle (>= 0.2.0), purrr (>=
-        0.3.0), rlang (>= 0.3.0), vctrs (>= 0.3.2)
-Suggests: carrier, covr, dplyr (>= 0.7.4), knitr, listenv (>= 0.6.0),
-        magrittr, progressr, rmarkdown, testthat, withr, tidyselect
-License: MIT + file LICENSE
 
 Package: futile.logger
 Version: 1.4.3
@@ -1108,12 +1081,6 @@ Depends: R (>= 2.10)
 Suggests: patRoon
 License: CC0
 
-Package: pbmcapply
-Version: 1.5.0
-Depends: utils, parallel
-License: MIT + file LICENSE
-Archs: i386, x64
-
 Package: pcaMethods
 Version: 1.78.0
 Depends: Biobase, methods
@@ -1262,13 +1229,6 @@ Suggests: testthat
 License: GPL-3
 Archs: i386, x64
 
-Package: R.cache
-Version: 0.14.0
-Depends: R (>= 2.14.0)
-Imports: utils, R.methodsS3 (>= 1.7.1), R.oo (>= 1.23.0), R.utils (>=
-        2.8.0), digest (>= 0.6.13)
-License: LGPL (>= 2.1)
-
 Package: R.methodsS3
 Version: 1.8.1
 Depends: R (>= 2.13.0)
@@ -1281,15 +1241,6 @@ Version: 1.24.0
 Depends: R (>= 2.13.0), R.methodsS3 (>= 1.8.0)
 Imports: methods, utils
 Suggests: tools
-License: LGPL (>= 2.1)
-
-Package: R.rsp
-Version: 0.44.0
-Depends: R (>= 2.14.0)
-Imports: methods, stats, tools, utils, R.methodsS3 (>= 1.7.1), R.oo (>=
-        1.23.0), R.utils, R.cache, digest (>= 0.6.13)
-Suggests: tcltk, markdown (>= 0.8), knitr (>= 1.9), R.devices (>=
-        2.16.1), base64enc (>= 0.1-2)
 License: LGPL (>= 2.1)
 
 Package: R.utils
@@ -1436,11 +1387,6 @@ Package: Rhdf5lib
 Version: 1.8.0
 Suggests: BiocStyle, knitr, rmarkdown
 License: Artistic-2.0
-Archs: i386, x64
-
-Package: RhpcBLASctl
-Version: 0.20-137
-License: AGPL-3
 Archs: i386, x64
 
 Package: rJava
