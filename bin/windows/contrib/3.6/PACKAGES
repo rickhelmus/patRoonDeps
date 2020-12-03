@@ -582,7 +582,7 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: gplots
-Version: 3.1.0
+Version: 3.1.1
 Depends: R (>= 3.0)
 Imports: gtools, stats, caTools, KernSmooth
 Suggests: grid, MASS, knitr
@@ -641,7 +641,7 @@ Suggests: knitr, testit
 License: GPL
 
 Package: Hmisc
-Version: 4.4-1
+Version: 4.4-2
 Depends: lattice, survival (>= 3.1-6), Formula, ggplot2 (>= 2.2)
 Imports: methods, latticeExtra, cluster, rpart, nnet, foreign, gtable,
         grid, gridExtra, data.table, htmlTable (>= 1.11.0), viridis,
@@ -743,11 +743,11 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: isoband
-Version: 0.2.2
+Version: 0.2.3
 Imports: grid, utils
 LinkingTo: testthat
 Suggests: covr, ggplot2, knitr, magick, microbenchmark, rmarkdown, sf,
-        testthat
+        testthat, xml2
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1171,7 +1171,7 @@ Suggests: codetools, covr, testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.4.4
+Version: 3.4.5
 Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
         parallel, testthat, withr
@@ -1320,7 +1320,7 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: RDCOMClient
-Version: 0.94-0
+Version: 0.95-0
 Depends: R (>= 3.2.0)
 License: GPL-2
 Archs: i386, x64
@@ -1396,8 +1396,8 @@ License: GPL-2
 Archs: i386, x64
 
 Package: rlang
-Version: 0.4.8
-Depends: R (>= 3.2.0)
+Version: 0.4.9
+Depends: R (>= 3.3.0)
 Suggests: cli, covr, crayon, glue, magrittr, methods, pillar,
         rmarkdown, testthat (>= 2.3.0), vctrs (>= 0.2.3), withr
 Enhances: winch
