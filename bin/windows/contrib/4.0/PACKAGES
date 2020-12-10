@@ -261,11 +261,11 @@ Suggests: dplyr, lintr, knitr, rbenchmark, nycflights13, rmarkdown,
 License: MIT + file LICENSE
 
 Package: data.table
-Version: 1.13.2
+Version: 1.13.4
 Depends: R (>= 3.1.0)
 Imports: methods
-Suggests: bit64, curl, R.utils, xts, nanotime, zoo, yaml, knitr,
-        rmarkdown
+Suggests: bit64 (>= 4.0.0), bit (>= 4.0.4), curl, R.utils, xts,
+        nanotime, zoo (>= 1.8-1), yaml, knitr, rmarkdown
 License: MPL-2.0 | file LICENSE
 Archs: i386, x64
 
@@ -545,7 +545,7 @@ Suggests: covr, pkgload, testthat, tibble
 License: MIT + file LICENSE
 
 Package: GenomeInfoDb
-Version: 1.26.1
+Version: 1.26.2
 Depends: R (>= 3.1), methods, BiocGenerics (>= 0.13.8), S4Vectors (>=
         0.25.12), IRanges (>= 2.13.12)
 Imports: stats, stats4, utils, RCurl, GenomeInfoDbData
@@ -790,11 +790,11 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: isoband
-Version: 0.2.2
+Version: 0.2.3
 Imports: grid, utils
 LinkingTo: testthat
 Suggests: covr, ggplot2, knitr, magick, microbenchmark, rmarkdown, sf,
-        testthat
+        testthat, xml2
 License: MIT + file LICENSE
 Archs: i386, x64
 
@@ -1119,7 +1119,7 @@ Imports: parallel, tools, utils
 License: LGPL (>= 2.1)
 
 Package: patRoon
-Version: 1.1
+Version: 1.1.0
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
@@ -1270,7 +1270,7 @@ Depends: methods
 License: Artistic-2.0
 
 Package: ps
-Version: 1.4.0
+Version: 1.5.0
 Depends: R (>= 3.1)
 Imports: utils
 Suggests: callr, covr, curl, pingr, processx (>= 3.1.0), R6, rlang,
