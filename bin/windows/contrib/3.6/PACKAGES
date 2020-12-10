@@ -1055,7 +1055,7 @@ Imports: parallel, tools, utils
 License: LGPL (>= 2.1)
 
 Package: patRoon
-Version: 1.1
+Version: 1.1.0
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
@@ -1206,7 +1206,7 @@ Depends: methods
 License: Artistic-2.0
 
 Package: ps
-Version: 1.4.0
+Version: 1.5.0
 Depends: R (>= 3.1)
 Imports: utils
 Suggests: callr, covr, curl, pingr, processx (>= 3.1.0), R6, rlang,
