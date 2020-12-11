@@ -1546,9 +1546,9 @@ Suggests: covr, knitr, png, rmarkdown, spelling, stringi (>= 0.3.1),
 License: GPL-3
 
 Package: S4Vectors
-Version: 0.28.0
-Depends: R (>= 3.3.0), methods, utils, stats, stats4, BiocGenerics (>=
-        0.35.0)
+Version: 0.28.1
+Depends: R (>= 4.0.0), methods, utils, stats, stats4, BiocGenerics (>=
+        0.36.0)
 Suggests: IRanges, GenomicRanges, SummarizedExperiment, Matrix,
         DelayedArray, ShortRead, graph, data.table, RUnit, BiocStyle
 License: Artistic-2.0
