@@ -520,7 +520,7 @@ Suggests: datasets, stats, tools, listenv (>= 0.8.0), R.rsp, markdown
 License: GPL (>= 2)
 
 Package: future
-Version: 1.20.1
+Version: 1.21.0
 Imports: digest, globals (>= 0.13.1), listenv (>= 0.8.0), parallel,
         parallelly (>= 1.21.0), tools, utils
 Suggests: RhpcBLASctl, R.rsp, markdown
@@ -723,9 +723,9 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: htmlwidgets
-Version: 1.5.2
+Version: 1.5.3
 Imports: grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml
-Suggests: knitr (>= 1.8), rmarkdown
+Suggests: knitr (>= 1.8), rmarkdown, testthat
 Enhances: shiny (>= 1.1)
 License: MIT + file LICENSE
 
@@ -778,8 +778,8 @@ Imports: Rdisop, enviPat, plyr, utils, foreach, doParallel, DBI,
 License: GPL-3
 
 Package: IRanges
-Version: 2.24.0
-Depends: R (>= 3.1.0), methods, utils, stats, BiocGenerics (>= 0.25.3),
+Version: 2.24.1
+Depends: R (>= 4.0.0), methods, utils, stats, BiocGenerics (>= 0.36.0),
         S4Vectors (>= 0.27.12)
 Imports: stats4
 LinkingTo: S4Vectors
@@ -818,7 +818,7 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: jsonlite
-Version: 1.7.1
+Version: 1.7.2
 Depends: methods
 Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sf
 License: MIT + file LICENSE
@@ -1249,10 +1249,11 @@ Suggests: Rcpp, testthat, withr
 License: MIT + file LICENSE
 
 Package: progressr
-Version: 0.6.0
+Version: 0.7.0
+Depends: R (>= 3.5.0)
 Imports: digest, utils
-Suggests: graphics, tcltk, beepr, pbmcapply, progress, purrr, foreach,
-        plyr, doFuture, future (>= 1.16.0), future.apply, furrr, shiny,
+Suggests: graphics, tcltk, beepr, crayon, pbmcapply, progress, purrr,
+        foreach, plyr, doFuture, future, future.apply, furrr, shiny,
         commonmark, base64enc, tools
 License: GPL (>= 3)
 
