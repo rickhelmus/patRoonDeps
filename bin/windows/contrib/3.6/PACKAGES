@@ -261,11 +261,11 @@ Suggests: dplyr, lintr, knitr, rbenchmark, nycflights13, rmarkdown,
 License: MIT + file LICENSE
 
 Package: data.table
-Version: 1.13.2
+Version: 1.13.4
 Depends: R (>= 3.1.0)
 Imports: methods
-Suggests: bit64, curl, R.utils, xts, nanotime, zoo, yaml, knitr,
-        rmarkdown
+Suggests: bit64 (>= 4.0.0), bit (>= 4.0.4), curl, R.utils, xts,
+        nanotime, zoo (>= 1.8-1), yaml, knitr, rmarkdown
 License: MPL-2.0 | file LICENSE
 Archs: i386, x64
 
@@ -507,7 +507,7 @@ Suggests: datasets, stats, tools, listenv (>= 0.8.0), R.rsp, markdown
 License: GPL (>= 2)
 
 Package: future
-Version: 1.20.1
+Version: 1.21.0
 Imports: digest, globals (>= 0.13.1), listenv (>= 0.8.0), parallel,
         parallelly (>= 1.21.0), tools, utils
 Suggests: RhpcBLASctl, R.rsp, markdown
@@ -676,9 +676,9 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: htmlwidgets
-Version: 1.5.2
+Version: 1.5.3
 Imports: grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml
-Suggests: knitr (>= 1.8), rmarkdown
+Suggests: knitr (>= 1.8), rmarkdown, testthat
 Enhances: shiny (>= 1.1)
 License: MIT + file LICENSE
 
@@ -771,7 +771,7 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: jsonlite
-Version: 1.7.1
+Version: 1.7.2
 Depends: methods
 Suggests: httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sf
 License: MIT + file LICENSE
@@ -1014,7 +1014,7 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: nlme
-Version: 3.1-150
+Version: 3.1-151
 Priority: recommended
 Depends: R (>= 3.4.0)
 Imports: graphics, stats, utils, lattice
@@ -1390,7 +1390,7 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: rJava
-Version: 0.9-12
+Version: 0.9-13
 Depends: R (>= 2.5.0), methods
 License: GPL-2
 Archs: i386, x64
@@ -1547,11 +1547,10 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: stringi
-Version: 1.4.6
+Version: 1.5.3
 Depends: R (>= 2.14)
 Imports: tools, utils, stats
 License: file LICENSE
-License_is_FOSS: yes
 Archs: i386, x64
 
 Package: stringr
