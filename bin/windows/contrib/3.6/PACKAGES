@@ -215,6 +215,17 @@ Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: i386, x64
 
+Package: covr
+Version: 3.5.1
+Depends: R (>= 3.1.0), methods
+Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
+        1.0.2), yaml
+Suggests: R6, curl, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
+        rlang, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
+        mockery
+License: GPL-3
+Archs: i386, x64
+
 Package: cowplot
 Version: 1.1.0
 Depends: R (>= 3.5.0)
@@ -478,6 +489,15 @@ Version: 1.2-4
 Depends: R (>= 2.0.0), stats
 License: GPL-2 | GPL-3
 
+Package: fs
+Version: 1.5.0
+Depends: R (>= 3.1)
+Imports: methods
+Suggests: testthat, covr, pillar (>= 1.0.0), tibble (>= 1.1.0), crayon,
+        rmarkdown, knitr, withr, spelling, vctrs (>= 0.3.0)
+License: GPL-3
+Archs: i386, x64
+
 Package: fst
 Version: 0.9.4
 Depends: R (>= 3.0.0)
@@ -698,6 +718,16 @@ Imports: curl (>= 3.0.0), jsonlite, mime, openssl (>= 0.8), R6
 Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
         (>= 0.8.0), xml2
 License: MIT + file LICENSE
+
+Package: hunspell
+Version: 3.0.1
+Depends: R (>= 3.0.2)
+Imports: Rcpp, digest
+LinkingTo: Rcpp (>= 0.12.12)
+Suggests: spelling, testthat, pdftools, janeaustenr, wordcloud2, knitr,
+        stopwords, rmarkdown
+License: GPL-2 | LGPL-2.1 | MPL-1.1
+Archs: i386, x64
 
 Package: igraph
 Version: 1.2.6
@@ -1055,7 +1085,7 @@ Imports: parallel, tools, utils
 License: LGPL (>= 2.1)
 
 Package: patRoon
-Version: 1.1.0
+Version: 1.2.0
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
@@ -1067,7 +1097,7 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         CAMERA, enviPat, nontarget, knitr, rmarkdown, flexdashboard,
         DT, magrittr, kableExtra, R.utils, magick, glue, ggplot2,
         ggrepel, cowplot, jsonlite, Rdpack, rsm, future.apply,
-        progressr
+        progressr, fs, yaml
 LinkingTo: Rcpp
 Suggests: RDCOMClient, metfRag, RAMClustR, testthat, rlang, vdiffr,
         patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg,
@@ -1376,6 +1406,13 @@ Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
 
+Package: rex
+Version: 1.2.0
+Imports: lazyeval
+Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, magrittr, Hmisc,
+        stringr, rvest, roxygen2, covr
+License: MIT + file LICENSE
+
 Package: rhandsontable
 Version: 0.3.7
 Imports: jsonlite, htmlwidgets (>= 0.3.3), magrittr, methods
@@ -1545,6 +1582,12 @@ Depends: R (>= 3.0.2)
 Suggests: testthat
 License: MIT + file LICENSE
 Archs: i386, x64
+
+Package: spelling
+Version: 2.2
+Imports: commonmark, xml2, hunspell (>= 3.0), knitr
+Suggests: pdftools
+License: MIT + file LICENSE
 
 Package: stringi
 Version: 1.5.3
