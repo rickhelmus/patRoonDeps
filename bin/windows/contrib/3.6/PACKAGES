@@ -671,10 +671,10 @@ Suggests: testthat, XML, xml2, Hmisc, reshape, rmarkdown, chron,
 License: GPL (>= 3)
 
 Package: htmltools
-Version: 0.5.1
+Version: 0.5.1.1
 Depends: R (>= 2.14.1)
 Imports: utils, digest, grDevices, base64enc, rlang
-Suggests: markdown, testthat, withr, Cairo, ragg
+Suggests: markdown, testthat, withr, Cairo, ragg, shiny
 Enhances: knitr
 License: GPL (>= 2)
 Archs: i386, x64
@@ -1068,7 +1068,7 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         processx, tools, MSnbase, Biobase, xcms, cluster, fastcluster,
         gplots, heatmaply, dynamicTreeCut, dendextend, igraph,
         visNetwork, rJava, rcdk, fingerprint, mzR, circlize, miniUI,
-        plotly, rhandsontable, rstudioapi, htmlwidgets, shiny,
+        plotly, rhandsontable, rstudioapi, htmlwidgets, shiny, shinyjs,
         templates, CAMERA, enviPat, nontarget, knitr, rmarkdown,
         flexdashboard, DT, magrittr, kableExtra, R.utils, magick, glue,
         ggplot2, ggrepel, cowplot, jsonlite, Rdpack, rsm, future.apply,
@@ -1541,6 +1541,29 @@ Suggests: datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>=
         1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),
         magrittr, shinytest, yaml, future, dygraphs, ragg, showtext
 License: GPL-3 | file LICENSE
+
+Package: shinyAce
+Version: 0.4.1
+Depends: R (>= 3.3.0)
+Imports: shiny (>= 1.0.5), jsonlite, utils, tools
+Suggests: testthat (>= 2.0.0), dplyr (>= 0.8.3)
+License: MIT + file LICENSE
+
+Package: shinydisconnect
+Version: 0.1.0
+Depends: R (>= 3.0.0)
+Imports: checkmate, glue, htmltools, shiny (>= 1.0)
+Suggests: colourpicker
+License: MIT + file LICENSE
+
+Package: shinyjs
+Version: 2.0.0
+Depends: R (>= 3.1.0)
+Imports: digest (>= 0.6.8), htmltools (>= 0.2.9), jsonlite, shiny (>=
+        1.0.0)
+Suggests: knitr (>= 1.7), rmarkdown, shinyAce, shinydisconnect,
+        testthat (>= 0.9.1)
+License: MIT + file LICENSE
 
 Package: snow
 Version: 0.4-3
