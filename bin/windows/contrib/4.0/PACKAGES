@@ -230,17 +230,6 @@ Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: i386, x64
 
-Package: covr
-Version: 3.5.1
-Depends: R (>= 3.1.0), methods
-Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
-        1.0.2), yaml
-Suggests: R6, curl, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
-        rlang, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
-        mockery
-License: GPL-3
-Archs: i386, x64
-
 Package: cowplot
 Version: 1.1.1
 Depends: R (>= 3.5.0)
@@ -1486,13 +1475,6 @@ Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
 
-Package: rex
-Version: 1.2.0
-Imports: lazyeval
-Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, magrittr, Hmisc,
-        stringr, rvest, roxygen2, covr
-License: MIT + file LICENSE
-
 Package: rhandsontable
 Version: 0.3.7
 Imports: jsonlite, htmlwidgets (>= 0.3.3), magrittr, methods
@@ -1662,20 +1644,6 @@ Suggests: datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>=
         magrittr, shinytest (>= 1.4.0.9003), yaml, future, dygraphs,
         ragg, showtext, sass
 License: GPL-3 | file LICENSE
-
-Package: shinyAce
-Version: 0.4.1
-Depends: R (>= 3.3.0)
-Imports: shiny (>= 1.0.5), jsonlite, utils, tools
-Suggests: testthat (>= 2.0.0), dplyr (>= 0.8.3)
-License: MIT + file LICENSE
-
-Package: shinydisconnect
-Version: 0.1.0
-Depends: R (>= 3.0.0)
-Imports: checkmate, glue, htmltools, shiny (>= 1.0)
-Suggests: colourpicker
-License: MIT + file LICENSE
 
 Package: shinyjs
 Version: 2.0.0
