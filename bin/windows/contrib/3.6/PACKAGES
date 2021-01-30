@@ -123,6 +123,21 @@ Suggests: testthat (>= 2.1.0), covr
 License: MIT + file LICENSE
 Archs: i386, x64
 
+Package: bslib
+Version: 0.2.4
+Depends: R (>= 2.10)
+Imports: grDevices, htmltools (>= 0.5.1), jsonlite, sass (>= 0.3.0),
+        digest (>= 0.6.25), jquerylib (>= 0.1.3), rlang, magrittr
+Suggests: shiny, rmarkdown, knitr, testthat, withr, rappdirs, curl
+License: MIT + file LICENSE
+
+Package: cachem
+Version: 1.0.1
+Imports: rlang, fastmap
+Suggests: testthat
+License: MIT + file LICENSE
+Archs: i386, x64
+
 Package: callr
 Version: 3.5.1
 Imports: processx (>= 3.4.4), R6, utils
@@ -213,6 +228,17 @@ Package: commonmark
 Version: 1.7
 Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
+Archs: i386, x64
+
+Package: covr
+Version: 3.5.1
+Depends: R (>= 3.1.0), methods
+Imports: digest, stats, utils, jsonlite, rex, httr, crayon, withr (>=
+        1.0.2), yaml
+Suggests: R6, curl, knitr, rmarkdown, htmltools, DT (>= 0.2), testthat,
+        rlang, rstudioapi (>= 0.2), xml2 (>= 1.0.0), parallel, memoise,
+        mockery
+License: GPL-3
 Archs: i386, x64
 
 Package: cowplot
@@ -426,7 +452,7 @@ License: FreeBSD | GPL-2 | file LICENSE
 Archs: i386, x64
 
 Package: fastmap
-Version: 1.0.1
+Version: 1.1.0
 Suggests: testthat (>= 2.1.1)
 License: MIT + file LICENSE
 Archs: i386, x64
@@ -774,6 +800,12 @@ Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: i386, x64
 
+Package: jquerylib
+Version: 0.1.3
+Imports: htmltools
+Suggests: testthat
+License: MIT + file LICENSE
+
 Package: jsonlite
 Version: 1.7.2
 Depends: methods
@@ -800,10 +832,10 @@ License: Unlimited
 Archs: i386, x64
 
 Package: knitr
-Version: 1.30
+Version: 1.31
 Depends: R (>= 3.2.3)
-Imports: evaluate (>= 0.10), highr, markdown, stringr (>= 0.6), yaml
-        (>= 2.1.19), methods, xfun (>= 0.15), tools
+Imports: evaluate (>= 0.10), highr, methods, markdown, stringr (>=
+        0.6), yaml (>= 2.1.19), xfun (>= 0.19), tools
 Suggests: formatR, testit, digest, rgl (>= 0.95.1201), codetools,
         rmarkdown, htmlwidgets (>= 0.7), webshot, tikzDevice (>= 0.10),
         tinytex, reticulate (>= 1.4), JuliaCall (>= 0.11.1), magick,
@@ -938,9 +970,10 @@ License: GPL (>= 2) | file LICENCE
 Archs: i386, x64
 
 Package: memoise
-Version: 1.1.0
-Imports: digest (>= 0.6.3)
-Suggests: testthat, aws.s3, httr, covr
+Version: 2.0.0
+Imports: rlang (>= 0.4.10), cachem
+Suggests: digest, aws.s3, covr, googleAuthR, googleCloudStorageR, httr,
+        testthat
 License: MIT + file LICENSE
 
 Package: mgcv
@@ -1277,6 +1310,13 @@ Suggests: testthat
 License: GPL (>= 3)
 Archs: i386, x64
 
+Package: rappdirs
+Version: 0.3.2
+Depends: R (>= 3.2)
+Suggests: roxygen2, testthat (>= 3.0.0), covr, withr
+License: MIT + file LICENSE
+Archs: i386, x64
+
 Package: RBGL
 Version: 1.62.1
 Depends: graph, methods
@@ -1382,6 +1422,13 @@ LinkingTo: Rcpp
 Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: i386, x64
+
+Package: rex
+Version: 1.2.0
+Imports: lazyeval
+Suggests: testthat, knitr, rmarkdown, dplyr, ggplot2, magrittr, Hmisc,
+        stringr, rvest, roxygen2, covr
+License: MIT + file LICENSE
 
 Package: rhandsontable
 Version: 0.3.7
@@ -1498,6 +1545,13 @@ Suggests: IRanges, GenomicRanges, SummarizedExperiment, Matrix,
 License: Artistic-2.0
 Archs: i386, x64
 
+Package: sass
+Version: 0.3.1
+Imports: digest, fs, rlang, htmltools, R6, rappdirs
+Suggests: testthat, knitr, rmarkdown, withr, shiny
+License: MIT + file LICENSE
+Archs: i386, x64
+
 Package: scales
 Version: 1.1.1
 Depends: R (>= 3.2)
@@ -1530,31 +1584,19 @@ Imports: stats, graphics, grDevices
 License: GPL (>= 3)
 
 Package: shiny
-Version: 1.5.0
+Version: 1.6.0
 Depends: R (>= 3.0.2), methods
 Imports: utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite
-        (>= 0.9.16), xtable, digest, htmltools (>= 0.4.0.9003), R6 (>=
-        2.0), sourcetools, later (>= 1.0.0), promises (>= 1.1.0),
-        tools, crayon, rlang (>= 0.4.0), fastmap (>= 1.0.0), withr,
-        commonmark (>= 1.7), glue (>= 1.3.2)
+        (>= 0.9.16), xtable, digest (>= 0.6.25), htmltools (>=
+        0.5.0.9001), R6 (>= 2.0), sourcetools, later (>= 1.0.0),
+        promises (>= 1.1.0), tools, crayon, rlang (>= 0.4.9), fastmap
+        (>= 1.0.0), withr, commonmark (>= 1.7), glue (>= 1.3.2), bslib
+        (>= 0.2.2.9002), cachem, ellipsis, lifecycle (>= 0.2.0)
 Suggests: datasets, Cairo (>= 1.5-5), testthat (>= 2.1.1), knitr (>=
         1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),
-        magrittr, shinytest, yaml, future, dygraphs, ragg, showtext
+        magrittr, shinytest (>= 1.4.0.9003), yaml, future, dygraphs,
+        ragg, showtext, sass
 License: GPL-3 | file LICENSE
-
-Package: shinyAce
-Version: 0.4.1
-Depends: R (>= 3.3.0)
-Imports: shiny (>= 1.0.5), jsonlite, utils, tools
-Suggests: testthat (>= 2.0.0), dplyr (>= 0.8.3)
-License: MIT + file LICENSE
-
-Package: shinydisconnect
-Version: 0.1.0
-Depends: R (>= 3.0.0)
-Imports: checkmate, glue, htmltools, shiny (>= 1.0)
-Suggests: colourpicker
-License: MIT + file LICENSE
 
 Package: shinyjs
 Version: 2.0.0
@@ -1768,7 +1810,7 @@ Suggests: httpuv, knitr, rmarkdown, shiny
 License: GPL-2
 
 Package: withr
-Version: 2.4.0
+Version: 2.4.1
 Depends: R (>= 3.2.0)
 Imports: graphics, grDevices, stats
 Suggests: covr, DBI, knitr, lattice, methods, rmarkdown, RSQLite,
