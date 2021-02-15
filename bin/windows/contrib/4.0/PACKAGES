@@ -1164,7 +1164,7 @@ Suggests: RDCOMClient, metfRag, RAMClustR, testthat, rlang, vdiffr,
         patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg,
         pkgload
 License: GPL-3
-Archs: x64
+Archs: i386, x64
 
 Package: patRoonData
 Version: 1.0.0
