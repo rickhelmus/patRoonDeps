@@ -132,7 +132,7 @@ Suggests: shiny, rmarkdown, knitr, testthat, withr, rappdirs, curl
 License: MIT + file LICENSE
 
 Package: cachem
-Version: 1.0.1
+Version: 1.0.3
 Imports: rlang, fastmap
 Suggests: testthat
 License: MIT + file LICENSE
@@ -249,7 +249,7 @@ Suggests: bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
 License: MIT + file LICENSE
 
 Package: crayon
-Version: 1.4.0
+Version: 1.4.1
 Imports: grDevices, methods, utils
 Suggests: mockery, rstudioapi, testthat, withr
 License: MIT + file LICENSE
@@ -1777,10 +1777,10 @@ License: BSD_3_clause + file LICENSE
 Archs: i386, x64
 
 Package: webchem
-Version: 1.1.0
+Version: 1.1.1
 Depends: R (>= 3.0)
-Imports: xml2, httr, rvest, RCurl, jsonlite, stringr, methods, dplyr,
-        purrr, data.tree, tibble, base64enc, rlang
+Imports: xml2, httr, rvest, jsonlite, stringr, methods, dplyr, purrr,
+        data.tree, tibble, base64enc, rlang
 Suggests: testthat, rcdk, covr, robotstxt, knitr, rmarkdown,
         plot.matrix, usethis
 License: MIT + file LICENSE
