@@ -157,14 +157,6 @@ Suggests: MASS, rpart
 License: GPL-3
 Archs: i386, x64
 
-Package: cba
-Version: 0.2-21
-Depends: R (>= 2.10), grid, proxy
-Imports: stats, graphics, grDevices, methods
-Suggests: gclus, colorspace
-License: GPL-2
-Archs: i386, x64
-
 Package: checkmate
 Version: 2.0.0
 Depends: R (>= 3.0.0)
@@ -306,7 +298,7 @@ Suggests: blob, covr, dbplyr, dplyr, glue, hms, knitr, magrittr,
 License: LGPL (>= 2.1)
 
 Package: DelayedArray
-Version: 0.16.2
+Version: 0.16.3
 Depends: R (>= 3.4), methods, stats4, Matrix, BiocGenerics (>= 0.31.5),
         MatrixGenerics (>= 1.1.3), S4Vectors (>= 0.27.2), IRanges (>=
         2.17.3)
@@ -936,7 +928,7 @@ Suggests: R.utils, R.rsp, markdown
 License: LGPL (>= 2.1)
 
 Package: magick
-Version: 2.7.0
+Version: 2.7.1
 Imports: Rcpp (>= 0.12.12), magrittr, curl
 LinkingTo: Rcpp
 Suggests: av (>= 0.3), spelling, jsonlite, methods, knitr, rmarkdown,
@@ -1152,7 +1144,7 @@ Suggests: RDCOMClient, metfRag, RAMClustR, testthat, rlang, vdiffr,
         patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg,
         pkgload
 License: GPL-3
-Archs: x64
+Archs: i386, x64
 
 Package: patRoonData
 Version: 1.0.0
@@ -1247,9 +1239,9 @@ Suggests: codetools, covr, testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.4.5
+Version: 3.5.0
 Imports: ps (>= 1.2.0), R6, utils
-Suggests: callr (>= 3.2.0), codetools, covr, crayon, curl, debugme,
+Suggests: callr (>= 3.2.0), cli, codetools, covr, curl, debugme,
         parallel, testthat, withr
 License: MIT + file LICENSE
 Archs: i386, x64
@@ -1549,7 +1541,7 @@ Suggests: emmeans (> 1.3.5.1), Vdgraph, conf.design, DoE.base, FrF2
 License: GPL (>= 2)
 
 Package: RSQLite
-Version: 2.2.4
+Version: 2.2.5
 Depends: R (>= 3.1.0)
 Imports: bit64, blob (>= 1.2.0), DBI (>= 1.1.0), memoise, methods,
         pkgconfig, Rcpp (>= 0.12.7)
@@ -1780,9 +1772,9 @@ Suggests: knitr
 License: MIT + file LICENSE
 
 Package: utf8
-Version: 1.1.4
+Version: 1.2.1
 Depends: R (>= 2.10)
-Suggests: knitr, rmarkdown, testthat
+Suggests: covr, knitr, rlang, rmarkdown, testthat (>= 3.0.0)
 License: Apache License (== 2.0) | file LICENSE
 Archs: i386, x64
 
