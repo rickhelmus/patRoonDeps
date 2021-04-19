@@ -61,7 +61,7 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: BiocGenerics
-Version: 0.36.0
+Version: 0.36.1
 Depends: R (>= 4.0.0), methods, utils, graphics, stats, parallel
 Imports: methods, utils, graphics, stats, parallel
 Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, DelayedArray,
@@ -70,9 +70,9 @@ Suggests: Biobase, S4Vectors, IRanges, GenomicRanges, DelayedArray,
 License: Artistic-2.0
 
 Package: BiocManager
-Version: 1.30.10
+Version: 1.30.12
 Imports: utils
-Suggests: BiocStyle, BiocVersion, remotes, testthat, withr, curl, knitr
+Suggests: BiocVersion, remotes, rmarkdown, testthat, withr, curl, knitr
 License: Artistic-2.0
 
 Package: BiocParallel
@@ -133,8 +133,8 @@ License: MIT + file LICENSE
 Archs: i386, x64
 
 Package: callr
-Version: 3.5.1
-Imports: processx (>= 3.4.4), R6, utils
+Version: 3.6.0
+Imports: processx (>= 3.5.0), R6, utils
 Suggests: cli, covr, crayon, fansi, pingr, ps, rprojroot, spelling,
         testthat, tibble, withr (>= 2.3.0)
 License: MIT + file LICENSE
@@ -150,7 +150,7 @@ License: GPL (>= 2)
 Archs: i386, x64
 
 Package: caTools
-Version: 1.18.1
+Version: 1.18.2
 Depends: R (>= 3.6.0)
 Imports: bitops
 Suggests: MASS, rpart
@@ -185,9 +185,9 @@ License: GPL-2 | GPL-3
 Archs: i386, x64
 
 Package: cli
-Version: 2.3.1
+Version: 2.4.0
 Depends: R (>= 2.10)
-Imports: assertthat, glue, methods, utils
+Imports: glue, methods, utils
 Suggests: callr, covr, grDevices, htmlwidgets, knitr, mockery, ps (>=
         1.3.4.9000), rmarkdown, rstudioapi, prettycode (>= 1.1.0),
         testthat, withr
@@ -236,7 +236,7 @@ Suggests: Cairo, covr, dplyr, forcats, gridGraphics (>= 0.4-0), knitr,
 License: GPL-2
 
 Package: cpp11
-Version: 0.2.6
+Version: 0.2.7
 Suggests: bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
         knitr, lobstr, mockery, progress, rmarkdown, scales, testthat,
         tibble, utils, vctrs, withr
@@ -552,7 +552,7 @@ Suggests: covr, pkgload, testthat, tibble
 License: MIT + file LICENSE
 
 Package: GenomeInfoDb
-Version: 1.26.4
+Version: 1.26.7
 Depends: R (>= 3.1), methods, BiocGenerics (>= 0.13.8), S4Vectors (>=
         0.25.12), IRanges (>= 2.13.12)
 Imports: stats, stats4, utils, RCurl, GenomeInfoDbData
@@ -1144,7 +1144,7 @@ Suggests: RDCOMClient, metfRag, RAMClustR, testthat, rlang, vdiffr,
         patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg,
         pkgload
 License: GPL-3
-Archs: i386, x64
+Archs: x64
 
 Package: patRoonData
 Version: 1.0.0
@@ -1162,12 +1162,12 @@ License: GPL (>= 3)
 Archs: i386, x64
 
 Package: pillar
-Version: 1.5.1
+Version: 1.6.0
 Imports: cli, crayon (>= 1.3.4), ellipsis, fansi, lifecycle, rlang (>=
         0.3.0), utf8 (>= 1.1.0), utils, vctrs (>= 0.2.0)
-Suggests: bit64, debugme, DiagrammeR, knitr, lubridate, nycflights13,
-        palmerpenguins, rmarkdown, survival, testthat (>= 3.0.2),
-        tibble, withr
+Suggests: bit64, debugme, DiagrammeR, dplyr, ggplot2, knitr, lubridate,
+        nycflights13, palmerpenguins, rmarkdown, scales, stringi,
+        survival, testthat (>= 3.0.2), tibble, withr
 License: MIT + file LICENSE
 
 Package: pkgbuild
@@ -1185,10 +1185,10 @@ Suggests: covr, testthat, disposables (>= 1.0.3)
 License: MIT + file LICENSE
 
 Package: pkgload
-Version: 1.2.0
-Imports: cli, crayon, desc, methods, pkgbuild, rlang, rprojroot,
-        rstudioapi, utils, withr
-Suggests: bitops, covr, Rcpp, testthat
+Version: 1.2.1
+Imports: cli, crayon, desc, methods, rlang, rprojroot, rstudioapi,
+        utils, withr
+Suggests: bitops, covr, pkgbuild, Rcpp, testthat
 License: GPL-3
 
 Package: plogr
@@ -1239,7 +1239,7 @@ Suggests: codetools, covr, testthat
 License: MIT + file LICENSE
 
 Package: processx
-Version: 3.5.0
+Version: 3.5.1
 Imports: ps (>= 1.2.0), R6, utils
 Suggests: callr (>= 3.2.0), cli, codetools, covr, curl, debugme,
         parallel, testthat, withr
@@ -1338,7 +1338,8 @@ Package: RAMClustR
 Version: 1.1.0
 Imports: dynamicTreeCut, fastcluster, ff, InterpretMSSpectrum,
         BiocManager, httr, jsonlite, preprocessCore, e1071, gplots,
-        pcaMethods, stringr, xml2, utils, webchem, stringi, RCurl
+        pcaMethods, stringr, xml2, utils, webchem, stringi, RCurl,
+        MSnbase, ggplot2
 Suggests: knitr, rmarkdown, xcms
 License: GPL (>= 2)
 
@@ -1365,7 +1366,7 @@ License: Artistic-2.0
 Archs: i386, x64
 
 Package: rbibutils
-Version: 2.0
+Version: 2.1
 Depends: R (>= 2.10)
 Imports: utils, tools
 Suggests: testthat
@@ -1438,12 +1439,12 @@ Imports: utils
 License: GPL-2
 
 Package: remotes
-Version: 2.2.0
+Version: 2.3.0
 Depends: R (>= 3.0.0)
 Imports: methods, stats, tools, utils
 Suggests: brew, callr, codetools, curl, covr, git2r (>= 0.23.0), knitr,
         mockery, pkgbuild (>= 1.0.1), pingr, rmarkdown, rprojroot,
-        testthat, withr
+        testthat, webfakes, withr
 License: GPL (>= 2)
 
 Package: reshape2
@@ -1541,11 +1542,11 @@ Suggests: emmeans (> 1.3.5.1), Vdgraph, conf.design, DoE.base, FrF2
 License: GPL (>= 2)
 
 Package: RSQLite
-Version: 2.2.5
+Version: 2.2.6
 Depends: R (>= 3.1.0)
 Imports: bit64, blob (>= 1.2.0), DBI (>= 1.1.0), memoise, methods,
         pkgconfig, Rcpp (>= 0.12.7)
-LinkingTo: BH (>= 1.75.0-0), plogr (>= 0.2.0), Rcpp
+LinkingTo: plogr (>= 0.2.0), Rcpp
 Suggests: DBItest (>= 1.7.0), gert, gh, knitr, rmarkdown, hms, rvest,
         testthat, xml2
 License: LGPL (>= 2.1)
@@ -1750,7 +1751,7 @@ Suggests: covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
 License: GPL-3
 
 Package: tinytex
-Version: 0.30
+Version: 0.31
 Imports: xfun (>= 0.19)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
@@ -1779,9 +1780,9 @@ License: Apache License (== 2.0) | file LICENSE
 Archs: i386, x64
 
 Package: vctrs
-Version: 0.3.6
+Version: 0.3.7
 Depends: R (>= 3.3)
-Imports: ellipsis (>= 0.2.0), digest, glue, rlang (>= 0.4.7)
+Imports: ellipsis (>= 0.2.0), glue, rlang (>= 0.4.10)
 Suggests: bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
         pillar (>= 1.4.4), pkgdown, rmarkdown, testthat (>= 2.3.0),
         tibble, withr, xml2, waldo (>= 0.2.0), zeallot
@@ -1804,7 +1805,7 @@ Suggests: hexbin (>= 1.27.0), scales, MASS, knitr, dichromat,
 License: MIT + file LICENSE
 
 Package: viridisLite
-Version: 0.3.0
+Version: 0.4.0
 Depends: R (>= 2.10)
 Suggests: hexbin (>= 1.27.0), ggplot2 (>= 1.0.1), testthat, covr
 License: MIT + file LICENSE
