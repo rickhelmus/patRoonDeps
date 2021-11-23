@@ -4,16 +4,23 @@ library("miniCRAN")
 # repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
 repos <- c(BiocManager::repositories())
 
+GHDeps <- c("rickhelmus/patRoonData",
+            "BSchamberger/RDCOMClient", # fixes for recent R versions
+            "cbroeckl/RAMClustR",
+            "rickhelmus/KPIC2",
+            "rickhelmus/cliqueMS",
+            "KelseyChetnik/MetaClean",
+            "KelseyChetnik/MetaCleanData",
+            "Bioconductor/GenomeInfoDbData") # dep that doesn't have binaries
+
 pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
-pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoonData")
-# pdb <- addPackageListingGithub(pdb = pdb, "omegahat/RDCOMClient")
-pdb <- addPackageListingGithub(pdb = pdb, "dkyleward/RDCOMClient") # fixes for recent R versions
-pdb <- addPackageListingGithub(pdb = pdb, "cbroeckl/RAMClustR") # CRAN version sometimes disappears...
-pdb <- addPackageListingGithub(pdb = pdb, "Bioconductor/GenomeInfoDbData") # dep that doesn't have binaries
+for (dep in GHDeps)
+    pdb <- addPackageListingGithub(pdb = pdb, dep)
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", "RDCOMClient", "RAMClustR"),
+pkgDeps <- c("RDCOMClient", "RAMClustR", "KPIC", "cliqueMS", "MetaClean", "MetaCleanData")
+pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", pkgDeps),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
 makeGHPackage <- function(repos, pkgDir)
@@ -42,18 +49,14 @@ if (!fromArtifact)
     }
     makeGHPackage("rickhelmus/patRoon", pkgDir)
 }
-    
-makeGHPackage("rickhelmus/patRoonData", pkgDir)
-# makeGHPackage("omegahat/RDCOMClient", pkgDir)
-makeGHPackage("dkyleward/RDCOMClient", pkgDir)
-makeGHPackage("cbroeckl/RAMClustR", pkgDir)
-makeGHPackage("Bioconductor/GenomeInfoDbData", pkgDir)
+
+for (dep in GHDeps)
+    makeGHPackage(dep, pkgDir)
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
 
-localPackages <- c("patRoon", "patRoonData", "RDCOMClient", "RAMClustR",
-                   "GenomeInfoDbData")
+localPackages <- c(pkgDeps, "GenomeInfoDbData")
 if (R.Version()$major < 4)
     localPackages <- c(localPackages, "XML")
 
