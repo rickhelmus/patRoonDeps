@@ -51,6 +51,7 @@ if (!fromArtifact)
 }
 
 BiocManager::install("ropls") # for KPIC2
+BiocManager::install(c("xcms", "qlcMatrix")) # for cliqueMS
 for (dep in GHDeps)
     makeGHPackage(dep, pkgDir)
 
