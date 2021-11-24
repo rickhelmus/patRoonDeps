@@ -50,6 +50,7 @@ if (!fromArtifact)
     makeGHPackage("rickhelmus/patRoon", pkgDir)
 }
 
+BiocManager::install("ropls") # for KPIC2
 for (dep in GHDeps)
     makeGHPackage(dep, pkgDir)
 
