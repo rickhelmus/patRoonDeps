@@ -4,8 +4,7 @@ library("miniCRAN")
 # repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
 repos <- c(BiocManager::repositories())
 
-GHDeps <- c("rickhelmus/patRoonData",
-            "BSchamberger/RDCOMClient", # fixes for recent R versions
+GHDeps <- c("BSchamberger/RDCOMClient", # fixes for recent R versions
             "cbroeckl/RAMClustR",
             "rickhelmus/KPIC2",
             "Bioconductor/GenomeInfoDbData", # dep that doesn't have binaries. Put before cliqueMS!
@@ -20,7 +19,7 @@ for (dep in GHDeps)
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
 pkgDeps <- c("RDCOMClient", "RAMClustR", "KPIC", "cliqueMS", "MetaClean")
-pkgList <- pkgDep(c("patRoon", "patRoonData", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", pkgDeps),
+pkgList <- pkgDep(c("patRoon", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", pkgDeps),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
 makeGHPackage <- function(repos, pkgDir)
