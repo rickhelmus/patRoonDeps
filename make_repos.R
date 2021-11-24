@@ -8,10 +8,11 @@ GHDeps <- c("rickhelmus/patRoonData",
             "BSchamberger/RDCOMClient", # fixes for recent R versions
             "cbroeckl/RAMClustR",
             "rickhelmus/KPIC2",
+            "Bioconductor/GenomeInfoDbData", # dep that doesn't have binaries. Put before cliqueMS!
             "rickhelmus/cliqueMS",
             "KelseyChetnik/MetaClean",
-            "KelseyChetnik/MetaCleanData",
-            "Bioconductor/GenomeInfoDbData") # dep that doesn't have binaries
+            "KelseyChetnik/MetaCleanData")
+            
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
