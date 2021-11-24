@@ -100,10 +100,15 @@ if (file.exists(packagesFile))
 
 for (pkg in localPackages)
 {
-    if (fromArtifact && pkg == "patRoon")
+    if (pkg == "patRoon")
     {
-        # should be downloaded as artifact from AppVeyor
-        addLocalPackage("patRoon", "C:/Projects", ".", "win.binary", build = FALSE, deps = TRUE)
+        if (fromArtifact)
+        {
+            # should be downloaded as artifact from AppVeyor
+            addLocalPackage("patRoon", "C:/Projects", ".", "win.binary", build = FALSE, deps = TRUE)
+        }
+        else
+            addLocalPackage("patRoon", pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
     }
     else if (pkg == "XML")
         addPackage("XML", ".", "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
