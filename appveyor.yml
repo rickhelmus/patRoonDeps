@@ -45,6 +45,7 @@ build_script:
 
 test_script:
   #- travis-tool.sh run_tests
+  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
   - Rscript make_repos.R
   - mkdir c:\Projects\Rpkgs
   - Rscript -e ".libPaths(c('C:\\Projects\\Rpkgs', .libPaths())); install.packages(c('patRoon', 'patRoonData'), repos = 'file:.', type = 'binary')"
