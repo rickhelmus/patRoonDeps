@@ -28,7 +28,7 @@ environment:
     GITHUB_PAT:
       secure: VNNpZ/vmYAXvbXKtPfD/JNj4PPJOgbyUGMowVtH0Q//HULJrlOo62MWSuhksQ2MR
     matrix:
-      - R_VERSION: stable
+      #- R_VERSION: stable
       - R_VERSION: oldrel
 
 matrix:
