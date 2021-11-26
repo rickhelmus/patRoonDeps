@@ -49,15 +49,13 @@ if (!fromArtifact)
     makeGHPackage("rickhelmus/patRoon", pkgDir)
 }
 
-BiocManager::install("ropls") # for KPIC2
-BiocManager::install(c("xcms", "qlcMatrix")) # for cliqueMS
 for (dep in GHDeps)
     makeGHPackage(dep, pkgDir)
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
 
-localPackages <- c(pkgDeps, "GenomeInfoDbData")
+localPackages <- c(pkgDeps, "GenomeInfoDbData", "patRoon")
 if (R.Version()$major < 4)
     localPackages <- c(localPackages, "XML")
 

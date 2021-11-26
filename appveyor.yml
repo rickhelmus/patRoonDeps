@@ -28,7 +28,7 @@ environment:
     GITHUB_PAT:
       secure: VNNpZ/vmYAXvbXKtPfD/JNj4PPJOgbyUGMowVtH0Q//HULJrlOo62MWSuhksQ2MR
     matrix:
-      #- R_VERSION: stable
+      - R_VERSION: stable
       - R_VERSION: oldrel
 
 matrix:
@@ -39,13 +39,15 @@ build_script:
   - ps: .\get_artifact.ps1
   - travis-tool.sh install_r miniCRAN git2r devtools BiocManager rversions
   - travis-tool.sh install_bioc Rdisop GenomeInfoDbData # sometimes needed as dependency may not be picked up...
+  - travis-tool.sh install_bioc ropls # For KPIC2
+  - travis-tool.sh install_bioc xcms qlcMatrix # for cliqueMS
   - travis-tool.sh install_github cbroeckl/RAMClustR # pull-in necessary deps
   - travis-tool.sh install_github rickhelmus/KPIC2 # pull-in necessary deps
   - travis-tool.sh install_github KelseyChetnik/MetaClean # pull-in necessary deps
 
 test_script:
   #- travis-tool.sh run_tests
-  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+  #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
   - Rscript make_repos.R
   - mkdir c:\Projects\Rpkgs
   - Rscript -e ".libPaths(c('C:\\Projects\\Rpkgs', .libPaths())); install.packages(c('patRoon', 'patRoonData'), repos = 'file:.', type = 'binary')"
