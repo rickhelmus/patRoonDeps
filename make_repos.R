@@ -15,9 +15,9 @@ GHDeps <- c("BSchamberger/RDCOMClient", # fixes for recent R versions
             
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
-pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon")
+pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
 for (dep in GHDeps)
-    pdb <- addPackageListingGithub(pdb = pdb, dep)
+    pdb <- addPackageListingGithub(pdb = pdb, dep, branch = "master")
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
 pkgDeps <- c("RDCOMClient", "RAMClustR", "nontargetData", "nontarget", "KPIC", "cliqueMS", "MetaClean")
