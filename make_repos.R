@@ -6,6 +6,8 @@ repos <- c(BiocManager::repositories())
 
 GHDeps <- c("BSchamberger/RDCOMClient", # fixes for recent R versions
             "cbroeckl/RAMClustR",
+            "blosloos/nontargetData",
+            "blosloos/nontarget",
             "rickhelmus/KPIC2",
             "Bioconductor/GenomeInfoDbData", # dep that doesn't have binaries. Put before cliqueMS!
             "rickhelmus/cliqueMS",
@@ -18,7 +20,7 @@ for (dep in GHDeps)
     pdb <- addPackageListingGithub(pdb = pdb, dep)
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-pkgDeps <- c("RDCOMClient", "RAMClustR", "KPIC", "cliqueMS", "MetaClean")
+pkgDeps <- c("RDCOMClient", "RAMClustR", "nontargetData", "nontarget", "KPIC", "cliqueMS", "MetaClean")
 pkgList <- pkgDep(c("patRoon", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", pkgDeps),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
