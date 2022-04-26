@@ -20,7 +20,8 @@ for (dep in GHDeps)
     pdb <- addPackageListingGithub(pdb = pdb, dep, branch = "master")
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
-pkgDeps <- c("RDCOMClient", "RAMClustR", "nontargetData", "nontarget", "KPIC", "cliqueMS", "MetaClean")
+pkgDeps <- c("RDCOMClient", "InterpretMSSpectrum", "RAMClustR", "nontargetData", "nontarget", "KPIC", "cliqueMS",
+             "MetaClean")
 pkgList <- pkgDep(c("patRoon", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", pkgDeps),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 

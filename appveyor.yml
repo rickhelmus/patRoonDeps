@@ -40,6 +40,7 @@ build_script:
   - travis-tool.sh install_r miniCRAN git2r devtools BiocManager rversions
   - travis-tool.sh install_bioc Rdisop GenomeInfoDbData # sometimes needed as dependency may not be picked up...
   - travis-tool.sh install_bioc ropls # For KPIC2
+  - travis-tool.sh install_bioc InterpretMSSpectrum # For RAMClustR
   - travis-tool.sh install_bioc xcms qlcMatrix # for cliqueMS
   - travis-tool.sh install_github cbroeckl/RAMClustR # pull-in necessary deps
   - travis-tool.sh install_github blosloos/nontargetData
