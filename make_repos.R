@@ -55,6 +55,7 @@ if (!fromArtifact)
 
 for (dep in GHDeps)
     makeGHPackage(dep, pkgDir)
+makeGHPackage("rickhelmus/RDCOMClient@R42-compat-fix", pkgDir)
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
