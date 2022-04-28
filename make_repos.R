@@ -4,7 +4,7 @@ library("miniCRAN")
 # repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
 repos <- c(BiocManager::repositories())
 
-GHDeps <- c("BSchamberger/RDCOMClient", # fixes for recent R versions
+GHDeps <- c("rickhelmus/RDCOMClient@R42-compat-fix", # fixes for recent R versions
             "cbroeckl/RAMClustR",
             "blosloos/nontargetData",
             "blosloos/nontarget",
