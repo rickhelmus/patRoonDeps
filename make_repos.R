@@ -4,7 +4,7 @@ library("miniCRAN")
 # repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
 repos <- c(BiocManager::repositories())
 
-GHDeps <- c("rickhelmus/RDCOMClient@R42-compat-fix", # fixes for recent R versions
+GHDeps <- c(#"rickhelmus/RDCOMClient@R42-compat-fix", # fixes for recent R versions --> NOTE: added below
             "cbroeckl/RAMClustR",
             "blosloos/nontargetData",
             "blosloos/nontarget",
@@ -18,6 +18,7 @@ pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
 for (dep in GHDeps)
     pdb <- addPackageListingGithub(pdb = pdb, dep, branch = "master")
+pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/RDCOMClient", branch = "R42-compat-fix")
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
 pkgDeps <- c("RDCOMClient", "InterpretMSSpectrum", "RAMClustR", "nontargetData", "nontarget", "KPIC", "cliqueMS",
