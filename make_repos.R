@@ -114,6 +114,8 @@ for (pkg in localPackages)
     }
     else if (pkg == "XML")
         addPackage("XML", ".", "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
+    else if (pkg == "InterpretMSSpectrum")
+        addPackage(pkg, ".", type = "win.binary")
     else
         addLocalPackage(pkg, pkgDir, ".", "win.binary", build = FALSE, deps = TRUE)
     
