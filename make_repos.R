@@ -26,10 +26,10 @@ pkgDeps <- c("RDCOMClient", "InterpretMSSpectrum", "RAMClustR", "nontargetData",
 pkgList <- pkgDep(c("patRoon", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", pkgDeps),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
-makeGHPackage <- function(repos, pkgDir)
+makeGHPackage <- function(repos, pkgDir, branch = "master")
 {
     cloneDir <- tempfile("ghclone");
-    git2r::clone(paste0("https://github.com/", repos), cloneDir)
+    git2r::clone(paste0("https://github.com/", repos), cloneDir, branch = branch)
     dir.create(pkgDir, recursive = TRUE, showWarnings = FALSE)
     devtools::build(cloneDir, pkgDir, binary = TRUE, vignettes = FALSE,
                     args = c("--no-test-load", ""))
@@ -55,7 +55,7 @@ if (!fromArtifact)
 
 for (dep in GHDeps)
     makeGHPackage(dep, pkgDir)
-makeGHPackage("rickhelmus/RDCOMClient@R42-compat-fix", pkgDir)
+makeGHPackage("rickhelmus/RDCOMClient", pkgDir, branch = "R42-compat-fix")
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
