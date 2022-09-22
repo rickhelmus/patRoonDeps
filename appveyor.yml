@@ -46,7 +46,7 @@ build_script:
   - travis-tool.sh install_github blosloos/nontargetData
   - travis-tool.sh install_github blosloos/nontarget
   - travis-tool.sh install_github rickhelmus/KPIC2 # pull-in necessary deps
-  - travis-tool.sh souravc83/fastAdaboost # For Metaclean, removed from CRAN (9/22)
+  - travis-tool.sh install_github souravc83/fastAdaboost # For Metaclean, removed from CRAN (9/22)
   - travis-tool.sh install_github KelseyChetnik/MetaClean # pull-in necessary deps
 
 test_script:
