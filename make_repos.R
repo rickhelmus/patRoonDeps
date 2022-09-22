@@ -11,6 +11,7 @@ GHDeps <- c(#"rickhelmus/RDCOMClient@R42-compat-fix", # fixes for recent R versi
             "rickhelmus/KPIC2",
             "Bioconductor/GenomeInfoDbData", # dep that doesn't have binaries. Put before cliqueMS!
             "rickhelmus/cliqueMS",
+            "souravc83/fastAdaboost", # For Metaclean, removed from CRAN (9/22)
             "KelseyChetnik/MetaClean")
             
 
@@ -22,7 +23,7 @@ pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/RDCOMClient", branch = "R4
 # pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
 
 pkgDeps <- c("RDCOMClient", "InterpretMSSpectrum", "RAMClustR", "nontargetData", "nontarget", "KPIC", "cliqueMS",
-             "MetaClean")
+             "fastAdaboost", "MetaClean")
 pkgList <- pkgDep(c("patRoon", "installr", "BiocManager", "rJava", "remotes", "pkgbuild", pkgDeps),
                   availPkgs = pdb, repos = repos, type = "win.binary", suggests = FALSE)
 
