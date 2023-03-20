@@ -5,7 +5,7 @@ library("miniCRAN")
 repos <- c(BiocManager::repositories())
 
 GHDeps <- c(#"rickhelmus/RDCOMClient@R42-compat-fix", # fixes for recent R versions --> NOTE: added below
-            "cbroeckl/RAMClustR",
+            "cbroeckl/RAMClustR@73accadaded", # temp workaround for buggy commit
             "blosloos/nontargetData",
             "blosloos/nontarget",
             "rickhelmus/KPIC2",
