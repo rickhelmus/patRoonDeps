@@ -8,6 +8,7 @@ $accountName = 'rickhelmus'
 $projectSlug = 'patRoon'
 
 $downloadLocation = 'C:\Projects'
+New-Item -Path "$downloadLocation" -ItemType Directory
 
 # get project with last build details
 $project = Invoke-RestMethod -Method Get -Uri "$apiUrl/projects/$accountName/$projectSlug" -Headers $headers
