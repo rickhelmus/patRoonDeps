@@ -4,19 +4,20 @@ library("miniCRAN")
 # repos <- c(BiocManager::repositories(), "http://www.omegahat.net/R")
 repos <- c(BiocManager::repositories())
 
-GHDeps <- c(#"rickhelmus/RDCOMClient@R42-compat-fix", # fixes for recent R versions --> NOTE: added below
+GHDeps <- c("omegahat/RDCOMClient",
             "cbroeckl/RAMClustR",
             "blosloos/nontargetData",
             "blosloos/nontarget",
             "rickhelmus/KPIC2",
-            "Bioconductor/GenomeInfoDbData", # dep that doesn't have binaries. Put before cliqueMS!
             "rickhelmus/cliqueMS",
             "souravc83/fastAdaboost", # For Metaclean, removed from CRAN (9/22)
             "KelseyChetnik/MetaClean")
             
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
-pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
+# pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
+# dep that doesn't have binaries. Put before cliqueMS!
+pdb <- addPackageListingGithub(pdb = pdb, "Bioconductor/GenomeInfoDbData", branch = "devel")
 for (dep in GHDeps)
     pdb <- addPackageListingGithub(pdb = pdb, dep, branch = "master")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/RDCOMClient", branch = "R42-compat-fix")
