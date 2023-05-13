@@ -9,19 +9,17 @@ GHDeps <- c("omegahat/RDCOMClient",
             "blosloos/nontargetData",
             "blosloos/nontarget",
             "rickhelmus/KPIC2",
+            "Bioconductor/GenomeInfoDbData", # dep that doesn't have binaries. Put before cliqueMS!
             "rickhelmus/cliqueMS",
             "souravc83/fastAdaboost", # For Metaclean, removed from CRAN (9/22)
             "KelseyChetnik/MetaClean")
-            
+GHBranches <- rep("master", length(GHDeps))
+GHBranches[grepl("GenomeInfoDbData", fixed = TRUE, GHDeps)] <- "devel"
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
-# pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
-# dep that doesn't have binaries. Put before cliqueMS!
-pdb <- addPackageListingGithub(pdb = pdb, "Bioconductor/GenomeInfoDbData", branch = "devel")
-for (dep in GHDeps)
-    pdb <- addPackageListingGithub(pdb = pdb, dep, branch = "master")
-pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/RDCOMClient", branch = "R42-compat-fix")
-# pdb <- miniCRAN:::addPackageListing(pdb, miniCRAN:::readDescription("~/Rproj/patRoon/DESCRIPTION"))
+
+for (i in seq_along(GHDeps))
+    pdb <- addPackageListingGithub(pdb = pdb, GHDeps[i], branch = GHBranches[i])
 
 pkgDeps <- c("RDCOMClient", "InterpretMSSpectrum", "RAMClustR", "nontargetData", "nontarget", "KPIC", "cliqueMS",
              "fastAdaboost", "MetaClean")
@@ -55,9 +53,8 @@ if (!fromArtifact)
     makeGHPackage("rickhelmus/patRoon", pkgDir)
 }
 
-for (dep in GHDeps)
-    makeGHPackage(dep, pkgDir)
-makeGHPackage("rickhelmus/RDCOMClient", pkgDir, branch = "R42-compat-fix")
+for (i in seq_along(GHDeps))
+    makeGHPackage(GHDeps[i], pkgDir, branch = GHBranches[i])
 
 RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
