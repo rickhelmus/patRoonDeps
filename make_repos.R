@@ -17,6 +17,7 @@ GHBranches <- rep("master", length(GHDeps))
 GHBranches[grepl("GenomeInfoDbData", fixed = TRUE, GHDeps)] <- "devel"
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
+pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
 
 for (i in seq_along(GHDeps))
     pdb <- addPackageListingGithub(pdb = pdb, GHDeps[i], branch = GHBranches[i])
