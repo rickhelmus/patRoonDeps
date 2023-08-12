@@ -5,6 +5,8 @@ jobs:
     strategy:
       matrix:
         R: [ 'release', 'oldrel' ]
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     name: Build ${{ matrix.R }}
     steps:
       - uses: actions/checkout@v3
