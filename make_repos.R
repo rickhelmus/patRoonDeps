@@ -5,7 +5,7 @@ library("miniCRAN")
 repos <- c(BiocManager::repositories())
 
 GHDeps <- c("omegahat/RDCOMClient",
-            "cbroeckl/RAMClustR",
+            "cran/RAMClustR",
             "blosloos/nontargetData",
             "blosloos/nontarget",
             "rickhelmus/KPIC2",
@@ -18,6 +18,8 @@ GHBranches[grepl("GenomeInfoDbData", fixed = TRUE, GHDeps)] <- "devel"
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
 pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
+
+pdb <- addPackageListingGithub(pdb = pdb, "cran/InterpretMSSpectrum", branch = "1.3.3")
 
 for (i in seq_along(GHDeps))
     pdb <- addPackageListingGithub(pdb = pdb, GHDeps[i], branch = GHBranches[i])

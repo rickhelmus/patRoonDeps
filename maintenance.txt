@@ -1,0 +1,9 @@
+* disable master branch protection
+* git clone --mirror ...
+* cd to repos
+* java -jar .../bfg-1.14.0.jar --delete-folders X.Y .   (e.g. 4.3)
+* this can be done for current and older R releases: the master branch is 'protected'
+* as per instructions: git reflog expire --expire=now --all && git gc --prune=now --aggressive
+* git push
+* errors seem to occur when the push is too large (error 500) --> clean more files
+* enable master branch protection
