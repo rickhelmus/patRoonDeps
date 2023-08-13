@@ -59,12 +59,13 @@ if (!fromArtifact)
 for (i in seq_along(GHDeps))
     makeGHPackage(GHDeps[i], pkgDir, branch = GHBranches[i])
 
-RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
-packagesFile <- paste0("bin/windows/contrib/", RVers, "/PACKAGES")
-
 localPackages <- c(pkgDeps, "GenomeInfoDbData", "patRoon")
 if (R.Version()$major < 4)
     localPackages <- c(localPackages, "XML")
+
+RVers <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
+pkgPath <- file.path("bin", "windows", "contrib", RVers)
+packagesFile <- file.path(pkgPath, "PACKAGES")
 
 if (file.exists(packagesFile))
 {
@@ -80,9 +81,9 @@ if (file.exists(packagesFile))
     # will be re-added
     removedPackages <- union(removedPackages, localPackages)
     
-    if (file.exists(packagesFile) && length(removedPackages) > 0)
+    if (length(removedPackages) > 0)
     {
-        file.remove(list.files(paste0("bin/windows/contrib/", RVers), full.names = TRUE,
+        file.remove(list.files(pkgPath, full.names = TRUE,
                                pattern = paste0(sprintf("^%s_.+\\.zip", removedPackages), collapse = "|")))
         updateRepoIndex(".", "win.binary")
     }
@@ -92,8 +93,13 @@ if (file.exists(packagesFile))
     
     updatePackages(".", repos = repos, ask = FALSE, type = "win.binary")
     
-    
-    
+    # remove old versions
+    pkgM <- readRDS(file.path(pkgPath, "PACKAGES.rds"))
+    curPkgs <- paste0(pkgM[, "Package"], "_", pkgM[, "Version"], ".zip")
+    curPkgs <- file.path(pkgPath, curPkgs)
+    oldPkgs <- setdiff(list.files(pkgPath, pattern = "\\.zip", full.names = TRUE), curPkgs)
+    cat("Removing old packages: ", paste0(oldPkgs, collapse = "\n"), "\n", sep = "")
+    file.remove(oldPkgs)
 } else
 {
     unlink(file.path("bin/windows/contrib", RVers), recursive = TRUE)
