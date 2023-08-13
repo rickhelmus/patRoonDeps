@@ -16,6 +16,8 @@ jobs:
           r-version: ${{ matrix.R }}
       - name: Pre-Install R deps
         run: |
+            if (getRversion() < "4.3") # workaround, see https://support.bioconductor.org/p/9148444/
+                options(BioC_mirror = "http://bioconductor.org")
             install.packages(c("miniCRAN", "git2r", "devtools", "BiocManager", "rversions"))
             BiocManager::install(c("Rdisop", "GenomeInfoDbData")) # sometimes needed as dependency may not be picked up...
             BiocManager::install("ropls") # For KPIC2
@@ -29,3 +31,14 @@ jobs:
         shell: Rscript {0}
       - name: Make repos
         run: Rscript make_repos.R
+      - name: Push changes
+        env: 
+            CI_COMMIT_MESSAGE: Automated GHA update
+            CI_COMMIT_AUTHOR: GHA
+        run: |
+            git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+            git config --global user.email "notvalid@someemail.com"
+            git add bin/
+            git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+            git status
+            git push
