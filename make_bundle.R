@@ -1,4 +1,14 @@
-RExePath <- "../R-win.exe" # on Appveyor
+# RExePath <- "../R-win.exe" # on Appveyor
+
+RExePath <- if (Sys.getenv("GITHUB_ACTIONS") == "true")
+{
+    sprintf("D:/a/_temp/R-%s-win.exe", getRversion()) # HACK: maybe not very maintainable, let's see...
+} else {
+    dl <- tempfile(fileext = ".exe")
+    stopifnot(download.file("https://cloud.r-project.org/bin/windows/base/R-4.3.1-win.exe",
+                            dl, mode = "wb") == 0)
+}
+
 
 IEZip <- tempfile(fileext = ".zip")
 stopifnot(download.file("https://constexpr.org/innoextract/files/innoextract-1.9-windows.zip",
@@ -22,7 +32,6 @@ for (dir in c(file.path(RExtrDir, "user", "library"),
               file.path(RExtrDir, "user", "Rcache"),
               file.path(RExtrDir, "tmp")))
      dir.create(dir, recursive = TRUE)
-
 
 JDKZip <-  tempfile(fileext = ".zip")
 stopifnot(download.file("https://api.adoptium.net/v3/binary/latest/17/ga/windows/x64/jdk/hotspot/normal/eclipse",
