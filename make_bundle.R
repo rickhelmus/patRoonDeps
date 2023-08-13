@@ -50,7 +50,7 @@ execInR <- function(code)
 libSite <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
 execInR(sprintf('install.packages("patRoon", repos = "file:///%s", type = "binary", lib = "%s")',
                 normalizePath(".", winslash = "/"), libSite))
-execInR(sprintf(paste(lib = "%s",
+execInR(sprintf(paste('lib = "%s"',
                       'install.packages("remotes", repos = "cran.rstudio.com", lib = lib)',
                       'remotes::install_github("rickhelmus/patRoonData", lib = lib)',
                       'remotes::install_github("rickhelmus/patRoonExt, lib = lib)',
