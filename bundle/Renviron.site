@@ -1,0 +1,9 @@
+HOME="${R_HOME}"/../user
+R_USER="${R_HOME}"/../user
+R_LIBS_USER="${R_HOME}"/../user/library
+R_USER_DATA_DIR="${R_HOME}"/../user/Rdata
+R_USER_CONFIG_DIR="${R_HOME}"/../user/Rconfig
+R_USER_CACHE_DIR="${R_HOME}"/../user/Rcache
+TMPDIR="${R_HOME}"/../tmp
+JAVA_HOME="${R_HOME}"/../jdk
+PATH="${R_HOME}"/../jdk/bin:"${PATH}"
