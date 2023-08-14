@@ -1,0 +1,2 @@
+# Avoid large source archives, thanks to https://stackoverflow.com/a/58443948
+bin export-ignore
