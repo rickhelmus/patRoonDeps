@@ -53,7 +53,7 @@ execInR(sprintf('install.packages("patRoon", repos = "file:///%s", type = "binar
 execInR(sprintf(paste('lib = "%s"',
                       'install.packages("remotes", repos = "cran.rstudio.com", lib = lib)',
                       'remotes::install_github("rickhelmus/patRoonData", lib = lib)',
-                      'remotes::install_github("rickhelmus/patRoonExt, lib = lib)',
+                      'remotes::install_github("rickhelmus/patRoonExt", lib = lib)',
                       sep = ";"), libSite))
 
 output <- normalizePath(sprintf("patRoon-bundle-%s.zip", packageVersion("patRoon", libSite)))
