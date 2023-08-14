@@ -4,6 +4,8 @@ jobs:
   build:
     name: Make bundle
     runs-on: windows-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -15,13 +17,16 @@ jobs:
         run: |
             install.packages("withr")
         shell: Rscript {0}
-
       - name: Run script
         run: Rscript make_bundle.R
-      - name: Create Release
-        id: create_release
-        uses: softprops/action-gh-release@v1
+      - name: Make pre-release
+        uses: andelf/nightly-release@main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: patRoon-bundle-*.zip
+            tag_name: prerelease
+            name: 'Automated Pre-release $$'
+            prerelease: true
+            body: 'TODO: Add release notes'
+            files: |
+                patRoon-bundle-*.zip
