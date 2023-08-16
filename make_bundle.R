@@ -44,7 +44,7 @@ file.rename(JDKDir, file.path(RExtrDir, "jdk"))
 
 execInR <- function(code)
 {
-    system2(file.path(RExtrDir, "R", "bin", "Rscript.exe"), c("-e", shQuote(code)))
+    stopifnot(system2(file.path(RExtrDir, "R", "bin", "Rscript.exe"), c("-e", shQuote(code))) == 0)
 }
 
 libSite <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
