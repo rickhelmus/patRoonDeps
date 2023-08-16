@@ -16,7 +16,7 @@ jobs:
         uses: codex-/return-dispatch@v1
         id: return_dispatch
         with:
-            token: ${{ secrets.GHA }}
+            token: ${{ secrets.PAT }}
             ref: master
             repo: patRoon
             owner: rickhelmus
@@ -26,7 +26,7 @@ jobs:
       - name: Await Run ID ${{ steps.return_dispatch.outputs.run_id }}
         uses: Codex-/await-remote-run@v1.0.0
         with:
-            token: ${{ secrets.GHA }}
+            token: ${{ secrets.PAT }}
             repo: patRoon
             owner: rickhelmus
             run_id: ${{ steps.return_dispatch.outputs.run_id }}
