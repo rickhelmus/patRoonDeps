@@ -12,26 +12,26 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     name: Build ${{ matrix.R }}
     steps:
-        - name: Test dispatch
-            uses: codex-/return-dispatch@v1
-            id: return_dispatch
-            with:
-                token: ${{ secrets.GHA }}
-                ref: master
-                repo: patRoon
-                owner: rickhelmus
-                workflow: test.yml
-                #workflow_inputs: { "some_input": "value" } # Optional
-                #workflow_timeout_seconds: 120 # Default: 300
-        - name: Await Run ID ${{ steps.return_dispatch.outputs.run_id }}
-            uses: Codex-/await-remote-run@v1.0.0
-            with:
-                token: ${{ secrets.GHA }}
-                repo: patRoon
-                owner: rickhelmus
-                run_id: ${{ steps.return_dispatch.outputs.run_id }}
-                run_timeout_seconds: 300 # Optional
-                poll_interval_ms: 5000 # Optional
+      - name: Test dispatch
+        uses: codex-/return-dispatch@v1
+        id: return_dispatch
+        with:
+            token: ${{ secrets.GHA }}
+            ref: master
+            repo: patRoon
+            owner: rickhelmus
+            workflow: test.yml
+            #workflow_inputs: { "some_input": "value" } # Optional
+            #workflow_timeout_seconds: 120 # Default: 300
+      - name: Await Run ID ${{ steps.return_dispatch.outputs.run_id }}
+        uses: Codex-/await-remote-run@v1.0.0
+        with:
+            token: ${{ secrets.GHA }}
+            repo: patRoon
+            owner: rickhelmus
+            run_id: ${{ steps.return_dispatch.outputs.run_id }}
+            run_timeout_seconds: 300 # Optional
+            poll_interval_ms: 5000 # Optional
       - uses: actions/checkout@v3
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
