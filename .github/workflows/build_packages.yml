@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: windows-latest
     strategy:
+      fail-fast: true
+      max-parallel: 1
       matrix:
         R: [ 'release', 'oldrel' ]
-        fail-fast: true
-        max-parallel: 1
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     name: Build ${{ matrix.R }}
