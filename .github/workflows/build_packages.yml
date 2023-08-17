@@ -12,6 +12,12 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     name: Build ${{ matrix.R }}
     steps:
+      - name: Make test artifact
+        run: echo hi from ${{ github.run_id }} > testarti.txt
+      - uses: actions/upload-artifact@v3
+        with:
+            name: testarti
+            path: testarti.txt
       - name: Test dispatch
         uses: codex-/return-dispatch@v1
         id: return_dispatch
