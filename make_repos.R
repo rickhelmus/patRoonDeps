@@ -17,7 +17,9 @@ GHBranches <- rep("master", length(GHDeps))
 GHBranches[grepl("GenomeInfoDbData", fixed = TRUE, GHDeps)] <- "devel"
 
 pdb <- pkgAvail(repos = repos, type = "win.binary")
-pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = "master")
+
+patRoonRef <- Sys.getenv("GITHUB_REF", "master")
+pdb <- addPackageListingGithub(pdb = pdb, "rickhelmus/patRoon", branch = patRoonRef)
 
 pdb <- addPackageListingGithub(pdb = pdb, "cran/InterpretMSSpectrum", branch = "1.3.3")
 
@@ -51,7 +53,7 @@ if (!fromArtifact)
         if (R.Version()$major < 4)
             install.packages("XML", repos = "https://mran.revolutionanalytics.com/snapshot/2020-07-01")
         # UNDONE: could this be combined with making the package?
-        remotes::install_github("rickhelmus/patRoon")
+        remotes::install_github("rickhelmus/patRoon", ref = patRoonRef)
     }
     makeGHPackage("rickhelmus/patRoon", pkgDir)
 }
