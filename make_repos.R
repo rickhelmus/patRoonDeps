@@ -48,7 +48,7 @@ dependencies <- list(
     ),
     MetaCleanData = list(type = "gh", user = "KelseyChetnik"),
     splashR = list(type = "gh", user = "berlinguyinca", repos = "spectra-hash", pkgroot = "splashR"),
-    patRoon = list(type = "gh", user = "rickhelmus", branch = Sys.getenv("GITHUB_REF", "master"))
+    patRoon = list(type = "gh", user = "rickhelmus", branch = Sys.getenv("GITHUB_REF_NAME", "master"))
 )
 
 addPkgListingGH <- function(pdb, pkgs)
