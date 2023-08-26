@@ -46,7 +46,7 @@ dependencies <- list(
             fastAdaboost = list(type = "gh", user = "souravc83")
         )
     ),
-    MetaCleanData = list(type = "gh", user = "KelseyChetnik"),
+    # MetaCleanData = list(type = "gh", user = "KelseyChetnik"), # package is too big file for GitHub :-(
     splashR = list(type = "gh", user = "berlinguyinca", repos = "spectra-hash", pkgroot = "splashR"),
     patRoon = list(type = "gh", user = "rickhelmus", branch = Sys.getenv("GITHUB_REF_NAME", "master"))
 )
