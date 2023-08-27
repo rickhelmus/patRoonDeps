@@ -20,8 +20,13 @@ dependencies <- list(
         )
     ),
     enviPick = list(type = "gh", user = "blosloos"),
-    nontargetData = list(type = "gh", user = "blosloos"),
-    nontarget = list(type = "gh", user = "blosloos"),
+    nontarget = list(
+        type = "gh",
+        user = "blosloos",
+        deps = list(
+            nontargetData = list(type = "gh", user = "blosloos"),        
+        )
+    ),
     KPIC = list(
         type = "gh",
         user = "rickhelmus",
