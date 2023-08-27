@@ -24,7 +24,7 @@ dependencies <- list(
         type = "gh",
         user = "blosloos",
         deps = list(
-            nontargetData = list(type = "gh", user = "blosloos"),        
+            nontargetData = list(type = "gh", user = "blosloos")
         )
     ),
     KPIC = list(
