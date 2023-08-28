@@ -7,6 +7,7 @@ RExePath <- if (Sys.getenv("GITHUB_ACTIONS") == "true")
     dl <- tempfile(fileext = ".exe")
     stopifnot(download.file("https://cloud.r-project.org/bin/windows/base/R-4.3.1-win.exe",
                             dl, mode = "wb") == 0)
+    dl
 }
 
 
@@ -50,11 +51,14 @@ execInR <- function(code)
 libSite <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
 execInR(sprintf(paste('lib = "%s"',
                       'install.packages("remotes", repos = "cran.rstudio.com", lib = lib)',
-                      'remotes::install_cran("patRoon", repos = "file:///%s", type = "binary", lib = lib,
-                                             dependencies = c("hard", "Config/Needs/pdeps"))',
+                      # install_cran doesn't seem to work with the customized dependencies
+                      # 'remotes::install_cran("patRoon", repos = "file:///%s", type = "binary", lib = lib, dependencies = c("hard", "Config/Needs/pdeps"))',
+                      'remotes::install_local("%s", repos = "file:///%s", type = "binary", lib = lib, dependencies = c("hard", "Config/Needs/pdeps"))',
                       'remotes::install_github("rickhelmus/patRoonData", lib = lib)',
                       'remotes::install_github("rickhelmus/patRoonExt", lib = lib)',
-                      sep = ";"), libSite, normalizePath(".", winslash = "/")))
+                      sep = ";"),
+                libSite, normalizePath(Sys.glob("bin/windows/contrib/4.2/patRoon_*.zip"), winslash = "/"),
+                normalizePath(".", winslash = "/")))
 
 output <- normalizePath(sprintf("patRoon-bundle-%s.zip", packageVersion("patRoon", libSite)))
 unlink(output)

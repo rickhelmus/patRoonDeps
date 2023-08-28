@@ -1233,11 +1233,6 @@ Imports: reshape2, knitr, ggplot2, plotrix, tools, utils, klaR, fastAdaboost, rp
 Suggests: markdown
 License: GPL-3
 
-Package: MetaCleanData
-Version: 0.1.0
-Depends: R (>= 2.10)
-License: GPL-3
-
 Package: mgcv
 Version: 1.9-0
 Priority: recommended
@@ -1419,8 +1414,8 @@ Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR, stats, utils,
               knitr, rmarkdown, flexdashboard, DT, bslib (>= 0.4.2), reactable (>= 0.4.1), magrittr, kableExtra, R.utils,
               magick, glue, jsonlite, Rdpack, rsm, future, future.apply, fs, yaml, keys, backports, httr, getPass
 LinkingTo: Rcpp, rapidjsonr
-Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR, KPIC, MetaClean, MetaCleanData, testthat, rlang, vdiffr,
-              patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg, pkgload, splashR
+Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR, cliqueMS, KPIC, MetaClean, MetaCleanData, testthat, rlang,
+              vdiffr, patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg, rsvg, pkgload, splashR
 License: GPL-3
 Archs: x64
 
