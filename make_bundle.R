@@ -49,16 +49,19 @@ execInR <- function(code)
 }
 
 libSite <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
-execInR(sprintf(paste('lib = "%s"',
-                      'install.packages("remotes", repos = "cran.rstudio.com", lib = lib)',
-                      # install_cran doesn't seem to work with the customized dependencies
-                      # 'remotes::install_cran("patRoon", repos = "file:///%s", type = "binary", lib = lib, dependencies = c("hard", "Config/Needs/pdeps"))',
-                      'remotes::install_local("%s", repos = "file:///%s", type = "binary", lib = lib, dependencies = c("hard", "Config/Needs/pdeps"))',
-                      'remotes::install_github("rickhelmus/patRoonData", lib = lib)',
-                      'remotes::install_github("rickhelmus/patRoonExt", lib = lib)',
+thisRVersion <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
+patRoonPkgPath <- normalizePath(Sys.glob(file.path("bin", "windows", "contrib", thisRVersion, "patRoon_*.zip")),
+                                winslash = "/")
+
+# NOTE: use pak to install stuff, as remotes seem to throw all kinds of errors with local packages and dependencies set
+execInR(sprintf(paste('lib <- "%s"',
+                      'install.packages("pak", repos = "cran.rstudio.com", lib = lib)',
+                      'options(repos = c(local = "file:///%s"))',
+                      'pak::pkg_install("local::%s", lib = lib, dependencies = c("hard", "Config/Needs/pdeps"))',
+                      'pak::pkg_install("rickhelmus/patRoonData", lib = lib)',
+                      'pak::pkg_install("rickhelmus/patRoonExt", lib = lib)',
                       sep = ";"),
-                libSite, normalizePath(Sys.glob("bin/windows/contrib/4.2/patRoon_*.zip"), winslash = "/"),
-                normalizePath(".", winslash = "/")))
+                libSite, normalizePath(".", winslash = "/"), patRoonPkgPath))
 
 output <- normalizePath(sprintf("patRoon-bundle-%s.zip", packageVersion("patRoon", libSite)))
 unlink(output)
