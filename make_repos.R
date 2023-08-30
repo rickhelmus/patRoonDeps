@@ -14,7 +14,9 @@ installFromOurRepos <- function(pkg)
 dependencies <- list(
     RDCOMClient = list(type = "gh", user = "omegahat"),
     RAMClustR = list(
-        type = "cran",
+        type = "gh",
+        user = "cbroeckl",
+        commit = "e005614",
         deps = list(
             InterpretMSSpectrum = list(type = "gh", user = "cran", tag = "1.3.3")
         )
@@ -69,6 +71,8 @@ addPkgListingGH <- function(pdb, pkgs)
                 md$branch
             else if (!is.null(md[["tag"]]))
                 md$tag
+            else if (!is.null(md[["commit"]]))
+                md$commit
             else
                 "master"
             if (!is.null(md[["pkgroot"]]))
@@ -208,6 +212,8 @@ handlePackages <- function(pkgs)
                 # from https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives#source-code-archive-urls
                 url <- if (!is.null(md[["tag"]]))
                     sprintf("https://github.com/%s/archive/refs/tags/%s.zip", ghrepos, md$tag)
+                else if (!is.null(md[["commit"]]))
+                    sprintf("https://github.com/%s/archive/%s.zip", ghrepos, md$commit)
                 else
                     sprintf("https://github.com/%s/archive/refs/heads/%s.zip", ghrepos,
                             if (!is.null(md[["branch"]])) md$branch else "master")
