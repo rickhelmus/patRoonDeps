@@ -63,6 +63,14 @@ execInR(sprintf(paste('lib <- "%s"',
                       sep = ";"),
                 libSite, normalizePath(".", winslash = "/"), patRoonPkgPath))
 
+# tidy up
+for (dir in c("tmp", "user/Rcache"))
+{
+    p <- file.path(RExtrDir, dir)
+    unlink(p, recursive = TRUE)
+    dir.create(p, recursive = TRUE)
+}
+
 output <- normalizePath(sprintf("patRoon-bundle-%s.zip", packageVersion("patRoon", libSite)))
 unlink(output)
 withr::with_dir(RExtrDir, utils::zip(output, Sys.glob("*")))
