@@ -6,4 +6,4 @@ R_USER_CONFIG_DIR="${R_HOME}"/../user/Rconfig
 R_USER_CACHE_DIR="${R_HOME}"/../user/Rcache
 TMPDIR="${R_HOME}"/../tmp
 JAVA_HOME="${R_HOME}"/../jdk
-PATH="${R_HOME}"/../jdk/bin:"${PATH}"
+PATH="${R_HOME}"/../jdk/bin;"${PATH}"
