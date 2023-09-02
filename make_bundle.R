@@ -50,27 +50,15 @@ execInR <- function(code)
 
 libSite <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
 thisRVersion <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
-patRoonPkgPath <- normalizePath(Sys.glob(file.path("bin", "windows", "contrib", thisRVersion, "patRoon_*.zip")),
-                                winslash = "/")
 
 # NOTE: use pak to install stuff, as remotes seem to throw all kinds of errors with local packages and dependencies set
 execInR(sprintf(paste('lib <- "%s"',
-                      'install.packages("pak", repos = "cran.rstudio.com", lib = lib)',
-                      'options(repos = c(local = "file:///%s"), pkg.include_linkingto = TRUE)',
-                      'pak::pkg_install("local::%s", lib = lib, dependencies = c("hard", "Config/Needs/pdeps"))',
-                      'pak::pkg_install("rickhelmus/patRoonData", lib = lib)',
-                      'pak::pkg_install("rickhelmus/patRoonExt", lib = lib)',
-                      'pak::cache_clean()',
+                      'install.packages("remotes", repos = "cran.rstudio.com", lib = lib)',
+                      'install.packages(Sys.glob(paste0("%s", "/*.zip")), repos = NULL, lib = lib, type = "win.binary")',
+                      'remotes::install_github("rickhelmus/patRoonData", lib = lib)',
+                      'remotes::install_github("rickhelmus/patRoonExt", lib = lib)',
                       sep = ";"),
-                libSite, normalizePath(".", winslash = "/"), patRoonPkgPath))
-
-# tidy up
-for (dir in c("tmp", "user/Rcache"))
-{
-    p <- file.path(RExtrDir, dir)
-    unlink(p, recursive = TRUE)
-    dir.create(p, recursive = TRUE)
-}
+                libSite, normalizePath("bin/windows/contrib/4.3", winslash = "/")))
 
 output <- normalizePath(sprintf("patRoon-bundle-%s.zip", packageVersion("patRoon", libSite)))
 unlink(output)
