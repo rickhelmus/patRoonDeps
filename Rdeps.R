@@ -1,7 +1,7 @@
-getRDependencies <- function()
+getRDependencies <- function(patRoonGitRef, os)
 {
-    list(
-        RDCOMClient = list(type = "gh", user = "omegahat"),
+    ret <- list(
+        RDCOMClient = list(type = "gh", user = "omegahat", os = "windows"),
         RAMClustR = list(
             type = "gh",
             user = "cbroeckl",
@@ -30,7 +30,8 @@ getRDependencies <- function()
             type = "gh",
             user = "rickhelmus",
             deps = list(
-                GenomeInfoDbData = list(type = "gh", user = "BioConductor", branch = "devel")
+                GenomeInfoDbData = list(type = "gh", user = "BioConductor", branch = "devel",
+                                        os = "windows", internal = TRUE)
             )
         ),
         MetaClean = list(
@@ -44,6 +45,20 @@ getRDependencies <- function()
         ),
         # MetaCleanData = list(type = "gh", user = "KelseyChetnik"), # package is too big file for GitHub :-(
         splashR = list(type = "gh", user = "berlinguyinca", repos = "spectra-hash", pkgroot = "splashR"),
-        patRoon = list(type = "gh", user = "rickhelmus", branch = Sys.getenv("GITHUB_REF_NAME", "master"))
+        patRoon = list(type = "gh", user = "rickhelmus", branch = patRoonGitRef)
     )
+    
+    filterDeps <- function(deps)
+    {
+        deps <- lapply(deps, function(d)
+        {
+            if (!is.null(d[["os"]]) && d$os != os)
+                return(NULL)
+            if (!is.null(d[["deps"]]))
+                d$deps <- filterDeps(d$deps)
+            return(d)
+        })
+        return(deps[!sapply(deps, is.null)])
+    }
+    return(filterDeps(ret))
 }
