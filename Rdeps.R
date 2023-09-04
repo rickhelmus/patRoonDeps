@@ -1,7 +1,8 @@
-getRDependencies <- function(patRoonGitRef, os)
+getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE)
 {
     ret <- list(
-        RDCOMClient = list(type = "gh", user = "omegahat", os = "windows"),
+        CAMERA = list(type = "bioc", mandatory = TRUE), # also pulls in other mandatory BioC deps (mzR, XCMS, ...)
+        RDCOMClient = list(type = "gh", user = "BSchamberger", os = "windows"),
         RAMClustR = list(
             type = "gh",
             user = "cbroeckl",
@@ -43,8 +44,10 @@ getRDependencies <- function(patRoonGitRef, os)
                 fastAdaboost = list(type = "gh", user = "souravc83")
             )
         ),
-        # MetaCleanData = list(type = "gh", user = "KelseyChetnik"), # package is too big file for GitHub :-(
+        MetaCleanData = list(type = "gh", user = "KelseyChetnik", patRoonDeps = FALSE),
         splashR = list(type = "gh", user = "berlinguyinca", repos = "spectra-hash", pkgroot = "splashR"),
+        patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
+        patRoonExt = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoon = list(type = "gh", user = "rickhelmus", branch = patRoonGitRef)
     )
     
@@ -53,6 +56,8 @@ getRDependencies <- function(patRoonGitRef, os)
         deps <- lapply(deps, function(d)
         {
             if (!is.null(d[["os"]]) && d$os != os)
+                return(NULL)
+            if (onlyPDeps && isFALSE(d[["patRoonDeps"]]))
                 return(NULL)
             if (!is.null(d[["deps"]]))
                 d$deps <- filterDeps(d$deps)
