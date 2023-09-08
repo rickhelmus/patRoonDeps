@@ -55,7 +55,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE)
     {
         deps <- lapply(deps, function(d)
         {
-            if (!is.null(d[["os"]]) && d$os != os)
+            if (!is.null(os) && !is.null(d[["os"]]) && d$os != os)
                 return(NULL)
             if (onlyPDeps && isFALSE(d[["patRoonDeps"]]))
                 return(NULL)
