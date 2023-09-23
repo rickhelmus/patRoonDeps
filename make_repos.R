@@ -142,6 +142,15 @@ handlePackages <- function(pkgs)
         {
             repos <-  if (!is.null(md[["repos"]])) md$repos else dep
             ghrepos <- paste0(md$user, "/", repos)
+            ghref <- if (!is.null(md[["tag"]]))
+                md$tag
+            else if (!is.null(md[["commit"]]))
+                md$commit
+            else if (!is.null(md[["branch"]]))
+                md$branch
+            else
+                "master"
+            
             doInstall <- !isInstalled(dep, lib.loc = tempRLibrary)
             
             if (doInstall && dep %in% ourPackages)
@@ -151,11 +160,11 @@ handlePackages <- function(pkgs)
                 doInstall <- FALSE
             }
 
-            upSHA <- remotes::remote_sha(remotes::github_remote(ghrepos))
+            upSHA <- remotes::remote_sha(remotes::github_remote(ghrepos, ref = ghref))
             if (!doInstall)
             {
                 # check if it's current by using some internals of the remotes package
-                locSHA <- packageDescription(dep)[["pdSHA"]] # this is added below before GH packages are built
+                locSHA <- packageDescription(dep)[["RemoteSha"]] # this is added below before GH packages are built
                 doInstall <- is.null(locSHA) || remotes:::different_sha(upSHA, locSHA)
                 if (doInstall)
                     printf("SHA changed for %s: %s/%s\n", dep, upSHA, if (is.null(locSHA)) "NULL" else locSHA)
@@ -186,15 +195,27 @@ handlePackages <- function(pkgs)
                 # NOTE: some packages don't have a newline at the end. At the same time R doesn't like empty lines, so
                 # we can't just always prepend a newline before our text.
                 ds <- readLines(file.path(extrp, "DESCRIPTION"))
-                ds <- c(ds, paste("pdSHA:", upSHA))
+                ds <- c(ds, paste("RemoteSha:", upSHA))
+                
+                if (FALSE)
+                {
+                    # needed for renv
+                    
+                    ds <- ds[!grepl("^Repository:", ds)]
+                    ds <- c(ds,
+                        paste("RemoteRef:", ghref),
+                        paste("RemoteUrl:", paste0("https://github.com/", ghrepos)),
+                        if (!is.null(md[["pkgroot"]])) paste("RemoteSubdir:", md$pkgroot),
+                        "Repository: https://rickhelmus.github.io/patRoonDeps"
+                    )
+                }
+                
                 writeLines(ds, file.path(extrp, "DESCRIPTION"))
 
                 remotes::install_deps(extrp, upgrade = "never", dependencies = TRUE,
                                       repos = paste0("file:///", normalizePath(".", winslash = "/")), type = "win.binary")
                 
                 binpkg <- pkgbuild::build(extrp, GHPackagesPath, binary = TRUE, vignettes = FALSE, args = c("--no-test-load", ""))
-                # remotes::install_local(extrp, md$subdir, upgrade = "never", force = TRUE)
-                # remotes::install_local(binpkg, upgrade = "never", force = TRUE)
                 utils::install.packages(binpkg, repos = NULL)
                 
                 # before the package can be added to the repos, any previous should be removed: addLocalPackage()
@@ -210,3 +231,83 @@ handlePackages <- function(pkgs)
 }
 
 handlePackages(dependencies)
+
+# generate package sync file
+pkgTab <- readRDS(file.path(reposPkgPath, "PACKAGES.Rds"))[, c("Package", "Version")]
+getAllGHSHAs <- function(pkgs)
+{
+    data.table::rbindlist(lapply(names(pkgs), function(dep)
+    {
+        md <- pkgs[[dep]]
+        
+        ret <- if (md$type %in% c("cran", "bioc"))
+            data.table::data.table(Package = character(), RemoteSha = character())
+        else
+            data.table::data.table(Package = dep, RemoteSha = packageDescription(dep, tempRLibrary, fields = "RemoteSha"))
+        
+        if (!is.null(md[["deps"]]))
+            ret <- rbind(ret, getAllGHSHAs(md$deps))
+        
+        return(ret)
+    }))
+}
+pkgtabSHA <- merge(pkgTab, getAllGHSHAs(dependencies), by = "Package", all = TRUE)
+data.table::fwrite(pkgtabSHA, "patRoonDeps.tsv", sep = "\t")
+
+if (FALSE)
+{
+    # generate renv.lock file
+    pkgLockList <- split(data.table::as.data.table(pkgTab), by = "Package")
+    pkgLockList <- lapply(pkgLockList, as.list)
+    pkgLockList <- lapply(pkgLockList, "[[<-", i = "Repository", value = "https://rickhelmus.github.io/patRoonDeps")
+    pkgLockList <- lapply(pkgLockList, "[[<-", i = "Source", value = "Repository")
+    
+    setGHLocks <- function(lockList, pkgs)
+    {
+        for (dep in names(pkgs))
+        {
+            md <- pkgs[[dep]]
+            
+            if (!is.null(md[["deps"]]))
+                lockList <- setGHLocks(lockList, md$deps)
+            
+            if (md$type %in% c("cran", "bioc"))
+                next
+            
+            lockList[[dep]]$Source <- "patRoonDeps"
+            lockList[[dep]]$RemoteType <- "patRoonDeps" # also set for bioc?
+            pdfields <- c("RemoteSha", "RemoteUrl", "RemoteRef")
+            pd <- packageDescription(dep, tempRLibrary, fields = pdfields)
+            lockList[[dep]][pdfields] <- pd[pdfields]
+            lockList[[dep]]$RemoteUsername <- md$user
+            lockList[[dep]]$RemoteRepo <- if (!is.null(md[["repos"]])) md$repos else dep
+            if (!is.null(md[["pkgroot"]])) lockList[[dep]]$RemoteSubdir <- md$pkgroot
+        }
+        return(lockList)
+    }
+    pkgLockList <- setGHLocks(pkgLockList, dependencies)
+    
+    unlink("patRoonDeps.lock")
+    lockf <- renv::lockfile_create(packages = character()) # create empty lockfile
+    lockf <- renv::lockfile_modify(lockf, repos = "https://rickhelmus.github.io/patRoonDeps")
+    renv::lockfile_write(lockf, "patRoonDeps.lock")
+    renv::record(pkgLockList[c("BiocGenerics", "data.table")], "patRoonDeps.lock")
+    
+    BioCPackages <- packageDB[packageDB[,"Package"] %in% packagesForRepos & grepl("bioconductor", packageDB[, "Repository"]), "Package"]
+    for (pkg in BioCPackages)
+    {
+        extrp <- tempfile()
+        dir.create(extrp)
+        pkgf <- normalizePath(Sys.glob(sprintf("%s/%s_*.zip", reposPkgPath, pkg)))
+        unzip(pkgf, exdir = extrp)
+        pkgdir <- file.path(extrp, pkg)
+        descp <- file.path(pkgdir, "DESCRIPTION")
+        descl <- readLines(descp)
+        descl <- descl[!grepl("^biocViews:", descl)]
+        # descl <- c(descl, "RemoteType: standard")
+        writeLines(descl, descp)
+        tools:::.installMD5sums(pkgdir)
+        unlink(pkgf)
+        withr::with_dir(extrp, utils::zip(pkgf, Sys.glob("*")))
+    }
+}
