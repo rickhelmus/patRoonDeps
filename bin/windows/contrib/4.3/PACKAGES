@@ -22,7 +22,7 @@ License: LGPL (>= 2)
 Archs: x64
 
 Package: askpass
-Version: 1.1
+Version: 1.2.0
 Imports: sys (>= 2.1)
 Suggests: testthat
 License: MIT + file LICENSE
@@ -96,7 +96,7 @@ License: GPL-2 | GPL-3
 Archs: x64
 
 Package: BiocStyle
-Version: 2.28.0
+Version: 2.28.1
 Imports: bookdown, knitr (>= 1.30), rmarkdown (>= 1.2), stats, utils,
         yaml, BiocManager
 Suggests: BiocGenerics, RUnit, htmltools
@@ -271,7 +271,7 @@ License: GPL-2 | GPL-3
 Archs: x64
 
 Package: classInt
-Version: 0.4-9
+Version: 0.4-10
 Depends: R (>= 2.2)
 Imports: grDevices, stats, graphics, e1071, class, KernSmooth
 Suggests: spData (>= 0.2.6.2), units, knitr, rmarkdown, tinytest
@@ -508,7 +508,7 @@ Enhances: compiler
 License: GPL-2
 
 Package: dplyr
-Version: 1.1.2
+Version: 1.1.3
 Depends: R (>= 3.5.0)
 Imports: cli (>= 3.4.0), generics, glue (>= 1.3.2), lifecycle (>=
         1.0.3), magrittr (>= 1.5), methods, pillar (>= 1.9.0), R6,
@@ -674,7 +674,7 @@ Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
 License: Apache License (== 2.0)
 
 Package: foreign
-Version: 0.8-84
+Version: 0.8-85
 Priority: recommended
 Depends: R (>= 4.0.0)
 Imports: methods, utils, stats
@@ -779,7 +779,7 @@ Suggests: covr, pkgload, testthat (>= 3.0.0), tibble, withr
 License: MIT + file LICENSE
 
 Package: GenomeInfoDb
-Version: 1.36.2
+Version: 1.36.3
 Depends: R (>= 4.0.0), methods, BiocGenerics (>= 0.37.0), S4Vectors (>=
         0.25.12), IRanges (>= 2.13.12)
 Imports: stats, stats4, utils, RCurl, GenomeInfoDbData
@@ -978,14 +978,15 @@ Suggests: knitr, markdown, testit
 License: GPL
 
 Package: Hmisc
-Version: 5.1-0
+Version: 5.1-1
 Imports: methods, ggplot2, cluster, rpart, nnet, foreign, gtable, grid,
         gridExtra, data.table, htmlTable (>= 1.11.0), viridis,
         htmltools, base64enc, colorspace, rmarkdown, knitr, Formula
 Suggests: survival, qreport, acepack, chron, rms, mice, rstudioapi,
         tables, plotly (>= 4.5.6), rlang, plyr, VGAM, leaps, pcaPP,
         digest, parallel, polspline, abind, kableExtra, rio, lattice,
-        latticeExtra, gt, sparkline, jsonlite, htmlwidgets
+        latticeExtra, gt, sparkline, jsonlite, htmlwidgets, qs,
+        getPass, keyring, safer
 License: GPL (>= 2)
 Archs: x64
 
@@ -1166,7 +1167,7 @@ Enhances: clustMixType, randomForest, ClustVarLV
 License: GPL-2 | GPL-3
 
 Package: knitr
-Version: 1.43
+Version: 1.44
 Depends: R (>= 3.3.0)
 Imports: evaluate (>= 0.15), highr, methods, tools, xfun (>= 0.39),
         yaml (>= 2.1.19)
@@ -1175,8 +1176,8 @@ Suggests: bslib, codetools, DBI (>= 0.4-1), digest, formatR, gifski,
         0.11.1), magick, markdown (>= 1.3), png, ragg, reticulate (>=
         1.4), rgl (>= 0.95.1201), rlang, rmarkdown, sass, showtext,
         styler (>= 1.2.0), targets (>= 0.6.0), testit, tibble,
-        tikzDevice (>= 0.10), tinytex, webshot, rstudioapi, xml2 (>=
-        1.2.0)
+        tikzDevice (>= 0.10), tinytex (>= 0.46), webshot, rstudioapi,
+        svglite, xml2 (>= 1.2.0)
 License: GPL
 
 Package: KPIC
@@ -1321,7 +1322,7 @@ License: LGPL (>= 2)
 Archs: x64
 
 Package: Matrix
-Version: 1.6-1
+Version: 1.6-1.1
 Priority: recommended
 Depends: R (>= 3.5.0), methods
 Imports: grDevices, graphics, grid, lattice, stats, utils
@@ -1893,7 +1894,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RcppArmadillo
-Version: 0.12.6.3.0
+Version: 0.12.6.4.0
 Depends: R (>= 3.3.0)
 Imports: Rcpp (>= 0.11.0), stats, utils, methods
 LinkingTo: Rcpp
@@ -1910,8 +1911,8 @@ License: BSD_3_clause + file LICENSE
 Archs: x64
 
 Package: RDCOMClient
-Version: 0.96-1
-Imports: methods
+Version: 0.95-1
+Depends: R (>= 3.2.0)
 License: GPL-2
 Archs: x64
 
@@ -2038,7 +2039,7 @@ Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
 License: MIT + file LICENSE
 
 Package: Rhdf5lib
-Version: 1.22.0
+Version: 1.22.1
 Depends: R (>= 4.2.0)
 Suggests: BiocStyle, knitr, rmarkdown, tinytest, mockery
 License: Artistic-2.0
@@ -2062,7 +2063,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: rmarkdown
-Version: 2.24
+Version: 2.25
 Depends: R (>= 3.0)
 Imports: bslib (>= 0.2.5.1), evaluate (>= 0.13), fontawesome (>=
         0.5.0), htmltools (>= 0.5.1), jquerylib, jsonlite, knitr (>=
@@ -2116,7 +2117,7 @@ Suggests: covr, knitr, lifecycle, mockr, rmarkdown, testthat (>=
 License: MIT + file LICENSE
 
 Package: rsm
-Version: 2.10.3
+Version: 2.10.4
 Imports: estimability
 Suggests: emmeans (> 1.3.5.1), Vdgraph, conf.design, DoE.base, FrF2
 License: GPL (>= 2)
@@ -2158,7 +2159,7 @@ License: Artistic-2.0
 Archs: x64
 
 Package: S4Vectors
-Version: 0.38.1
+Version: 0.38.2
 Depends: R (>= 4.0.0), methods, utils, stats, stats4, BiocGenerics (>=
         0.37.0)
 Suggests: IRanges, GenomicRanges, SummarizedExperiment, Matrix,
