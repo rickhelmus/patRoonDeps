@@ -51,7 +51,6 @@ execInR <- function(code)
 libSite <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
 thisRVersion <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
 
-# NOTE: use pak to install stuff, as remotes seem to throw all kinds of errors with local packages and dependencies set
 execInR(sprintf(paste('lib <- "%s"',
                       'install.packages("remotes", repos = "cran.rstudio.com", lib = lib)',
                       'install.packages(Sys.glob(paste0("%s", "/*.zip")), repos = NULL, lib = lib, type = "win.binary")',
