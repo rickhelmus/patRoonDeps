@@ -8,6 +8,9 @@ printf <- function(...) cat(sprintf(...), sep = "")
 # Otherwise upgrading packages etc will fail with files being in use
 isInstalled <- function(pkg, ...) nzchar(system.file(package = pkg, ...))
 
+getPDRepos <- function() "https://rickhelmus.github.io/patRoonDeps"
+# getPDRepos <- function() "file:///E:/devel/patRoonDeps"
+
 installFromOurRepos <- function(pkg)
 {
     utils::install.packages(pkg, repos = paste0("file:///", normalizePath(".", winslash = "/")), type = "win.binary")
@@ -197,18 +200,15 @@ handlePackages <- function(pkgs)
                 ds <- readLines(file.path(extrp, "DESCRIPTION"))
                 ds <- c(ds, paste("RemoteSha:", upSHA))
                 
-                if (FALSE)
-                {
-                    # needed for renv
-                    
-                    ds <- ds[!grepl("^Repository:", ds)]
-                    ds <- c(ds,
-                        paste("RemoteRef:", ghref),
-                        paste("RemoteUrl:", paste0("https://github.com/", ghrepos)),
-                        if (!is.null(md[["pkgroot"]])) paste("RemoteSubdir:", md$pkgroot),
-                        "Repository: https://rickhelmus.github.io/patRoonDeps"
-                    )
-                }
+                # needed for renv
+                ds <- ds[!grepl("^Repository:", ds)] # remove, because we're going to change it below
+                ds <- c(
+                    ds,
+                    paste("RemoteRef:", ghref),
+                    paste("RemoteUrl:", paste0("https://github.com/", ghrepos)),
+                    if (!is.null(md[["pkgroot"]])) paste("RemoteSubdir:", md$pkgroot),
+                    paste("Repository:", getPDRepos())
+                )
                 
                 writeLines(ds, file.path(extrp, "DESCRIPTION"))
 
@@ -254,45 +254,48 @@ getAllGHSHAs <- function(pkgs)
 pkgtabSHA <- merge(pkgTab, getAllGHSHAs(dependencies), by = "Package", all = TRUE)
 data.table::fwrite(pkgtabSHA, "patRoonDeps.tsv", sep = "\t")
 
+# generate renv.lock file
+pkgLockList <- split(data.table::as.data.table(pkgTab), by = "Package")
+pkgLockList <- lapply(pkgLockList, as.list)
+pkgLockList <- lapply(pkgLockList, "[[<-", i = "Repository", value = getPDRepos())
+pkgLockList <- lapply(pkgLockList, "[[<-", i = "Source", value = "Repository")
+
+setGHLocks <- function(lockList, pkgs)
+{
+    for (dep in names(pkgs))
+    {
+        md <- pkgs[[dep]]
+        
+        if (!is.null(md[["deps"]]))
+            lockList <- setGHLocks(lockList, md$deps)
+        
+        if (md$type %in% c("cran", "bioc"))
+            next
+        
+        lockList[[dep]]$Source <- "patRoonDeps"
+        lockList[[dep]]$RemoteType <- "patRoonDeps"
+        pdfields <- c("RemoteSha", "RemoteUrl", "RemoteRef")
+        pd <- packageDescription(dep, tempRLibrary, fields = pdfields)
+        lockList[[dep]][pdfields] <- pd[pdfields]
+        lockList[[dep]]$RemoteUsername <- md$user
+        lockList[[dep]]$RemoteRepo <- if (!is.null(md[["repos"]])) md$repos else dep
+        if (!is.null(md[["pkgroot"]]))
+            lockList[[dep]]$RemoteSubdir <- md$pkgroot
+    }
+    return(lockList)
+}
+pkgLockList <- setGHLocks(pkgLockList, dependencies)
+
+unlink("patRoonDeps.lock")
+lockf <- renv::lockfile_create(packages = character()) # create empty lockfile
+lockf <- renv::lockfile_modify(lockf, repos = c(patRoonDeps = getPDRepos()))
+renv::lockfile_write(lockf, "patRoonDeps.lock")
+renv::record(pkgLockList, "patRoonDeps.lock")
+
 if (FALSE)
 {
-    # generate renv.lock file
-    pkgLockList <- split(data.table::as.data.table(pkgTab), by = "Package")
-    pkgLockList <- lapply(pkgLockList, as.list)
-    pkgLockList <- lapply(pkgLockList, "[[<-", i = "Repository", value = "https://rickhelmus.github.io/patRoonDeps")
-    pkgLockList <- lapply(pkgLockList, "[[<-", i = "Source", value = "Repository")
-    
-    setGHLocks <- function(lockList, pkgs)
-    {
-        for (dep in names(pkgs))
-        {
-            md <- pkgs[[dep]]
-            
-            if (!is.null(md[["deps"]]))
-                lockList <- setGHLocks(lockList, md$deps)
-            
-            if (md$type %in% c("cran", "bioc"))
-                next
-            
-            lockList[[dep]]$Source <- "patRoonDeps"
-            lockList[[dep]]$RemoteType <- "patRoonDeps" # also set for bioc?
-            pdfields <- c("RemoteSha", "RemoteUrl", "RemoteRef")
-            pd <- packageDescription(dep, tempRLibrary, fields = pdfields)
-            lockList[[dep]][pdfields] <- pd[pdfields]
-            lockList[[dep]]$RemoteUsername <- md$user
-            lockList[[dep]]$RemoteRepo <- if (!is.null(md[["repos"]])) md$repos else dep
-            if (!is.null(md[["pkgroot"]])) lockList[[dep]]$RemoteSubdir <- md$pkgroot
-        }
-        return(lockList)
-    }
-    pkgLockList <- setGHLocks(pkgLockList, dependencies)
-    
-    unlink("patRoonDeps.lock")
-    lockf <- renv::lockfile_create(packages = character()) # create empty lockfile
-    lockf <- renv::lockfile_modify(lockf, repos = "https://rickhelmus.github.io/patRoonDeps")
-    renv::lockfile_write(lockf, "patRoonDeps.lock")
-    renv::record(pkgLockList[c("BiocGenerics", "data.table")], "patRoonDeps.lock")
-    
+    # HACK: fixup BioC packages so renv::snapshot() doesn't change source
+    # UNDONE: this only partially works, and does strange things with BiocManager/BiocVersion
     BioCPackages <- packageDB[packageDB[,"Package"] %in% packagesForRepos & grepl("bioconductor", packageDB[, "Repository"]), "Package"]
     for (pkg in BioCPackages)
     {
