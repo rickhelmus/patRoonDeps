@@ -1,4 +1,4 @@
-getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE)
+getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal = TRUE, flatten = FALSE)
 {
     ret <- list(
         CAMERA = list(type = "bioc", mandatory = TRUE), # also pulls in other mandatory BioC deps (mzR, XCMS, ...)
@@ -59,11 +59,36 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE)
                 return(NULL)
             if (onlyPDeps && isFALSE(d[["patRoonDeps"]]))
                 return(NULL)
+            if (!withInternal && isTRUE(d[["internal"]]))
+                return(NULL)
             if (!is.null(d[["deps"]]))
                 d$deps <- filterDeps(d$deps)
             return(d)
         })
         return(deps[!sapply(deps, is.null)])
     }
-    return(filterDeps(ret))
+    ret <- filterDeps(ret)
+    
+    if (flatten)
+    {
+        flret <- list()
+        makeFlat <- function(deps, parent)
+        {
+            for (d in names(deps))
+            {
+                md <- deps[[d]]
+                if (!is.null(md[["deps"]]))
+                {
+                    makeFlat(md$deps, d)
+                    md$deps <- NULL
+                }
+                md$parentDep <- parent
+                flret <<- c(flret, setNames(list(md), d))
+            }
+        }
+        makeFlat(ret, parent = NULL)
+        return(flret)
+    }
+    
+    return(ret)
 }
