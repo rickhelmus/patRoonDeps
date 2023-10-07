@@ -252,7 +252,7 @@ getAllGHSHAs <- function(pkgs)
     }))
 }
 pkgtabSHA <- merge(pkgTab, getAllGHSHAs(dependencies), by = "Package", all = TRUE)
-data.table::fwrite(pkgtabSHA, "patRoonDeps.tsv", sep = "\t")
+data.table::fwrite(pkgtabSHA, sprintf("patRoonDeps-%s.tsv", thisRVersion), sep = "\t")
 
 # generate renv.lock file
 pkgLockList <- split(data.table::as.data.table(pkgTab), by = "Package")
