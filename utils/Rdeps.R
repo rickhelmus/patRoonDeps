@@ -1,5 +1,11 @@
-getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal = TRUE, flatten = FALSE)
+getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal = TRUE, flatten = FALSE,
+                             checkVersion = NULL)
 {
+    if (!is.null(checkVersion))
+    {
+        # nothing yet, in case we need to handle compatibility issues with eg patRoonInst
+    }
+    
     ret <- list(
         CAMERA = list(type = "bioc", mandatory = TRUE), # also pulls in other mandatory BioC deps (mzR, XCMS, ...)
         RDCOMClient = list(type = "gh", user = "BSchamberger", os = "windows"),
@@ -91,4 +97,10 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
     }
     
     return(ret)
+}
+
+checkRDepsVersion <- function(ver)
+{
+    # nothing yet, in case we need to handle compatibility issues with eg patRoonInst
+    return(TRUE)
 }
