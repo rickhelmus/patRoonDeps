@@ -23,9 +23,11 @@ stopifnot(system2(file.path(IEDir, "innoextract.exe"), c("-ed", RExtrDir, RExePa
 
 file.rename(file.path(RExtrDir, "app"), file.path(RExtrDir, "R"))
 file.copy("bundle/Renviron.site", file.path(RExtrDir, "R", "etc"), overwrite = TRUE)
-cat("\n# Customization of patRoon",
-    "options(repos = c(CRAN = \"https://cran.rstudio.com/\", patRoonDeps = \"https://rickhelmus.github.io/patRoonDeps/\"))",
-    sep = "\n", file = file.path(RExtrDir, "R", "etc", "Rprofile.site"), append = TRUE)
+
+# UNDONE: for now leave the repos as the default, mainly since patRoonInst already deals with setting up the repos
+# cat("\n# Customization of patRoon",
+#     "options(repos = c(CRAN = \"https://cran.rstudio.com/\", patRoonDeps = \"https://rickhelmus.github.io/patRoonDeps/\"))",
+#     sep = "\n", file = file.path(RExtrDir, "R", "etc", "Rprofile.site"), append = TRUE)
 
 for (dir in c(file.path(RExtrDir, "user", "library"),
               file.path(RExtrDir, "user", "Rdata"),
@@ -48,17 +50,20 @@ execInR <- function(code)
     stopifnot(system2(file.path(RExtrDir, "R", "bin", "Rscript.exe"), c("-e", shQuote(code))) == 0)
 }
 
-libSite <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
-thisRVersion <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")
+Rlib <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
 
-execInR(sprintf(paste('lib <- "%s"',
-                      'install.packages("remotes", repos = "cran.rstudio.com", lib = lib)',
-                      'install.packages(Sys.glob(paste0("%s", "/*.zip")), repos = NULL, lib = lib, type = "win.binary")',
-                      'remotes::install_github("rickhelmus/patRoonData", lib = lib)',
-                      'remotes::install_github("rickhelmus/patRoonExt", lib = lib)',
+execInR(sprintf(paste('install.packages("remotes")',
+                      'thisRVersion <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")',
+                      'install.packages(Sys.glob("%s/%s/*.zip"), repos = NULL, type = "win.binary")',
+                      'remotes::install_github("rickhelmus/patRoonData")',
+                      'remotes::install_github("rickhelmus/patRoonExt")',
+                      'remotes::install_github("rickhelmus/patRoonInst")',
                       sep = ";"),
-                libSite, normalizePath("bin/windows/contrib/4.3", winslash = "/")))
+                normalizePath("bin/windows/contrib", winslash = "/")))
 
-output <- normalizePath(sprintf("patRoon-bundle-%s.zip", packageVersion("patRoon", libSite)))
+# get current GH hash so we can tag it in the bundle file name
+SHA <- read.dcf(file.path(RExtrDir, "user", "library", "patRoon", "DESCRIPTION"))[, "RemoteSha"]
+
+output <- normalizePath(sprintf("patRoon-bundle-%s.zip", strtrim(SHA, 7)))
 unlink(output)
 withr::with_dir(RExtrDir, utils::zip(output, Sys.glob("*")))
