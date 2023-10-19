@@ -54,18 +54,20 @@ packageOrigRepos <- c(BiocManager::repositories())
 packageDB <- pkgAvail(repos = packageOrigRepos, type = "win.binary")
 packageDB <- addPkgListingGH(packageDB, dependencies)
 
-getPkgDeps <- function(pkgs)
+getPkgDeps <- function(pkgs, onlyGH)
 {
     ret <- names(pkgs)
+    if (onlyGH)
+        ret <- ret[sapply(pkgs, "[[", "type") == "gh"]
     for (md in pkgs)
     {
         if (!is.null(md[["deps"]]))
-            ret <- c(ret, getPkgDeps(md$deps))
+            ret <- c(ret, getPkgDeps(md$deps, onlyGH))
     }
     return(ret)
 }
 
-allDependencyNames <- getPkgDeps(dependencies)
+allDependencyNames <- getPkgDeps(dependencies, onlyGH = FALSE)
 packagesForRepos <- pkgDep(allDependencyNames, availPkgs = packageDB, repos = packageOrigRepos,
                            type = "win.binary", suggests = FALSE)
 
@@ -81,7 +83,7 @@ if (file.exists(packagesFile))
     
     removedPackages <- setdiff(packages, packagesForRepos)
     newPackages <- setdiff(packagesForRepos, packages)
-    newPackages <- setdiff(newPackages, allDependencyNames)
+    newPackages <- setdiff(newPackages, getPkgDeps(dependencies, onlyGH = TRUE))
     
     # will be re-added
     # removedPackages <- union(removedPackages, localPackages)
