@@ -52,6 +52,8 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         ),
         MetaCleanData = list(type = "gh", user = "KelseyChetnik", patRoonDeps = FALSE),
         splashR = list(type = "gh", user = "berlinguyinca", repos = "spectra-hash", pkgroot = "splashR"),
+        MS2Tox = list(type = "gh", user = "kruvelab", branch = "main"),
+        MS2Quant = list(type = "gh", user = "kruvelab", branch = "main"),
         patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoonExt = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoon = list(type = "gh", user = "rickhelmus", branch = patRoonGitRef)
