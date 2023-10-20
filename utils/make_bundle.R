@@ -28,6 +28,9 @@ file.copy("bundle/Renviron.site", file.path(RExtrDir, "R", "etc"), overwrite = T
 # cat("\n# Customization of patRoon",
 #     "options(repos = c(CRAN = \"https://cran.rstudio.com/\", patRoonDeps = \"https://rickhelmus.github.io/patRoonDeps/\"))",
 #     sep = "\n", file = file.path(RExtrDir, "R", "etc", "Rprofile.site"), append = TRUE)
+cat("\n# Customization of patRoon",
+    "options(repos = c(CRAN = \"https://cran.rstudio.com/\"))",
+    sep = "\n", file = file.path(RExtrDir, "R", "etc", "Rprofile.site"), append = TRUE)
 
 for (dir in c(file.path(RExtrDir, "user", "library"),
               file.path(RExtrDir, "user", "Rdata"),
@@ -54,7 +57,8 @@ Rlib <- normalizePath(file.path(RExtrDir, "R", "library"), winslash = "/")
 
 execInR(sprintf(paste('install.packages("remotes")',
                       'thisRVersion <- paste(R.Version()$major, floor(as.numeric(R.Version()$minor)), sep = ".")',
-                      'install.packages(Sys.glob("%s/%s/*.zip"), repos = NULL, type = "win.binary")',
+                      'pkgdir <- file.path("%s", thisRVersion)',
+                      'install.packages(Sys.glob(paste0(pkgdir, "/*.zip")), repos = NULL, type = "win.binary")',
                       'remotes::install_github("rickhelmus/patRoonData")',
                       'remotes::install_github("rickhelmus/patRoonExt")',
                       'remotes::install_github("rickhelmus/patRoonInst")',
@@ -64,6 +68,6 @@ execInR(sprintf(paste('install.packages("remotes")',
 # get current GH hash so we can tag it in the bundle file name
 SHA <- read.dcf(file.path(RExtrDir, "user", "library", "patRoon", "DESCRIPTION"))[, "RemoteSha"]
 
-output <- normalizePath(sprintf("patRoon-bundle-%s.zip", strtrim(SHA, 7)))
+output <- normalizePath(sprintf("patRoon-bundle-%s.zip", strtrim(SHA, 7)), mustWork = FALSE)
 unlink(output)
 withr::with_dir(RExtrDir, utils::zip(output, Sys.glob("*")))
