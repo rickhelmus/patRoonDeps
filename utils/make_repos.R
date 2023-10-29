@@ -256,6 +256,7 @@ getAllGHSHAs <- function(pkgs)
 pkgtabSHA <- merge(pkgTab, getAllGHSHAs(dependencies), by = "Package", all = TRUE)
 data.table::fwrite(pkgtabSHA, sprintf("patRoonDeps-%s.tsv", thisRVersion), sep = "\t")
 
+if (FALSE){
 # generate renv.lock file
 pkgLockList <- split(data.table::as.data.table(pkgTab), by = "Package")
 pkgLockList <- lapply(pkgLockList, as.list)
@@ -315,4 +316,6 @@ if (FALSE)
         unlink(pkgf)
         withr::with_dir(extrp, utils::zip(pkgf, Sys.glob("*")))
     }
+}
+
 }
