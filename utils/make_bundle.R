@@ -1,11 +1,9 @@
-# RExePath <- "../R-win.exe" # on Appveyor
-
 RExePath <- if (Sys.getenv("GITHUB_ACTIONS") == "true")
 {
     sprintf("D:/a/_temp/R-%s-win.exe", getRversion()) # HACK: maybe not very maintainable, let's see...
 } else {
     dl <- tempfile(fileext = ".exe")
-    stopifnot(download.file("https://cloud.r-project.org/bin/windows/base/R-4.3.1-win.exe",
+    stopifnot(download.file("https://cloud.r-project.org/bin/windows/base/R-4.3.2-win.exe",
                             dl, mode = "wb") == 0)
     dl
 }
@@ -24,10 +22,6 @@ stopifnot(system2(file.path(IEDir, "innoextract.exe"), c("-ed", RExtrDir, RExePa
 file.rename(file.path(RExtrDir, "app"), file.path(RExtrDir, "R"))
 file.copy("bundle/Renviron.site", file.path(RExtrDir, "R", "etc"), overwrite = TRUE)
 
-# UNDONE: for now leave the repos as the default, mainly since patRoonInst already deals with setting up the repos
-# cat("\n# Customization of patRoon",
-#     "options(repos = c(CRAN = \"https://cran.rstudio.com/\", patRoonDeps = \"https://rickhelmus.github.io/patRoonDeps/\"))",
-#     sep = "\n", file = file.path(RExtrDir, "R", "etc", "Rprofile.site"), append = TRUE)
 cat("\n# Customization of patRoon",
     "options(repos = c(CRAN = \"https://cran.rstudio.com/\"))",
     sep = "\n", file = file.path(RExtrDir, "R", "etc", "Rprofile.site"), append = TRUE)
