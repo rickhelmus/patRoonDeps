@@ -18,7 +18,6 @@ bit64	4.0.5
 bitops	1.0-7	
 blob	1.2.4	
 bookdown	0.36	
-brio	1.1.3	
 broom	1.0.5	
 bslib	0.5.1	
 ca	0.71.1	
@@ -49,7 +48,6 @@ cpp11	0.4.6
 crayon	1.5.2	
 crosstalk	1.2.0	
 curl	5.1.0	
-cyclocomp	1.1.1	
 data.table	1.14.8	
 data.tree	1.0.0	
 DBI	1.1.3	
@@ -58,14 +56,10 @@ dbscan	1.1-11
 DelayedArray	0.26.7	
 dendextend	1.17.1	
 DEoptimR	1.1-3	
-desc	1.4.2	
 diagram	1.6.5	
-DiagrammeR	1.0.10	
-diffobj	0.3.5	
 digest	0.6.33	
 docopt	0.7.1	
 doParallel	1.0.17	
-downloader	0.4	
 dplyr	1.1.3	
 DT	0.30	
 dtplyr	1.3.1	
@@ -85,7 +79,6 @@ fastmap	1.1.1
 ff	4.0.9	
 fingerprint	3.5.7	
 flexdashboard	0.6.2	
-float	0.3-1	
 fontawesome	0.5.2	
 forcats	1.0.0	
 foreach	1.5.2	
@@ -158,9 +151,7 @@ lava	1.7.2.1
 lazyeval	0.2.2	
 lifecycle	1.0.3	
 limma	3.56.2	
-lintr	3.1.0	
 listenv	0.9.0	
-lmtest	0.9-40	
 lubridate	1.9.3	
 magick	2.8.1	
 magrittr	2.0.3	
@@ -197,19 +188,16 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.1.1	
 parallelly	1.36.0	
-patRoon	2.3.0	4da4c4e774f55791aaff5da9a3769989b2285c5f
+patRoon	2.3.0	2b270ba94506f1fcc429a408dd00861ebd2a6c14
 pcaMethods	1.92.0	
 permute	0.9-7	
 pillar	1.9.0	
-pkgbuild	1.4.2	
 pkgconfig	2.0.3	
-pkgload	1.3.3	
 plogr	0.2.0	
 plotly	4.10.3	
 plotrix	3.8-2	
 plyr	1.8.9	
 png	0.1-8	
-praise	1.0.0	
 preprocessCore	1.62.1	
 prettyunits	1.2.0	
 pROC	1.18.5	
@@ -257,10 +245,8 @@ recipes	1.0.8
 registry	0.5-1	
 rematch	2.0.0	
 rematch2	2.1.2	
-remotes	2.4.2.1	
 reprex	2.0.2	
 reshape2	1.4.4	
-rex	1.2.1	
 Rgraphviz	2.44.0	
 rhandsontable	0.3.8	
 Rhdf5lib	1.22.1	
@@ -292,7 +278,6 @@ sourcetools	0.1.7-1
 sparsesvd	0.2-2	
 splashR	0.0.4	174fbf289a0357535f9bacda282b9a2dbb7807cc
 SQUAREM	2021.1	
-stringdist	0.9.10	
 stringi	1.7.12	
 stringr	1.5.0	
 styler	1.10.2	
@@ -301,7 +286,6 @@ survival	3.5-7
 svglite	2.1.2	
 sys	3.4.2	
 systemfonts	1.0.5	
-testthat	3.2.0	
 textshaping	0.3.7	
 tibble	3.2.1	
 tidyr	1.3.0	
@@ -310,13 +294,11 @@ tidyverse	2.0.0
 timechange	0.2.0	
 timeDate	4022.108	
 tinytex	0.48	
-titanic	0.1.0	
 TSP	1.2-4	
 tzdb	0.4.0	
 UpSetR	1.4.0	
 utf8	1.2.4	
 uuid	1.1-1	
-vcd	1.4-11	
 vctrs	0.6.4	
 vegan	2.6-4	
 VennDiagram	1.7.3	
@@ -325,7 +307,6 @@ viridisLite	0.4.2
 visNetwork	2.1.2	
 vroom	1.6.4	
 vsn	3.68.0	
-waldo	0.5.1	
 webchem	1.3.0	
 webshot	0.5.5	
 withr	2.5.2	
@@ -334,9 +315,7 @@ xfun	0.41
 xgboost	1.7.5.1	
 XML	3.99-0.14	
 xml2	1.3.5	
-xmlparsedata	1.0.5	
 xtable	1.8-4	
 XVector	0.40.0	
 yaml	2.3.7	
 zlibbioc	1.46.0	
-zoo	1.8-12	
