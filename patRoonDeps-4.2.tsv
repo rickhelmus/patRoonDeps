@@ -16,9 +16,9 @@ bit	4.0.5
 bit64	4.0.5	
 bitops	1.0-7	
 blob	1.2.4	
-bookdown	0.36	
+bookdown	0.37	
 broom	1.0.5	
-bslib	0.5.1	
+bslib	0.6.1	
 ca	0.71.1	
 cachem	1.0.8	
 calibrate	1.7.7	
@@ -27,31 +27,31 @@ CAMERA	1.54.0
 caret	6.0-94	
 caTools	1.18.2	
 cellranger	1.1.0	
-checkmate	2.3.0	
+checkmate	2.3.1	
 circlize	0.4.15	
 Ckmeans.1d.dp	4.3.5	
 class	7.3-22	
 classInt	0.4-10	
-cli	3.6.1	
+cli	3.6.2	
 clipr	0.8.0	
 cliqueMS	1.7.1	cb569e0b78ce0fa4254f1393874762bed08fa855
 clock	0.7.0	
 clue	0.3-65	
-cluster	2.1.4	
+cluster	2.1.6	
 codetools	0.2-19	
 colorspace	2.1-0	
 combinat	0.0-8	
 commonmark	1.9.0	
 conflicted	1.2.0	
-cpp11	0.4.6	
+cpp11	0.4.7	
 crayon	1.5.2	
-crosstalk	1.2.0	
-curl	5.1.0	
-data.table	1.14.8	
-data.tree	1.0.0	
+crosstalk	1.2.1	
+curl	5.2.0	
+data.table	1.14.10	
+data.tree	1.1.0	
 DBI	1.1.3	
 dbplyr	2.4.0	
-dbscan	1.1-11	
+dbscan	1.1-12	
 DelayedArray	0.23.2	
 dendextend	1.17.1	
 DEoptimR	1.1-3	
@@ -59,18 +59,18 @@ diagram	1.6.5
 digest	0.6.33	
 docopt	0.7.1	
 doParallel	1.0.17	
-dplyr	1.1.3	
-DT	0.30	
+dplyr	1.1.4	
+DT	0.31	
 dtplyr	1.3.1	
 dynamicTreeCut	1.63-1	
-e1071	1.7-13	
+e1071	1.7-14	
 egg	0.4.5	
 ellipsis	0.3.2	
 enviPat	2.6	
 enviPick	1.7	d346b23b1f7dc7a226c4e3a45b74fcc617e19c1b
 estimability	1.4.1	
-evaluate	0.22	
-fansi	1.0.5	
+evaluate	0.23	
+fansi	1.0.6	
 farver	2.1.1	
 fastAdaboost	1.0.0	f331ff8ccfe2e7f318448a29bc72af646dfaf2c1
 fastcluster	1.2.3	
@@ -81,12 +81,12 @@ flexdashboard	0.6.2
 fontawesome	0.5.2	
 forcats	1.0.0	
 foreach	1.5.2	
-foreign	0.8-85	
+foreign	0.8-86	
 formatR	1.14	
 Formula	1.2-5	
 fs	1.6.3	
 fst	0.9.8	
-fstcore	0.9.14	
+fstcore	0.9.18	
 futile.logger	1.4.3	
 futile.options	1.0.1	
 future	1.33.0	
@@ -98,7 +98,7 @@ generics	0.1.3
 GenomeInfoDb	1.34.9	
 GenomeInfoDbData	1.2.11	f3111730888a3d83e9465ffa2552003de153bbf2
 GenomicRanges	1.50.2	
-getPass	0.2-2	
+getPass	0.2-4	
 ggplot2	3.4.4	
 ggrepel	0.9.4	
 GlobalOptions	0.1.2	
@@ -111,20 +111,20 @@ gplots	3.1.3
 graph	1.76.0	
 gridExtra	2.3	
 gtable	0.3.4	
-gtools	3.9.4	
+gtools	3.9.5	
 hardhat	1.3.0	
-haven	2.5.3	
+haven	2.5.4	
 heatmaply	1.5.0	
 highr	0.10	
 Hmisc	5.1-1	
 hms	1.1.3	
 htmlTable	2.4.2	
-htmltools	0.5.6.1	
-htmlwidgets	1.6.2	
-httpuv	1.6.12	
+htmltools	0.5.7	
+htmlwidgets	1.6.4	
+httpuv	1.6.13	
 httr	1.4.7	
 ids	1.0.1	
-igraph	1.5.1	
+igraph	1.6.0	
 impute	1.72.3	
 InterpretMSSpectrum	1.3.3	0731d92accdf5db2a6d7b03c24b2d324b67b1c72
 ipred	0.9-14	
@@ -133,7 +133,7 @@ isoband	0.2.7
 iterators	1.0.14	
 itertools	0.1-3	
 jquerylib	0.1.4	
-jsonlite	1.8.7	
+jsonlite	1.8.8	
 kableExtra	1.3.4	
 kernlab	0.9-32	
 KernSmooth	2.23-22	
@@ -144,11 +144,11 @@ KPIC	2.4.0	dd0dddb0cac9bc7882eb1a420c82c9713a8aa0ce
 labeling	0.4.3	
 labelled	2.12.0	
 lambda.r	1.2.4	
-later	1.3.1	
+later	1.3.2	
 lattice	0.22-5	
-lava	1.7.2.1	
+lava	1.7.3	
 lazyeval	0.2.2	
-lifecycle	1.0.3	
+lifecycle	1.0.4	
 limma	3.54.2	
 listenv	0.9.0	
 lubridate	1.9.3	
@@ -157,9 +157,9 @@ magrittr	2.0.3
 MALDIquant	1.22.1	
 MASS	7.3-60	
 MassSpecWavelet	1.64.1	
-Matrix	1.6-1.1	
+Matrix	1.6-4	
 MatrixGenerics	1.10.0	
-matrixStats	1.0.0	
+matrixStats	1.2.0	
 memoise	2.0.1	
 MetaClean	1.0.1	d0ce1bc0b2fe4d17e7e047c8c07c75b81c4e5833
 mgcv	1.9-0	
@@ -168,7 +168,7 @@ miniUI	0.1.1.1
 MLmetrics	1.1.1	
 ModelMetrics	1.2.2.2	
 modelr	0.1.11	
-MS2Quant	1.1.0	1a8a16dcde9c97d8c9c25214c18f77e27a81332f
+MS2Quant	1.1.0	46e0c77ef4961a29a73a388105eeb28e33839630
 MS2Tox	0.3.2	7e5574291c834b1ab9e50f8adf74a703188f6a6f
 MsCoreUtils	1.10.0	
 MsFeatures	1.6.0	
@@ -178,30 +178,30 @@ MultiDataSet	1.26.0
 munsell	0.5.0	
 mzID	1.36.0	
 mzR	2.32.0	
-ncdf4	1.21	
-nlme	3.1-163	
+ncdf4	1.22	
+nlme	3.1-164	
 nnet	7.3-19	
 nontarget	2.2	e30221585182bc66e1f8e1113b2c1103a0f2cb56
 nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.1.1	
 parallelly	1.36.0	
-patRoon	2.3.0	217d41bbc43876d43c8ce8531838001f29bbf61d
+patRoon	2.3.0	80d3175c10387b1d1f9fc83a9e3c69b78b90fbe3
 pcaMethods	1.90.0	
 permute	0.9-7	
 pillar	1.9.0	
 pkgconfig	2.0.3	
 plogr	0.2.0	
 plotly	4.10.3	
-plotrix	3.8-2	
+plotrix	3.8-4	
 plyr	1.8.9	
 png	0.1-8	
 preprocessCore	1.60.2	
 prettyunits	1.2.0	
-pROC	1.18.4	
-processx	3.8.2	
+pROC	1.18.5	
+processx	3.8.3	
 prodlim	2023.08.28	
-progress	1.2.2	
+progress	1.2.3	
 progressr	0.14.0	
 promises	1.2.1	
 ProtGenerics	1.30.0	
@@ -209,15 +209,15 @@ proxy	0.4-27
 ps	1.7.5	
 purrr	1.0.2	
 qap	0.1-2	
-qlcMatrix	0.9.7	
+qlcMatrix	0.9.7	d919872f69b07b6cf892f725ed3d6e4569319206
 qqman	0.1.9	
 questionr	0.7.8	
 R.cache	0.16.0	
 R.methodsS3	1.8.2	
 R.oo	1.25.0	
-R.utils	2.12.2	
+R.utils	2.12.3	
 R6	2.5.1	
-ragg	1.2.6	
+ragg	1.2.7	
 RAMClustR	1.3.1	e005614d808e0ca93c459ec8cc103b87cd5d11fd
 randomForest	4.7-1.1	
 RANN	2.6.1	
@@ -229,11 +229,11 @@ rcdk	3.8.1
 rcdklibs	2.8	
 RColorBrewer	1.1-3	
 Rcpp	1.0.11	
-RcppArmadillo	0.12.6.4.0	
-RCurl	1.98-1.12	
+RcppArmadillo	0.12.6.6.1	
+RCurl	1.98-1.13	
 RDCOMClient	0.95-1	1554833f8659461427a93732119756ae1c25bc32
 Rdisop	1.58.0	
-Rdpack	2.5	
+Rdpack	2.6	
 reactable	0.4.4	
 reactR	0.5.0	
 readMzXmlData	2.8.3	
@@ -248,26 +248,26 @@ reshape2	1.4.4
 Rgraphviz	2.42.0	
 rhandsontable	0.3.8	
 Rhdf5lib	1.20.0	
-rJava	1.0-6	
-rlang	1.1.1	
+rJava	1.0-10	
+rlang	1.1.2	
 rlist	0.4.6.2	
 rmarkdown	2.25	
-robustbase	0.99-0	
+robustbase	0.99-1	
 ROCR	1.0-11	
 ropls	1.30.0	
-rpart	4.1.21	
-rprojroot	2.0.3	
+rpart	4.1.23	
+rprojroot	2.0.4	
 rsm	2.10.4	
-RSQLite	2.3.2	
+RSQLite	2.3.4	
 rstudioapi	0.15.0	
 rvest	1.0.3	
 S4Vectors	0.36.2	
-sass	0.4.7	
-scales	1.2.1	
+sass	0.4.8	
+scales	1.3.0	
 selectr	0.4-2	
-seriation	1.5.1	
+seriation	1.5.4	
 shape	1.4.6	
-shiny	1.7.5.1	
+shiny	1.8.0	
 shinyjs	2.1.0	
 slam	0.1-50	
 snow	0.4-4	
@@ -275,12 +275,12 @@ sourcetools	0.1.7-1
 sparsesvd	0.2-2	
 splashR	0.0.4	174fbf289a0357535f9bacda282b9a2dbb7807cc
 SQUAREM	2021.1	
-stringi	1.7.12	
-stringr	1.5.0	
+stringi	1.8.3	
+stringr	1.5.1	
 styler	1.10.2	
 SummarizedExperiment	1.28.0	
 survival	3.5-7	
-svglite	2.1.2	
+svglite	2.1.3	
 sys	3.4.2	
 systemfonts	1.0.5	
 textshaping	0.3.7	
@@ -290,29 +290,29 @@ tidyselect	1.2.0
 tidyverse	2.0.0	
 timechange	0.2.0	
 timeDate	4022.108	
-tinytex	0.48	
+tinytex	0.49	
 TSP	1.2-4	
 tzdb	0.4.0	
 UpSetR	1.4.0	
 utf8	1.2.4	
 uuid	1.1-1	
-vctrs	0.6.4	
+vctrs	0.6.5	
 vegan	2.6-4	
 VennDiagram	1.7.3	
 viridis	0.6.4	
 viridisLite	0.4.2	
 visNetwork	2.1.2	
-vroom	1.6.4	
+vroom	1.6.5	
 vsn	3.66.0	
 webchem	1.3.0	
 webshot	0.5.5	
 withr	2.5.2	
 xcms	3.20.0	
-xfun	0.40	
-xgboost	1.7.5.1	
-XML	3.99-0.14	
-xml2	1.3.5	
+xfun	0.41	
+xgboost	1.7.6.1	
+XML	3.99-0.16	
+xml2	1.3.6	
 xtable	1.8-4	
 XVector	0.38.0	
-yaml	2.3.7	
+yaml	2.3.8	
 zlibbioc	1.44.0	
