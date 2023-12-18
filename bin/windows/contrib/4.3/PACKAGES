@@ -73,14 +73,6 @@ Imports: methods, utils
 Suggests: knitr, rmarkdown, BiocStyle, tinytest
 License: Artistic-2.0
 
-Package: BiocFileCache
-Version: 2.10.1
-Depends: R (>= 3.4.0), dbplyr (>= 1.0.0)
-Imports: methods, stats, utils, dplyr, RSQLite, DBI, filelock, curl,
-        httr
-Suggests: testthat, knitr, BiocStyle, rmarkdown, rtracklayer
-License: Artistic-2.0
-
 Package: BiocGenerics
 Version: 0.48.1
 Depends: R (>= 4.0.0), methods, utils, graphics, stats
@@ -152,18 +144,6 @@ Suggests: bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
         shiny, tibble, testit (>= 0.9), tufte, xml2, webshot, testthat
         (>= 3.1.0), withr (>= 2.3.0)
 License: GPL-3
-
-Package: brew
-Version: 1.0-8
-Suggests: testthat (>= 3.0.0)
-License: GPL-2
-
-Package: brio
-Version: 1.1.4
-Depends: R (>= 3.6)
-Suggests: covr, testthat (>= 3.0.0)
-License: MIT + file LICENSE
-Archs: x64
 
 Package: broom
 Version: 1.0.5
@@ -391,18 +371,6 @@ Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: x64
 
-Package: ComplexHeatmap
-Version: 2.18.0
-Depends: R (>= 3.5.0), methods, grid, graphics, stats, grDevices
-Imports: circlize (>= 0.4.14), GetoptLong, colorspace, clue,
-        RColorBrewer, GlobalOptions (>= 0.1.0), png, digest, IRanges,
-        matrixStats, foreach, doParallel, codetools
-Suggests: testthat (>= 1.0.0), knitr, markdown, dendsort, jpeg, tiff,
-        fastcluster, EnrichedHeatmap, dendextend (>= 1.0.1), grImport,
-        grImport2, glue, GenomicRanges, gridtext, pheatmap (>= 1.0.12),
-        gridGraphics, gplots, rmarkdown, Cairo, magick
-License: MIT + file LICENSE
-
 Package: conflicted
 Version: 1.2.0
 Depends: R (>= 3.2)
@@ -521,26 +489,11 @@ Imports: stats
 Enhances: robustbase
 License: GPL (>= 2)
 
-Package: desc
-Version: 1.4.3
-Depends: R (>= 3.4)
-Imports: cli, R6, utils
-Suggests: callr, covr, gh, spelling, testthat, whoami, withr
-License: MIT + file LICENSE
-
 Package: diagram
 Version: 1.6.5
 Depends: R (>= 2.01), shape
 Imports: stats, graphics
 License: GPL (>= 2)
-
-Package: diffobj
-Version: 0.3.5
-Depends: R (>= 3.1.0)
-Imports: crayon (>= 1.3.2), tools, methods, utils, stats
-Suggests: knitr, rmarkdown
-License: GPL-2 | GPL-3
-Archs: x64
 
 Package: digest
 Version: 0.6.33
@@ -690,13 +643,6 @@ Suggests: biglm, testthat (>= 0.11.0)
 License: GPL-2 | GPL-3 | file LICENSE
 Archs: x64
 
-Package: filelock
-Version: 1.0.3
-Depends: R (>= 3.4)
-Suggests: callr (>= 2.0.0), covr, testthat (>= 3.0.0)
-License: MIT + file LICENSE
-Archs: x64
-
 Package: fingerprint
 Version: 3.5.7
 Depends: methods
@@ -843,7 +789,7 @@ Suggests: covr, pkgload, testthat (>= 3.0.0), tibble, withr
 License: MIT + file LICENSE
 
 Package: GenomeInfoDb
-Version: 1.38.1
+Version: 1.38.2
 Depends: R (>= 4.0.0), methods, BiocGenerics (>= 0.37.0), S4Vectors (>=
         0.25.12), IRanges (>= 2.13.12)
 Imports: stats, stats4, utils, RCurl, GenomeInfoDbData
@@ -880,13 +826,6 @@ Suggests: Matrix, Biobase, AnnotationDbi, annotate, Biostrings (>=
         rmarkdown, BiocStyle
 License: Artistic-2.0
 Archs: x64
-
-Package: GetoptLong
-Version: 1.0.5
-Depends: R (>= 3.3.0)
-Imports: rjson, GlobalOptions (>= 0.1.0), methods, crayon
-Suggests: testthat (>= 1.0.0), knitr, markdown, rmarkdown
-License: MIT + file LICENSE
 
 Package: getPass
 Version: 0.2-4
@@ -941,14 +880,6 @@ Suggests: covr, crayon, DBI, dplyr, forcats, ggplot2, knitr, magrittr,
         microbenchmark, R.utils, rmarkdown, rprintf, RSQLite, stringr,
         testthat (>= 3.0.0), vctrs (>= 0.3.0), waldo (>= 0.3.0), withr
 License: MIT + file LICENSE
-Archs: x64
-
-Package: gmm
-Version: 1.8
-Depends: R (>= 2.10.0), sandwich
-Imports: stats, methods, grDevices, graphics
-Suggests: knitr, mvtnorm, car, stabledist, MASS, timeDate, timeSeries
-License: GPL (>= 2)
 Archs: x64
 
 Package: googledrive
@@ -1035,19 +966,6 @@ LinkingTo: cpp11
 Suggests: covr, crayon, fs, knitr, pillar (>= 1.4.0), rmarkdown,
         testthat (>= 3.0.0), utf8
 License: MIT + file LICENSE
-Archs: x64
-
-Package: HDF5Array
-Version: 1.30.0
-Depends: R (>= 3.4), methods, DelayedArray (>= 0.27.2), rhdf5 (>=
-        2.31.6)
-Imports: utils, stats, tools, Matrix, rhdf5filters, BiocGenerics (>=
-        0.31.5), S4Vectors, IRanges, S4Arrays (>= 1.1.1)
-LinkingTo: S4Vectors (>= 0.27.13), Rhdf5lib
-Suggests: BiocParallel, GenomicRanges, SummarizedExperiment (>=
-        1.15.1), h5vcData, ExperimentHub, TENxBrainData, zellkonverter,
-        GenomicFeatures, RUnit, SingleCellExperiment
-License: Artistic-2.0
 Archs: x64
 
 Package: heatmaply
@@ -1155,11 +1073,6 @@ Version: 1.76.0
 Depends: R (>= 2.10)
 License: GPL-2
 Archs: x64
-
-Package: imputeLCMD
-Version: 2.1
-Depends: R (>= 2.10), tmvtnorm, norm, pcaMethods, impute
-License: GPL (>= 2)
 
 Package: InterpretMSSpectrum
 Version: 1.3.3
@@ -1533,14 +1446,6 @@ Enhances: HDF5Array
 License: Artistic-2.0
 Archs: x64
 
-Package: msentropy
-Version: 0.1.4
-Depends: R (>= 3.5.0), Rcpp (>= 1.0.10)
-LinkingTo: Rcpp
-Suggests: testthat
-License: Apache License (== 2.0)
-Archs: x64
-
 Package: MsExperiment
 Version: 1.4.0
 Depends: R (>= 4.2), ProtGenerics (>= 1.9.1),
@@ -1611,14 +1516,6 @@ Imports: colorspace, methods
 Suggests: ggplot2, testthat
 License: MIT + file LICENSE
 
-Package: mvtnorm
-Version: 1.2-4
-Depends: R(>= 3.5.0)
-Imports: stats
-Suggests: qrng, numDeriv
-License: GPL-2
-Archs: x64
-
 Package: mzID
 Version: 1.40.0
 Depends: methods
@@ -1671,12 +1568,6 @@ Package: nontargetData
 Version: 1.1
 License: GPL-3
 
-Package: norm
-Version: 1.0-11.1
-Imports: stats
-License: GPL (>= 2)
-Archs: x64
-
 Package: numDeriv
 Version: 2016.8-1.1
 Depends: R (>= 2.11.1)
@@ -1694,12 +1585,6 @@ Package: parallelly
 Version: 1.36.0
 Imports: parallel, tools, utils
 License: LGPL (>= 2.1)
-
-Package: patrick
-Version: 0.2.0
-Depends: R (>= 3.1)
-Imports: dplyr, purrr, rlang, testthat, tibble
-License: Apache License 2.0
 
 Package: patRoon
 Version: 2.3.0
@@ -1750,28 +1635,11 @@ Suggests: bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,
         tibble, units (>= 0.7.2), vdiffr, withr
 License: MIT + file LICENSE
 
-Package: pkgbuild
-Version: 1.4.3
-Depends: R (>= 3.5)
-Imports: callr (>= 3.2.0), cli (>= 3.4.0), desc, processx, R6
-Suggests: covr, cpp11, knitr, mockery, Rcpp, rmarkdown, testthat (>=
-        3.0.0), withr (>= 2.3.0)
-License: MIT + file LICENSE
-
 Package: pkgconfig
 Version: 2.0.3
 Imports: utils
 Suggests: covr, testthat, disposables (>= 1.0.3)
 License: MIT + file LICENSE
-
-Package: pkgload
-Version: 1.3.3
-Depends: R (>= 3.4.0)
-Imports: cli (>= 3.3.0), crayon, desc, fs, glue, methods, pkgbuild,
-        rlang (>= 1.1.1), rprojroot, utils, withr (>= 2.4.3)
-Suggests: bitops, covr, mathjaxr, mockr, pak, Rcpp, remotes,
-        rstudioapi, testthat (>= 3.1.0)
-License: GPL-3
 
 Package: plogr
 Version: 0.2.0
@@ -1814,11 +1682,6 @@ Version: 0.1-8
 Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: x64
-
-Package: praise
-Version: 1.0.0
-Suggests: testthat
-License: MIT + file LICENSE
 
 Package: preprocessCore
 Version: 1.64.0
@@ -2226,23 +2089,6 @@ Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
         rstudioapi (>= 0.6), htmltools
 License: MIT + file LICENSE
 
-Package: rhdf5
-Version: 2.46.1
-Depends: R (>= 4.0.0), methods
-Imports: Rhdf5lib (>= 1.13.4), rhdf5filters, S4Vectors
-LinkingTo: Rhdf5lib
-Suggests: bit64, BiocStyle, knitr, rmarkdown, testthat, bench, dplyr,
-        ggplot2, mockery, BiocParallel
-License: Artistic-2.0
-Archs: x64
-
-Package: rhdf5filters
-Version: 1.14.1
-LinkingTo: Rhdf5lib
-Suggests: BiocStyle, knitr, rmarkdown, tinytest, rhdf5 (>= 2.34.0)
-License: BSD_2_clause + file LICENSE
-Archs: x64
-
 Package: Rhdf5lib
 Version: 1.24.1
 Depends: R (>= 4.2.0)
@@ -2254,12 +2100,6 @@ Package: rJava
 Version: 1.0-10
 Depends: R (>= 3.6.0), methods
 License: LGPL-2.1
-Archs: x64
-
-Package: rjson
-Version: 0.2.21
-Depends: R (>= 4.0.0)
-License: GPL-2
 Archs: x64
 
 Package: rlang
@@ -2319,19 +2159,6 @@ Suggests: BiocGenerics, BiocStyle, knitr, multtest, omicade4,
         rmarkdown, testthat
 License: CeCILL
 
-Package: roxygen2
-Version: 7.2.3
-Depends: R (>= 3.3)
-Imports: brew, cli (>= 3.3.0), commonmark, desc (>= 1.2.0), knitr,
-        methods, pkgload (>= 1.0.2), purrr (>= 0.3.3), R6 (>= 2.1.2),
-        rlang (>= 1.0.6), stringi, stringr (>= 1.0.0), utils, withr,
-        xml2
-LinkingTo: cpp11
-Suggests: covr, R.methodsS3, R.oo, rmarkdown (>= 2.16), testthat (>=
-        3.1.2), yaml
-License: MIT + file LICENSE
-Archs: x64
-
 Package: rpart
 Version: 4.1.23
 Priority: recommended
@@ -2346,13 +2173,6 @@ Depends: R (>= 3.0.0)
 Suggests: covr, knitr, lifecycle, mockr, rlang, rmarkdown, testthat (>=
         3.0.0), withr
 License: MIT + file LICENSE
-
-Package: rpx
-Version: 2.10.0
-Depends: R (>= 3.5.0), methods
-Imports: BiocFileCache, jsonlite, xml2, RCurl, curl, utils
-Suggests: Biostrings, BiocStyle, testthat, knitr, tibble, rmarkdown
-License: GPL-2
 
 Package: rsm
 Version: 2.10.4
@@ -2405,15 +2225,6 @@ Suggests: IRanges, GenomicRanges, SummarizedExperiment, Matrix,
         knitr
 License: Artistic-2.0
 Archs: x64
-
-Package: sandwich
-Version: 3.1-0
-Depends: R (>= 3.0.0)
-Imports: stats, utils, zoo
-Suggests: AER, car, geepack, lattice, lme4, lmtest, MASS, multiwayvcov,
-        parallel, pcse, plm, pscl, scatterplot3d, stats4, strucchange,
-        survival
-License: GPL-2 | GPL-3
 
 Package: sass
 Version: 0.4.8
@@ -2469,12 +2280,6 @@ Suggests: datasets, Cairo (>= 1.5-5), testthat (>= 3.0.0), knitr (>=
         magrittr, yaml, future, dygraphs, ragg, showtext, sass
 License: GPL-3 | file LICENSE
 
-Package: shinydashboard
-Version: 0.7.2
-Depends: R (>= 3.0)
-Imports: utils, shiny (>= 1.0.0), htmltools (>= 0.2.6), promises
-License: GPL (>= 2) | file LICENSE
-
 Package: shinyjs
 Version: 2.1.0
 Depends: R (>= 3.1.0)
@@ -2482,15 +2287,6 @@ Imports: digest (>= 0.6.8), jsonlite, shiny (>= 1.0.0)
 Suggests: htmltools (>= 0.2.9), knitr (>= 1.7), rmarkdown, shinyAce,
         shinydisconnect, testthat (>= 0.9.1)
 License: MIT + file LICENSE
-
-Package: SingleCellExperiment
-Version: 1.24.0
-Depends: SummarizedExperiment
-Imports: methods, utils, stats, S4Vectors, BiocGenerics, GenomicRanges,
-        DelayedArray
-Suggests: testthat, BiocStyle, knitr, rmarkdown, Matrix, scRNAseq (>=
-        2.9.1), Rtsne
-License: GPL-3
 
 Package: slam
 Version: 0.1-50
@@ -2635,20 +2431,6 @@ Suggests: covr, knitr, rmarkdown, testthat (>= 2.1.0), tools
 License: MIT + file LICENSE
 Archs: x64
 
-Package: testthat
-Version: 3.2.1
-Depends: R (>= 3.6.0)
-Imports: brio (>= 1.1.3), callr (>= 3.7.3), cli (>= 3.6.1), desc (>=
-        1.4.2), digest (>= 0.6.33), evaluate (>= 0.21), jsonlite (>=
-        1.8.7), lifecycle (>= 1.0.3), magrittr (>= 2.0.3), methods,
-        pkgload (>= 1.3.2.1), praise (>= 1.0.0), processx (>= 3.8.2),
-        ps (>= 1.7.5), R6 (>= 2.5.1), rlang (>= 1.1.1), utils, waldo
-        (>= 0.5.1), withr (>= 2.5.0)
-Suggests: covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), knitr,
-        rmarkdown, rstudioapi, shiny, usethis, vctrs (>= 0.1.0), xml2
-License: MIT + file LICENSE
-Archs: x64
-
 Package: textshaping
 Version: 0.3.7
 Depends: R (>= 3.2.0)
@@ -2721,9 +2503,9 @@ License: GPL-3
 Archs: x64
 
 Package: timeDate
-Version: 4022.108
-Depends: R (>= 3.6.0)
-Imports: graphics, utils, stats, methods
+Version: 4032.109
+Depends: R (>= 3.6.0), methods
+Imports: graphics, utils, stats
 Suggests: RUnit
 License: GPL (>= 2)
 
@@ -2733,28 +2515,12 @@ Imports: xfun (>= 0.29)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
 
-Package: tmvtnorm
-Version: 1.6
-Depends: R (>= 1.9.0), mvtnorm, utils, Matrix, stats4, gmm
-Imports: stats, methods
-Suggests: lattice
-License: GPL (>= 2)
-Archs: x64
-
 Package: TSP
 Version: 1.2-4
 Depends: R (>= 3.5.0)
 Imports: graphics, foreach, utils, stats, grDevices
 Suggests: maps, doParallel, testthat
 License: GPL-3
-Archs: x64
-
-Package: tweedie
-Version: 2.3.5
-Depends: R (>= 2.8.0)
-Imports: methods
-Suggests: stabledist, statmod(>= 1.4.20)
-License: GPL (>= 2)
 Archs: x64
 
 Package: tzdb
@@ -2795,16 +2561,6 @@ Suggests: bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
         pillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=
         3.0.0), tibble (>= 3.1.3), waldo (>= 0.2.0), withr, xml2,
         zeallot
-License: MIT + file LICENSE
-Archs: x64
-
-Package: vdiffr
-Version: 1.0.7
-Depends: R (>= 3.2.0)
-Imports: diffobj, glue, grDevices, htmltools, lifecycle, rlang,
-        testthat (>= 3.0.3), xml2 (>= 1.0.0)
-LinkingTo: cpp11
-Suggests: covr, ggplot2 (>= 3.2.0), roxygen2, withr
 License: MIT + file LICENSE
 Archs: x64
 
@@ -2870,14 +2626,6 @@ Suggests: affydata, hgu95av2cdf, BiocStyle, knitr, rmarkdown, dplyr,
         testthat
 License: Artistic-2.0
 Archs: x64
-
-Package: waldo
-Version: 0.5.2
-Depends: R (>= 3.6)
-Imports: cli, diffobj (>= 0.3.4), fansi, glue, methods, rematch2, rlang
-        (>= 1.0.0), tibble
-Suggests: covr, R6, testthat (>= 3.0.0), withr, xml2
-License: MIT + file LICENSE
 
 Package: webchem
 Version: 1.3.0
@@ -2983,13 +2731,4 @@ Package: zlibbioc
 Version: 1.48.0
 Suggests: BiocStyle
 License: Artistic-2.0 + file LICENSE
-Archs: x64
-
-Package: zoo
-Version: 1.8-12
-Depends: R (>= 3.1.0), stats
-Imports: utils, graphics, grDevices, lattice (>= 0.20-27)
-Suggests: AER, coda, chron, ggplot2 (>= 3.0.0), mondate, scales,
-        stinepack, strucchange, timeDate, timeSeries, tis, tseries, xts
-License: GPL-2 | GPL-3
 Archs: x64

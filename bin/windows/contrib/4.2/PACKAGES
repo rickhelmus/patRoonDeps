@@ -1153,7 +1153,7 @@ Suggests: knitr, rmarkdown
 License: Apache License (>= 2)
 
 Package: klaR
-Version: 1.7-2
+Version: 1.7-3
 Depends: R (>= 2.10.0), MASS
 Imports: combinat, questionr, grDevices, stats, utils, graphics
 Suggests: scatterplot3d (>= 0.3-22), som, mlbench, rpart, e1071
@@ -1973,12 +1973,12 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: recipes
-Version: 1.0.8
+Version: 1.0.9
 Depends: dplyr (>= 1.1.0), R (>= 3.6)
 Imports: cli, clock (>= 0.6.1), ellipsis, generics (>= 0.1.2), glue,
         gower, hardhat (>= 1.3.0), ipred (>= 0.9-12), lifecycle (>=
         1.0.3), lubridate (>= 1.8.0), magrittr, Matrix, purrr (>=
-        1.0.0), rlang (>= 1.0.3), stats, tibble, tidyr (>= 1.0.0),
+        1.0.0), rlang (>= 1.1.0), stats, tibble, tidyr (>= 1.0.0),
         tidyselect (>= 1.2.0), timeDate, utils, vctrs (>= 0.5.0), withr
 Suggests: covr, ddalpha, dials (>= 1.2.0), ggplot2, igraph, kernlab,
         knitr, modeldata (>= 0.1.1), parsnip (>= 0.1.7), RANN,
@@ -2410,9 +2410,9 @@ License: GPL-3
 Archs: x64
 
 Package: timeDate
-Version: 4022.108
-Depends: R (>= 3.6.0)
-Imports: graphics, utils, stats, methods
+Version: 4032.109
+Depends: R (>= 3.6.0), methods
+Imports: graphics, utils, stats
 Suggests: RUnit
 License: GPL (>= 2)
 

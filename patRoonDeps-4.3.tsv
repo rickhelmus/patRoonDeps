@@ -10,7 +10,6 @@ base64enc	0.1-3
 BH	1.81.0-1	
 Biobase	2.62.0	
 BiocBaseUtils	1.4.0	
-BiocFileCache	2.10.1	
 BiocGenerics	0.48.1	
 BiocManager	1.30.22	
 BiocParallel	1.36.0	
@@ -20,8 +19,6 @@ bit64	4.0.5
 bitops	1.0-7	
 blob	1.2.4	
 bookdown	0.37	
-brew	1.0-8	
-brio	1.1.4	
 broom	1.0.5	
 bslib	0.6.1	
 ca	0.71.1	
@@ -47,7 +44,6 @@ codetools	0.2-19
 colorspace	2.1-0	
 combinat	0.0-8	
 commonmark	1.9.0	
-ComplexHeatmap	2.18.0	
 conflicted	1.2.0	
 cpp11	0.4.7	
 crayon	1.5.2	
@@ -61,9 +57,7 @@ dbscan	1.1-12
 DelayedArray	0.28.0	
 dendextend	1.17.1	
 DEoptimR	1.1-3	
-desc	1.4.3	
 diagram	1.6.5	
-diffobj	0.3.5	
 digest	0.6.33	
 docopt	0.7.1	
 doParallel	1.0.17	
@@ -84,7 +78,6 @@ fastAdaboost	1.0.0	f331ff8ccfe2e7f318448a29bc72af646dfaf2c1
 fastcluster	1.2.3	
 fastmap	1.1.1	
 ff	4.0.9	
-filelock	1.0.3	
 fingerprint	3.5.7	
 flexdashboard	0.6.2	
 fontawesome	0.5.2	
@@ -104,17 +97,15 @@ GA	3.2.3
 gargle	1.5.2	
 gclus	1.3.2	
 generics	0.1.3	
-GenomeInfoDb	1.38.1	
+GenomeInfoDb	1.38.2	
 GenomeInfoDbData	1.2.11	f3111730888a3d83e9465ffa2552003de153bbf2
 GenomicRanges	1.54.1	
-GetoptLong	1.0.5	
 getPass	0.2-4	
 ggplot2	3.4.4	
 ggrepel	0.9.4	
 GlobalOptions	0.1.2	
 globals	0.16.2	
 glue	1.6.2	
-gmm	1.8	
 googledrive	2.1.1	
 googlesheets4	1.1.1	
 gower	1.0.1	
@@ -125,7 +116,6 @@ gtable	0.3.4
 gtools	3.9.5	
 hardhat	1.3.0	
 haven	2.5.4	
-HDF5Array	1.30.0	
 heatmaply	1.5.0	
 highr	0.10	
 Hmisc	5.1-1	
@@ -138,7 +128,6 @@ httr	1.4.7
 ids	1.0.1	
 igraph	1.6.0	
 impute	1.76.0	
-imputeLCMD	2.1	
 InterpretMSSpectrum	1.3.3	0731d92accdf5db2a6d7b03c24b2d324b67b1c72
 ipred	0.9-14	
 IRanges	2.36.0	
@@ -185,7 +174,6 @@ modelr	0.1.11
 MS2Quant	1.1.0	46e0c77ef4961a29a73a388105eeb28e33839630
 MS2Tox	0.3.2	7e5574291c834b1ab9e50f8adf74a703188f6a6f
 MsCoreUtils	1.14.1	
-msentropy	0.1.4	
 MsExperiment	1.4.0	
 MsFeatures	1.10.0	
 MSnbase	2.28.1	
@@ -193,7 +181,6 @@ MultiAssayExperiment	1.28.0
 MultiDataSet	1.30.0	
 multtest	2.58.0	
 munsell	0.5.0	
-mvtnorm	1.2-4	
 mzID	1.40.0	
 mzR	2.36.0	
 ncdf4	1.22	
@@ -201,24 +188,19 @@ nlme	3.1-164
 nnet	7.3-19	
 nontarget	2.2	e30221585182bc66e1f8e1113b2c1103a0f2cb56
 nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
-norm	1.0-11.1	
 numDeriv	2016.8-1.1	
 openssl	2.1.1	
 parallelly	1.36.0	
-patrick	0.2.0	
-patRoon	2.3.0	80d3175c10387b1d1f9fc83a9e3c69b78b90fbe3
+patRoon	2.3.0	53ea5e848c94917befc269d0994b63234376d8cb
 pcaMethods	1.94.0	
 permute	0.9-7	
 pillar	1.9.0	
-pkgbuild	1.4.3	
 pkgconfig	2.0.3	
-pkgload	1.3.3	
 plogr	0.2.0	
 plotly	4.10.3	
 plotrix	3.8-4	
 plyr	1.8.9	
 png	0.1-8	
-praise	1.0.0	
 preprocessCore	1.64.0	
 prettyunits	1.2.0	
 pROC	1.18.5	
@@ -271,37 +253,29 @@ reprex	2.0.2
 reshape2	1.4.4	
 Rgraphviz	2.46.0	
 rhandsontable	0.3.8	
-rhdf5	2.46.1	
-rhdf5filters	1.14.1	
 Rhdf5lib	1.24.1	
 rJava	1.0-10	
-rjson	0.2.21	
 rlang	1.1.2	
 rlist	0.4.6.2	
 rmarkdown	2.25	
 robustbase	0.99-1	
 ROCR	1.0-11	
 ropls	1.34.0	
-roxygen2	7.2.3	
 rpart	4.1.23	
 rprojroot	2.0.4	
-rpx	2.10.0	
 rsm	2.10.4	
 RSQLite	2.3.4	
 rstudioapi	0.15.0	
 rvest	1.0.3	
 S4Arrays	1.2.0	
 S4Vectors	0.40.2	
-sandwich	3.1-0	
 sass	0.4.8	
 scales	1.3.0	
 selectr	0.4-2	
 seriation	1.5.4	
 shape	1.4.6	
 shiny	1.8.0	
-shinydashboard	0.7.2	
 shinyjs	2.1.0	
-SingleCellExperiment	1.24.0	
 slam	0.1-50	
 snow	0.4-4	
 sourcetools	0.1.7-1	
@@ -319,24 +293,20 @@ survival	3.5-7
 svglite	2.1.3	
 sys	3.4.2	
 systemfonts	1.0.5	
-testthat	3.2.1	
 textshaping	0.3.7	
 tibble	3.2.1	
 tidyr	1.3.0	
 tidyselect	1.2.0	
 tidyverse	2.0.0	
 timechange	0.2.0	
-timeDate	4022.108	
+timeDate	4032.109	
 tinytex	0.49	
-tmvtnorm	1.6	
 TSP	1.2-4	
-tweedie	2.3.5	
 tzdb	0.4.0	
 UpSetR	1.4.0	
 utf8	1.2.4	
 uuid	1.1-1	
 vctrs	0.6.5	
-vdiffr	1.0.7	
 vegan	2.6-4	
 VennDiagram	1.7.3	
 viridis	0.6.4	
@@ -344,7 +314,6 @@ viridisLite	0.4.2
 visNetwork	2.1.2	
 vroom	1.6.5	
 vsn	3.70.0	
-waldo	0.5.2	
 webchem	1.3.0	
 webshot	0.5.5	
 withr	2.5.2	
@@ -357,4 +326,3 @@ xtable	1.8-4
 XVector	0.42.0	
 yaml	2.3.8	
 zlibbioc	1.48.0	
-zoo	1.8-12	
