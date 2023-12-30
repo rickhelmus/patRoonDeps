@@ -51,7 +51,7 @@ crosstalk	1.2.1
 curl	5.2.0	
 data.table	1.14.10	
 data.tree	1.1.0	
-DBI	1.1.3	
+DBI	1.2.0	
 dbplyr	2.4.0	
 dbscan	1.1-12	
 DelayedArray	0.28.0	
@@ -91,13 +91,13 @@ fst	0.9.8
 fstcore	0.9.18	
 futile.logger	1.4.3	
 futile.options	1.0.1	
-future	1.33.0	
-future.apply	1.11.0	
+future	1.33.1	
+future.apply	1.11.1	
 GA	3.2.3	
 gargle	1.5.2	
 gclus	1.3.2	
 generics	0.1.3	
-GenomeInfoDb	1.38.2	
+GenomeInfoDb	1.38.5	
 GenomeInfoDbData	1.2.11	f3111730888a3d83e9465ffa2552003de153bbf2
 GenomicRanges	1.54.1	
 getPass	0.2-4	
@@ -154,7 +154,7 @@ lifecycle	1.0.4
 limma	3.58.1	
 listenv	0.9.0	
 lubridate	1.9.3	
-magick	2.8.1	
+magick	2.8.2	
 magrittr	2.0.3	
 MALDIquant	1.22.1	
 MASS	7.3-60	
@@ -165,7 +165,7 @@ matrixStats	1.2.0
 memoise	2.0.1	
 MetaboCoreUtils	1.10.0	
 MetaClean	1.0.1	d0ce1bc0b2fe4d17e7e047c8c07c75b81c4e5833
-mgcv	1.9-0	
+mgcv	1.9-1	
 mime	0.12	
 miniUI	0.1.1.1	
 MLmetrics	1.1.1	
@@ -191,7 +191,7 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.1.1	
 parallelly	1.36.0	
-patRoon	2.3.1	336bc1625e69b4ff6444f52d861b459ef8d10e5b
+patRoon	2.3.1	44da5141fd5bdb3565ad42720514f158ed96d939
 pcaMethods	1.94.0	
 permute	0.9-7	
 pillar	1.9.0	
@@ -279,7 +279,7 @@ shinyjs	2.1.0
 slam	0.1-50	
 snow	0.4-4	
 sourcetools	0.1.7-1	
-SparseArray	1.2.2	
+SparseArray	1.2.3	
 sparsesvd	0.2-2	
 Spectra	1.12.0	
 splashR	0.0.4	174fbf289a0357535f9bacda282b9a2dbb7807cc
