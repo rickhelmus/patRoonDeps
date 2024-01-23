@@ -5,7 +5,7 @@ askpass	1.2.0
 assertthat	0.2.1	
 backports	1.4.1	
 base64enc	0.1-3	
-BH	1.81.0-1	
+BH	1.84.0-0	
 Biobase	2.58.0	
 BiocBaseUtils	1.0.0	
 BiocGenerics	0.44.0	
@@ -56,7 +56,7 @@ DelayedArray	0.23.2
 dendextend	1.17.1	
 DEoptimR	1.1-3	
 diagram	1.6.5	
-digest	0.6.33	
+digest	0.6.34	
 docopt	0.7.1	
 doParallel	1.0.17	
 dplyr	1.1.4	
@@ -73,9 +73,9 @@ evaluate	0.23
 fansi	1.0.6	
 farver	2.1.1	
 fastAdaboost	1.0.0	f331ff8ccfe2e7f318448a29bc72af646dfaf2c1
-fastcluster	1.2.3	
+fastcluster	1.2.6	
 fastmap	1.1.1	
-ff	4.0.9	
+ff	4.0.12	
 fingerprint	3.5.7	
 flexdashboard	0.6.2	
 fontawesome	0.5.2	
@@ -100,10 +100,10 @@ GenomeInfoDbData	1.2.11	f3111730888a3d83e9465ffa2552003de153bbf2
 GenomicRanges	1.50.2	
 getPass	0.2-4	
 ggplot2	3.4.4	
-ggrepel	0.9.4	
+ggrepel	0.9.5	
 GlobalOptions	0.1.2	
 globals	0.16.2	
-glue	1.6.2	
+glue	1.7.0	
 googledrive	2.1.1	
 googlesheets4	1.1.1	
 gower	1.0.1	
@@ -155,9 +155,9 @@ lubridate	1.9.3
 magick	2.8.2	
 magrittr	2.0.3	
 MALDIquant	1.22.1	
-MASS	7.3-60	
+MASS	7.3-60.0.1	
 MassSpecWavelet	1.64.1	
-Matrix	1.6-4	
+Matrix	1.6-5	
 MatrixGenerics	1.10.0	
 matrixStats	1.2.0	
 memoise	2.0.1	
@@ -186,13 +186,13 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.1.1	
 parallelly	1.36.0	
-patRoon	2.3.1	44da5141fd5bdb3565ad42720514f158ed96d939
+patRoon	2.3.1	5c43464b096a9632f6d6ec3b00b464e1509be349
 pcaMethods	1.90.0	
 permute	0.9-7	
 pillar	1.9.0	
 pkgconfig	2.0.3	
 plogr	0.2.0	
-plotly	4.10.3	
+plotly	4.10.4	
 plotrix	3.8-4	
 plyr	1.8.9	
 png	0.1-8	
@@ -206,7 +206,7 @@ progressr	0.14.0
 promises	1.2.1	
 ProtGenerics	1.30.0	
 proxy	0.4-27	
-ps	1.7.5	
+ps	1.7.6	
 purrr	1.0.2	
 qap	0.1-2	
 qlcMatrix	0.9.7	d919872f69b07b6cf892f725ed3d6e4569319206
@@ -228,28 +228,28 @@ rbibutils	2.2.16
 rcdk	3.8.1	
 rcdklibs	2.8	
 RColorBrewer	1.1-3	
-Rcpp	1.0.11	
+Rcpp	1.0.12	
 RcppArmadillo	0.12.6.6.1	
-RCurl	1.98-1.13	
+RCurl	1.98-1.14	
 RDCOMClient	0.95-1	1554833f8659461427a93732119756ae1c25bc32
 Rdisop	1.58.0	
 Rdpack	2.6	
 reactable	0.4.4	
 reactR	0.5.0	
 readMzXmlData	2.8.3	
-readr	2.1.4	
+readr	2.1.5	
 readxl	1.4.3	
 recipes	1.0.9	
 registry	0.5-1	
 rematch	2.0.0	
 rematch2	2.1.2	
-reprex	2.0.2	
+reprex	2.1.0	
 reshape2	1.4.4	
 Rgraphviz	2.42.0	
 rhandsontable	0.3.8	
 Rhdf5lib	1.20.0	
 rJava	1.0-10	
-rlang	1.1.2	
+rlang	1.1.3	
 rlist	0.4.6.2	
 rmarkdown	2.25	
 robustbase	0.99-1	
@@ -258,7 +258,7 @@ ropls	1.30.0
 rpart	4.1.23	
 rprojroot	2.0.4	
 rsm	2.10.4	
-RSQLite	2.3.4	
+RSQLite	2.3.5	
 rstudioapi	0.15.0	
 rvest	1.0.3	
 S4Vectors	0.36.2	
@@ -288,14 +288,14 @@ tibble	3.2.1
 tidyr	1.3.0	
 tidyselect	1.2.0	
 tidyverse	2.0.0	
-timechange	0.2.0	
+timechange	0.3.0	
 timeDate	4032.109	
 tinytex	0.49	
 TSP	1.2-4	
 tzdb	0.4.0	
 UpSetR	1.4.0	
 utf8	1.2.4	
-uuid	1.1-1	
+uuid	1.2-0	
 vctrs	0.6.5	
 vegan	2.6-4	
 VennDiagram	1.7.3	
@@ -306,7 +306,7 @@ vroom	1.6.5
 vsn	3.66.0	
 webchem	1.3.0	
 webshot	0.5.5	
-withr	2.5.2	
+withr	3.0.0	
 xcms	3.20.0	
 xfun	0.41	
 xgboost	1.7.6.1	
