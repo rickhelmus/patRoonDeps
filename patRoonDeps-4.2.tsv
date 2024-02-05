@@ -41,13 +41,13 @@ cluster	2.1.6
 codetools	0.2-19	
 colorspace	2.1-0	
 combinat	0.0-8	
-commonmark	1.9.0	
+commonmark	1.9.1	
 conflicted	1.2.0	
 cpp11	0.4.7	
 crayon	1.5.2	
 crosstalk	1.2.1	
 curl	5.2.0	
-data.table	1.14.10	
+data.table	1.15.0	
 data.tree	1.1.0	
 DBI	1.2.0	
 dbplyr	2.4.0	
@@ -91,7 +91,7 @@ futile.logger	1.4.3
 futile.options	1.0.1	
 future	1.33.1	
 future.apply	1.11.1	
-GA	3.2.3	
+GA	3.2.4	
 gargle	1.5.2	
 gclus	1.3.2	
 generics	0.1.3	
@@ -107,12 +107,12 @@ glue	1.7.0
 googledrive	2.1.1	
 googlesheets4	1.1.1	
 gower	1.0.1	
-gplots	3.1.3	
+gplots	3.1.3.1	
 graph	1.76.0	
 gridExtra	2.3	
 gtable	0.3.4	
 gtools	3.9.5	
-hardhat	1.3.0	
+hardhat	1.3.1	
 haven	2.5.4	
 heatmaply	1.5.0	
 highr	0.10	
@@ -121,10 +121,10 @@ hms	1.1.3
 htmlTable	2.4.2	
 htmltools	0.5.7	
 htmlwidgets	1.6.4	
-httpuv	1.6.13	
+httpuv	1.6.14	
 httr	1.4.7	
 ids	1.0.1	
-igraph	1.6.0	
+igraph	2.0.1.1	
 impute	1.72.3	
 InterpretMSSpectrum	1.3.3	0731d92accdf5db2a6d7b03c24b2d324b67b1c72
 ipred	0.9-14	
@@ -134,7 +134,7 @@ iterators	1.0.14
 itertools	0.1-3	
 jquerylib	0.1.4	
 jsonlite	1.8.8	
-kableExtra	1.3.4	
+kableExtra	1.4.0	
 kernlab	0.9-32	
 KernSmooth	2.23-22	
 keys	0.1.1	
@@ -150,11 +150,11 @@ lava	1.7.3
 lazyeval	0.2.2	
 lifecycle	1.0.4	
 limma	3.54.2	
-listenv	0.9.0	
+listenv	0.9.1	
 lubridate	1.9.3	
 magick	2.8.2	
 magrittr	2.0.3	
-MALDIquant	1.22.1	
+MALDIquant	1.22.2	
 MASS	7.3-60.0.1	
 MassSpecWavelet	1.64.1	
 Matrix	1.6-5	
@@ -186,7 +186,7 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.1.1	
 parallelly	1.36.0	
-patRoon	2.3.1	5c43464b096a9632f6d6ec3b00b464e1509be349
+patRoon	2.3.1	9f186020ee9ef8cb538ce7de32d8c1b456928d65
 pcaMethods	1.90.0	
 permute	0.9-7	
 pillar	1.9.0	
@@ -214,7 +214,7 @@ qqman	0.1.9
 questionr	0.7.8	
 R.cache	0.16.0	
 R.methodsS3	1.8.2	
-R.oo	1.25.0	
+R.oo	1.26.0	
 R.utils	2.12.3	
 R6	2.5.1	
 ragg	1.2.7	
@@ -248,11 +248,11 @@ reshape2	1.4.4
 Rgraphviz	2.42.0	
 rhandsontable	0.3.8	
 Rhdf5lib	1.20.0	
-rJava	1.0-10	
+rJava	1.0-11	
 rlang	1.1.3	
 rlist	0.4.6.2	
 rmarkdown	2.25	
-robustbase	0.99-1	
+robustbase	0.99-2	
 ROCR	1.0-11	
 ropls	1.30.0	
 rpart	4.1.23	
@@ -285,7 +285,7 @@ sys	3.4.2
 systemfonts	1.0.5	
 textshaping	0.3.7	
 tibble	3.2.1	
-tidyr	1.3.0	
+tidyr	1.3.1	
 tidyselect	1.2.0	
 tidyverse	2.0.0	
 timechange	0.3.0	
@@ -299,7 +299,7 @@ uuid	1.2-0
 vctrs	0.6.5	
 vegan	2.6-4	
 VennDiagram	1.7.3	
-viridis	0.6.4	
+viridis	0.6.5	
 viridisLite	0.4.2	
 visNetwork	2.1.2	
 vroom	1.6.5	
@@ -309,8 +309,8 @@ webshot	0.5.5
 withr	3.0.0	
 xcms	3.20.0	
 xfun	0.41	
-xgboost	1.7.6.1	
-XML	3.99-0.16	
+xgboost	1.7.7.1	
+XML	3.99-0.16.1	
 xml2	1.3.6	
 xtable	1.8-4	
 XVector	0.38.0	

@@ -352,7 +352,7 @@ Version: 0.0-8
 License: GPL-2
 
 Package: commonmark
-Version: 1.9.0
+Version: 1.9.1
 Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: x64
@@ -394,11 +394,11 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: data.table
-Version: 1.14.10
+Version: 1.15.0
 Depends: R (>= 3.1.0)
 Imports: methods
-Suggests: bit64 (>= 4.0.0), bit (>= 4.0.4), curl, R.utils, xts,
-        nanotime, zoo (>= 1.8-1), yaml, knitr, rmarkdown
+Suggests: bit64 (>= 4.0.0), bit (>= 4.0.4), R.utils, xts, zoo (>=
+        1.8-1), yaml, knitr, markdown
 License: MPL-2.0 | file LICENSE
 Archs: x64
 
@@ -741,7 +741,7 @@ Suggests: methods, RhpcBLASctl, R.rsp, markdown
 License: LGPL (>= 2.1)
 
 Package: GA
-Version: 3.2.3
+Version: 3.2.4
 Depends: R (>= 3.4), methods, foreach, iterators
 Imports: stats, graphics, grDevices, utils, cli, crayon, Rcpp
 LinkingTo: Rcpp, RcppArmadillo
@@ -895,7 +895,7 @@ License: GPL-3
 Archs: x64
 
 Package: gplots
-Version: 3.1.3
+Version: 3.1.3.1
 Depends: R (>= 3.0)
 Imports: gtools, stats, caTools, KernSmooth, methods
 Suggests: grid, MASS, knitr, r2d2
@@ -932,7 +932,7 @@ License: GPL-2
 Archs: x64
 
 Package: hardhat
-Version: 1.3.0
+Version: 1.3.1
 Depends: R (>= 3.5.0)
 Imports: cli (>= 3.6.0), glue (>= 1.6.2), rlang (>= 1.1.0), tibble (>=
         3.2.1), vctrs (>= 0.6.0)
@@ -1019,7 +1019,7 @@ Enhances: shiny (>= 1.1)
 License: MIT + file LICENSE
 
 Package: httpuv
-Version: 1.6.13
+Version: 1.6.14
 Depends: R (>= 2.15.1)
 Imports: later (>= 0.8.0), promises, R6, Rcpp (>= 1.0.7), utils
 LinkingTo: later, Rcpp
@@ -1042,7 +1042,7 @@ Suggests: knitr, rcorpora, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: igraph
-Version: 1.6.0
+Version: 2.0.1.1
 Depends: methods, R (>= 3.5.0)
 Imports: cli, graphics, grDevices, lifecycle, magrittr, Matrix,
         pkgconfig (>= 2.0.0), rlang, stats, utils
@@ -1122,13 +1122,12 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: kableExtra
-Version: 1.3.4
+Version: 1.4.0
 Depends: R (>= 3.1.0)
-Imports: knitr (>= 1.16), magrittr, stringr (>= 1.0), xml2 (>= 1.1.1),
-        rvest, rmarkdown (>= 1.6.0), scales, viridisLite, stats,
-        grDevices, htmltools, rstudioapi, glue, tools, webshot, digest,
-        graphics, svglite
-Suggests: testthat, magick, formattable, sparkline
+Imports: knitr (>= 1.33), magrittr, stringr (>= 1.0), xml2 (>= 1.1.1),
+        rmarkdown (>= 1.6.0), scales, viridisLite, stats, grDevices,
+        htmltools, rstudioapi, tools, digest, graphics, svglite
+Suggests: testthat, magick, tinytex, formattable, sparkline, webshot2
 License: MIT + file LICENSE
 
 Package: kernlab
@@ -1261,7 +1260,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: listenv
-Version: 0.9.0
+Version: 0.9.1
 Depends: R (>= 3.1.2)
 Suggests: R.utils, R.rsp, markdown
 License: LGPL (>= 2.1)
@@ -1293,7 +1292,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: MALDIquant
-Version: 1.22.1
+Version: 1.22.2
 Depends: R (>= 4.0.0), methods
 Imports: parallel
 Suggests: knitr, testthat (>= 0.8)
@@ -1789,8 +1788,8 @@ Suggests: codetools
 License: LGPL (>= 2.1)
 
 Package: R.oo
-Version: 1.25.0
-Depends: R (>= 2.13.0), R.methodsS3 (>= 1.8.1)
+Version: 1.26.0
+Depends: R (>= 2.13.0), R.methodsS3 (>= 1.8.2)
 Imports: methods, utils
 Suggests: tools
 License: LGPL (>= 2.1)
@@ -2045,7 +2044,7 @@ License: Artistic-2.0
 Archs: x64
 
 Package: rJava
-Version: 1.0-10
+Version: 1.0-11
 Depends: R (>= 3.6.0), methods
 License: LGPL-2.1
 Archs: x64
@@ -2081,7 +2080,7 @@ Suggests: digest, dygraphs, fs, rsconnect, downlit (>= 0.4.0), katex
 License: GPL-3
 
 Package: robustbase
-Version: 0.99-1
+Version: 0.99-2
 Depends: R (>= 3.5.0)
 Imports: stats, graphics, utils, methods, DEoptimR
 Suggests: grid, MASS, lattice, boot, cluster, Matrix, robust,
@@ -2362,10 +2361,10 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: tidyr
-Version: 1.3.0
-Depends: R (>= 3.4.0)
+Version: 1.3.1
+Depends: R (>= 3.6)
 Imports: cli (>= 3.4.1), dplyr (>= 1.0.10), glue, lifecycle (>= 1.0.3),
-        magrittr, purrr (>= 1.0.1), rlang (>= 1.0.4), stringr (>=
+        magrittr, purrr (>= 1.0.1), rlang (>= 1.1.1), stringr (>=
         1.5.0), tibble (>= 2.1.1), tidyselect (>= 1.2.0), utils, vctrs
         (>= 0.5.2)
 LinkingTo: cpp11 (>= 0.4.0)
@@ -2487,7 +2486,7 @@ Suggests: testthat
 License: GPL-2
 
 Package: viridis
-Version: 0.6.4
+Version: 0.6.5
 Depends: R (>= 2.10), viridisLite (>= 0.4.0)
 Imports: ggplot2 (>= 1.0.1), gridExtra
 Suggests: hexbin (>= 1.27.0), scales, MASS, knitr, dichromat,
@@ -2583,7 +2582,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: xgboost
-Version: 1.7.6.1
+Version: 1.7.7.1
 Depends: R (>= 3.3.0)
 Imports: Matrix (>= 1.1-0), methods, data.table (>= 1.9.6), jsonlite
         (>= 1.0),
@@ -2594,7 +2593,7 @@ License: Apache License (== 2.0) | file LICENSE
 Archs: x64
 
 Package: XML
-Version: 3.99-0.16
+Version: 3.99-0.16.1
 Depends: R (>= 4.0.0), methods, utils
 Suggests: bitops, RCurl
 License: BSD_3_clause + file LICENSE
