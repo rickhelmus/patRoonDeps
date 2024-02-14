@@ -789,7 +789,7 @@ Suggests: covr, pkgload, testthat (>= 3.0.0), tibble, withr
 License: MIT + file LICENSE
 
 Package: GenomeInfoDb
-Version: 1.38.5
+Version: 1.38.6
 Depends: R (>= 4.0.0), methods, BiocGenerics (>= 0.37.0), S4Vectors (>=
         0.25.12), IRanges (>= 2.13.12)
 Imports: stats, stats4, utils, RCurl, GenomeInfoDbData
@@ -1945,7 +1945,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RcppArmadillo
-Version: 0.12.6.6.1
+Version: 0.12.8.0.0
 Depends: R (>= 3.3.0)
 Imports: Rcpp (>= 0.11.0), stats, utils, methods
 LinkingTo: Rcpp
@@ -2090,7 +2090,7 @@ Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
 License: MIT + file LICENSE
 
 Package: Rhdf5lib
-Version: 1.24.1
+Version: 1.24.2
 Depends: R (>= 4.2.0)
 Suggests: BiocStyle, knitr, rmarkdown, tinytest, mockery
 License: Artistic-2.0
@@ -2197,12 +2197,12 @@ Suggests: testthat, knitr, rmarkdown, clipr, covr
 License: MIT + file LICENSE
 
 Package: rvest
-Version: 1.0.3
-Depends: R (>= 3.2)
-Imports: glue, cli, httr (>= 0.5), lifecycle (>= 1.0.0), magrittr,
-        rlang (>= 1.0.0), selectr, tibble, xml2 (>= 1.3), withr
-Suggests: covr, knitr, readr, repurrrsive, rmarkdown, spelling, stringi
-        (>= 0.3.1), testthat (>= 3.0.2), webfakes
+Version: 1.0.4
+Depends: R (>= 3.6)
+Imports: cli, glue, httr (>= 0.5), lifecycle (>= 1.0.3), magrittr,
+        rlang (>= 1.1.0), selectr, tibble, xml2 (>= 1.3)
+Suggests: chromote, covr, knitr, R6, readr, repurrrsive, rmarkdown,
+        spelling, stringi (>= 0.3.1), testthat (>= 3.0.2), webfakes
 License: MIT + file LICENSE
 
 Package: S4Arrays
@@ -2311,7 +2311,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: SparseArray
-Version: 1.2.3
+Version: 1.2.4
 Depends: R (>= 4.3.0), methods, Matrix, BiocGenerics (>= 0.43.1),
         MatrixGenerics (>= 1.11.1), S4Vectors, S4Arrays (>= 1.1.6)
 Imports: stats, matrixStats, IRanges, XVector
@@ -2668,8 +2668,8 @@ License: GPL (>= 2) + file LICENSE
 Archs: x64
 
 Package: xfun
-Version: 0.41
-Imports: stats, tools
+Version: 0.42
+Imports: grDevices, stats, tools
 Suggests: testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
         mime, markdown (>= 1.5), knitr (>= 1.42), htmltools, remotes,
         pak, rhub, renv, curl, jsonlite, magick, yaml, rmarkdown

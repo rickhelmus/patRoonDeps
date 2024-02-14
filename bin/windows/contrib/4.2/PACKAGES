@@ -1892,7 +1892,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RcppArmadillo
-Version: 0.12.6.6.1
+Version: 0.12.8.0.0
 Depends: R (>= 3.3.0)
 Imports: Rcpp (>= 0.11.0), stats, utils, methods
 LinkingTo: Rcpp
@@ -2144,12 +2144,12 @@ Suggests: testthat, knitr, rmarkdown, clipr, covr
 License: MIT + file LICENSE
 
 Package: rvest
-Version: 1.0.3
-Depends: R (>= 3.2)
-Imports: glue, cli, httr (>= 0.5), lifecycle (>= 1.0.0), magrittr,
-        rlang (>= 1.0.0), selectr, tibble, xml2 (>= 1.3), withr
-Suggests: covr, knitr, readr, repurrrsive, rmarkdown, spelling, stringi
-        (>= 0.3.1), testthat (>= 3.0.2), webfakes
+Version: 1.0.4
+Depends: R (>= 3.6)
+Imports: cli, glue, httr (>= 0.5), lifecycle (>= 1.0.3), magrittr,
+        rlang (>= 1.1.0), selectr, tibble, xml2 (>= 1.3)
+Suggests: chromote, covr, knitr, R6, readr, repurrrsive, rmarkdown,
+        spelling, stringi (>= 0.3.1), testthat (>= 3.0.2), webfakes
 License: MIT + file LICENSE
 
 Package: S4Vectors
@@ -2573,8 +2573,8 @@ License: GPL (>= 2) + file LICENSE
 Archs: x64
 
 Package: xfun
-Version: 0.41
-Imports: stats, tools
+Version: 0.42
+Imports: grDevices, stats, tools
 Suggests: testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
         mime, markdown (>= 1.5), knitr (>= 1.42), htmltools, remotes,
         pak, rhub, renv, curl, jsonlite, magick, yaml, rmarkdown
