@@ -14,7 +14,14 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
             user = "cbroeckl",
             commit = "e005614",
             deps = list(
-                InterpretMSSpectrum = list(type = "gh", user = "cran", tag = "1.3.3")
+                InterpretMSSpectrum = list(
+                    type = "gh",
+                    user = "cran",
+                    tag = "1.3.3",
+                    deps = list(
+                        Rdisop = list(type = "gh", user = "rickhelmus", branch = "Rf_error-fix")
+                    )
+                )
             )
         ),
         enviPick = list(type = "gh", user = "blosloos"),
