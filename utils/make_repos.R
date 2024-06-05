@@ -212,6 +212,8 @@ handlePackages <- function(pkgs)
                     paste("Repository:", getPDRepos())
                 )
                 
+                ds <- ds[nzchar(ds)] # BUG?: Rdisop seems to have empty newlines (on Windows?) which prevent installation
+                
                 writeLines(ds, file.path(extrp, "DESCRIPTION"))
 
                 remotes::install_deps(extrp, upgrade = "never", dependencies = TRUE,
