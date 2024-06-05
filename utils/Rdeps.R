@@ -19,7 +19,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
                     user = "cran",
                     tag = "1.3.3",
                     deps = list(
-                        Rdisop = list(type = "gh", user = "rickhelmus", branch = "Rf_error-fix")
+                        Rdisop = list(type = "gh", user = "sneumann")
                     )
                 )
             )
