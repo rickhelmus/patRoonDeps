@@ -105,7 +105,7 @@ License: GPL-2 | GPL-3
 Archs: x64
 
 Package: BiocStyle
-Version: 2.32.0
+Version: 2.32.1
 Imports: bookdown, knitr (>= 1.30), rmarkdown (>= 1.2), stats, utils,
         yaml, BiocManager
 Suggests: BiocGenerics, RUnit, htmltools
@@ -593,8 +593,8 @@ Suggests: knitr, rmarkdown
 License: GPL (>= 3)
 
 Package: evaluate
-Version: 0.23
-Depends: R (>= 3.0.2)
+Version: 0.24.0
+Depends: R (>= 4.0.0)
 Imports: methods
 Suggests: covr, ggplot2, lattice, rlang, testthat (>= 3.0.0), withr
 License: MIT + file LICENSE
@@ -788,7 +788,7 @@ Suggests: covr, pkgload, testthat (>= 3.0.0), tibble, withr
 License: MIT + file LICENSE
 
 Package: GenomeInfoDb
-Version: 1.40.0
+Version: 1.40.1
 Depends: R (>= 4.0.0), methods, BiocGenerics (>= 0.37.0), S4Vectors (>=
         0.25.12), IRanges (>= 2.13.12)
 Imports: stats, stats4, utils, UCSC.utils, GenomeInfoDbData
@@ -805,7 +805,7 @@ Depends: R (>= 3.3)
 License: Artistic-2.0
 
 Package: GenomicRanges
-Version: 1.56.0
+Version: 1.56.1
 Depends: R (>= 4.0.0), methods, stats4, BiocGenerics (>= 0.37.0),
         S4Vectors (>= 0.27.12), IRanges (>= 2.37.1), GenomeInfoDb (>=
         1.15.2)
@@ -818,10 +818,10 @@ Suggests: Matrix, Biobase, AnnotationDbi, annotate, Biostrings (>=
         AnnotationHub, DESeq2, DEXSeq, edgeR, KEGGgraph,
         RNAseqData.HNRNPC.bam.chr14, pasillaBamSubset, KEGGREST,
         hgu95av2.db, hgu95av2probe, BSgenome.Scerevisiae.UCSC.sacCer2,
-        BSgenome.Hsapiens.UCSC.hg19, BSgenome.Mmusculus.UCSC.mm10,
+        BSgenome.Hsapiens.UCSC.hg38, BSgenome.Mmusculus.UCSC.mm10,
         TxDb.Athaliana.BioMart.plantsmart22,
         TxDb.Dmelanogaster.UCSC.dm3.ensGene,
-        TxDb.Hsapiens.UCSC.hg19.knownGene,
+        TxDb.Hsapiens.UCSC.hg38.knownGene,
         TxDb.Mmusculus.UCSC.mm10.knownGene, RUnit, digest, knitr,
         rmarkdown, BiocStyle
 License: Artistic-2.0
@@ -1265,7 +1265,7 @@ Suggests: covr, crayon, knitr, lintr, rmarkdown, testthat (>= 3.0.1),
 License: MIT + file LICENSE
 
 Package: limma
-Version: 3.60.2
+Version: 3.60.3
 Depends: R (>= 3.6.0)
 Imports: grDevices, graphics, stats, utils, methods, statmod
 Suggests: BiasedUrn, ellipse, gplots, knitr, locfit, MASS, splines,
@@ -2151,9 +2151,10 @@ Suggests: covr, knitr, lifecycle, mockr, rlang, rmarkdown, testthat (>=
 License: MIT + file LICENSE
 
 Package: rsm
-Version: 2.10.4
+Version: 2.10.5
 Imports: estimability
-Suggests: emmeans (> 1.3.5.1), Vdgraph, conf.design, DoE.base, FrF2
+Suggests: emmeans (> 1.3.5.1), Vdgraph, conf.design, DoE.base, FrF2,
+        knitr, rmarkdown
 License: GPL (>= 2)
 
 Package: RSQLite
@@ -2636,7 +2637,7 @@ Suggests: callr, covr, DBI, knitr, lattice, methods, rlang, rmarkdown
 License: MIT + file LICENSE
 
 Package: xcms
-Version: 4.2.1
+Version: 4.2.2
 Depends: R (>= 4.0.0), BiocParallel (>= 1.8.0)
 Imports: MSnbase (>= 2.29.3), mzR (>= 2.25.3), methods, Biobase,
         BiocGenerics, ProtGenerics (>= 1.35.4), lattice,
