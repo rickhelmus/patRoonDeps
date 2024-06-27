@@ -289,7 +289,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: cli
-Version: 3.6.2
+Version: 3.6.3
 Depends: R (>= 3.4)
 Imports: utils
 Suggests: callr, covr, crayon, digest, glue (>= 1.6.0), grDevices,
@@ -391,7 +391,7 @@ Suggests: bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
 License: MIT + file LICENSE
 
 Package: crayon
-Version: 1.5.2
+Version: 1.5.3
 Imports: grDevices, methods, utils
 Suggests: mockery, rstudioapi, testthat, withr
 License: MIT + file LICENSE
@@ -494,7 +494,7 @@ Imports: stats, graphics
 License: GPL (>= 2)
 
 Package: digest
-Version: 0.6.35
+Version: 0.6.36
 Depends: R (>= 3.3.0)
 Imports: utils
 Suggests: tinytest, simplermarkdown
@@ -1315,7 +1315,7 @@ License: GPL (>= 3)
 Archs: x64
 
 Package: MASS
-Version: 7.3-60.2
+Version: 7.3-61
 Priority: recommended
 Depends: R (>= 4.4.0), grDevices, graphics, stats, utils
 Imports: methods
@@ -1531,11 +1531,11 @@ License: GPL (>= 3)
 Archs: x64
 
 Package: nlme
-Version: 3.1-164
+Version: 3.1-165
 Priority: recommended
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.6.0)
 Imports: graphics, stats, utils, lattice
-Suggests: Hmisc, MASS, SASmixed
+Suggests: MASS, SASmixed
 License: GPL (>= 2)
 Archs: x64
 
@@ -1707,7 +1707,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: prodlim
-Version: 2023.08.28
+Version: 2024.06.25
 Depends: R (>= 2.9.0)
 Imports: Rcpp (>= 0.11.5), stats, data.table, grDevices, graphics,
         diagram, survival, KernSmooth, lava
@@ -2377,7 +2377,7 @@ Suggests: HDF5Array (>= 1.7.5), annotate, AnnotationDbi, hgu95av2.db,
 License: Artistic-2.0
 
 Package: survival
-Version: 3.6-4
+Version: 3.7-0
 Priority: recommended
 Depends: R (>= 3.5.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
@@ -2654,10 +2654,10 @@ License: GPL (>= 2) + file LICENSE
 Archs: x64
 
 Package: xfun
-Version: 0.44
+Version: 0.45
 Imports: grDevices, stats, tools
 Suggests: testit, parallel, codetools, methods, rstudioapi, tinytex (>=
-        0.30), mime, markdown (>= 1.5), knitr (>= 1.42), htmltools,
+        0.30), mime, markdown (>= 1.5), knitr (>= 1.47), htmltools,
         remotes, pak, rhub, renv, curl, xml2, jsonlite, magick, yaml,
         qs, rmarkdown
 License: MIT + file LICENSE

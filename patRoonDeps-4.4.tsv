@@ -34,7 +34,7 @@ circlize	0.4.16
 Ckmeans.1d.dp	4.3.5	
 class	7.3-22	
 classInt	0.4-10	
-cli	3.6.2	
+cli	3.6.3	
 clipr	0.8.0	
 cliqueMS	1.7.1	cb569e0b78ce0fa4254f1393874762bed08fa855
 clock	0.7.0	
@@ -46,7 +46,7 @@ combinat	0.0-8
 commonmark	1.9.1	
 conflicted	1.2.0	
 cpp11	0.4.7	
-crayon	1.5.2	
+crayon	1.5.3	
 crosstalk	1.2.1	
 curl	5.2.1	
 data.table	1.15.4	
@@ -57,7 +57,7 @@ dbscan	1.1-12
 DelayedArray	0.30.1	
 dendextend	1.17.1	
 diagram	1.6.5	
-digest	0.6.35	
+digest	0.6.36	
 docopt	0.7.1	
 doParallel	1.0.17	
 dplyr	1.1.4	
@@ -156,7 +156,7 @@ lubridate	1.9.3
 magick	2.8.3	
 magrittr	2.0.3	
 MALDIquant	1.22.2	
-MASS	7.3-60.2	
+MASS	7.3-61	
 MassSpecWavelet	1.70.0	
 Matrix	1.7-0	
 MatrixGenerics	1.16.0	
@@ -182,14 +182,14 @@ munsell	0.5.1
 mzID	1.42.0	
 mzR	2.38.0	
 ncdf4	1.22	
-nlme	3.1-164	
+nlme	3.1-165	
 nnet	7.3-19	
 nontarget	2.2	e30221585182bc66e1f8e1113b2c1103a0f2cb56
 nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.2.0	
 parallelly	1.37.1	
-patRoon	2.3.1	02e71665cb9c53ef1e89a17f26560d45ae5419d8
+patRoon	2.3.1	f0f8aa2b888eea31ee89226b98e17ce9af81e707
 pcaMethods	1.96.0	
 permute	0.9-7	
 pillar	1.9.0	
@@ -203,7 +203,7 @@ preprocessCore	1.66.0
 prettyunits	1.2.0	
 pROC	1.18.5	
 processx	3.8.4	
-prodlim	2023.08.28	
+prodlim	2024.06.25	
 progress	1.2.3	
 progressr	0.14.0	
 promises	1.3.0	
@@ -285,7 +285,7 @@ stringi	1.8.4
 stringr	1.5.1	
 styler	1.10.3	
 SummarizedExperiment	1.34.0	
-survival	3.6-4	
+survival	3.7-0	
 svglite	2.1.3	
 sys	3.4.2	
 systemfonts	1.1.0	
@@ -315,7 +315,7 @@ webchem	1.3.0
 webshot	0.5.5	
 withr	3.0.0	
 xcms	4.2.2	
-xfun	0.44	
+xfun	0.45	
 xgboost	1.7.7.1	
 XML	3.99-0.16.1	
 xml2	1.3.6	
