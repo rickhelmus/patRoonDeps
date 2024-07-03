@@ -136,7 +136,7 @@ Suggests: covr, crayon, pillar (>= 1.2.1), testthat
 License: MIT + file LICENSE
 
 Package: bookdown
-Version: 0.39
+Version: 0.40
 Depends: R (>= 3.5.0)
 Imports: htmltools (>= 0.3.6), knitr (>= 1.38), rmarkdown (>= 2.14),
         jquerylib, xfun (>= 0.39), tinytex (>= 0.12), yaml (>= 2.1.19)
@@ -452,11 +452,12 @@ Suggests: bit64, covr, knitr, Lahman, nycflights13, odbc (>= 1.4.2),
 License: MIT + file LICENSE
 
 Package: dbscan
-Version: 1.1-12
-Imports: Rcpp (>= 1.0.0), graphics, stats
+Version: 1.2-0
+Depends: R (>= 3.2.0)
+Imports: Rcpp (>= 1.0.0), graphics, stats, generics
 LinkingTo: Rcpp
-Suggests: fpc, microbenchmark, testthat, dendextend, igraph, knitr,
-        rmarkdown
+Suggests: fpc, microbenchmark, testthat (>= 3.0.0), dendextend, igraph,
+        knitr, rmarkdown, tibble, rlang
 License: GPL (>= 2)
 Archs: x64
 
@@ -688,7 +689,7 @@ Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
 License: Apache License (== 2.0)
 
 Package: foreign
-Version: 0.8-86
+Version: 0.8-87
 Priority: recommended
 Depends: R (>= 4.0.0)
 Imports: methods, utils, stats
@@ -1770,7 +1771,7 @@ License: GPL-2
 Archs: x64
 
 Package: ps
-Version: 1.7.6
+Version: 1.7.7
 Depends: R (>= 3.4)
 Imports: utils
 Suggests: callr, covr, curl, pillar, pingr, processx (>= 3.1.0), R6,
@@ -1997,7 +1998,7 @@ Suggests: covr, crosstalk, dplyr, fontawesome, knitr, leaflet, MASS,
 License: MIT + file LICENSE
 
 Package: reactR
-Version: 0.5.0
+Version: 0.6.0
 Imports: htmltools
 Suggests: htmlwidgets (>= 1.5.3), rmarkdown, shiny, V8, knitr, usethis,
         jsonlite
@@ -2138,7 +2139,7 @@ Suggests: digest, dygraphs, fs, rsconnect, downlit (>= 0.4.0), katex
 License: GPL-3
 
 Package: robustbase
-Version: 0.99-2
+Version: 0.99-3
 Depends: R (>= 3.5.0)
 Imports: stats, graphics, utils, methods, DEoptimR
 Suggests: grid, MASS, lattice, boot, cluster, Matrix, robust,

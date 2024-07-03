@@ -453,11 +453,12 @@ Suggests: bit64, covr, knitr, Lahman, nycflights13, odbc (>= 1.4.2),
 License: MIT + file LICENSE
 
 Package: dbscan
-Version: 1.1-12
-Imports: Rcpp (>= 1.0.0), graphics, stats
+Version: 1.2-0
+Depends: R (>= 3.2.0)
+Imports: Rcpp (>= 1.0.0), graphics, stats, generics
 LinkingTo: Rcpp
-Suggests: fpc, microbenchmark, testthat, dendextend, igraph, knitr,
-        rmarkdown
+Suggests: fpc, microbenchmark, testthat (>= 3.0.0), dendextend, igraph,
+        knitr, rmarkdown, tibble, rlang
 License: GPL (>= 2)
 Archs: x64
 
@@ -683,7 +684,7 @@ Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
 License: Apache License (== 2.0)
 
 Package: foreign
-Version: 0.8-86
+Version: 0.8-87
 Priority: recommended
 Depends: R (>= 4.0.0)
 Imports: methods, utils, stats
@@ -1979,7 +1980,7 @@ Suggests: covr, crosstalk, dplyr, fontawesome, knitr, leaflet, MASS,
 License: MIT + file LICENSE
 
 Package: reactR
-Version: 0.5.0
+Version: 0.6.0
 Imports: htmltools
 Suggests: htmlwidgets (>= 1.5.3), rmarkdown, shiny, V8, knitr, usethis,
         jsonlite
@@ -2675,7 +2676,7 @@ License: Apache License (== 2.0) | file LICENSE
 Archs: x64
 
 Package: XML
-Version: 3.99-0.16.1
+Version: 3.99-0.17
 Depends: R (>= 4.0.0), methods, utils
 Suggests: bitops, RCurl
 License: BSD_3_clause + file LICENSE
