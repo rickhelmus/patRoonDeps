@@ -67,7 +67,6 @@ dtplyr	1.3.1
 dynamicTreeCut	1.63-1	
 e1071	1.7-14	
 egg	0.4.5	
-ellipsis	0.3.2	
 enviPat	2.6	
 enviPick	1.7	d346b23b1f7dc7a226c4e3a45b74fcc617e19c1b
 estimability	1.5.1	
@@ -141,7 +140,7 @@ kernlab	0.9-32
 KernSmooth	2.23-24	
 keys	0.1.1	
 klaR	1.7-3	
-knitr	1.47	
+knitr	1.48	
 KPIC	2.4.0	dd0dddb0cac9bc7882eb1a420c82c9713a8aa0ce
 labeling	0.4.3	
 labelled	2.13.0	
@@ -191,7 +190,7 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.2.0	
 parallelly	1.37.1	
-patRoon	2.3.1	fa5adc282e2a452155840f2abf41f1b41e2f1c5e
+patRoon	2.3.1	fe4ad4ec8f2db7fdb550caa958bcf4eaa93ec139
 pcaMethods	1.94.0	
 permute	0.9-7	
 pillar	1.9.0	
@@ -235,7 +234,7 @@ rcdk	3.8.1
 rcdklibs	2.9	
 RColorBrewer	1.1-3	
 Rcpp	1.0.12	
-RcppArmadillo	0.12.8.4.0	
+RcppArmadillo	14.0.0-1	
 RCurl	1.98-1.14	
 RDCOMClient	0.95-1	1554833f8659461427a93732119756ae1c25bc32
 Rdisop	1.65.1	37d44575b7f2aa6530d79208c0fb05fcc7b84e19
@@ -245,11 +244,11 @@ reactR	0.6.0
 readMzXmlData	2.8.3	
 readr	2.1.5	
 readxl	1.4.3	
-recipes	1.0.10	
+recipes	1.1.0	
 registry	0.5-1	
 rematch	2.0.0	
 rematch2	2.1.2	
-reprex	2.1.0	
+reprex	2.1.1	
 reshape2	1.4.4	
 Rgraphviz	2.46.0	
 rhandsontable	0.3.8	
@@ -324,5 +323,5 @@ XML	3.99-0.17
 xml2	1.3.6	
 xtable	1.8-4	
 XVector	0.42.0	
-yaml	2.3.8	
+yaml	2.3.9	
 zlibbioc	1.48.2	
