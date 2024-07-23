@@ -152,7 +152,7 @@ lifecycle	1.0.4
 limma	3.60.3	
 listenv	0.9.1	
 lubridate	1.9.3	
-magick	2.8.3	
+magick	2.8.4	
 magrittr	2.0.3	
 MALDIquant	1.22.2	
 MASS	7.3-61	
@@ -188,7 +188,7 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.2.0	
 parallelly	1.37.1	
-patRoon	2.3.1	fe4ad4ec8f2db7fdb550caa958bcf4eaa93ec139
+patRoon	2.3.2	bac920593083111f83fb406bf3f2500866b43e38
 pcaMethods	1.96.0	
 permute	0.9-7	
 pillar	1.9.0	

@@ -316,8 +316,8 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: clock
-Version: 0.7.0
-Depends: R (>= 3.5.0)
+Version: 0.7.1
+Depends: R (>= 3.6.0)
 Imports: cli (>= 3.6.1), lifecycle (>= 1.0.3), rlang (>= 1.1.0), tzdb
         (>= 0.4.0), vctrs (>= 0.6.1)
 LinkingTo: cpp11 (>= 0.4.3), tzdb (>= 0.4.0)
@@ -1005,7 +1005,7 @@ Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat (>= 3.0.0)
 License: MIT + file LICENSE
 
 Package: htmlTable
-Version: 2.4.2
+Version: 2.4.3
 Depends: R (>= 4.1)
 Imports: stringr, knitr (>= 1.6), magrittr (>= 1.5), methods,
         checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)
@@ -1082,7 +1082,7 @@ Suggests: DBI, doParallel, foreach, parallel, RSQLite, testthat (>=
 License: GPL-3
 
 Package: ipred
-Version: 0.9-14
+Version: 0.9-15
 Depends: R (>= 2.10)
 Imports: rpart (>= 3.1-8), MASS, survival, nnet, class, prodlim
 Suggests: mvtnorm, mlbench, TH.data, randomForest, party
@@ -1288,7 +1288,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: magick
-Version: 2.8.3
+Version: 2.8.4
 Imports: Rcpp (>= 0.12.12), magrittr, curl
 LinkingTo: Rcpp
 Suggests: av (>= 0.3), spelling, jsonlite, methods, knitr, rmarkdown,
@@ -1585,7 +1585,7 @@ License: LGPL (>= 2.1)
 Archs: x64
 
 Package: patRoon
-Version: 2.3.1
+Version: 2.3.2
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
@@ -1936,7 +1936,7 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.12
+Version: 1.0.13
 Imports: methods, utils
 Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
@@ -1952,7 +1952,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RCurl
-Version: 1.98-1.14
+Version: 1.98-1.16
 Depends: R (>= 3.4.0), methods
 Imports: bitops
 Suggests: XML
@@ -2288,7 +2288,7 @@ Suggests: htmltools (>= 0.2.9), knitr (>= 1.7), rmarkdown, shinyAce,
 License: MIT + file LICENSE
 
 Package: slam
-Version: 0.1-50
+Version: 0.1-51
 Depends: R (>= 3.4.0)
 Imports: stats
 Enhances: Matrix, SparseM, spam
@@ -2510,7 +2510,7 @@ Suggests: RUnit
 License: GPL (>= 2)
 
 Package: tinytex
-Version: 0.51
+Version: 0.52
 Imports: xfun (>= 0.29)
 Suggests: testit, rstudioapi
 License: MIT + file LICENSE
@@ -2668,7 +2668,7 @@ License: GPL (>= 2) + file LICENSE
 Archs: x64
 
 Package: xfun
-Version: 0.45
+Version: 0.46
 Imports: grDevices, stats, tools
 Suggests: testit, parallel, codetools, methods, rstudioapi, tinytex (>=
         0.30), mime, markdown (>= 1.5), knitr (>= 1.47), htmltools,

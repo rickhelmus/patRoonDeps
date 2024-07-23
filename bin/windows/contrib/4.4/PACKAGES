@@ -1283,7 +1283,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: magick
-Version: 2.8.3
+Version: 2.8.4
 Imports: Rcpp (>= 0.12.12), magrittr, curl
 LinkingTo: Rcpp
 Suggests: av (>= 0.3), spelling, jsonlite, methods, knitr, rmarkdown,
@@ -1571,7 +1571,7 @@ License: LGPL (>= 2.1)
 Archs: x64
 
 Package: patRoon
-Version: 2.3.1
+Version: 2.3.2
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
