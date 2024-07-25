@@ -149,7 +149,7 @@ lattice	0.22-6
 lava	1.8.0	
 lazyeval	0.2.2	
 lifecycle	1.0.4	
-limma	3.60.3	
+limma	3.60.4	
 listenv	0.9.1	
 lubridate	1.9.3	
 magick	2.8.4	
@@ -175,7 +175,7 @@ MsCoreUtils	1.16.0
 MsExperiment	1.6.0	
 MsFeatures	1.12.0	
 MSnbase	2.30.1	
-MultiAssayExperiment	1.30.2	
+MultiAssayExperiment	1.30.3	
 MultiDataSet	1.32.0	
 munsell	0.5.1	
 mzID	1.42.0	
@@ -188,7 +188,7 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.2.0	
 parallelly	1.37.1	
-patRoon	2.3.2	c3f5c4968c026c54ef4134728dc135be635ef532
+patRoon	2.3.2	3bd25abac934ad6cfabb259a0d52a0d5c33f10b2
 pcaMethods	1.96.0	
 permute	0.9-7	
 pillar	1.9.0	
