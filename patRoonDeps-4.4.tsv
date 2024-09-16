@@ -11,25 +11,25 @@ BH	1.84.0-0
 Biobase	2.64.0	
 BiocBaseUtils	1.6.0	
 BiocGenerics	0.50.0	
-BiocManager	1.30.23	
+BiocManager	1.30.25	
 BiocParallel	1.38.0	
 BiocStyle	2.32.1	
 bit	4.0.5	
 bit64	4.0.5	
-bitops	1.0-7	
+bitops	1.0-8	
 blob	1.2.4	
 bookdown	0.40	
 broom	1.0.6	
-bslib	0.7.0	
+bslib	0.8.0	
 ca	0.71.1	
 cachem	1.1.0	
 calibrate	1.7.7	
 callr	3.7.6	
 CAMERA	1.60.0	
 caret	6.0-94	
-caTools	1.18.2	
+caTools	1.18.3	
 cellranger	1.1.0	
-checkmate	2.3.1	
+checkmate	2.3.2	
 circlize	0.4.16	
 Ckmeans.1d.dp	4.3.5	
 class	7.3-22	
@@ -37,19 +37,19 @@ classInt	0.4-10
 cli	3.6.3	
 clipr	0.8.0	
 cliqueMS	1.7.1	cb569e0b78ce0fa4254f1393874762bed08fa855
-clock	0.7.0	
+clock	0.7.1	
 clue	0.3-65	
 cluster	2.1.6	
 codetools	0.2-20	
-colorspace	2.1-0	
+colorspace	2.1-1	
 combinat	0.0-8	
 commonmark	1.9.1	
 conflicted	1.2.0	
-cpp11	0.4.7	
+cpp11	0.5.0	
 crayon	1.5.3	
 crosstalk	1.2.1	
-curl	5.2.1	
-data.table	1.15.4	
+curl	5.2.2	
+data.table	1.16.0	
 data.tree	1.1.0	
 DBI	1.2.3	
 dbplyr	2.5.0	
@@ -57,7 +57,7 @@ dbscan	1.2-0
 DelayedArray	0.30.1	
 dendextend	1.17.1	
 diagram	1.6.5	
-digest	0.6.36	
+digest	0.6.37	
 docopt	0.7.1	
 doParallel	1.0.17	
 dplyr	1.1.4	
@@ -89,7 +89,7 @@ fst	0.9.8
 fstcore	0.9.18	
 futile.logger	1.4.3	
 futile.options	1.0.1	
-future	1.33.2	
+future	1.34.0	
 future.apply	1.11.2	
 GA	3.2.4	
 gargle	1.5.2	
@@ -100,7 +100,7 @@ GenomeInfoDbData	1.2.12	19f191e01a4ca92f1b8ca4307788b08f34287b7a
 GenomicRanges	1.56.1	
 getPass	0.2-4	
 ggplot2	3.5.1	
-ggrepel	0.9.5	
+ggrepel	0.9.6	
 GlobalOptions	0.1.2	
 globals	0.16.3	
 glue	1.7.0	
@@ -118,7 +118,7 @@ heatmaply	1.5.0
 highr	0.11	
 Hmisc	5.1-3	
 hms	1.1.3	
-htmlTable	2.4.2	
+htmlTable	2.4.3	
 htmltools	0.5.8.1	
 htmlwidgets	1.6.4	
 httpuv	1.6.15	
@@ -127,7 +127,7 @@ ids	1.0.1
 igraph	2.0.3	
 impute	1.78.0	
 InterpretMSSpectrum	1.3.3	0731d92accdf5db2a6d7b03c24b2d324b67b1c72
-ipred	0.9-14	
+ipred	0.9-15	
 IRanges	2.38.1	
 isoband	0.2.7	
 iterators	1.0.14	
@@ -135,7 +135,7 @@ itertools	0.1-3
 jquerylib	0.1.4	
 jsonlite	1.8.8	
 kableExtra	1.4.0	
-kernlab	0.9-32	
+kernlab	0.9-33	
 KernSmooth	2.23-24	
 keys	0.1.1	
 klaR	1.7-3	
@@ -154,12 +154,12 @@ listenv	0.9.1
 lubridate	1.9.3	
 magick	2.8.4	
 magrittr	2.0.3	
-MALDIquant	1.22.2	
+MALDIquant	1.22.3	
 MASS	7.3-61	
 MassSpecWavelet	1.70.0	
 Matrix	1.7-0	
 MatrixGenerics	1.16.0	
-matrixStats	1.3.0	
+matrixStats	1.4.1	
 memoise	2.0.1	
 MetaboCoreUtils	1.12.0	
 MetaClean	1.0.1	d0ce1bc0b2fe4d17e7e047c8c07c75b81c4e5833
@@ -171,7 +171,7 @@ ModelMetrics	1.2.2.2
 modelr	0.1.11	
 MS2Quant	1.1.0	46e0c77ef4961a29a73a388105eeb28e33839630
 MS2Tox	0.3.2	259b4f70ea6ee2fbd4ff68b43eaa3633b0a0e891
-MsCoreUtils	1.16.0	
+MsCoreUtils	1.16.1	
 MsExperiment	1.6.0	
 MsFeatures	1.12.0	
 MSnbase	2.30.1	
@@ -180,15 +180,15 @@ MultiDataSet	1.32.0
 munsell	0.5.1	
 mzID	1.42.0	
 mzR	2.38.0	
-ncdf4	1.22	
-nlme	3.1-165	
+ncdf4	1.23	
+nlme	3.1-166	
 nnet	7.3-19	
 nontarget	2.2	e30221585182bc66e1f8e1113b2c1103a0f2cb56
 nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
-openssl	2.2.0	
-parallelly	1.37.1	
-patRoon	2.3.2	73099c23adfef461984284fce25c5e57a8ec9249
+openssl	2.2.1	
+parallelly	1.38.0	
+patRoon	2.3.2	95c811844a921f3b63a0d6a494d0a5592e5b12a7
 pcaMethods	1.96.0	
 permute	0.9-7	
 pillar	1.9.0	
@@ -231,11 +231,11 @@ rbibutils	2.2.16
 rcdk	3.8.1	
 rcdklibs	2.9	
 RColorBrewer	1.1-3	
-Rcpp	1.0.12	
+Rcpp	1.0.13	
 RcppArmadillo	14.0.0-1	
 RDCOMClient	0.95-1	1554833f8659461427a93732119756ae1c25bc32
 Rdisop	1.65.1	37d44575b7f2aa6530d79208c0fb05fcc7b84e19
-Rdpack	2.6	
+Rdpack	2.6.1	
 reactable	0.4.4	
 reactR	0.6.0	
 readMzXmlData	2.8.3	
@@ -253,7 +253,7 @@ Rhdf5lib	1.26.0
 rJava	1.0-11	
 rlang	1.1.4	
 rlist	0.4.6.2	
-rmarkdown	2.27	
+rmarkdown	2.28	
 ROCR	1.0-11	
 ropls	1.36.0	
 rpart	4.1.23	
@@ -267,11 +267,11 @@ S4Vectors	0.42.1
 sass	0.4.9	
 scales	1.3.0	
 selectr	0.4-2	
-seriation	1.5.5	
+seriation	1.5.6	
 shape	1.4.6.1	
-shiny	1.8.1.1	
+shiny	1.9.1	
 shinyjs	2.1.0	
-slam	0.1-50	
+slam	0.1-53	
 snow	0.4-4	
 sourcetools	0.1.7-1	
 SparseArray	1.4.8	
@@ -295,15 +295,15 @@ tidyselect	1.2.1
 tidyverse	2.0.0	
 timechange	0.3.0	
 timeDate	4032.109	
-tinytex	0.51	
+tinytex	0.52	
 TSP	1.2-4	
 tzdb	0.4.0	
 UCSC.utils	1.0.0	
 UpSetR	1.4.0	
 utf8	1.2.4	
-uuid	1.2-0	
+uuid	1.2-1	
 vctrs	0.6.5	
-vegan	2.6-6.1	
+vegan	2.6-8	
 VennDiagram	1.7.3	
 viridis	0.6.5	
 viridisLite	0.4.2	
@@ -312,13 +312,13 @@ vroom	1.6.5
 vsn	3.72.0	
 webchem	1.3.0	
 webshot	0.5.5	
-withr	3.0.0	
-xcms	4.2.2	
-xfun	0.45	
-xgboost	1.7.7.1	
+withr	3.0.1	
+xcms	4.2.3	
+xfun	0.47	
+xgboost	1.7.8.1	
 XML	3.99-0.17	
 xml2	1.3.6	
 xtable	1.8-4	
 XVector	0.44.0	
-yaml	2.3.9	
+yaml	2.3.10	
 zlibbioc	1.50.0	
