@@ -124,7 +124,7 @@ htmlwidgets	1.6.4
 httpuv	1.6.15	
 httr	1.4.7	
 ids	1.0.1	
-igraph	2.0.3	
+igraph	2.1.1	
 impute	1.78.0	
 InterpretMSSpectrum	1.3.3	0731d92accdf5db2a6d7b03c24b2d324b67b1c72
 ipred	0.9-15	
@@ -170,7 +170,7 @@ MLmetrics	1.1.3
 ModelMetrics	1.2.2.2	
 modelr	0.1.11	
 MS2Quant	1.1.0	46e0c77ef4961a29a73a388105eeb28e33839630
-MS2Tox	0.3.2	176f53f4d14dc68616827fbb6eaeac76ce4265c1
+MS2Tox	0.4.2	43950393b1d88704f77c3df4d5efdae8d8e7f3f6
 MsCoreUtils	1.16.1	
 MsExperiment	1.6.0	
 MsFeatures	1.12.0	
@@ -188,7 +188,7 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.2.2	
 parallelly	1.38.0	
-patRoon	2.3.2	74e3cdca8ee5ebc11eec6e93c0e85c1948752a92
+patRoon	2.3.2	51e793fb7d3f9310a159c7fe92edbae5d3eeb935
 pcaMethods	1.96.0	
 permute	0.9-7	
 pillar	1.9.0	

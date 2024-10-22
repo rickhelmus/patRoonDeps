@@ -1052,14 +1052,14 @@ Suggests: knitr, rcorpora, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: igraph
-Version: 2.0.3
+Version: 2.1.1
 Depends: methods, R (>= 3.5.0)
 Imports: cli, graphics, grDevices, lifecycle, magrittr, Matrix,
         pkgconfig (>= 2.0.0), rlang, stats, utils, vctrs
-LinkingTo: cpp11 (>= 0.4.7)
-Suggests: ape (>= 5.7-0.1), callr, decor, digest, graph, igraphdata,
-        knitr, rgl, rmarkdown, scales, stats4, tcltk, testthat, vdiffr,
-        withr
+LinkingTo: cpp11 (>= 0.5.0)
+Suggests: ape (>= 5.7-0.1), callr, decor, digest, igraphdata, knitr,
+        rgl, rmarkdown, scales, stats4, tcltk, testthat, vdiffr, withr
+Enhances: graph
 License: GPL (>= 2)
 Archs: x64
 
@@ -1422,7 +1422,7 @@ Imports: enviPat, rJava, rlist, rcdklibs, rcdk, xgboost, ggplot2,
         tidyr, dplyr, readr, tibble, xfun, stringr
 
 Package: MS2Tox
-Version: 0.3.2
+Version: 0.4.2
 Imports: Rdisop, dplyr, readr, rlist, stringr, tibble, xgboost,
         tidyselect, magrittr, rcdklibs, rcdk, stats, utils
 License: GPL-2
