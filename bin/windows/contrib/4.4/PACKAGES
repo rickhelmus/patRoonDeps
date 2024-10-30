@@ -1572,7 +1572,7 @@ License: LGPL (>= 2.1)
 Archs: x64
 
 Package: patRoon
-Version: 2.3.2
+Version: 2.3.3
 Depends: R (>= 3.5.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
