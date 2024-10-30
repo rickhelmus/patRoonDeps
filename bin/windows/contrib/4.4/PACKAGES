@@ -1324,7 +1324,7 @@ License: LGPL (>= 2)
 Archs: x64
 
 Package: Matrix
-Version: 1.7-0
+Version: 1.7-1
 Priority: recommended
 Depends: R (>= 4.4.0), methods
 Imports: grDevices, graphics, grid, lattice, stats, utils
@@ -2163,7 +2163,7 @@ License: LGPL (>= 2.1)
 Archs: x64
 
 Package: rstudioapi
-Version: 0.17.0
+Version: 0.17.1
 Suggests: testthat, knitr, rmarkdown, clipr, covr
 License: MIT + file LICENSE
 
