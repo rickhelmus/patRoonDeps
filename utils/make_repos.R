@@ -211,7 +211,7 @@ handlePackages <- function(pkgs)
                     if (!is.null(md[["pkgroot"]])) paste("RemoteSubdir:", md$pkgroot),
                     paste("Repository:", getPDRepos())
                 )
-                
+                ds <- trimws(ds, "right") # BUG: MS2Quant has some empty Imports listed
                 ds <- ds[nzchar(ds)] # BUG?: Rdisop seems to have empty newlines (on Windows?) which prevent installation
                 
                 writeLines(ds, file.path(extrp, "DESCRIPTION"))
