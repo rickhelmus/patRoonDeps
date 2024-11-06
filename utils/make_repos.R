@@ -51,7 +51,7 @@ addPkgListingGH <- function(pdb, pkgs)
 
 dependencies <- getRDependencies(Sys.getenv("GITHUB_REF_NAME", "master"), "windows", onlyPDeps = TRUE)
 packageOrigRepos <- c(BiocManager::repositories())
-packageDB <- pkgAvail(repos = packageOrigRepos, type = "win.binary")
+packageDB <- pkgAvail(repos = packageOrigRepos) # UNDONE , type = "win.binary")
 packageDB <- addPkgListingGH(packageDB, dependencies)
 
 getPkgDeps <- function(pkgs, onlyGH)

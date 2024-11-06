@@ -7,8 +7,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
     }
     
     ret <- list(
-        # UNDONE: put CAMERA from GH until binaries are available
-        CAMERA = list(type = "gh", user = "sneumann", mandatory = TRUE), # also pulls in other mandatory BioC deps (mzR, XCMS, ...)
+        CAMERA = list(type = "bioc", mandatory = TRUE), # also pulls in other mandatory BioC deps (mzR, XCMS, ...)
         RDCOMClient = list(type = "gh", user = "BSchamberger", os = "windows"),
         RAMClustR = list(type = "cran"),
         enviPick = list(type = "gh", user = "blosloos"),
