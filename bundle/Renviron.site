@@ -1,5 +1,6 @@
-HOME="${R_HOME}"/../user
-R_USER="${R_HOME}"/../user
+# disabled setting HOME for now as it results in inconsistent tilde expansion
+#HOME="${R_HOME}"/../user
+#R_USER="${R_HOME}"/../user
 R_LIBS_USER="${R_HOME}"/../user/library
 R_USER_DATA_DIR="${R_HOME}"/../user/Rdata
 R_USER_CONFIG_DIR="${R_HOME}"/../user/Rconfig
