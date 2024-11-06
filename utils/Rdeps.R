@@ -9,21 +9,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
     ret <- list(
         CAMERA = list(type = "bioc", mandatory = TRUE), # also pulls in other mandatory BioC deps (mzR, XCMS, ...)
         RDCOMClient = list(type = "gh", user = "BSchamberger", os = "windows"),
-        RAMClustR = list(
-            type = "gh",
-            user = "cbroeckl",
-            commit = "e005614",
-            deps = list(
-                InterpretMSSpectrum = list(
-                    type = "gh",
-                    user = "cran",
-                    tag = "1.3.3",
-                    deps = list(
-                        Rdisop = list(type = "gh", user = "sneumann")
-                    )
-                )
-            )
-        ),
+        RAMClustR = list(type = "cran"),
         enviPick = list(type = "gh", user = "blosloos"),
         nontarget = list(
             type = "gh",
@@ -45,8 +31,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
             user = "rickhelmus",
             deps = list(
                 GenomeInfoDbData = list(type = "gh", user = "BioConductor", branch = "devel",
-                                        os = "windows", internal = TRUE),
-                qlcMatrix = list(type = "gh", user = "cysouw") # removed from CRAN (11/23)
+                                        os = "windows", internal = TRUE)
             )
         ),
         MetaClean = list(
@@ -61,7 +46,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         MetaCleanData = list(type = "gh", user = "KelseyChetnik", patRoonDeps = FALSE),
         splashR = list(type = "gh", user = "berlinguyinca", repos = "spectra-hash", pkgroot = "splashR"),
         MS2Tox = list(type = "gh", user = "kruvelab", branch = "main"),
-        MS2Quant = list(type = "gh", user = "drewszabo", branch = "main"),
+        MS2Quant = list(type = "gh", user = "kruvelab", branch = "main"),
         patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoonExt = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoon = list(type = "gh", user = "rickhelmus", branch = patRoonGitRef)
