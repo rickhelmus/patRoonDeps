@@ -12,7 +12,13 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         RAMClustR = list(
             type = "cran",
             deps = list(
-                ff = list(type = "cran")
+                ff = list(type = "cran"),
+                InterpretMSSpectrum = list(
+                    type = "cran",
+                    deps = list(
+                        Rdisop = list(type = "bioc")
+                    )
+                )
             )
         ),
         enviPick = list(type = "gh", user = "blosloos"),
