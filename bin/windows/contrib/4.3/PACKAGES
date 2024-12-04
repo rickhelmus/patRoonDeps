@@ -111,7 +111,7 @@ Suggests: BiocGenerics, RUnit, htmltools
 License: Artistic-2.0
 
 Package: bit
-Version: 4.5.0
+Version: 4.5.0.1
 Depends: R (>= 3.4.0)
 Suggests: testthat (>= 0.11.0), roxygen2, knitr, markdown, rmarkdown,
         microbenchmark, bit64 (>= 4.0.0), ff (>= 4.0.0)
@@ -489,7 +489,7 @@ Enhances: ggdendro, dendroextras, Hmisc, data.table, rpart, WGCNA,
 License: GPL-2 | GPL-3
 
 Package: DEoptimR
-Version: 1.1-3
+Version: 1.1-3-1
 Imports: stats
 Enhances: robustbase
 License: GPL (>= 2)
@@ -985,7 +985,7 @@ Suggests: knitr, markdown, testit
 License: GPL
 
 Package: Hmisc
-Version: 5.2-0
+Version: 5.2-1
 Depends: R (>= 4.2.0)
 Imports: methods, ggplot2, cluster, rpart, nnet, foreign, gtable, grid,
         gridExtra, data.table, htmlTable (>= 1.11.0), viridis,
@@ -1220,10 +1220,10 @@ Suggests: testit
 License: LGPL-3
 
 Package: later
-Version: 1.3.2
+Version: 1.4.1
 Imports: Rcpp (>= 0.12.9), rlang
 LinkingTo: Rcpp
-Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
+Suggests: knitr, nanonext, R6, rmarkdown, testthat (>= 2.1.0)
 License: MIT + file LICENSE
 Archs: x64
 
@@ -1581,8 +1581,9 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: parallelly
-Version: 1.39.0
+Version: 1.40.0
 Imports: parallel, tools, utils
+Suggests: commonmark, base64enc
 License: LGPL (>= 2.1)
 Archs: x64
 
@@ -1732,16 +1733,17 @@ Suggests: Rcpp, testthat (>= 3.0.0), withr
 License: MIT + file LICENSE
 
 Package: progressr
-Version: 0.15.0
+Version: 0.15.1
 Depends: R (>= 3.5.0)
 Imports: digest, utils
 Suggests: graphics, tcltk, beepr, cli, crayon, pbmcapply, progress,
         purrr, foreach, plyr, doFuture, future, future.apply, furrr,
-        RPushbullet, rstudioapi, shiny, commonmark, base64enc, tools
+        ntfy, RPushbullet, rstudioapi, shiny, commonmark, base64enc,
+        tools
 License: GPL (>= 3)
 
 Package: promises
-Version: 1.3.0
+Version: 1.3.2
 Imports: fastmap (>= 1.1.0), later, magrittr (>= 1.5), R6, Rcpp, rlang,
         stats
 LinkingTo: later, Rcpp
@@ -2182,7 +2184,7 @@ Suggests: emmeans (> 1.3.5.1), Vdgraph, conf.design, DoE.base, FrF2,
 License: GPL (>= 2)
 
 Package: RSQLite
-Version: 2.3.8
+Version: 2.3.9
 Depends: R (>= 3.1.0)
 Imports: bit64, blob (>= 1.2.0), DBI (>= 1.2.0), memoise, methods,
         pkgconfig, rlang
