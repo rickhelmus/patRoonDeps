@@ -76,13 +76,13 @@ farver	2.1.2
 fastAdaboost	1.0.0	f331ff8ccfe2e7f318448a29bc72af646dfaf2c1
 fastcluster	1.2.6	
 fastmap	1.2.0	
-ff	4.5.0	
+ff	4.5.2	
 fingerprint	3.5.7	
 flexdashboard	0.6.2	
 fontawesome	0.5.3	
 forcats	1.0.0	
 foreach	1.5.2	
-foreign	0.8-87	
+foreign	0.8-88	
 formatR	1.14	
 Formula	1.2-5	
 fs	1.6.5	
@@ -147,7 +147,7 @@ labelled	2.14.0
 lambda.r	1.2.4	
 later	1.4.1	
 lattice	0.22-6	
-lava	1.8.0	
+lava	1.8.1	
 lazyeval	0.2.2	
 lifecycle	1.0.4	
 limma	3.58.1	
@@ -190,7 +190,7 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.3.1	
 parallelly	1.41.0	
-patRoon	2.3.3	084ea7e6d69a79c464a772144b33293df1680813
+patRoon	2.3.3	b1f995a503b26eaeb53c542080d9613c303fb23d
 pcaMethods	1.94.0	
 permute	0.9-7	
 pillar	1.10.1	
@@ -233,7 +233,7 @@ rbibutils	2.3
 rcdk	3.8.1	
 rcdklibs	2.9	
 RColorBrewer	1.1-3	
-Rcpp	1.0.13-1	
+Rcpp	1.0.14	
 RcppArmadillo	14.0.2-1	
 RCurl	1.98-1.16	
 RDCOMClient	0.95-1	1554833f8659461427a93732119756ae1c25bc32
