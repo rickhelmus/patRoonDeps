@@ -630,7 +630,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: ff
-Version: 4.5.0
+Version: 4.5.2
 Depends: R (>= 3.4.0), bit (>= 4.0.0), utils
 Suggests: biglm, testthat (>= 0.11.0), markdown
 License: GPL-2 | GPL-3 | file LICENSE
@@ -677,7 +677,7 @@ Suggests: randomForest, doMC, doParallel, testthat, knitr, rmarkdown
 License: Apache License (== 2.0)
 
 Package: foreign
-Version: 0.8-87
+Version: 0.8-88
 Priority: recommended
 Depends: R (>= 4.0.0)
 Imports: methods, utils, stats
@@ -1234,7 +1234,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: lava
-Version: 1.8.0
+Version: 1.8.1
 Depends: R (>= 3.0)
 Imports: cli, future.apply, graphics, grDevices, methods, numDeriv,
         progressr, stats, survival, SQUAREM, utils
@@ -1931,7 +1931,7 @@ Depends: R (>= 2.0.0)
 License: Apache License 2.0
 
 Package: Rcpp
-Version: 1.0.13-1
+Version: 1.0.14
 Imports: methods, utils
 Suggests: tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)
 License: GPL (>= 2)
