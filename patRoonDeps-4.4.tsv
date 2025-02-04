@@ -19,7 +19,6 @@ bit64	4.6.0-1
 bitops	1.0-9	
 blob	1.2.4	
 bookdown	0.42	
-brio	1.1.5	
 broom	1.0.7	
 bslib	0.9.0	
 ca	0.71.1	
@@ -57,9 +56,7 @@ dbplyr	2.5.0
 dbscan	1.2.2	
 DelayedArray	0.32.0	
 dendextend	1.19.0	
-desc	1.4.3	
 diagram	1.6.5	
-diffobj	0.3.5	
 digest	0.6.37	
 docopt	0.7.1	
 doParallel	1.0.17	
@@ -191,19 +188,16 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.3.2	
 parallelly	1.42.0	
-patRoon	2.3.3	0ca2361f3ce465612ecd0f74866865f889fd9a7f
+patRoon	2.3.3	2e8a68ddd000883aa691d90f3444c417c16505eb
 pcaMethods	1.98.0	
 permute	0.9-7	
 pillar	1.10.1	
-pkgbuild	1.4.6	
 pkgconfig	2.0.3	
-pkgload	1.4.0	
 plogr	0.2.0	
 plotly	4.10.4	
 plotrix	3.8-4	
 plyr	1.8.9	
 png	0.1-8	
-praise	1.0.0	
 preprocessCore	1.68.0	
 prettyunits	1.2.0	
 pROC	1.18.5	
@@ -295,7 +289,6 @@ survival	3.8-3
 svglite	2.1.3	
 sys	3.4.3	
 systemfonts	1.2.1	
-testthat	3.2.3	
 textshaping	1.0.0	
 tibble	3.2.1	
 tidyr	1.3.1	
@@ -318,7 +311,6 @@ viridisLite	0.4.2
 visNetwork	2.1.2	
 vroom	1.6.5	
 vsn	3.74.0	
-waldo	0.6.1	
 webchem	1.3.0	
 webshot	0.5.5	
 withr	3.0.2	

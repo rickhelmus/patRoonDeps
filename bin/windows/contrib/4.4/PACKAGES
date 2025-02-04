@@ -150,13 +150,6 @@ Suggests: bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
         (>= 3.1.0), withr (>= 2.3.0)
 License: GPL-3
 
-Package: brio
-Version: 1.1.5
-Depends: R (>= 3.6)
-Suggests: covr, testthat (>= 3.0.0)
-License: MIT + file LICENSE
-Archs: x64
-
 Package: broom
 Version: 1.0.7
 Depends: R (>= 3.5)
@@ -498,26 +491,11 @@ Enhances: ggdendro, dendroextras, Hmisc, data.table, rpart, WGCNA,
         moduleColor, distory, phangorn, zoo
 License: GPL-2 | GPL-3
 
-Package: desc
-Version: 1.4.3
-Depends: R (>= 3.4)
-Imports: cli, R6, utils
-Suggests: callr, covr, gh, spelling, testthat, whoami, withr
-License: MIT + file LICENSE
-
 Package: diagram
 Version: 1.6.5
 Depends: R (>= 2.01), shape
 Imports: stats, graphics
 License: GPL (>= 2)
-
-Package: diffobj
-Version: 0.3.5
-Depends: R (>= 3.1.0)
-Imports: crayon (>= 1.3.2), tools, methods, utils, stats
-Suggests: knitr, rmarkdown
-License: GPL-2 | GPL-3
-Archs: x64
 
 Package: digest
 Version: 0.6.37
@@ -1647,28 +1625,11 @@ Suggests: bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,
         tibble, units (>= 0.7.2), vdiffr, withr
 License: MIT + file LICENSE
 
-Package: pkgbuild
-Version: 1.4.6
-Depends: R (>= 3.5)
-Imports: callr (>= 3.2.0), cli (>= 3.4.0), desc, processx, R6
-Suggests: covr, cpp11, knitr, Rcpp, rmarkdown, testthat (>= 3.2.0),
-        withr (>= 2.3.0)
-License: MIT + file LICENSE
-
 Package: pkgconfig
 Version: 2.0.3
 Imports: utils
 Suggests: covr, testthat, disposables (>= 1.0.3)
 License: MIT + file LICENSE
-
-Package: pkgload
-Version: 1.4.0
-Depends: R (>= 3.4.0)
-Imports: cli (>= 3.3.0), desc, fs, glue, lifecycle, methods, pkgbuild,
-        processx, rlang (>= 1.1.1), rprojroot, utils, withr (>= 2.4.3)
-Suggests: bitops, jsonlite, mathjaxr, pak, Rcpp, remotes, rstudioapi,
-        testthat (>= 3.2.1.1), usethis
-License: GPL-3
 
 Package: plogr
 Version: 0.2.0
@@ -1711,11 +1672,6 @@ Version: 0.1-8
 Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: x64
-
-Package: praise
-Version: 1.0.0
-Suggests: testthat
-License: MIT + file LICENSE
 
 Package: preprocessCore
 Version: 1.68.0
@@ -2466,21 +2422,6 @@ Suggests: covr, farver, graphics, knitr, rmarkdown, testthat (>= 2.1.0)
 License: MIT + file LICENSE
 Archs: x64
 
-Package: testthat
-Version: 3.2.3
-Depends: R (>= 3.6.0)
-Imports: brio (>= 1.1.3), callr (>= 3.7.3), cli (>= 3.6.1), desc (>=
-        1.4.2), digest (>= 0.6.33), evaluate (>= 1.0.1), jsonlite (>=
-        1.8.7), lifecycle (>= 1.0.3), magrittr (>= 2.0.3), methods,
-        pkgload (>= 1.3.2.1), praise (>= 1.0.0), processx (>= 3.8.2),
-        ps (>= 1.7.5), R6 (>= 2.5.1), rlang (>= 1.1.1), utils, waldo
-        (>= 0.6.0), withr (>= 3.0.2)
-Suggests: covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), knitr,
-        rmarkdown, rstudioapi, S7, shiny, usethis, vctrs (>= 0.1.0),
-        xml2
-License: MIT + file LICENSE
-Archs: x64
-
 Package: textshaping
 Version: 1.0.0
 Depends: R (>= 3.2.0)
@@ -2683,13 +2624,6 @@ Suggests: affydata, hgu95av2cdf, BiocStyle, knitr, rmarkdown, dplyr,
         testthat
 License: Artistic-2.0
 Archs: x64
-
-Package: waldo
-Version: 0.6.1
-Depends: R (>= 4.0)
-Imports: cli, diffobj (>= 0.3.4), glue, methods, rlang (>= 1.1.0)
-Suggests: bit64, R6, S7, testthat (>= 3.0.0), withr, xml2
-License: MIT + file LICENSE
 
 Package: webchem
 Version: 1.3.0
