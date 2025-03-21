@@ -111,9 +111,9 @@ Suggests: BiocGenerics, RUnit, htmltools
 License: Artistic-2.0
 
 Package: bit
-Version: 4.5.0.1
+Version: 4.6.0
 Depends: R (>= 3.4.0)
-Suggests: testthat (>= 0.11.0), roxygen2, knitr, markdown, rmarkdown,
+Suggests: testthat (>= 3.0.0), roxygen2, knitr, markdown, rmarkdown,
         microbenchmark, bit64 (>= 4.0.0), ff (>= 4.0.0)
 License: GPL-2 | GPL-3
 Archs: x64
@@ -339,7 +339,7 @@ License: GPL-2
 Archs: x64
 
 Package: cluster
-Version: 2.1.8
+Version: 2.1.8.1
 Priority: recommended
 Depends: R (>= 3.5.0)
 Imports: graphics, grDevices, stats, utils
@@ -370,7 +370,7 @@ Version: 0.0-8
 License: GPL-2
 
 Package: commonmark
-Version: 1.9.2
+Version: 1.9.5
 Suggests: curl, testthat, xml2
 License: BSD_2_clause + file LICENSE
 Archs: x64
@@ -384,7 +384,7 @@ Suggests: callr, covr, dplyr, Matrix, methods, pkgload, testthat (>=
 License: MIT + file LICENSE
 
 Package: cpp11
-Version: 0.5.1
+Version: 0.5.2
 Depends: R (>= 4.0.0)
 Suggests: bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
         knitr, lobstr, mockery, progress, rmarkdown, scales, Rcpp,
@@ -581,7 +581,7 @@ License: GPL-2
 Archs: x64
 
 Package: enviPick
-Version: 1.7
+Version: 1.8
 Depends: R (>= 3.0.1), shiny(>= 0.7.0), readMzXmlData(>= 2.7)
 License: GPL (>= 3)
 Archs: x64
@@ -800,7 +800,7 @@ Suggests: R.utils, data.table, GenomicRanges, Rsamtools,
 License: Artistic-2.0
 
 Package: GenomeInfoDbData
-Version: 1.2.13
+Version: 1.2.14
 Depends: R (>= 3.3)
 License: Artistic-2.0
 
@@ -986,7 +986,7 @@ Suggests: knitr, markdown, testit
 License: GPL
 
 Package: Hmisc
-Version: 5.2-2
+Version: 5.2-3
 Depends: R (>= 4.2.0)
 Imports: methods, ggplot2, cluster, rpart, nnet, foreign, gtable, grid,
         gridExtra, data.table, htmlTable (>= 1.11.0), viridis,
@@ -1132,7 +1132,7 @@ Suggests: testthat
 License: MIT + file LICENSE
 
 Package: jsonlite
-Version: 1.9.0
+Version: 1.9.1
 Depends: methods
 Suggests: httr, vctrs, testthat, knitr, rmarkdown, R.rsp, sf
 License: MIT + file LICENSE
@@ -1177,16 +1177,16 @@ Enhances: clustMixType, randomForest, ClustVarLV
 License: GPL-2 | GPL-3
 
 Package: knitr
-Version: 1.49
+Version: 1.50
 Depends: R (>= 3.6.0)
 Imports: evaluate (>= 0.15), highr (>= 0.11), methods, tools, xfun (>=
-        0.48), yaml (>= 2.1.19)
+        0.51), yaml (>= 2.1.19)
 Suggests: bslib, codetools, DBI (>= 0.4-1), digest, formatR, gifski,
         gridSVG, htmlwidgets (>= 0.7), jpeg, JuliaCall (>= 0.11.1),
         magick, litedown, markdown (>= 1.3), png, ragg, reticulate (>=
         1.4), rgl (>= 0.95.1201), rlang, rmarkdown, sass, showtext,
         styler (>= 1.2.0), targets (>= 0.6.0), testit, tibble,
-        tikzDevice (>= 0.10), tinytex (>= 0.46), webshot, rstudioapi,
+        tikzDevice (>= 0.10), tinytex (>= 0.56), webshot, rstudioapi,
         svglite
 License: GPL
 
@@ -1390,7 +1390,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: mime
-Version: 0.12
+Version: 0.13
 Imports: tools
 License: GPL
 Archs: x64
@@ -1822,12 +1822,12 @@ Suggests: knitr, rmarkdown
 License: GPL-3
 
 Package: questionr
-Version: 0.7.8
-Depends: R (>= 3.5.0)
+Version: 0.8.0
+Depends: R (>= 4.1.0)
 Imports: shiny (>= 1.0.5), miniUI, rstudioapi, highr, styler, classInt,
         htmltools, graphics, stats, utils, rlang, labelled (>= 2.6.0)
-Suggests: testthat, roxygen2, dplyr, ggplot2, tidyr, janitor, forcats,
-        knitr, rmarkdown, survey, Hmisc
+Suggests: testthat, roxygen2, dplyr, ggplot2, tidyr, janitor, forcats
+        (>= 1.0.0), knitr, rmarkdown, survey, Hmisc
 License: GPL (>= 2)
 
 Package: R.cache
@@ -1980,7 +1980,7 @@ License: GPL-2
 Archs: x64
 
 Package: Rdpack
-Version: 2.6.2
+Version: 2.6.3
 Depends: R (>= 2.15.0), methods
 Imports: tools, utils, rbibutils (>= 1.3)
 Suggests: grDevices, testthat, rstudioapi, rprojroot, gbRd
@@ -2020,7 +2020,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: readxl
-Version: 1.4.4
+Version: 1.4.5
 Depends: R (>= 3.6)
 Imports: cellranger, tibble (>= 2.0.1), utils
 LinkingTo: cpp11 (>= 0.4.0), progress
@@ -2029,12 +2029,12 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: recipes
-Version: 1.1.1
+Version: 1.2.0
 Depends: dplyr (>= 1.1.0), R (>= 3.6)
 Imports: cli, clock (>= 0.6.1), generics (>= 0.1.2), glue, gower,
         hardhat (>= 1.4.1), ipred (>= 0.9-12), lifecycle (>= 1.0.3),
         lubridate (>= 1.8.0), magrittr, Matrix, purrr (>= 1.0.0), rlang
-        (>= 1.1.0), sparsevctrs (>= 0.2.0), stats, tibble, tidyr (>=
+        (>= 1.1.0), sparsevctrs (>= 0.3.0), stats, tibble, tidyr (>=
         1.0.0), tidyselect (>= 1.2.0), timeDate, utils, vctrs (>=
         0.5.0), withr
 Suggests: covr, ddalpha, dials (>= 1.2.0), ggplot2, igraph, kernlab,
@@ -2335,7 +2335,7 @@ License: BSD_3_clause + file LICENSE
 Archs: x64
 
 Package: sparsevctrs
-Version: 0.2.0
+Version: 0.3.1
 Depends: R (>= 4.0.0)
 Imports: cli (>= 3.4.0), rlang (>= 1.1.0), vctrs
 Suggests: knitr, Matrix, methods, rmarkdown, testthat (>= 3.0.0),
@@ -2541,9 +2541,9 @@ License: GPL-3
 Archs: x64
 
 Package: tzdb
-Version: 0.4.0
-Depends: R (>= 3.5.0)
-LinkingTo: cpp11 (>= 0.4.2)
+Version: 0.5.0
+Depends: R (>= 4.0.0)
+LinkingTo: cpp11 (>= 0.5.2)
 Suggests: covr, testthat (>= 3.0.0)
 License: MIT + file LICENSE
 Archs: x64
@@ -2714,7 +2714,7 @@ License: BSD_3_clause + file LICENSE
 Archs: x64
 
 Package: xml2
-Version: 1.3.7
+Version: 1.3.8
 Depends: R (>= 3.6.0)
 Imports: cli, methods, rlang (>= 1.1.0)
 Suggests: covr, curl, httr, knitr, magrittr, mockery, rmarkdown,
