@@ -10,7 +10,9 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         CAMERA = list(type = "bioc", mandatory = TRUE), # also pulls in other mandatory BioC deps (mzR, XCMS, ...)
         RDCOMClient = list(type = "gh", user = "BSchamberger", os = "windows"),
         RAMClustR = list(
-            type = "cran",
+            type = "gh",
+            user = "cbroeckl",
+            branch = "release_1.3.x",
             deps = list(
                 ff = list(type = "cran"),
                 InterpretMSSpectrum = list(
