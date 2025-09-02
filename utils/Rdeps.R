@@ -12,7 +12,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         RAMClustR = list(
             type = "gh",
             user = "cbroeckl",
-            branch = "release_1.3.x",
+            branch = "master", # "release_1.3.x",
             deps = list(
                 ff = list(type = "cran"),
                 InterpretMSSpectrum = list(
