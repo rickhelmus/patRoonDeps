@@ -2,7 +2,6 @@ Package	Version	RemoteSha
 abind	1.4-8	
 affy	1.87.0	
 affyio	1.79.0	
-AnnotationDbi	1.71.1	
 AnnotationFilter	1.33.0	
 askpass	1.2.1	
 assertthat	0.2.1	
@@ -12,19 +11,15 @@ BH	1.87.0-1
 Biobase	2.69.0	
 BiocBaseUtils	1.11.2	
 BiocGenerics	0.55.1	
-BiocIO	1.19.0	
 BiocManager	1.30.26	
 BiocParallel	1.43.4	
 BiocStyle	2.37.1	
-Biostrings	2.77.2	
 bit	4.6.0	
 bit64	4.6.0-1	
 bitops	1.0-9	
 blob	1.2.4	
 bookdown	0.45	
-brio	1.1.5	
 broom	1.0.10	
-BSgenome	1.77.1	
 bslib	0.9.0	
 ca	0.71.1	
 cachem	1.1.0	
@@ -60,9 +55,7 @@ dbplyr	2.5.1
 dbscan	1.2.3	
 DelayedArray	0.35.2	
 dendextend	1.19.1	
-desc	1.4.3	
 diagram	1.6.5	
-diffobj	0.3.6	
 digest	0.6.37	
 docopt	0.7.2	
 doParallel	1.0.17	
@@ -100,10 +93,7 @@ GA	3.2.4
 gargle	1.6.0	
 gclus	1.3.3	
 generics	0.1.4	
-GenomeInfoDb	1.45.9	
 GenomeInfoDbData	1.2.15	bb65b130376349472eb1ee8a734352f0a50980bb
-GenomicAlignments	1.45.2	
-GenomicFeatures	1.61.6	
 GenomicRanges	1.61.1	
 getPass	0.2-4	
 ggplot2	4.0.0	
@@ -130,7 +120,6 @@ htmltools	0.5.8.1
 htmlwidgets	1.6.4	
 httpuv	1.6.16	
 httr	1.4.7	
-hunspell	3.0.6	
 ids	1.0.1	
 igraph	2.2.1	
 impute	1.83.0	
@@ -143,7 +132,6 @@ itertools	0.1-3
 jquerylib	0.1.4	
 jsonlite	2.0.0	
 kableExtra	1.4.0	
-KEGGREST	1.49.1	
 kernlab	0.9-33	
 KernSmooth	2.23-26	
 keys	0.1.1	
@@ -196,21 +184,17 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.3.4	
 otel	0.2.0	
-otelsdk	0.2.2	
 parallelly	1.45.1	
-patRoon	2.3.4	1b47c768b45a8921fd2cc228c70e8ef8632fb87c
+patRoon	2.3.4	5e2dabb237416ee8862e07a835da35ffeca1eb38
 pcaMethods	2.1.0	
 permute	0.9-8	
 pillar	1.11.1	
-pkgbuild	1.4.8	
 pkgconfig	2.0.3	
-pkgload	1.4.1	
 plogr	0.2.0	
 plotly	4.11.0	
 plotrix	3.8-4	
 plyr	1.8.9	
 png	0.1-8	
-praise	1.0.0	
 preprocessCore	1.71.2	
 prettyunits	1.2.0	
 pROC	1.19.0.1	
@@ -246,7 +230,6 @@ rcdklibs	2.9
 RColorBrewer	1.1-3	
 Rcpp	1.1.0	
 RcppArmadillo	15.0.2-2	
-RCurl	1.98-1.17	
 RDCOMClient	0.95-1	1554833f8659461427a93732119756ae1c25bc32
 Rdisop	1.69.2	
 Rdpack	2.6.4	
@@ -261,13 +244,10 @@ rematch	2.0.0
 rematch2	2.1.2	
 reprex	2.1.1	
 reshape2	1.4.4	
-restfulr	0.0.16	
 Rgraphviz	2.53.0	
 rhandsontable	0.3.8	
 Rhdf5lib	1.31.0	
-Rhtslib	3.5.0	
 rJava	1.0-11	
-rjson	0.2.23	
 rlang	1.1.6	
 rlist	0.4.6.2	
 rmarkdown	2.30	
@@ -275,12 +255,9 @@ ROCR	1.0-11
 ropls	1.41.0	
 rpart	4.1.24	
 rprojroot	2.1.1	
-Rsamtools	2.25.2	
 rsm	2.10.6	
 RSQLite	2.4.3	
 rstudioapi	0.17.1	
-rtracklayer	1.69.1	
-RUnit	0.4.33.1	
 rvest	1.0.5	
 S4Arrays	1.9.1	
 S4Vectors	0.47.0	
@@ -300,7 +277,6 @@ SparseArray	1.9.1
 sparsesvd	0.2-3	
 sparsevctrs	0.3.4	
 Spectra	1.19.4	
-spelling	2.3.2	
 splashR	0.0.4	174fbf289a0357535f9bacda282b9a2dbb7807cc
 SQUAREM	2021.1	
 statmod	1.5.1	
@@ -312,7 +288,6 @@ survival	3.8-3
 svglite	2.2.2	
 sys	3.4.3	
 systemfonts	1.3.1	
-testthat	3.2.3	
 textshaping	1.0.4	
 tibble	3.3.0	
 tidyr	1.3.1	
@@ -323,7 +298,6 @@ timeDate	4051.111
 tinytex	0.57	
 TSP	1.2-5	
 tzdb	0.5.0	
-UCSC.utils	1.5.0	
 UpSetR	1.4.0	
 utf8	1.2.6	
 uuid	1.2-1	
@@ -335,7 +309,6 @@ viridisLite	0.4.2
 visNetwork	2.1.4	
 vroom	1.6.6	
 vsn	3.77.0	
-waldo	0.6.2	
 webshot	0.5.5	
 withr	3.0.2	
 xcms	4.7.2	
