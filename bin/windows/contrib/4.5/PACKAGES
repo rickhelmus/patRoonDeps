@@ -5,7 +5,7 @@ Imports: methods, utils
 License: MIT + file LICENSE
 
 Package: affy
-Version: 1.86.0
+Version: 1.87.0
 Depends: R (>= 2.8.0), BiocGenerics (>= 0.1.12), Biobase (>= 2.5.5)
 Imports: affyio (>= 1.13.3), BiocManager, graphics, grDevices, methods,
         preprocessCore, stats, utils
@@ -15,14 +15,25 @@ License: LGPL (>= 2.0)
 Archs: x64
 
 Package: affyio
-Version: 1.78.0
+Version: 1.79.0
 Depends: R (>= 2.6.0)
 Imports: methods
 License: LGPL (>= 2)
 Archs: x64
 
+Package: AnnotationDbi
+Version: 1.71.1
+Depends: R (>= 2.7.0), methods, stats4, BiocGenerics (>= 0.29.2),
+        Biobase (>= 1.17.0), IRanges
+Imports: DBI, RSQLite, S4Vectors (>= 0.9.25), stats, KEGGREST
+Suggests: utils, hgu95av2.db, GO.db, org.Sc.sgd.db, org.At.tair.db,
+        RUnit, TxDb.Hsapiens.UCSC.hg19.knownGene, org.Hs.eg.db,
+        reactome.db, AnnotationForge, graph, EnsDb.Hsapiens.v75,
+        BiocStyle, knitr
+License: Artistic-2.0
+
 Package: AnnotationFilter
-Version: 1.32.0
+Version: 1.33.0
 Depends: R (>= 3.4.0)
 Imports: utils, methods, GenomicRanges, lazyeval
 Suggests: BiocStyle, knitr, testthat, RSQLite, org.Hs.eg.db, rmarkdown
@@ -59,7 +70,7 @@ Version: 1.87.0-1
 License: BSL-1.0
 
 Package: Biobase
-Version: 2.68.0
+Version: 2.69.0
 Depends: R (>= 2.10), BiocGenerics (>= 0.27.1), utils
 Imports: methods
 Suggests: tools, tkWidgets, ALL, RUnit, golubEsets, BiocStyle, knitr,
@@ -68,20 +79,27 @@ License: Artistic-2.0
 Archs: x64
 
 Package: BiocBaseUtils
-Version: 1.10.0
+Version: 1.11.2
 Depends: R (>= 4.2.0)
 Imports: methods, utils
 Suggests: knitr, rmarkdown, BiocStyle, tinytest
 License: Artistic-2.0
 
 Package: BiocGenerics
-Version: 0.54.0
+Version: 0.55.1
 Depends: R (>= 4.0.0), methods, utils, graphics, stats, generics
 Imports: methods, utils, graphics, stats
 Suggests: Biobase, S4Vectors, IRanges, S4Arrays, SparseArray,
         DelayedArray, HDF5Array, GenomicRanges, pwalign, Rsamtools,
         AnnotationDbi, affy, affyPLM, DESeq2, flowClust, MSnbase,
         annotate, MultiAssayExperiment, RUnit
+License: Artistic-2.0
+
+Package: BiocIO
+Version: 1.19.0
+Depends: R (>= 4.3.0)
+Imports: BiocGenerics, S4Vectors, methods, tools
+Suggests: testthat, knitr, rmarkdown, BiocStyle
 License: Artistic-2.0
 
 Package: BiocManager
@@ -92,7 +110,7 @@ Suggests: BiocVersion, BiocStyle, remotes, rmarkdown, testthat, withr,
 License: Artistic-2.0
 
 Package: BiocParallel
-Version: 1.42.1
+Version: 1.43.4
 Depends: methods, R (>= 4.1.0)
 Imports: stats, utils, futile.logger, parallel, snow, codetools
 LinkingTo: BH (>= 1.87.0), cpp11
@@ -106,11 +124,27 @@ License: GPL-2 | GPL-3 | BSL-1.0
 Archs: x64
 
 Package: BiocStyle
-Version: 2.36.0
+Version: 2.37.1
 Imports: bookdown, knitr (>= 1.30), rmarkdown (>= 1.2), stats, utils,
         yaml, BiocManager
 Suggests: BiocGenerics, RUnit, htmltools
 License: Artistic-2.0
+
+Package: Biostrings
+Version: 2.77.2
+Depends: R (>= 4.1.0), BiocGenerics (>= 0.37.0), S4Vectors (>=
+        0.27.12), IRanges (>= 2.31.2), XVector (>= 0.37.1), Seqinfo
+Imports: methods, utils, grDevices, stats, crayon
+LinkingTo: S4Vectors, IRanges, XVector
+Suggests: graphics, pwalign, BSgenome (>= 1.13.14),
+        BSgenome.Celegans.UCSC.ce2 (>= 1.3.11),
+        BSgenome.Dmelanogaster.UCSC.dm3 (>= 1.3.11),
+        BSgenome.Hsapiens.UCSC.hg18, drosophila2probe, hgu95av2probe,
+        hgu133aprobe, GenomicFeatures (>= 1.3.14), hgu95av2cdf, affy
+        (>= 1.41.3), affydata (>= 1.11.5), RUnit, BiocStyle, knitr,
+        testthat (>= 3.0.0), covr
+License: Artistic-2.0
+Archs: x64
 
 Package: bit
 Version: 4.6.0
@@ -140,7 +174,7 @@ Suggests: covr, crayon, pillar (>= 1.2.1), testthat
 License: MIT + file LICENSE
 
 Package: bookdown
-Version: 0.44
+Version: 0.45
 Depends: R (>= 3.5.0)
 Imports: htmltools (>= 0.3.6), knitr (>= 1.38), rmarkdown (>= 2.14),
         jquerylib, xfun (>= 0.48), tinytex (>= 0.12), yaml (>= 2.1.19)
@@ -149,6 +183,13 @@ Suggests: bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
         0.13), shiny, tibble, testit (>= 0.9), tufte, xml2, webshot,
         testthat (>= 3.1.0), withr (>= 2.3.0)
 License: GPL-3
+
+Package: brio
+Version: 1.1.5
+Depends: R (>= 3.6)
+Suggests: covr, testthat (>= 3.0.0)
+License: MIT + file LICENSE
+Archs: x64
 
 Package: broom
 Version: 1.0.10
@@ -170,6 +211,26 @@ Suggests: AER, AUC, bbmle, betareg (>= 3.2-1), biglm, binGroup, boot,
         spdep (>= 1.1), speedglm, spelling, stats4, survey, survival
         (>= 3.6-4), systemfit, testthat (>= 3.0.0), tseries, vars, zoo
 License: MIT + file LICENSE
+
+Package: BSgenome
+Version: 1.77.1
+Depends: R (>= 2.8.0), methods, BiocGenerics (>= 0.13.8), S4Vectors (>=
+        0.17.28), IRanges (>= 2.13.16), Seqinfo, GenomicRanges (>=
+        1.61.1), Biostrings (>= 2.77.2), BiocIO, rtracklayer (>=
+        1.69.1)
+Imports: utils, stats, matrixStats, XVector, Rsamtools (>= 2.25.1)
+Suggests: BiocManager, GenomeInfoDb, BSgenome.Celegans.UCSC.ce2,
+        BSgenome.Hsapiens.UCSC.hg38,
+        BSgenome.Hsapiens.UCSC.hg38.masked,
+        BSgenome.Mmusculus.UCSC.mm10, BSgenome.Rnorvegicus.UCSC.rn5,
+        BSgenome.Scerevisiae.UCSC.sacCer1,
+        BSgenome.Hsapiens.NCBI.GRCh38,
+        TxDb.Hsapiens.UCSC.hg38.knownGene,
+        TxDb.Mmusculus.UCSC.mm10.knownGene,
+        SNPlocs.Hsapiens.dbSNP144.GRCh38,
+        XtraSNPlocs.Hsapiens.dbSNP144.GRCh38, hgu95av2probe, RUnit,
+        BSgenomeForge
+License: Artistic-2.0
 
 Package: bslib
 Version: 0.9.0
@@ -209,7 +270,7 @@ Suggests: asciicast (>= 2.3.1), cli (>= 1.1.0), mockery, ps, rprojroot,
 License: MIT + file LICENSE
 
 Package: CAMERA
-Version: 1.64.0
+Version: 1.65.1
 Depends: R (>= 3.5.0), methods, Biobase, xcms (>= 1.13.5)
 Imports: methods, xcms, RBGL, graph, graphics, grDevices, stats, utils,
         Hmisc, igraph
@@ -455,7 +516,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: DelayedArray
-Version: 0.34.1
+Version: 0.35.2
 Depends: R (>= 4.0.0), methods, stats4, Matrix, BiocGenerics (>=
         0.53.3), MatrixGenerics (>= 1.1.3), S4Vectors (>= 0.27.2),
         IRanges (>= 2.17.3), S4Arrays (>= 1.5.4), SparseArray (>=
@@ -480,11 +541,26 @@ Enhances: ggdendro, dendroextras, Hmisc, data.table, rpart, WGCNA,
         moduleColor, distory, phangorn, zoo
 License: GPL-2 | GPL-3
 
+Package: desc
+Version: 1.4.3
+Depends: R (>= 3.4)
+Imports: cli, R6, utils
+Suggests: callr, covr, gh, spelling, testthat, whoami, withr
+License: MIT + file LICENSE
+
 Package: diagram
 Version: 1.6.5
 Depends: R (>= 2.01), shape
 Imports: stats, graphics
 License: GPL (>= 2)
+
+Package: diffobj
+Version: 0.3.6
+Depends: R (>= 3.1.0)
+Imports: crayon (>= 1.3.2), tools, methods, utils, stats
+Suggests: knitr, rmarkdown
+License: GPL-2 | GPL-3
+Archs: x64
 
 Package: digest
 Version: 0.6.37
@@ -566,7 +642,7 @@ License: GPL-2
 Archs: x64
 
 Package: enviPick
-Version: 1.93
+Version: 1.94
 Depends: R (>= 3.0.1), shiny(>= 0.7.0), readMzXmlData(>= 2.7)
 License: GPL (>= 3)
 Archs: x64
@@ -767,12 +843,12 @@ Suggests: covr, pkgload, testthat (>= 3.0.0), tibble, withr
 License: MIT + file LICENSE
 
 Package: GenomeInfoDb
-Version: 1.44.1
+Version: 1.45.9
 Depends: R (>= 4.0.0), methods, BiocGenerics (>= 0.53.2), S4Vectors (>=
-        0.45.2), IRanges (>= 2.41.1)
-Imports: stats, stats4, utils, UCSC.utils, GenomeInfoDbData
-Suggests: R.utils, data.table, GenomicRanges, Rsamtools,
-        GenomicAlignments, GenomicFeatures, BSgenome,
+        0.45.2), IRanges (>= 2.41.1), Seqinfo (>= 0.99.2)
+Imports: stats, utils, UCSC.utils
+Suggests: GenomeInfoDbData, R.utils, data.table, GenomicRanges,
+        Rsamtools, GenomicAlignments, BSgenome, GenomicFeatures,
         TxDb.Dmelanogaster.UCSC.dm3.ensGene,
         BSgenome.Scerevisiae.UCSC.sacCer2, BSgenome.Celegans.UCSC.ce2,
         BSgenome.Hsapiens.NCBI.GRCh38, RUnit, BiocStyle, knitr
@@ -783,21 +859,59 @@ Version: 1.2.15
 Depends: R (>= 3.3)
 License: Artistic-2.0
 
+Package: GenomicAlignments
+Version: 1.45.2
+Depends: R (>= 4.0.0), methods, BiocGenerics (>= 0.37.0), S4Vectors (>=
+        0.27.12), IRanges (>= 2.23.9), Seqinfo, GenomicRanges (>=
+        1.61.1), SummarizedExperiment (>= 1.39.1), Biostrings (>=
+        2.77.2), Rsamtools (>= 2.25.1)
+Imports: methods, utils, stats, BiocGenerics, S4Vectors, IRanges,
+        GenomicRanges, Biostrings, Rsamtools, BiocParallel
+LinkingTo: S4Vectors, IRanges
+Suggests: ShortRead, rtracklayer, BSgenome, GenomicFeatures,
+        RNAseqData.HNRNPC.bam.chr14, pasillaBamSubset,
+        TxDb.Hsapiens.UCSC.hg19.knownGene,
+        TxDb.Dmelanogaster.UCSC.dm3.ensGene,
+        BSgenome.Dmelanogaster.UCSC.dm3, BSgenome.Hsapiens.UCSC.hg19,
+        DESeq2, edgeR, RUnit, knitr, BiocStyle
+License: Artistic-2.0
+Archs: x64
+
+Package: GenomicFeatures
+Version: 1.61.6
+Depends: R (>= 3.5.0), BiocGenerics (>= 0.51.2), S4Vectors (>=
+        0.17.29), IRanges (>= 2.37.1), Seqinfo (>= 0.99.2),
+        GenomicRanges (>= 1.61.1), AnnotationDbi (>= 1.41.4)
+Imports: methods, utils, stats, DBI, XVector, Biostrings (>= 2.77.2),
+        rtracklayer (>= 1.69.1)
+Suggests: GenomeInfoDb, txdbmaker, org.Mm.eg.db, org.Hs.eg.db,
+        BSgenome, BSgenome.Hsapiens.UCSC.hg19 (>= 1.3.17),
+        BSgenome.Celegans.UCSC.ce11, BSgenome.Dmelanogaster.UCSC.dm3
+        (>= 1.3.17), FDb.UCSC.tRNAs, TxDb.Hsapiens.UCSC.hg19.knownGene,
+        TxDb.Celegans.UCSC.ce11.ensGene,
+        TxDb.Dmelanogaster.UCSC.dm3.ensGene (>= 2.7.1),
+        TxDb.Mmusculus.UCSC.mm10.knownGene (>= 3.4.7),
+        TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts,
+        TxDb.Hsapiens.UCSC.hg38.knownGene (>= 3.4.6),
+        SNPlocs.Hsapiens.dbSNP144.GRCh38, Rsamtools, pasillaBamSubset
+        (>= 0.0.5), GenomicAlignments (>= 1.15.7), ensembldb,
+        AnnotationFilter, RUnit, BiocStyle, knitr, markdown
+License: Artistic-2.0
+
 Package: GenomicRanges
-Version: 1.60.0
+Version: 1.61.1
 Depends: R (>= 4.0.0), methods, stats4, BiocGenerics (>= 0.53.2),
-        S4Vectors (>= 0.45.2), IRanges (>= 2.41.1), GenomeInfoDb (>=
-        1.43.1)
+        S4Vectors (>= 0.45.2), IRanges (>= 2.41.1), Seqinfo
 Imports: utils, stats, XVector (>= 0.29.2)
 LinkingTo: S4Vectors, IRanges
-Suggests: Matrix, Biobase, AnnotationDbi, annotate, Biostrings (>=
-        2.25.3), SummarizedExperiment (>= 0.1.5), Rsamtools (>=
-        1.13.53), GenomicAlignments, rtracklayer, BSgenome,
-        GenomicFeatures, txdbmaker, Gviz, VariantAnnotation,
-        AnnotationHub, DESeq2, DEXSeq, edgeR, KEGGgraph,
-        RNAseqData.HNRNPC.bam.chr14, pasillaBamSubset, KEGGREST,
-        hgu95av2.db, hgu95av2probe, BSgenome.Scerevisiae.UCSC.sacCer2,
-        BSgenome.Hsapiens.UCSC.hg38, BSgenome.Mmusculus.UCSC.mm10,
+Suggests: GenomeInfoDb, Biobase, AnnotationDbi, annotate, Biostrings
+        (>= 2.77.2), SummarizedExperiment (>= 1.39.1), Rsamtools,
+        GenomicAlignments, rtracklayer, BSgenome, GenomicFeatures,
+        txdbmaker, Gviz, VariantAnnotation, AnnotationHub, DESeq2,
+        DEXSeq, edgeR, KEGGgraph, RNAseqData.HNRNPC.bam.chr14,
+        pasillaBamSubset, KEGGREST, hgu95av2.db, hgu95av2probe,
+        BSgenome.Scerevisiae.UCSC.sacCer2, BSgenome.Hsapiens.UCSC.hg38,
+        BSgenome.Mmusculus.UCSC.mm10,
         TxDb.Athaliana.BioMart.plantsmart22,
         TxDb.Dmelanogaster.UCSC.dm3.ensGene,
         TxDb.Hsapiens.UCSC.hg38.knownGene,
@@ -897,7 +1011,7 @@ Suggests: grid, MASS, knitr, rmarkdown, r2d2, nlme
 License: GPL-2
 
 Package: graph
-Version: 1.86.0
+Version: 1.87.0
 Depends: R (>= 2.10), methods, BiocGenerics (>= 0.13.11)
 Imports: stats, stats4, utils
 Suggests: SparseM (>= 0.36), XML, RBGL, RUnit, cluster, BiocStyle,
@@ -966,23 +1080,23 @@ Suggests: knitr, markdown, testit
 License: GPL
 
 Package: Hmisc
-Version: 5.2-3
+Version: 5.2-4
 Depends: R (>= 4.2.0)
 Imports: methods, ggplot2, cluster, rpart, nnet, foreign, gtable, grid,
-        gridExtra, data.table, htmlTable (>= 1.11.0), viridis,
+        gridExtra, data.table, htmlTable (>= 1.11.0), viridisLite,
         htmltools, base64enc, colorspace, rmarkdown, knitr, Formula
 Suggests: survival, qreport, acepack, chron, rms, mice, rstudioapi,
-        tables, plotly (>= 4.5.6), rlang, plyr, VGAM, leaps, pcaPP,
-        digest, parallel, polspline, abind, kableExtra, rio, lattice,
+        tables, plotly (>= 4.5.6), rlang, VGAM, leaps, pcaPP, digest,
+        parallel, polspline, abind, kableExtra, rio, lattice,
         latticeExtra, gt, sparkline, jsonlite, htmlwidgets, qs,
-        getPass, keyring, safer, htm2txt
+        getPass, keyring, safer, htm2txt, boot
 License: GPL (>= 2)
 Archs: x64
 
 Package: hms
-Version: 1.1.3
-Imports: lifecycle, methods, pkgconfig, rlang (>= 1.0.2), vctrs (>=
-        0.3.8)
+Version: 1.1.4
+Imports: cli, lifecycle, methods, pkgconfig, rlang (>= 1.0.2), vctrs
+        (>= 0.3.8)
 Suggests: crayon, lubridate, pillar (>= 1.1.0), testthat (>= 3.0.0)
 License: MIT + file LICENSE
 
@@ -1031,6 +1145,15 @@ Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
         (>= 0.8.0), xml2
 License: MIT + file LICENSE
 
+Package: hunspell
+Version: 3.0.6
+Depends: R (>= 3.0.2)
+Imports: Rcpp, digest
+LinkingTo: Rcpp (>= 0.12.12)
+Suggests: spelling, testthat, knitr, rmarkdown
+License: GPL-2 | LGPL-2.1 | MPL-1.1
+Archs: x64
+
 Package: ids
 Version: 1.0.1
 Imports: openssl, uuid
@@ -1038,10 +1161,10 @@ Suggests: knitr, rcorpora, rmarkdown, testthat
 License: MIT + file LICENSE
 
 Package: igraph
-Version: 2.1.4
+Version: 2.2.1
 Depends: methods, R (>= 3.5.0)
 Imports: cli, graphics, grDevices, lifecycle, magrittr, Matrix,
-        pkgconfig (>= 2.0.0), rlang, stats, utils, vctrs
+        pkgconfig (>= 2.0.0), rlang (>= 1.1.0), stats, utils, vctrs
 LinkingTo: cpp11 (>= 0.5.0)
 Suggests: ape (>= 5.7-0.1), callr, decor, digest, igraphdata, knitr,
         rgl (>= 1.3.14), rmarkdown, scales, stats4, tcltk, testthat,
@@ -1051,7 +1174,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: impute
-Version: 1.82.0
+Version: 1.83.0
 Depends: R (>= 2.10)
 License: GPL-2
 Archs: x64
@@ -1073,7 +1196,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: IRanges
-Version: 2.42.0
+Version: 2.43.0
 Depends: R (>= 4.0.0), methods, utils, stats, BiocGenerics (>= 0.53.2),
         S4Vectors (>= 0.45.4)
 Imports: stats4
@@ -1126,6 +1249,13 @@ Imports: knitr (>= 1.33), magrittr, stringr (>= 1.0), xml2 (>= 1.1.1),
         htmltools, rstudioapi, tools, digest, graphics, svglite
 Suggests: testthat, magick, tinytex, formattable, sparkline, webshot2
 License: MIT + file LICENSE
+
+Package: KEGGREST
+Version: 1.49.1
+Depends: R (>= 3.5.0)
+Imports: methods, httr, png, Biostrings
+Suggests: RUnit, BiocGenerics, BiocStyle, knitr, markdown
+License: Artistic-2.0
 
 Package: kernlab
 Version: 0.9-33
@@ -1185,12 +1315,12 @@ Imports: stats, graphics
 License: MIT + file LICENSE | Unlimited
 
 Package: labelled
-Version: 2.15.0
+Version: 2.16.0
 Depends: R (>= 3.2)
 Imports: haven (>= 2.4.1), cli, dplyr (>= 1.1.0), lifecycle, rlang (>=
-        1.1.0), vctrs, stringr, tidyr, tidyselect
-Suggests: testthat (>= 3.2.0), knitr, rmarkdown, questionr, snakecase,
-        spelling, survey
+        1.1.0), vctrs, stringr, tidyr (>= 1.3.0), tidyselect
+Suggests: gt, knitr, rmarkdown, purrr, questionr, snakecase, spelling,
+        survey, testthat (>= 3.2.0)
 Enhances: memisc
 License: GPL (>= 3)
 
@@ -1220,7 +1350,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: lava
-Version: 1.8.1
+Version: 1.8.2
 Depends: R (>= 3.0)
 Imports: cli, future.apply, graphics, grDevices, methods, numDeriv,
         progressr, stats, survival, SQUAREM, utils
@@ -1247,7 +1377,7 @@ Suggests: covr, crayon, knitr, lintr, rmarkdown, testthat (>= 3.0.1),
 License: MIT + file LICENSE
 
 Package: limma
-Version: 3.64.3
+Version: 3.65.3
 Depends: R (>= 3.6.0)
 Imports: grDevices, graphics, stats, utils, methods, statmod
 Suggests: BiasedUrn, ellipse, gplots, knitr, locfit, MASS, splines,
@@ -1307,7 +1437,7 @@ License: GPL-2 | GPL-3
 Archs: x64
 
 Package: MassSpecWavelet
-Version: 1.74.0
+Version: 1.75.1
 Suggests: signal, waveslim, BiocStyle, knitr, rmarkdown, RUnit, bench
 License: LGPL (>= 2)
 Archs: x64
@@ -1323,7 +1453,7 @@ License: GPL (>= 2) | file LICENCE
 Archs: x64
 
 Package: MatrixGenerics
-Version: 1.20.0
+Version: 1.21.0
 Depends: matrixStats (>= 1.4.1)
 Imports: methods
 Suggests: Matrix, sparseMatrixStats, SparseArray, DelayedArray,
@@ -1346,7 +1476,7 @@ Suggests: digest, aws.s3, covr, googleAuthR, googleCloudStorageR, httr,
 License: MIT + file LICENSE
 
 Package: MetaboCoreUtils
-Version: 1.16.1
+Version: 1.17.1
 Depends: R (>= 4.0)
 Imports: utils, MsCoreUtils, BiocParallel, methods, stats
 Suggests: BiocStyle, testthat, knitr, rmarkdown, robustbase
@@ -1417,7 +1547,7 @@ Imports: Rdisop, dplyr, readr, rlist, stringr, tibble, xgboost,
 License: GPL-2
 
 Package: MsCoreUtils
-Version: 1.20.0
+Version: 1.21.0
 Depends: R (>= 3.6.0)
 Imports: methods, S4Vectors, MASS, stats, clue
 LinkingTo: Rcpp
@@ -1429,7 +1559,7 @@ License: Artistic-2.0
 Archs: x64
 
 Package: MsExperiment
-Version: 1.10.1
+Version: 1.11.1
 Depends: R (>= 4.2), ProtGenerics (>= 1.35.2),
 Imports: methods, S4Vectors, IRanges, Spectra, SummarizedExperiment,
         QFeatures, DBI, BiocGenerics
@@ -1438,15 +1568,15 @@ Suggests: testthat, knitr (>= 1.1.0), roxygen2, BiocStyle (>= 2.5.19),
 License: Artistic-2.0
 
 Package: MsFeatures
-Version: 1.16.0
-Depends: R (>= 4.1)
+Version: 1.17.1
+Depends: R (>= 4.0)
 Imports: methods, ProtGenerics (>= 1.23.5), MsCoreUtils,
         SummarizedExperiment, stats
 Suggests: testthat, roxygen2, BiocStyle, pheatmap, knitr, rmarkdown
 License: Artistic-2.0
 
 Package: MSnbase
-Version: 2.34.1
+Version: 2.35.0
 Depends: R (>= 3.5), methods, BiocGenerics (>= 0.7.1), Biobase (>=
         2.15.2), mzR (>= 2.29.3), S4Vectors, ProtGenerics (>= 1.29.1)
 Imports: MsCoreUtils, PSMatch, BiocParallel, IRanges (>= 2.13.28),
@@ -1463,18 +1593,18 @@ License: Artistic-2.0
 Archs: x64
 
 Package: MultiAssayExperiment
-Version: 1.34.0
-Depends: SummarizedExperiment (>= 1.3.81), R (>= 3.5.0)
-Imports: Biobase, BiocBaseUtils, BiocGenerics (>= 0.53.4),
-        DelayedArray, GenomicRanges, IRanges, methods, S4Vectors,
+Version: 1.35.7
+Depends: SummarizedExperiment, R (>= 4.5.0)
+Imports: Biobase, BiocBaseUtils, BiocGenerics, DelayedArray,
+        GenomicRanges, IRanges, MatrixGenerics, methods, S4Vectors,
         tidyr, utils
-Suggests: BiocStyle, HDF5Array, h5mread, knitr, maftools, R.rsp,
+Suggests: BiocStyle, HDF5Array, h5mread, knitr, maftools,
         RaggedExperiment, reshape2, rmarkdown, survival, survminer,
         testthat, UpSetR
 License: Artistic-2.0
 
 Package: MultiDataSet
-Version: 1.36.0
+Version: 1.37.0
 Depends: R (>= 4.1), Biobase
 Imports: BiocGenerics, GenomicRanges, IRanges, S4Vectors,
         SummarizedExperiment, methods, utils, ggplot2, ggrepel, qqman,
@@ -1485,7 +1615,7 @@ Suggests: brgedata, minfi, minfiData, knitr, rmarkdown, testthat,
 License: file LICENSE
 
 Package: mzID
-Version: 1.46.0
+Version: 1.47.0
 Depends: methods
 Imports: XML, plyr, parallel, doParallel, foreach, iterators,
         ProtGenerics
@@ -1493,7 +1623,7 @@ Suggests: knitr, testthat
 License: GPL (>= 2)
 
 Package: mzR
-Version: 2.42.0
+Version: 2.43.1
 Depends: R (>= 4.0.0), Rcpp (>= 0.10.1), methods, utils
 Imports: Biobase, BiocGenerics (>= 0.13.6), ProtGenerics (>= 1.17.3),
         ncdf4
@@ -1549,6 +1679,21 @@ Suggests: curl, testthat (>= 2.1.0), digest, knitr, rmarkdown,
 License: MIT + file LICENSE
 Archs: x64
 
+Package: otel
+Version: 0.2.0
+Depends: R (>= 3.6.0)
+Suggests: callr, cli, glue, jsonlite, otelsdk, processx, shiny,
+        spelling, testthat (>= 3.0.0), utils, withr
+License: MIT + file LICENSE
+
+Package: otelsdk
+Version: 0.2.2
+Imports: otel, utils
+Suggests: callr, cli, curl, gh, jsonlite, processx, ps, rlang,
+        spelling, testthat (>= 3.0.0), webfakes, withr
+License: MIT + file LICENSE
+Archs: x64
+
 Package: parallelly
 Version: 1.45.1
 Imports: parallel, tools, utils
@@ -1579,7 +1724,7 @@ License: GPL-3
 Archs: x64
 
 Package: pcaMethods
-Version: 2.0.0
+Version: 2.1.0
 Depends: Biobase, methods
 Imports: BiocGenerics, Rcpp (>= 0.11.3), MASS
 LinkingTo: Rcpp
@@ -1605,10 +1750,27 @@ Suggests: bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,
         tibble, units (>= 0.7.2), vdiffr, withr
 License: MIT + file LICENSE
 
+Package: pkgbuild
+Version: 1.4.8
+Depends: R (>= 3.5)
+Imports: callr (>= 3.2.0), cli (>= 3.4.0), desc, processx, R6
+Suggests: covr, cpp11, knitr, Rcpp, rmarkdown, testthat (>= 3.2.0),
+        withr (>= 2.3.0)
+License: MIT + file LICENSE
+
 Package: pkgconfig
 Version: 2.0.3
 Imports: utils
 Suggests: covr, testthat, disposables (>= 1.0.3)
+License: MIT + file LICENSE
+
+Package: pkgload
+Version: 1.4.1
+Depends: R (>= 3.4.0)
+Imports: cli (>= 3.3.0), desc, fs, glue, lifecycle, methods, pkgbuild,
+        processx, rlang (>= 1.1.1), rprojroot, utils
+Suggests: bitops, jsonlite, mathjaxr, pak, Rcpp, remotes, rstudioapi,
+        testthat (>= 3.2.1.1), usethis, withr
 License: MIT + file LICENSE
 
 Package: plogr
@@ -1653,8 +1815,13 @@ Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: x64
 
+Package: praise
+Version: 1.0.0
+Suggests: testthat
+License: MIT + file LICENSE
+
 Package: preprocessCore
-Version: 1.70.0
+Version: 1.71.2
 Imports: stats
 License: LGPL (>= 2)
 Archs: x64
@@ -1702,7 +1869,7 @@ Suggests: Rcpp, testthat (>= 3.0.0), withr
 License: MIT + file LICENSE
 
 Package: progressr
-Version: 0.16.0
+Version: 0.17.0
 Depends: R (>= 3.5.0)
 Imports: digest, utils
 Suggests: graphics, tcltk, beepr, cli, crayon, pbmcapply, progress,
@@ -1712,17 +1879,16 @@ Suggests: graphics, tcltk, beepr, cli, crayon, pbmcapply, progress,
 License: GPL (>= 3)
 
 Package: promises
-Version: 1.3.3
-Imports: fastmap (>= 1.1.0), later, magrittr (>= 1.5), R6, Rcpp, rlang,
-        stats
-LinkingTo: later, Rcpp
-Suggests: future (>= 1.21.0), knitr, purrr, rmarkdown, spelling,
-        testthat (>= 3.0.0), vembedr
+Version: 1.4.0
+Depends: R (>= 4.1.0)
+Imports: fastmap (>= 1.1.0), later, lifecycle, magrittr (>= 1.5), otel
+        (>= 0.2.0), R6, rlang
+Suggests: future (>= 1.21.0), knitr, mirai, otelsdk (>= 0.2.0), purrr,
+        Rcpp, rmarkdown, spelling, testthat (>= 3.0.0), vembedr
 License: MIT + file LICENSE
-Archs: x64
 
 Package: ProtGenerics
-Version: 1.40.0
+Version: 1.41.0
 Depends: methods
 Suggests: testthat
 License: Artistic-2.0
@@ -1745,7 +1911,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: PSMatch
-Version: 1.12.0
+Version: 1.13.2
 Depends: S4Vectors, R (>= 4.1.0)
 Imports: utils, stats, igraph, methods, Spectra (>= 1.17.10), Matrix,
         BiocParallel, BiocGenerics, ProtGenerics (>= 1.27.1),
@@ -1773,12 +1939,13 @@ License: GPL-3
 Archs: x64
 
 Package: QFeatures
-Version: 1.18.0
-Depends: R (>= 4.1.0), MultiAssayExperiment
+Version: 1.19.2
+Depends: R (>= 4.1), MultiAssayExperiment (>= 1.33.6)
 Imports: methods, stats, utils, S4Vectors, IRanges,
-        SummarizedExperiment, BiocGenerics, ProtGenerics (>= 1.35.1),
-        AnnotationFilter, lazyeval, Biobase, MsCoreUtils (>= 1.7.2),
-        igraph, grDevices, plotly, tidyr, tidyselect, reshape2
+        SummarizedExperiment, BiocGenerics (>= 0.53.4), ProtGenerics
+        (>= 1.35.1), AnnotationFilter, lazyeval, Biobase, MsCoreUtils
+        (>= 1.7.2), igraph, grDevices, plotly, tidyr, tidyselect,
+        reshape2
 Suggests: SingleCellExperiment, MsDataHub (>= 1.3.3), Matrix,
         HDF5Array, msdata, ggplot2, gplots, dplyr, limma, DT, shiny,
         shinydashboard, testthat, knitr, BiocStyle, rmarkdown, vsn,
@@ -1880,7 +2047,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: RBGL
-Version: 1.84.0
+Version: 1.85.0
 Depends: graph, methods
 Imports: methods
 LinkingTo: BH
@@ -1929,6 +2096,14 @@ Suggests: tinytest, Matrix (>= 1.3.0), pkgKitten, reticulate, slam
 License: GPL (>= 2)
 Archs: x64
 
+Package: RCurl
+Version: 1.98-1.17
+Depends: R (>= 3.4.0), methods
+Imports: bitops
+Suggests: XML
+License: BSD_3_clause + file LICENSE
+Archs: x64
+
 Package: RDCOMClient
 Version: 0.95-1
 Depends: R (>= 3.2.0)
@@ -1936,10 +2111,10 @@ License: GPL-2
 Archs: x64
 
 Package: Rdisop
-Version: 1.68.0
+Version: 1.69.2
 Depends: R (>= 2.10), Rcpp
 LinkingTo: Rcpp
-Suggests: knitr, rmarkdown, RUnit, testthat (>= 3.0.0)
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
 License: GPL-2
 Archs: x64
 
@@ -1967,7 +2142,7 @@ Suggests: htmlwidgets (>= 1.5.3), rmarkdown, shiny, V8, knitr, usethis,
 License: MIT + file LICENSE
 
 Package: readMzXmlData
-Version: 2.8.3
+Version: 2.8.4
 Depends: R (>= 4.2.0)
 Imports: base64enc, digest, XML
 License: GPL (>= 3)
@@ -2043,8 +2218,16 @@ Suggests: covr, lattice, testthat (>= 0.8.0)
 License: MIT + file LICENSE
 Archs: x64
 
+Package: restfulr
+Version: 0.0.16
+Depends: R (>= 3.4.0), methods
+Imports: XML, RCurl, rjson, S4Vectors (>= 0.13.15), yaml
+Suggests: getPass, rsolr, RUnit
+License: Artistic-2.0
+Archs: x64
+
 Package: Rgraphviz
-Version: 2.52.0
+Version: 2.53.0
 Depends: R (>= 2.6.0), methods, utils, graph, grid
 Imports: stats4, graphics, grDevices
 Suggests: RUnit, BiocGenerics, XML
@@ -2059,16 +2242,29 @@ Suggests: knitr, rmarkdown, shiny (>= 0.13), miniUI (>= 0.1.1),
 License: MIT + file LICENSE
 
 Package: Rhdf5lib
-Version: 1.30.0
+Version: 1.31.0
 Depends: R (>= 4.2.0)
 Suggests: BiocStyle, knitr, rmarkdown, tinytest, mockery
 License: Artistic-2.0
+Archs: x64
+
+Package: Rhtslib
+Version: 3.5.0
+Imports: tools
+Suggests: knitr, rmarkdown, BiocStyle
+License: LGPL (>= 2)
 Archs: x64
 
 Package: rJava
 Version: 1.0-11
 Depends: R (>= 3.6.0), methods
 License: LGPL-2.1
+Archs: x64
+
+Package: rjson
+Version: 0.2.23
+Depends: R (>= 4.0.0)
+License: GPL-2
 Archs: x64
 
 Package: rlang
@@ -2109,7 +2305,7 @@ Suggests: testthat, knitr, rmarkdown
 License: GPL (>= 2)
 
 Package: ropls
-Version: 1.40.0
+Version: 1.41.0
 Depends: R (>= 3.5.0)
 Imports: Biobase, ggplot2, graphics, grDevices, methods, plotly, stats,
         MultiAssayExperiment, MultiDataSet, SummarizedExperiment, utils
@@ -2131,6 +2327,21 @@ Depends: R (>= 3.0.0)
 Suggests: covr, knitr, lifecycle, rlang, rmarkdown, testthat (>=
         3.2.0), withr
 License: MIT + file LICENSE
+
+Package: Rsamtools
+Version: 2.25.2
+Depends: R (>= 3.5.0), methods, Seqinfo, GenomicRanges (>= 1.61.1),
+        Biostrings (>= 2.77.2)
+Imports: utils, BiocGenerics (>= 0.25.1), S4Vectors (>= 0.17.25),
+        IRanges (>= 2.13.12), XVector (>= 0.19.7), bitops,
+        BiocParallel, stats
+LinkingTo: Rhtslib (>= 3.3.1), S4Vectors, IRanges, XVector, Biostrings
+Suggests: GenomicAlignments, ShortRead (>= 1.19.10), GenomicFeatures,
+        TxDb.Dmelanogaster.UCSC.dm3.ensGene,
+        TxDb.Hsapiens.UCSC.hg18.knownGene, RNAseqData.HNRNPC.bam.chr14,
+        BSgenome.Hsapiens.UCSC.hg19, RUnit, BiocStyle, knitr
+License: Artistic-2.0 | file LICENSE
+Archs: x64
 
 Package: rsm
 Version: 2.10.6
@@ -2155,6 +2366,29 @@ Version: 0.17.1
 Suggests: testthat, knitr, rmarkdown, clipr, covr
 License: MIT + file LICENSE
 
+Package: rtracklayer
+Version: 1.69.1
+Depends: R (>= 3.5), methods, GenomicRanges (>= 1.37.2)
+Imports: XML (>= 1.98-0), BiocGenerics (>= 0.35.3), S4Vectors (>=
+        0.23.18), IRanges (>= 2.13.13), XVector (>= 0.19.7), Seqinfo,
+        Biostrings (>= 2.77.2), curl, httr, Rsamtools (>= 1.31.2),
+        GenomicAlignments (>= 1.15.6), BiocIO, tools, restfulr (>=
+        0.0.13)
+LinkingTo: S4Vectors, IRanges, XVector
+Suggests: GenomeInfoDb, BSgenome (>= 1.33.4), humanStemCell, microRNA
+        (>= 1.1.1), genefilter, limma, org.Hs.eg.db, hgu133plus2.db,
+        GenomicFeatures, BSgenome.Hsapiens.UCSC.hg19,
+        TxDb.Hsapiens.UCSC.hg19.knownGene, RUnit
+License: Artistic-2.0 + file LICENSE
+Archs: x64
+
+Package: RUnit
+Version: 0.4.33.1
+Depends: R (>= 2.5.0), utils (>= 2.5.0), methods (>= 2.5.0), graphics
+        (>= 2.5.0)
+Suggests: XML (>= 3.1.0)
+License: GPL-2
+
 Package: rvest
 Version: 1.0.5
 Depends: R (>= 4.1)
@@ -2166,7 +2400,7 @@ Suggests: chromote, covr, knitr, purrr, R6, readr, repurrrsive,
 License: MIT + file LICENSE
 
 Package: S4Arrays
-Version: 1.8.1
+Version: 1.9.1
 Depends: R (>= 4.3.0), methods, Matrix, abind, BiocGenerics (>=
         0.45.2), S4Vectors, IRanges
 Imports: stats, crayon
@@ -2177,7 +2411,7 @@ License: Artistic-2.0
 Archs: x64
 
 Package: S4Vectors
-Version: 0.46.0
+Version: 0.47.0
 Depends: R (>= 4.0.0), methods, utils, stats, stats4, BiocGenerics (>=
         0.53.2)
 Suggests: IRanges, GenomicRanges, SummarizedExperiment, Matrix,
@@ -2218,6 +2452,17 @@ Depends: R (>= 3.0)
 Imports: methods, stringr, R6
 Suggests: testthat, XML, xml2
 License: BSD_3_clause + file LICENCE
+
+Package: Seqinfo
+Version: 0.99.2
+Depends: methods, BiocGenerics
+Imports: stats, S4Vectors, IRanges
+Suggests: GenomeInfoDb, GenomicRanges, BSgenome, GenomicFeatures,
+        TxDb.Hsapiens.UCSC.hg38.knownGene,
+        TxDb.Dmelanogaster.UCSC.dm3.ensGene,
+        BSgenome.Hsapiens.UCSC.hg38, BSgenome.Celegans.UCSC.ce2, RUnit,
+        knitr, rmarkdown, BiocStyle
+License: Artistic-2.0
 
 Package: seriation
 Version: 1.5.8
@@ -2281,7 +2526,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: SparseArray
-Version: 1.8.1
+Version: 1.9.1
 Depends: R (>= 4.3.0), methods, Matrix, BiocGenerics (>= 0.43.1),
         MatrixGenerics (>= 1.11.1), S4Vectors (>= 0.43.2), S4Arrays (>=
         1.5.11)
@@ -2309,7 +2554,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: Spectra
-Version: 1.18.2
+Version: 1.19.4
 Depends: R (>= 4.1.0), S4Vectors, BiocParallel
 Imports: ProtGenerics (>= 1.39.2), methods, IRanges, MsCoreUtils (>=
         1.7.5), graphics, grDevices, stats, tools, utils, fs,
@@ -2318,6 +2563,12 @@ Suggests: testthat, knitr (>= 1.1.0), msdata (>= 0.19.3), roxygen2,
         BiocStyle (>= 2.5.19), mzR (>= 2.19.6), rhdf5 (>= 2.32.0),
         rmarkdown, vdiffr (>= 1.0.0), msentropy, patrick
 License: Artistic-2.0
+
+Package: spelling
+Version: 2.3.2
+Imports: commonmark, xml2, hunspell (>= 3.0), knitr
+Suggests: pdftools
+License: MIT + file LICENSE
 
 Package: splashR
 Version: 0.0.4
@@ -2332,7 +2583,7 @@ Suggests: setRNG
 License: GPL (>= 2)
 
 Package: statmod
-Version: 1.5.0
+Version: 1.5.1
 Depends: R (>= 3.0.0)
 Imports: stats, graphics
 Suggests: MASS, tweedie
@@ -2357,25 +2608,25 @@ Suggests: covr, dplyr, gt, htmltools, htmlwidgets, knitr, rmarkdown,
 License: MIT + file LICENSE
 
 Package: styler
-Version: 1.10.3
-Depends: R (>= 3.6.0)
-Imports: cli (>= 3.1.1), magrittr (>= 2.0.0), purrr (>= 0.2.3), R.cache
+Version: 1.11.0
+Depends: R (>= 4.0.0)
+Imports: cli (>= 3.1.1), magrittr (>= 2.0.0), purrr (>= 1.0.2), R.cache
         (>= 0.15.0), rlang (>= 1.0.0), rprojroot (>= 1.1), tools, vctrs
         (>= 0.4.1), withr (>= 2.3.0),
 Suggests: data.tree (>= 0.1.6), digest, here, knitr, prettycode,
         rmarkdown, roxygen2, rstudioapi (>= 0.7), tibble (>= 1.4.2),
-        testthat (>= 3.0.0)
+        testthat (>= 3.2.1)
 License: MIT + file LICENSE
 
 Package: SummarizedExperiment
-Version: 1.38.1
+Version: 1.39.1
 Depends: R (>= 4.0.0), methods, MatrixGenerics (>= 1.1.3),
-        GenomicRanges (>= 1.55.2), Biobase
+        GenomicRanges (>= 1.61.1), Biobase
 Imports: utils, stats, tools, Matrix, BiocGenerics (>= 0.51.3),
-        S4Vectors (>= 0.33.7), IRanges (>= 2.23.9), GenomeInfoDb (>=
-        1.13.1), S4Arrays (>= 1.1.1), DelayedArray (>= 0.31.12)
-Suggests: jsonlite, rhdf5, HDF5Array (>= 1.7.5), annotate,
-        AnnotationDbi, GenomicFeatures, SparseArray,
+        S4Vectors (>= 0.33.7), IRanges (>= 2.23.9), Seqinfo, S4Arrays
+        (>= 1.1.1), DelayedArray (>= 0.31.12)
+Suggests: GenomeInfoDb (>= 1.45.5), rhdf5, HDF5Array (>= 1.7.5),
+        annotate, AnnotationDbi, GenomicFeatures, SparseArray,
         SingleCellExperiment, TxDb.Hsapiens.UCSC.hg19.knownGene,
         hgu95av2.db, airway (>= 1.15.1), BiocStyle, knitr, rmarkdown,
         RUnit, testthat, digest
@@ -2390,10 +2641,10 @@ License: LGPL (>= 2)
 Archs: x64
 
 Package: svglite
-Version: 2.2.1
+Version: 2.2.2
 Depends: R (>= 4.1)
 Imports: base64enc, cli, lifecycle, rlang (>= 1.1.0), systemfonts (>=
-        1.2.3), textshaping (>= 0.3.0)
+        1.3.0), textshaping (>= 0.3.0)
 LinkingTo: cpp11, systemfonts, textshaping
 Suggests: covr, fontquiver (>= 0.2.0), htmltools, knitr, rmarkdown,
         testthat (>= 3.0.0), xml2 (>= 1.0.0)
@@ -2407,7 +2658,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: systemfonts
-Version: 1.3.0
+Version: 1.3.1
 Depends: R (>= 3.2.0)
 Imports: base64enc, grid, jsonlite, lifecycle, tools, utils
 LinkingTo: cpp11 (>= 0.2.1)
@@ -2416,10 +2667,25 @@ Suggests: covr, farver, ggplot2, graphics, knitr, ragg, rmarkdown,
 License: MIT + file LICENSE
 Archs: x64
 
+Package: testthat
+Version: 3.2.3
+Depends: R (>= 3.6.0)
+Imports: brio (>= 1.1.3), callr (>= 3.7.3), cli (>= 3.6.1), desc (>=
+        1.4.2), digest (>= 0.6.33), evaluate (>= 1.0.1), jsonlite (>=
+        1.8.7), lifecycle (>= 1.0.3), magrittr (>= 2.0.3), methods,
+        pkgload (>= 1.3.2.1), praise (>= 1.0.0), processx (>= 3.8.2),
+        ps (>= 1.7.5), R6 (>= 2.5.1), rlang (>= 1.1.1), utils, waldo
+        (>= 0.6.0), withr (>= 3.0.2)
+Suggests: covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), knitr,
+        rmarkdown, rstudioapi, S7, shiny, usethis, vctrs (>= 0.1.0),
+        xml2
+License: MIT + file LICENSE
+Archs: x64
+
 Package: textshaping
-Version: 1.0.3
+Version: 1.0.4
 Depends: R (>= 3.2.0)
-Imports: lifecycle, stats, stringi, systemfonts (>= 1.1.0), utils
+Imports: lifecycle, stats, stringi, systemfonts (>= 1.3.0), utils
 LinkingTo: cpp11 (>= 0.2.1), systemfonts (>= 1.0.0)
 Suggests: covr, grDevices, grid, knitr, rmarkdown, testthat (>= 3.0.0)
 License: MIT + file LICENSE
@@ -2486,7 +2752,7 @@ License: GPL (>= 3)
 Archs: x64
 
 Package: timeDate
-Version: 4041.110
+Version: 4051.111
 Depends: R (>= 3.6.0), methods
 Imports: graphics, utils, stats
 Suggests: RUnit
@@ -2515,7 +2781,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: UCSC.utils
-Version: 1.4.0
+Version: 1.5.0
 Imports: methods, stats, httr, jsonlite, S4Vectors
 Suggests: DBI, RMariaDB, GenomeInfoDb, testthat, knitr, rmarkdown,
         BiocStyle
@@ -2555,7 +2821,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: vegan
-Version: 2.7-1
+Version: 2.7-2
 Depends: permute (>= 0.9-0), R (>= 4.1.0)
 Imports: MASS, cluster, lattice, mgcv
 Suggests: parallel, knitr, markdown
@@ -2609,13 +2875,20 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: vsn
-Version: 3.76.0
+Version: 3.77.0
 Depends: R (>= 4.0.0), methods, Biobase
 Imports: affy, limma, lattice, ggplot2
 Suggests: affydata, hgu95av2cdf, BiocStyle, knitr, rmarkdown, dplyr,
         testthat
 License: Artistic-2.0
 Archs: x64
+
+Package: waldo
+Version: 0.6.2
+Depends: R (>= 4.0)
+Imports: cli, diffobj (>= 0.3.4), glue, methods, rlang (>= 1.1.0)
+Suggests: bit64, R6, S7, testthat (>= 3.0.0), withr, xml2
+License: MIT + file LICENSE
 
 Package: webshot
 Version: 0.5.5
@@ -2633,24 +2906,24 @@ Suggests: callr, DBI, knitr, methods, rlang, rmarkdown (>= 2.12),
 License: MIT + file LICENSE
 
 Package: xcms
-Version: 4.6.3
+Version: 4.7.2
 Depends: R (>= 4.1.0), BiocParallel (>= 1.8.0)
 Imports: MSnbase (>= 2.33.3), mzR (>= 2.25.3), methods, Biobase,
         BiocGenerics, ProtGenerics (>= 1.37.1), lattice,
         MassSpecWavelet (>= 1.66.0), S4Vectors, IRanges,
-        SummarizedExperiment, MsCoreUtils (>= 1.15.5), MsFeatures,
-        MsExperiment (>= 1.10.1), Spectra (>= 1.15.7), progress,
-        RColorBrewer, MetaboCoreUtils (>= 1.11.2)
+        SummarizedExperiment, MsCoreUtils (>= 1.19.2), MsFeatures,
+        MsExperiment (>= 1.5.4), Spectra (>= 1.16.1), progress,
+        RColorBrewer, MetaboCoreUtils (>= 1.11.2), data.table
 Suggests: BiocStyle, caTools, knitr (>= 1.1.0), faahKO, msdata (>=
         0.25.1), ncdf4, testthat (>= 3.1.9), pander, rmarkdown,
         MALDIquant, pheatmap, RANN, multtest, MsBackendMgf, signal,
-        mgcv
+        mgcv, rhdf5
 Enhances: Rgraphviz, rgl
 License: GPL (>= 2) + file LICENSE
 Archs: x64
 
 Package: xfun
-Version: 0.53
+Version: 0.54
 Depends: R (>= 3.2.0)
 Imports: grDevices, stats, tools
 Suggests: testit, parallel, codetools, methods, rstudioapi, tinytex (>=
@@ -2679,11 +2952,11 @@ License: BSD_3_clause + file LICENSE
 Archs: x64
 
 Package: xml2
-Version: 1.4.0
+Version: 1.4.1
 Depends: R (>= 3.6.0)
 Imports: cli, methods, rlang (>= 1.1.0)
-Suggests: covr, curl, httr, knitr, magrittr, mockery, rmarkdown,
-        testthat (>= 3.2.0), xslt
+Suggests: covr, curl, httr, knitr, mockery, rmarkdown, testthat (>=
+        3.2.0), xslt
 License: MIT + file LICENSE
 Archs: x64
 
@@ -2695,7 +2968,7 @@ Suggests: knitr, plm, zoo, survival
 License: GPL (>= 2)
 
 Package: XVector
-Version: 0.48.0
+Version: 0.49.0
 Depends: R (>= 4.0.0), methods, BiocGenerics (>= 0.37.0), S4Vectors (>=
         0.27.12), IRanges (>= 2.23.9)
 Imports: methods, utils, tools, BiocGenerics, S4Vectors, IRanges
