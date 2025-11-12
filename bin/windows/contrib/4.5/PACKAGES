@@ -1244,7 +1244,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: listenv
-Version: 0.9.1
+Version: 0.10.0
 Depends: R (>= 3.1.2)
 Suggests: R.utils, R.rsp, markdown
 License: LGPL (>= 2.1)
@@ -1349,9 +1349,9 @@ Suggests: markdown
 License: GPL-3
 
 Package: mgcv
-Version: 1.9-3
+Version: 1.9-4
 Priority: recommended
-Depends: R (>= 3.6.0), nlme (>= 3.1-64)
+Depends: R (>= 4.4.0), nlme (>= 3.1-64)
 Imports: methods, stats, graphics, Matrix, splines, utils
 Suggests: parallel, survival, MASS
 License: GPL (>= 2)
@@ -1696,7 +1696,7 @@ Suggests: Rcpp, testthat (>= 3.0.0), withr
 License: MIT + file LICENSE
 
 Package: progressr
-Version: 0.17.0
+Version: 0.18.0
 Depends: R (>= 3.5.0)
 Imports: digest, utils
 Suggests: graphics, tcltk, beepr, cli, crayon, pbmcapply, progress,
@@ -1706,7 +1706,7 @@ Suggests: graphics, tcltk, beepr, cli, crayon, pbmcapply, progress,
 License: GPL (>= 3)
 
 Package: promises
-Version: 1.4.0
+Version: 1.5.0
 Depends: R (>= 4.1.0)
 Imports: fastmap (>= 1.1.0), later, lifecycle, magrittr (>= 1.5), otel
         (>= 0.2.0), R6, rlang
@@ -1748,13 +1748,13 @@ Suggests: msdata, rpx, mzID, mzR, SummarizedExperiment, BiocStyle,
 License: Artistic-2.0
 
 Package: purrr
-Version: 1.1.0
+Version: 1.2.0
 Depends: R (>= 4.1)
 Imports: cli (>= 3.6.1), lifecycle (>= 1.0.3), magrittr (>= 1.5.0),
         rlang (>= 1.1.1), vctrs (>= 0.6.3)
 LinkingTo: cli
-Suggests: carrier (>= 0.2.0), covr, dplyr (>= 0.7.8), httr, knitr,
-        lubridate, mirai (>= 2.4.0), rmarkdown, testthat (>= 3.0.0),
+Suggests: carrier (>= 0.3.0), covr, dplyr (>= 0.7.8), httr, knitr,
+        lubridate, mirai (>= 2.5.1), rmarkdown, testthat (>= 3.0.0),
         tibble, tidyselect
 License: MIT + file LICENSE
 Archs: x64
@@ -1883,7 +1883,7 @@ License: Artistic-2.0
 Archs: x64
 
 Package: rbibutils
-Version: 2.3
+Version: 2.4
 Depends: R (>= 2.10)
 Imports: utils, tools
 Suggests: testthat
@@ -2353,8 +2353,8 @@ License_is_FOSS: yes
 Archs: x64
 
 Package: stringr
-Version: 1.5.2
-Depends: R (>= 3.6)
+Version: 1.6.0
+Depends: R (>= 4.1.0)
 Imports: cli, glue (>= 1.6.1), lifecycle (>= 1.0.3), magrittr, rlang
         (>= 1.0.0), stringi (>= 1.5.3), vctrs (>= 0.4.0)
 Suggests: covr, dplyr, gt, htmltools, htmlwidgets, knitr, rmarkdown,
