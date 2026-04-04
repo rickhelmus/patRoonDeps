@@ -65,7 +65,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
             type = "bioc",
             deps = list(ChemmineR = list(type = "bioc"))
         ),
-        Rmstoolkitlib = list(type = "gh", user = "rickhelmus"),
+        Rmstoolkitlib = list(type = "gh", user = "rickhelmus", branch = "main"),
         patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoonDataIMS = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoonExt = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
