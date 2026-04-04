@@ -60,6 +60,12 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         splashR = list(type = "gh", user = "berlinguyinca", repos = "spectra-hash", pkgroot = "splashR"),
         MS2Tox = list(type = "gh", user = "rickhelmus", branch = "model_fix"),
         MS2Quant = list(type = "gh", user = "kruvelab", branch = "main"),
+        reticulate = list(type = "cran"),
+        fmcsR = list(
+            type = "bioc",
+            deps = list(ChemmineR = list(type = "bioc"))
+        ),
+        Rmstoolkitlib = list(type = "gh", user = "rickhelmus"),
         patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoonExt = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoon = list(type = "gh", user = "rickhelmus", branch = patRoonGitRef)
