@@ -67,7 +67,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         ),
         Rmstoolkitlib = list(type = "gh", user = "rickhelmus", branch = "main"),
         patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
-        patRoonDataIMS = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
+        patRoonDataIMS = list(type = "gh", user = "rickhelmus", branch = "main", patRoonDeps = FALSE),
         patRoonExt = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoon = list(type = "gh", user = "rickhelmus", branch = patRoonGitRef)
     )
