@@ -42,6 +42,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         cliqueMS = list(
             type = "gh",
             user = "rickhelmus",
+            branch = "devel",
             deps = list(
                 GenomeInfoDbData = list(type = "gh", user = "BioConductor", branch = "devel",
                                         os = "windows", internal = TRUE)
