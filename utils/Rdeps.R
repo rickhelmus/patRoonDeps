@@ -45,7 +45,9 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
             branch = "devel",
             deps = list(
                 GenomeInfoDbData = list(type = "gh", user = "BioConductor", branch = "devel",
-                                        os = "windows", internal = TRUE)
+                                        os = "windows", internal = TRUE),
+                BiocStyle = list(type = "gh", user = "BioConductor", branch = "devel",
+                                 os = "windows", internal = TRUE)
             )
         ),
         MetaClean = list(
