@@ -14,16 +14,18 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
             user = "cbroeckl",
             branch = "master", # "release_1.3.x",
             deps = list(
-                ff = list(type = "cran"),
-                InterpretMSSpectrum = list(
-                    type = "cran",
-                    deps = list(
-                        Rdisop = list(type = "bioc")
-                    )
-                )
+                ff = list(type = "cran")
+            )
+        ),
+        # for RAMClustR and net components
+        InterpretMSSpectrum = list(
+            type = "cran",
+            deps = list(
+                Rdisop = list(type = "bioc")
             )
         ),
         enviPick = list(type = "gh", user = "blosloos"),
+        # for generateComponentsNontarget() and generateComponentsNet()
         nontarget = list(
             type = "gh",
             user = "blosloos",
@@ -68,6 +70,9 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
             type = "bioc",
             deps = list(ChemmineR = list(type = "bioc"))
         ),
+        # for net components
+        proxy = list(type = "cran"), Hmisc = list(type = "cran"), RBGL = list(type = "cran"),
+
         Rmstoolkitlib = list(type = "gh", user = "rickhelmus", branch = "main"),
         patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
         patRoonDataIMS = list(type = "gh", user = "rickhelmus", branch = "main", patRoonDeps = FALSE),
