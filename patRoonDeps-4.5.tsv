@@ -15,7 +15,7 @@ BiocManager	1.30.27
 BiocParallel	1.44.0	
 BiocStyle	2.41.0	04201e5d965ead53efab4531d05e9a7bcdc11b26
 bit	4.6.0	
-bit64	4.8.2	
+bit64	4.8.4	
 bitops	1.1-0	
 blob	1.3.0	
 bookdown	0.47	
@@ -52,11 +52,11 @@ coop	0.6-3
 cpp11	0.5.5	
 crayon	1.5.3	
 crosstalk	1.2.2	
-curl	7.1.0	
-data.table	1.18.4	
+curl	8.0.0	
+data.table	1.18.6.1	
 DBI	1.3.0	
 dbplyr	2.6.0	
-dbscan	1.2.5	
+dbscan	1.2.6	
 DelayedArray	0.36.1	
 dendextend	1.19.1	
 diagram	1.6.5	
@@ -130,7 +130,7 @@ ids	1.0.1
 igraph	2.3.3	
 impute	1.84.0	
 InterpretMSSpectrum	1.5.3	
-ipred	0.9-15	
+ipred	0.9-16	
 IRanges	2.44.0	
 isoband	0.3.0	
 iterators	1.0.14	
@@ -139,17 +139,17 @@ jquerylib	0.1.4
 jsonlite	2.0.0	
 kableExtra	1.4.1	
 kernlab	0.9-33	
-KernSmooth	2.23-26	
+KernSmooth	2.23-27	
 keys	0.1.1	
 klaR	1.7-4	
 knitr	1.51	
 KPIC	2.4.0	5f638051693b13345445d79837a99744c34607a5
 labeling	0.4.3	
-labelled	2.16.0	
+labelled	2.16.1	
 lambda.r	1.2.4	
 later	1.4.8	
-lattice	0.22-9	
-lava	1.9.2	
+lattice	0.23-1	
+lava	1.9.3	
 lazyeval	0.2.3	
 lifecycle	1.0.5	
 limma	3.66.0	
@@ -195,7 +195,7 @@ numDeriv	2016.8-1.1
 openssl	2.4.2	
 otel	0.2.0	
 parallelly	1.48.0	
-patRoon	3.0.0	055ea3e15bbcada4660198507522df9946e5a0b5
+patRoon	3.0.0	5a6bb5d1c9b16a7a02a5c8a888490b4df6009380
 pcaMethods	2.2.0	
 permute	0.9-10	
 pillar	1.11.1	
@@ -241,7 +241,7 @@ Rcpp	1.1.2
 RcppArmadillo	15.4.2-1	
 RcppEigen	0.3.4.0.2	
 RcppTOML	0.2.3	
-RCurl	1.98-1.19	
+RCurl	1.98-1.20	
 RDCOMClient	0.95-1	d9a46e90bed01900366642e797ccd41b7fda7fee
 Rdisop	1.70.0	
 Rdpack	2.6.6	
@@ -250,7 +250,7 @@ reactR	0.6.1
 readMzXmlData	2.8.4	
 readr	2.2.0	
 readxl	1.5.0	
-recipes	1.3.3	
+recipes	1.4.0	
 registry	0.5-1	
 rematch	2.0.0	
 rematch2	2.1.2	
@@ -302,7 +302,7 @@ stringi	1.8.9
 stringr	1.6.0	
 styler	1.11.0	
 SummarizedExperiment	1.40.0	
-survival	3.8-9	
+survival	3.8-11	
 svglite	2.2.2	
 sys	3.4.3	
 systemfonts	1.3.2	
@@ -333,7 +333,7 @@ withr	3.0.3
 xcms	4.8.0	
 xfun	0.60	
 xgboost	3.2.1.1	
-XML	3.99-0.23	
+XML	3.99-0.24	
 xml2	1.6.0	
 xtable	1.8-8	
 XVector	0.50.0	

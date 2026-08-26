@@ -121,7 +121,7 @@ License: GPL-2 | GPL-3
 Archs: x64
 
 Package: bit64
-Version: 4.8.2
+Version: 4.8.4
 Depends: R (>= 3.5.0)
 Imports: bit (>= 4.0.0), graphics, methods, stats, utils
 Suggests: patrick (>= 0.3.0), testthat (>= 3.3.0), withr
@@ -446,7 +446,7 @@ Suggests: bslib, ggplot2, sass, shiny, testthat (>= 2.1.0)
 License: MIT + file LICENSE
 
 Package: curl
-Version: 7.1.0
+Version: 8.0.0
 Depends: R (>= 3.0.0)
 Suggests: spelling, testthat (>= 1.0.0), knitr, jsonlite, later,
         rmarkdown, httpuv (>= 1.4.4), webutils
@@ -454,7 +454,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: data.table
-Version: 1.18.4
+Version: 1.18.6.1
 Depends: R (>= 3.4.0)
 Imports: methods
 Suggests: bit64 (>= 4.0.0), bit (>= 4.0.4), R.utils (>= 2.13.0), xts,
@@ -487,7 +487,7 @@ Suggests: adbcdrivermanager, adbcsqlite, adbi, bit64, covr, knitr,
 License: MIT + file LICENSE
 
 Package: dbscan
-Version: 1.2.5
+Version: 1.2.6
 Depends: R (>= 3.2.0)
 Imports: generics, graphics, Rcpp (>= 1.0.0), stats
 LinkingTo: Rcpp
@@ -1111,7 +1111,7 @@ Suggests: DBI, doParallel, foreach, parallel, Rdisop, RSQLite, testthat
 License: GPL-3
 
 Package: ipred
-Version: 0.9-15
+Version: 0.9-16
 Depends: R (>= 2.10)
 Imports: rpart (>= 3.1-8), MASS, survival, nnet, class, prodlim
 Suggests: mvtnorm, mlbench, TH.data, randomForest, party
@@ -1182,7 +1182,7 @@ License: GPL-2
 Archs: x64
 
 Package: KernSmooth
-Version: 2.23-26
+Version: 2.23-27
 Priority: recommended
 Depends: R (>= 2.5.0), stats
 Suggests: MASS, carData
@@ -1232,7 +1232,7 @@ Imports: stats, graphics
 License: MIT + file LICENSE | Unlimited
 
 Package: labelled
-Version: 2.16.0
+Version: 2.16.1
 Depends: R (>= 3.2)
 Imports: haven (>= 2.4.1), cli, dplyr (>= 1.1.0), lifecycle, rlang (>=
         1.1.0), vctrs, stringr, tidyr (>= 1.3.0), tidyselect
@@ -1258,7 +1258,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: lattice
-Version: 0.22-9
+Version: 0.23-1
 Priority: recommended
 Depends: R (>= 4.0.0)
 Imports: grid, grDevices, graphics, stats, utils
@@ -1268,15 +1268,15 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: lava
-Version: 1.9.2
+Version: 1.9.3
 Depends: R (>= 3.5.0)
 Imports: cli, future.apply, graphics, grDevices, methods, numDeriv,
         progressr, stats, survival, SQUAREM, utils
 Suggests: KernSmooth, Rgraphviz, data.table, ellipse, fields, future,
         geepack, graph, knitr, rmarkdown, igraph (>= 0.6), lavaSearch2,
         lme4 (>= 1.1.35.1), MASS, Matrix (>= 1.6.3), mets (>= 1.1),
-        nlme, optimx, polycor, quantreg, rgl, svglite, targeted (>=
-        0.4), testthat (>= 0.11), vdiffr, visNetwork
+        nlme, optimx, polycor, quantreg, quarto, rgl, svglite, targeted
+        (>= 0.4), testthat (>= 0.11), vdiffr, visNetwork
 License: Apache License (== 2.0)
 
 Package: lazyeval
@@ -1663,7 +1663,8 @@ Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR,
         cliqueMS, KPIC, MetaClean, MetaCleanData, testthat, rlang,
         vdiffr, patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg,
         rsvg, pkgload, splashR, MS2Quant, MS2Tox, ChemmineR, fmcsR,
-        reticulate, Rmstoolkitlib
+        reticulate, Rmstoolkitlib, proxy, Hmisc, RBGL,
+        InterpretMSSpectrum
 License: GPL-3
 Archs: x64
 
@@ -2035,7 +2036,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RCurl
-Version: 1.98-1.19
+Version: 1.98-1.20
 Depends: R (>= 3.4.0), methods
 Imports: bitops
 Suggests: XML
@@ -2107,7 +2108,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: recipes
-Version: 1.3.3
+Version: 1.4.0
 Depends: dplyr (>= 1.1.0), R (>= 4.1)
 Imports: cli, clock (>= 0.6.1), generics (>= 0.1.2), glue, gower,
         hardhat (>= 1.4.1), ipred (>= 0.9-12), lifecycle (>= 1.0.3),
@@ -2117,9 +2118,9 @@ Imports: cli, clock (>= 0.6.1), generics (>= 0.1.2), glue, gower,
         0.5.0), withr
 Suggests: covr, ddalpha, dials (>= 1.2.0), dimRed, fastICA, ggplot2,
         igraph (>= 2.1.1), kernlab, knitr, methods, mixOmics, modeldata
-        (>= 0.1.1), parsnip (>= 1.2.0), RANN, RcppRoll, rmarkdown,
-        rpart, rsample, RSpectra, splines2, testthat (>= 3.3.0),
-        workflows, xml2
+        (>= 0.1.1), parsnip (>= 1.2.0), quarto, RANN, RcppRoll,
+        rmarkdown, rpart, rsample, RSpectra, splines2, survival,
+        testthat (>= 3.3.0), workflows, xml2
 License: MIT + file LICENSE
 
 Package: registry
@@ -2554,7 +2555,7 @@ Suggests: GenomeInfoDb (>= 1.45.5), rhdf5, HDF5Array (>= 1.7.5),
 License: Artistic-2.0
 
 Package: survival
-Version: 3.8-9
+Version: 3.8-11
 Priority: recommended
 Depends: R (>= 4.1.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
@@ -2845,7 +2846,7 @@ License: Apache License (== 2.0) | file LICENSE
 Archs: x64
 
 Package: XML
-Version: 3.99-0.23
+Version: 3.99-0.24
 Depends: R (>= 4.0.0), methods, utils
 Suggests: bitops, RCurl
 License: BSD_3_clause + file LICENSE
