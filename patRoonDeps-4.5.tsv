@@ -18,7 +18,7 @@ bit	4.6.0
 bit64	4.8.4	
 bitops	1.1-0	
 blob	1.3.0	
-bookdown	0.47	
+bookdown	0.48	
 broom	1.0.13	
 bsicons	0.1.2	
 bslib	0.12.0	
@@ -195,7 +195,7 @@ numDeriv	2016.8-1.1
 openssl	2.4.2	
 otel	0.2.0	
 parallelly	1.48.0	
-patRoon	3.0.0	5a6bb5d1c9b16a7a02a5c8a888490b4df6009380
+patRoon	3.0.0	80049fcad097777b34d7fcab0dcbf7b5ae4e2786
 pcaMethods	2.2.0	
 permute	0.9-10	
 pillar	1.11.1	
@@ -206,7 +206,7 @@ plyr	1.8.9
 png	0.1-9	
 preprocessCore	1.72.0	
 prettyunits	1.2.0	
-pROC	1.19.0.1	
+pROC	1.19.1	
 processx	3.9.0	
 prodlim	2026.03.11	
 progress	1.2.3	

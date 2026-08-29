@@ -186,17 +186,17 @@ Built: R 4.6.0; ; 2026-04-23 23:01:31 UTC; windows
 File: blob_1.3.0.zip
 
 Package: bookdown
-Version: 0.47
+Version: 0.48
 Depends: R (>= 3.5.0)
 Imports: htmltools (>= 0.3.6), knitr (>= 1.38), rmarkdown (>= 2.14),
-        jquerylib, xfun (>= 0.48), tinytex (>= 0.12), yaml (>= 2.1.19)
+        jquerylib, xfun (>= 0.60), tinytex (>= 0.12), yaml (>= 2.1.19)
 Suggests: bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
         curl, rstudioapi, miniUI, rsconnect (>= 1.7.0), servr (>=
         0.13), shiny, tibble, testit (>= 0.9), tufte, xml2, webshot,
         testthat (>= 3.1.0), withr (>= 2.3.0)
 License: GPL-3
-Built: R 4.6.0; ; 2026-06-17 05:53:25 UTC; windows
-File: bookdown_0.47.zip
+Built: R 4.6.0; ; 2026-08-29 04:30:33 UTC; windows
+File: bookdown_0.48.zip
 
 Package: broom
 Version: 1.0.13
@@ -425,7 +425,7 @@ LinkingTo: Rcpp, BH, RcppArmadillo
 Suggests: BiocParallel, knitr, rmarkdown, testthat, CAMERA
 License: GPL (>= 2)
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-08-26 14:05:52 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-08-29 13:41:10 UTC; windows
 File: cliqueMS_1.19.3.zip
 
 Package: clock
@@ -2083,7 +2083,7 @@ Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR,
         InterpretMSSpectrum
 License: GPL-3
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-08-26 14:06:57 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-08-29 13:42:13 UTC; windows
 File: patRoon_3.0.0.zip
 
 Package: pcaMethods
@@ -2189,15 +2189,16 @@ Built: R 4.6.0; ; 2026-04-23 22:43:53 UTC; windows
 File: prettyunits_1.2.0.zip
 
 Package: pROC
-Version: 1.19.0.1
+Version: 1.19.1
 Depends: R (>= 2.14)
 Imports: methods, Rcpp (>= 0.11.1)
 LinkingTo: Rcpp
-Suggests: tcltk, MASS, logcondens, testthat, vdiffr, ggplot2, rlang
+Suggests: MASS, logcondens, testthat, vdiffr, ggplot2, rlang, knitr,
+        rmarkdown
 License: GPL (>= 3)
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-25 10:27:56 UTC; windows
-File: pROC_1.19.0.1.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-08-28 09:03:02 UTC; windows
+File: pROC_1.19.1.zip
 
 Package: processx
 Version: 3.9.0

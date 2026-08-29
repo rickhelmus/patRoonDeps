@@ -140,10 +140,10 @@ Suggests: covr, crayon, pillar (>= 1.2.1), testthat (>= 3.0.0)
 License: MIT + file LICENSE
 
 Package: bookdown
-Version: 0.47
+Version: 0.48
 Depends: R (>= 3.5.0)
 Imports: htmltools (>= 0.3.6), knitr (>= 1.38), rmarkdown (>= 2.14),
-        jquerylib, xfun (>= 0.48), tinytex (>= 0.12), yaml (>= 2.1.19)
+        jquerylib, xfun (>= 0.60), tinytex (>= 0.12), yaml (>= 2.1.19)
 Suggests: bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
         curl, rstudioapi, miniUI, rsconnect (>= 1.7.0), servr (>=
         0.13), shiny, tibble, testit (>= 0.9), tufte, xml2, webshot,
@@ -1751,11 +1751,12 @@ Suggests: codetools, covr, testthat
 License: MIT + file LICENSE
 
 Package: pROC
-Version: 1.19.0.1
+Version: 1.19.1
 Depends: R (>= 2.14)
 Imports: methods, Rcpp (>= 0.11.1)
 LinkingTo: Rcpp
-Suggests: tcltk, MASS, logcondens, testthat, vdiffr, ggplot2, rlang
+Suggests: MASS, logcondens, testthat, vdiffr, ggplot2, rlang, knitr,
+        rmarkdown
 License: GPL (>= 3)
 Archs: x64
 
