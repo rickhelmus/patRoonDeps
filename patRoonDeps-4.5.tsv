@@ -15,7 +15,7 @@ BiocManager	1.30.27
 BiocParallel	1.44.0	
 BiocStyle	2.41.0	04201e5d965ead53efab4531d05e9a7bcdc11b26
 bit	4.6.0	
-bit64	4.8.4	
+bit64	4.8.6	
 bitops	1.1-0	
 blob	1.3.0	
 bookdown	0.48	
@@ -125,7 +125,7 @@ htmlTable	2.5.0
 htmltools	0.5.9	
 htmlwidgets	1.6.4	
 httpuv	1.6.17	
-httr	1.4.8	
+httr	1.4.9	
 ids	1.0.1	
 igraph	2.3.3	
 impute	1.84.0	
@@ -187,7 +187,7 @@ MultiDataSet	1.38.0
 mzID	1.48.0	
 mzR	2.44.0	
 ncdf4	1.24	
-nlme	3.1-170	
+nlme	3.1-171	
 nnet	7.3-21	
 nontarget	2.21	ce59a111029cbf23e28090071208928b6f31eb62
 nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
@@ -195,7 +195,7 @@ numDeriv	2016.8-1.1
 openssl	2.4.2	
 otel	0.2.0	
 parallelly	1.48.0	
-patRoon	3.0.0	0bf92ed96f1f865d84e44d926110ae6ba8ec657c
+patRoon	3.0.0	ddcc62ad0f5d38a8dac24306e15ba4310ca482f3
 pcaMethods	2.2.0	
 permute	0.9-10	
 pillar	1.11.1	
@@ -256,7 +256,7 @@ rematch	2.0.0
 rematch2	2.1.2	
 reprex	2.1.1	
 reshape2	1.4.5	
-reticulate	1.46.0	
+reticulate	1.47.0	
 Rgraphviz	2.54.0	
 rhandsontable	0.3.8	
 Rhdf5lib	1.32.0	
@@ -264,7 +264,7 @@ rJava	1.0-18
 rjson	0.2.23	
 rlang	1.3.0	
 rlist	0.4.6.2	
-rmarkdown	2.31	
+rmarkdown	2.32	
 Rmstoolkitlib	1.0.0	29e792b4af0e9b95b35d003d994e29a43ebb41b2
 rngtools	1.5.2	
 ROCR	1.0-12	
@@ -320,7 +320,7 @@ UpSetR	1.4.1
 utf8	1.2.6	
 uuid	1.2-2	
 vctrs	0.7.3	
-vegan	2.7-5	
+vegan	2.7-6	
 VennDiagram	1.8.2	
 viridis	0.6.5	
 viridisLite	0.4.3	

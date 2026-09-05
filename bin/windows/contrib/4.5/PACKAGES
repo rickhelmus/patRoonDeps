@@ -121,7 +121,7 @@ License: GPL-2 | GPL-3
 Archs: x64
 
 Package: bit64
-Version: 4.8.4
+Version: 4.8.6
 Depends: R (>= 3.5.0)
 Imports: bit (>= 4.0.0), graphics, methods, stats, utils
 Suggests: patrick (>= 0.3.0), testthat (>= 3.3.0), withr
@@ -1070,7 +1070,7 @@ License: GPL (>= 2) | file LICENSE
 Archs: x64
 
 Package: httr
-Version: 1.4.8
+Version: 1.4.9
 Depends: R (>= 3.6)
 Imports: curl (>= 5.1.0), jsonlite, mime, openssl (>= 0.8), R6
 Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
@@ -1589,7 +1589,7 @@ License: GPL (>= 3)
 Archs: x64
 
 Package: nlme
-Version: 3.1-170
+Version: 3.1-171
 Priority: recommended
 Depends: R (>= 3.6.0)
 Imports: graphics, stats, utils, lattice
@@ -2161,7 +2161,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: reticulate
-Version: 1.46.0
+Version: 1.47.0
 Depends: R (>= 3.5)
 Imports: Matrix, Rcpp (>= 1.0.7), RcppTOML, graphics, here, jsonlite,
         methods, png, rappdirs, utils, rlang, withr
@@ -2223,16 +2223,16 @@ Suggests: testthat, stringdist
 License: MIT + file LICENSE
 
 Package: rmarkdown
-Version: 2.31
+Version: 2.32
 Depends: R (>= 3.0)
 Imports: bslib (>= 0.2.5.1), evaluate (>= 0.13), fontawesome (>=
         0.5.0), htmltools (>= 0.5.1), jquerylib, jsonlite, knitr (>=
-        1.43), methods, tinytex (>= 0.31), tools, utils, xfun (>=
+        1.50), methods, tinytex (>= 0.31), tools, utils, xfun (>=
         0.36), yaml (>= 2.1.19)
 Suggests: digest, dygraphs, fs, rsconnect, downlit (>= 0.4.0), katex
         (>= 1.4.0), sass (>= 0.4.0), shiny (>= 1.6.0), testthat (>=
         3.0.3), tibble, vctrs, cleanrmd, withr (>= 2.4.2), xml2
-License: GPL-3
+License: MIT + file LICENSE
 
 Package: Rmstoolkitlib
 Version: 1.0.0
@@ -2722,7 +2722,7 @@ License: MIT + file LICENSE
 Archs: x64
 
 Package: vegan
-Version: 2.7-5
+Version: 2.7-6
 Depends: permute (>= 0.9-0), R (>= 4.1.0)
 Imports: MASS, cluster, lattice, mgcv
 Suggests: parallel, knitr, markdown

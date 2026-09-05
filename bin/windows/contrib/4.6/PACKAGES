@@ -161,14 +161,14 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 22:33:44 UTC; windows
 File: bit_4.6.0.zip
 
 Package: bit64
-Version: 4.8.4
+Version: 4.8.6
 Depends: R (>= 3.5.0)
 Imports: bit (>= 4.0.0), graphics, methods, stats, utils
 Suggests: patrick (>= 0.3.0), testthat (>= 3.3.0), withr
 License: GPL-2 | GPL-3
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-08-21 04:28:51 UTC; windows
-File: bit64_4.8.4.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-02 04:14:47 UTC; windows
+File: bit64_4.8.6.zip
 
 Package: bitops
 Version: 1.1-0
@@ -425,7 +425,7 @@ LinkingTo: Rcpp, BH, RcppArmadillo
 Suggests: BiocParallel, knitr, rmarkdown, testthat, CAMERA
 License: GPL (>= 2)
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-08-29 15:20:31 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-09-05 16:58:31 UTC; windows
 File: cliqueMS_1.19.3.zip
 
 Package: clock
@@ -1345,14 +1345,14 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-25 10:27:35 UTC; windows
 File: httpuv_1.6.17.zip
 
 Package: httr
-Version: 1.4.8
+Version: 1.4.9
 Depends: R (>= 3.6)
 Imports: curl (>= 5.1.0), jsonlite, mime, openssl (>= 0.8), R6
 Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
         (>= 0.8.0), xml2
 License: MIT + file LICENSE
-Built: R 4.6.0; ; 2026-04-23 23:02:36 UTC; windows
-File: httr_1.4.8.zip
+Built: R 4.6.0; ; 2026-09-02 04:14:57 UTC; windows
+File: httr_1.4.9.zip
 
 Package: ids
 Version: 1.0.1
@@ -1989,15 +1989,15 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 22:39:24 UTC; windows
 File: ncdf4_1.24.zip
 
 Package: nlme
-Version: 3.1-170
+Version: 3.1-171
 Priority: recommended
 Depends: R (>= 3.6.0)
 Imports: graphics, stats, utils, lattice
 Suggests: MASS
 License: GPL (>= 2)
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-07-16 05:31:29 UTC; windows
-File: nlme_3.1-170.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-02 04:14:48 UTC; windows
+File: nlme_3.1-171.zip
 
 Package: nnet
 Version: 7.3-21
@@ -2083,7 +2083,7 @@ Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR,
         InterpretMSSpectrum
 License: GPL-3
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-08-29 15:21:44 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-09-05 16:59:35 UTC; windows
 File: patRoon_3.0.0.zip
 
 Package: pcaMethods
@@ -2708,7 +2708,7 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-25 10:32:27 UTC; windows
 File: reshape2_1.4.5.zip
 
 Package: reticulate
-Version: 1.46.0
+Version: 1.47.0
 Depends: R (>= 3.5)
 Imports: Matrix, Rcpp (>= 1.0.7), RcppTOML, graphics, here, jsonlite,
         methods, png, rappdirs, utils, rlang, withr
@@ -2716,8 +2716,8 @@ LinkingTo: Rcpp
 Suggests: callr, knitr, glue, cli, rmarkdown, pillar, testthat
 License: Apache License 2.0
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-25 09:58:41 UTC; windows
-File: reticulate_1.46.0.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-04 04:44:48 UTC; windows
+File: reticulate_1.47.0.zip
 
 Package: Rgraphviz
 Version: 2.56.0
@@ -2786,18 +2786,18 @@ Built: R 4.6.0; ; 2026-04-23 22:51:39 UTC; windows
 File: rlist_0.4.6.2.zip
 
 Package: rmarkdown
-Version: 2.31
+Version: 2.32
 Depends: R (>= 3.0)
 Imports: bslib (>= 0.2.5.1), evaluate (>= 0.13), fontawesome (>=
         0.5.0), htmltools (>= 0.5.1), jquerylib, jsonlite, knitr (>=
-        1.43), methods, tinytex (>= 0.31), tools, utils, xfun (>=
+        1.50), methods, tinytex (>= 0.31), tools, utils, xfun (>=
         0.36), yaml (>= 2.1.19)
 Suggests: digest, dygraphs, fs, rsconnect, downlit (>= 0.4.0), katex
         (>= 1.4.0), sass (>= 0.4.0), shiny (>= 1.6.0), testthat (>=
         3.0.3), tibble, vctrs, cleanrmd, withr (>= 2.4.2), xml2
-License: GPL-3
-Built: R 4.6.0; ; 2026-04-23 23:14:08 UTC; windows
-File: rmarkdown_2.31.zip
+License: MIT + file LICENSE
+Built: R 4.6.0; ; 2026-09-02 04:15:53 UTC; windows
+File: rmarkdown_2.32.zip
 
 Package: Rmstoolkitlib
 Version: 1.0.0
@@ -3397,14 +3397,14 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 22:56:13 UTC; windows
 File: vctrs_0.7.3.zip
 
 Package: vegan
-Version: 2.7-5
+Version: 2.7-6
 Depends: permute (>= 0.9-0), R (>= 4.1.0)
 Imports: MASS, cluster, lattice, mgcv
 Suggests: parallel, knitr, markdown
 License: GPL-2
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-05-26 06:15:59 UTC; windows
-File: vegan_2.7-5.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-01 04:32:57 UTC; windows
+File: vegan_2.7-6.zip
 
 Package: VennDiagram
 Version: 1.8.2
