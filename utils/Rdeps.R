@@ -72,6 +72,12 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         ),
         # for net components
         proxy = list(type = "cran"), Hmisc = list(type = "cran"), RBGL = list(type = "cran"),
+        RSirius = list(
+            type = "gh",
+            user = "sirius-ms",
+            repos = "sirius-client-openAPI",
+            pkgroot = "client-api_r/generated"
+        ),
 
         Rmstoolkitlib = list(type = "gh", user = "rickhelmus", branch = "main"),
         patRoonData = list(type = "gh", user = "rickhelmus", patRoonDeps = FALSE),
