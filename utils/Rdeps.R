@@ -29,7 +29,7 @@ getRDependencies <- function(patRoonGitRef, os, onlyPDeps = FALSE, withInternal 
         nontarget = list(
             type = "gh",
             user = "blosloos",
-            commit = "ce59a11"
+            commit = "ce59a11",
             deps = list(
                 nontargetData = list(type = "gh", user = "blosloos")
             )
