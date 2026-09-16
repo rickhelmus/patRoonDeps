@@ -7,6 +7,7 @@ askpass	1.2.1
 assertthat	0.2.1	
 backports	1.5.1	
 base64enc	0.1-6	
+bench	1.1.4	
 BH	1.90.0-1	
 Biobase	2.70.0	
 BiocBaseUtils	1.12.0	
@@ -19,10 +20,11 @@ bit64	4.8.6
 bitops	1.1-0	
 blob	1.3.0	
 bookdown	0.48	
+brio	1.1.5	
 broom	1.0.13	
 bsicons	0.1.2	
 bslib	0.12.0	
-ca	0.71.1	
+ca	0.72	
 cachem	1.1.0	
 calibrate	1.7.7	
 callr	3.8.0	
@@ -44,11 +46,12 @@ clue	0.3-68
 cluster	2.1.8.3	
 codetools	0.2-20	
 colorspace	2.1-3	
-combinat	0.0-8	
+combinat	0.0-9	
 commonmark	2.0.0	
 conflicted	1.2.0	
 constructive	1.3.0	
 coop	0.6-3	
+covr	3.6.5	
 cpp11	0.5.5	
 crayon	1.5.3	
 crosstalk	1.2.2	
@@ -59,9 +62,11 @@ dbplyr	2.6.0
 dbscan	1.2.6	
 DelayedArray	0.36.1	
 dendextend	1.19.1	
+desc	1.4.3	
 diagram	1.6.5	
-diffobj	0.3.8	
+diffobj	0.3.9	
 digest	0.6.39	
+docopt	0.7.2	
 doParallel	1.0.17	
 doRNG	1.8.6.3	
 dplyr	1.2.1	
@@ -119,13 +124,14 @@ haven	2.5.5
 heatmaply	1.6.0	
 here	1.0.2	
 highr	0.12	
-Hmisc	5.2-6	
+Hmisc	5.3-0	
 hms	1.1.4	
 htmlTable	2.5.0	
 htmltools	0.5.9	
 htmlwidgets	1.6.4	
 httpuv	1.6.17	
 httr	1.4.9	
+httr2	1.3.0	
 ids	1.0.1	
 igraph	2.3.3	
 impute	1.84.0	
@@ -135,6 +141,7 @@ IRanges	2.44.0
 isoband	0.3.0	
 iterators	1.0.14	
 itertools	0.1-3	
+jose	2.0.0	
 jquerylib	0.1.4	
 jsonlite	2.0.0	
 kableExtra	1.4.1	
@@ -142,7 +149,7 @@ kernlab	0.9-33
 KernSmooth	2.23-27	
 keys	0.1.1	
 klaR	1.7-4	
-knitr	1.51	
+knitr	1.52	
 KPIC	2.4.0	5f638051693b13345445d79837a99744c34607a5
 labeling	0.4.3	
 labelled	2.16.1	
@@ -186,6 +193,7 @@ MultiAssayExperiment	1.36.2
 MultiDataSet	1.38.0	
 mzID	1.48.0	
 mzR	2.44.0	
+nanonext	1.10.2	
 ncdf4	1.24	
 nlme	3.1-171	
 nnet	7.3-21	
@@ -194,21 +202,27 @@ nontargetData	1.1	75b2a92cd549f72cc71dfe7b86bd42947d62f2c4
 numDeriv	2016.8-1.1	
 openssl	2.4.2	
 otel	0.2.0	
+otelsdk	0.2.4	
 parallelly	1.48.0	
-patRoon	3.0.0	ddcc62ad0f5d38a8dac24306e15ba4310ca482f3
+patRoon	3.1.0	878350ee35d23d4a3fc8e1f518da69c73d8f74cc
+paws.common	0.8.10	
 pcaMethods	2.2.0	
 permute	0.9-10	
 pillar	1.11.1	
+pkgbuild	1.4.8	
 pkgconfig	2.0.3	
+pkgload	1.5.3	
 plotly	4.12.1	
 plotrix	3.8-14	
 plyr	1.8.9	
 png	0.1-9	
+praise	1.0.0	
 preprocessCore	1.72.0	
 prettyunits	1.2.0	
 pROC	1.19.1	
 processx	3.9.0	
 prodlim	2026.03.11	
+profmem	0.7.0	
 progress	1.2.3	
 progressr	1.0.0	
 promises	1.5.0	
@@ -238,7 +252,7 @@ rcdk	3.8.2
 rcdklibs	2.9	
 RColorBrewer	1.1-3	
 Rcpp	1.1.2	
-RcppArmadillo	15.4.2-1	
+RcppArmadillo	15.6.0-1	
 RcppEigen	0.3.4.0.2	
 RcppTOML	0.2.3	
 RCurl	1.98-1.20	
@@ -257,6 +271,7 @@ rematch2	2.1.2
 reprex	2.1.1	
 reshape2	1.4.5	
 reticulate	1.47.0	
+rex	1.2.2	
 Rgraphviz	2.54.0	
 rhandsontable	0.3.8	
 Rhdf5lib	1.32.0	
@@ -271,6 +286,7 @@ ROCR	1.0-12
 ropls	1.42.0	
 rpart	4.1.27	
 rprojroot	2.1.1	
+RSirius	6.5.4	ab27d3715cf0f360e54ad419c577b33c6335c721
 rsm	2.10.6	
 RSQLite	3.53.3	
 rstudioapi	0.19.0	
@@ -302,10 +318,11 @@ stringi	1.8.9
 stringr	1.6.0	
 styler	1.11.0	
 SummarizedExperiment	1.40.0	
-survival	3.8-11	
+survival	3.8-12	
 svglite	2.2.2	
 sys	3.4.3	
 systemfonts	1.3.2	
+testthat	3.3.2	
 textshaping	1.0.5	
 tibble	3.3.1	
 tidyr	1.3.2	
@@ -328,6 +345,7 @@ visNetwork	2.1.4
 vroom	1.7.1	
 vsn	3.78.1	
 waldo	0.6.2	
+webfakes	1.5.0	
 webshot	0.5.5	
 withr	3.0.3	
 xcms	4.8.0	

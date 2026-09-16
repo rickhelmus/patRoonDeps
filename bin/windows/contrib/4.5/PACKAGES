@@ -54,6 +54,17 @@ Enhances: png
 License: GPL-2 | GPL-3
 Archs: x64
 
+Package: bench
+Version: 1.1.4
+Depends: R (>= 4.0.0)
+Imports: glue (>= 1.8.0), methods, pillar (>= 1.10.1), profmem (>=
+        0.6.0), rlang (>= 1.1.4), stats, tibble (>= 3.2.1), utils
+Suggests: covr, dplyr, forcats, ggbeeswarm, ggplot2 (>= 3.5.1),
+        ggridges, parallel, scales, testthat (>= 3.2.3), tidyr (>=
+        1.3.1), vctrs (>= 0.6.5), withr
+License: MIT + file LICENSE
+Archs: x64
+
 Package: BH
 Version: 1.90.0-1
 License: BSL-1.0
@@ -150,6 +161,13 @@ Suggests: bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
         testthat (>= 3.1.0), withr (>= 2.3.0)
 License: GPL-3
 
+Package: brio
+Version: 1.1.5
+Depends: R (>= 3.6)
+Suggests: covr, testthat (>= 3.0.0)
+License: MIT + file LICENSE
+Archs: x64
+
 Package: broom
 Version: 1.0.13
 Depends: R (>= 4.1)
@@ -190,7 +208,7 @@ Suggests: brand.yml, bsicons, curl, fontawesome, future, ggplot2,
 License: MIT + file LICENSE
 
 Package: ca
-Version: 0.71.1
+Version: 0.72
 Depends: R (>= 3.0.0)
 Suggests: rgl (>= 0.64-10), vcd
 License: GPL
@@ -389,7 +407,7 @@ License: BSD_3_clause + file LICENSE
 Archs: x64
 
 Package: combinat
-Version: 0.0-8
+Version: 0.0-9
 License: GPL-2
 
 Package: commonmark
@@ -423,6 +441,17 @@ Depends: R (>= 3.1.0)
 Suggests: memuse
 Enhances: slam (>= 0.1.32), Matrix
 License: BSD 2-clause License + file LICENSE
+Archs: x64
+
+Package: covr
+Version: 3.6.5
+Depends: R (>= 3.1.0), methods
+Imports: digest, stats, utils, jsonlite, rex, httr, cli, withr (>=
+        1.0.2), yaml
+Suggests: R6, S7 (>= 0.2.0), curl, knitr, rmarkdown, htmltools, DT (>=
+        0.2), testthat (>= 3.0.0), rlang, rstudioapi (>= 0.2), xml2 (>=
+        1.0.0), parallel, memoise, covr, box (>= 1.2.0)
+License: MIT + file LICENSE
 Archs: x64
 
 Package: cpp11
@@ -520,6 +549,13 @@ Enhances: ggdendro, dendroextras, Hmisc, data.table, rpart, WGCNA,
         moduleColor, distory, phangorn, zoo
 License: GPL-2 | GPL-3
 
+Package: desc
+Version: 1.4.3
+Depends: R (>= 3.4)
+Imports: cli, R6, utils
+Suggests: callr, covr, gh, spelling, testthat, whoami, withr
+License: MIT + file LICENSE
+
 Package: diagram
 Version: 1.6.5
 Depends: R (>= 2.01), shape
@@ -527,7 +563,7 @@ Imports: stats, graphics
 License: GPL (>= 2)
 
 Package: diffobj
-Version: 0.3.8
+Version: 0.3.9
 Depends: R (>= 4.1.0)
 Imports: crayon (>= 1.3.2), tools, methods, utils, stats
 Suggests: knitr, rmarkdown
@@ -541,6 +577,12 @@ Imports: utils
 Suggests: tinytest, simplermarkdown, rbenchmark
 License: GPL (>= 2)
 Archs: x64
+
+Package: docopt
+Version: 0.7.2
+Imports: methods
+Suggests: testthat
+License: MIT + file LICENSE
 
 Package: doParallel
 Version: 1.0.17
@@ -1012,7 +1054,7 @@ Suggests: knitr, markdown, testit
 License: GPL
 
 Package: Hmisc
-Version: 5.2-6
+Version: 5.3-0
 Depends: R (>= 4.2.0)
 Imports: methods, ggplot2, cluster, rpart, nnet, foreign, gtable, grid,
         gridExtra, data.table, htmlTable (>= 1.11.0), viridisLite,
@@ -1075,6 +1117,18 @@ Depends: R (>= 3.6)
 Imports: curl (>= 5.1.0), jsonlite, mime, openssl (>= 0.8), R6
 Suggests: covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
         (>= 0.8.0), xml2
+License: MIT + file LICENSE
+
+Package: httr2
+Version: 1.3.0
+Depends: R (>= 4.1)
+Imports: cli (>= 3.0.0), curl (>= 6.4.0), glue, lifecycle, magrittr,
+        openssl, R6, rlang (>= 1.3.0), vctrs (>= 0.6.3), withr
+Suggests: askpass, bench, clipr, covr, digest, docopt, httpuv, jose,
+        jsonlite, knitr, later (>= 1.4.0), nanonext, otel (>= 0.2.0),
+        otelsdk (>= 0.2.0), paws.common (>= 0.8.0), promises, rappdirs,
+        rmarkdown, testthat (>= 3.1.8), tibble, webfakes (>= 1.4.0),
+        xml2
 License: MIT + file LICENSE
 
 Package: ids
@@ -1152,6 +1206,13 @@ Imports: parallel
 Suggests: foreach
 License: GPL-2
 
+Package: jose
+Version: 2.0.0
+Depends: openssl (>= 1.2.1)
+Imports: jsonlite
+Suggests: spelling, testthat, knitr, rmarkdown
+License: MIT + file LICENSE
+
 Package: jquerylib
 Version: 0.1.4
 Imports: htmltools
@@ -1204,13 +1265,13 @@ Enhances: clustMixType, randomForest, ClustVarLV
 License: GPL-2 | GPL-3
 
 Package: knitr
-Version: 1.51
+Version: 1.52
 Depends: R (>= 3.6.0)
 Imports: evaluate (>= 0.15), highr (>= 0.11), methods, tools, xfun (>=
         0.52), yaml (>= 2.1.19)
 Suggests: bslib, DBI (>= 0.4-1), digest, formatR, gifski, gridSVG,
         htmlwidgets (>= 0.7), jpeg, JuliaCall (>= 0.11.1), magick,
-        litedown, markdown (>= 1.3), otel, otelsdk, png, ragg,
+        litedown (>= 0.10), otel, otelsdk, png, ragg (>= 1.5.0),
         reticulate (>= 1.4), rgl (>= 0.95.1201), rlang, rmarkdown,
         sass, showtext, styler (>= 1.2.0), targets (>= 0.6.0), testit,
         tibble, tikzDevice (>= 0.10), tinytex (>= 0.56), webshot,
@@ -1583,6 +1644,14 @@ Suggests: msdata (>= 0.15.1), RUnit, mzID, BiocStyle (>= 2.5.19),
 License: Artistic-2.0
 Archs: x64
 
+Package: nanonext
+Version: 1.10.2
+Depends: R (>= 3.6)
+Suggests: later, litedown
+Enhances: promises
+License: MIT + file LICENSE
+Archs: x64
+
 Package: ncdf4
 Version: 1.24
 License: GPL (>= 3)
@@ -1636,6 +1705,14 @@ Suggests: callr, cli, glue, jsonlite, otelsdk, processx, shiny,
         spelling, testthat (>= 3.0.0), utils, withr
 License: MIT + file LICENSE
 
+Package: otelsdk
+Version: 0.2.4
+Imports: otel, utils
+Suggests: callr, cli, curl, gh, jsonlite, processx, ps, rlang,
+        spelling, testthat (>= 3.0.0), webfakes, withr
+License: MIT + file LICENSE
+Archs: x64
+
 Package: parallelly
 Version: 1.48.0
 Imports: parallel, tools, utils
@@ -1644,7 +1721,7 @@ License: LGPL (>= 2.1)
 Archs: x64
 
 Package: patRoon
-Version: 3.0.0
+Version: 3.1.0
 Depends: R (>= 4.1.0)
 Imports: methods, checkmate (>= 1.8.5), Rcpp, VennDiagram, UpSetR,
         stats, utils, parallel, grid, graphics, RColorBrewer,
@@ -1664,8 +1741,18 @@ Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR,
         vdiffr, patRoonData, devtools, covr, DiagrammeR, DiagrammeRsvg,
         rsvg, pkgload, splashR, MS2Quant, MS2Tox, ChemmineR, fmcsR,
         reticulate, Rmstoolkitlib, proxy, Hmisc, RBGL,
-        InterpretMSSpectrum
+        InterpretMSSpectrum, RSirius
 License: GPL-3
+Archs: x64
+
+Package: paws.common
+Version: 0.8.10
+Depends: R (>= 4.1.0)
+Imports: base64enc, curl, digest, httr2 (>= 1.0.4), jsonlite, methods,
+        utils, stats, Rcpp, xml2
+LinkingTo: Rcpp
+Suggests: covr, crayon, mockery, withr, rstudioapi, testthat (>= 3.0.0)
+License: Apache License (>= 2.0)
 Archs: x64
 
 Package: pcaMethods
@@ -1695,10 +1782,27 @@ Suggests: bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,
         tibble, units (>= 0.7.2), vdiffr, withr
 License: MIT + file LICENSE
 
+Package: pkgbuild
+Version: 1.4.8
+Depends: R (>= 3.5)
+Imports: callr (>= 3.2.0), cli (>= 3.4.0), desc, processx, R6
+Suggests: covr, cpp11, knitr, Rcpp, rmarkdown, testthat (>= 3.2.0),
+        withr (>= 2.3.0)
+License: MIT + file LICENSE
+
 Package: pkgconfig
 Version: 2.0.3
 Imports: utils
 Suggests: covr, testthat, disposables (>= 1.0.3)
+License: MIT + file LICENSE
+
+Package: pkgload
+Version: 1.5.3
+Depends: R (>= 3.4.0)
+Imports: cli (>= 3.3.0), desc, fs, glue, lifecycle, methods, pkgbuild,
+        processx, rlang (>= 1.1.1), rprojroot, utils
+Suggests: bitops, jsonlite, mathjaxr, pak, Rcpp, remotes, rstudioapi,
+        testthat (>= 3.2.1.1), usethis, withr
 License: MIT + file LICENSE
 
 Package: plotly
@@ -1737,6 +1841,11 @@ Version: 0.1-9
 Depends: R (>= 2.9.0)
 License: GPL-2 | GPL-3
 Archs: x64
+
+Package: praise
+Version: 1.0.0
+Suggests: testthat
+License: MIT + file LICENSE
 
 Package: preprocessCore
 Version: 1.72.0
@@ -1779,6 +1888,12 @@ LinkingTo: Rcpp
 Suggests: tibble, ggthemes, riskRegression, testthat, etm, survey
 License: GPL (>= 2)
 Archs: x64
+
+Package: profmem
+Version: 0.7.0
+Imports: utils
+Suggests: R.rsp, markdown, microbenchmark
+License: LGPL (>= 2.1)
 
 Package: progress
 Version: 1.2.3
@@ -2010,7 +2125,7 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RcppArmadillo
-Version: 15.4.2-1
+Version: 15.6.0-1
 Depends: R (>= 3.3.0)
 Imports: Rcpp (>= 1.1.1), stats, utils, methods
 LinkingTo: Rcpp
@@ -2170,6 +2285,13 @@ Suggests: callr, knitr, glue, cli, rmarkdown, pillar, testthat
 License: Apache License 2.0
 Archs: x64
 
+Package: rex
+Version: 1.2.2
+Imports: withr
+Suggests: covr, dplyr, ggplot2, Hmisc, knitr, magrittr, rmarkdown,
+        roxygen2, rvest, stringr, testthat
+License: MIT + file LICENSE
+
 Package: Rgraphviz
 Version: 2.54.0
 Depends: R (>= 2.6.0), methods, utils, graph, grid
@@ -2276,6 +2398,12 @@ Depends: R (>= 3.0.0)
 Suggests: covr, knitr, lifecycle, rlang, rmarkdown, testthat (>=
         3.2.0), withr
 License: MIT + file LICENSE
+
+Package: RSirius
+Version: 6.5.4
+Depends: R (>= 3.3)
+Imports: jsonlite, httr2, R6, base64enc, stringr
+Suggests: testthat
 
 Package: rsm
 Version: 2.10.6
@@ -2556,7 +2684,7 @@ Suggests: GenomeInfoDb (>= 1.45.5), rhdf5, HDF5Array (>= 1.7.5),
 License: Artistic-2.0
 
 Package: survival
-Version: 3.8-11
+Version: 3.8-12
 Priority: recommended
 Depends: R (>= 4.1.0)
 Imports: graphics, Matrix, methods, splines, stats, utils
@@ -2587,6 +2715,21 @@ Imports: base64enc, grid, jsonlite, lifecycle, tools, utils
 LinkingTo: cpp11 (>= 0.2.1)
 Suggests: covr, farver, ggplot2, graphics, knitr, ragg, rmarkdown,
         svglite, testthat (>= 2.1.0)
+License: MIT + file LICENSE
+Archs: x64
+
+Package: testthat
+Version: 3.3.2
+Depends: R (>= 4.1.0)
+Imports: brio (>= 1.1.5), callr (>= 3.7.6), cli (>= 3.6.5), desc (>=
+        1.4.3), evaluate (>= 1.0.4), jsonlite (>= 2.0.0), lifecycle (>=
+        1.0.4), magrittr (>= 2.0.3), methods, pkgload (>= 1.4.0),
+        praise (>= 1.0.0), processx (>= 3.8.6), ps (>= 1.9.1), R6 (>=
+        2.6.1), rlang (>= 1.1.6), utils, waldo (>= 0.6.2), withr (>=
+        3.0.2)
+Suggests: covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), digest (>=
+        0.6.33), gh, knitr, otel, otelsdk, rmarkdown, rstudioapi, S7,
+        shiny, usethis, vctrs (>= 0.1.0), xml2
 License: MIT + file LICENSE
 Archs: x64
 
@@ -2790,6 +2933,16 @@ Depends: R (>= 4.0)
 Imports: cli, diffobj (>= 0.3.4), glue, methods, rlang (>= 1.1.0)
 Suggests: bit64, R6, S7, testthat (>= 3.0.0), withr, xml2
 License: MIT + file LICENSE
+
+Package: webfakes
+Version: 1.5.0
+Depends: R (>= 3.6)
+Imports: stats, tools, utils
+Suggests: brotli, callr, covr, curl, digest, glue, httpuv, httr,
+        jsonlite, processx, testthat (>= 3.0.0), withr, xml2, zip (>=
+        2.3.0)
+License: MIT + file LICENSE
+Archs: x64
 
 Package: webshot
 Version: 0.5.5
