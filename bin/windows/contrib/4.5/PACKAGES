@@ -526,14 +526,6 @@ Depends: R (>= 2.01), shape
 Imports: stats, graphics
 License: GPL (>= 2)
 
-Package: diffobj
-Version: 0.3.9
-Depends: R (>= 4.1.0)
-Imports: crayon (>= 1.3.2), tools, methods, utils, stats
-Suggests: knitr, rmarkdown
-License: GPL-2 | GPL-3
-Archs: x64
-
 Package: digest
 Version: 0.6.39
 Depends: R (>= 3.3.0)
@@ -777,7 +769,7 @@ Suggests: datasets, stats, tools, listenv, R.rsp, markdown
 License: GPL (>= 2)
 
 Package: future
-Version: 1.75.0
+Version: 1.76.0
 Depends: R (>= 3.2.0)
 Imports: digest, globals (>= 0.18.0), listenv (>= 0.8.0), parallel,
         parallelly (>= 1.44.0), tools, utils
@@ -2392,9 +2384,8 @@ Suggests: bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), stringi,
 License: MIT + file LICENSE
 
 Package: selectr
-Version: 0.7-0
+Version: 0.8-0
 Depends: R (>= 3.6)
-Imports: R6
 Suggests: testthat (>= 3.0.0), XML, xml2
 License: BSD_3_clause + file LICENCE
 
@@ -2802,13 +2793,6 @@ Suggests: affydata, hgu95av2cdf, BiocStyle, knitr, rmarkdown, dplyr,
 License: Artistic-2.0
 Archs: x64
 
-Package: waldo
-Version: 0.6.2
-Depends: R (>= 4.0)
-Imports: cli, diffobj (>= 0.3.4), glue, methods, rlang (>= 1.1.0)
-Suggests: bit64, R6, S7, testthat (>= 3.0.0), withr, xml2
-License: MIT + file LICENSE
-
 Package: webshot
 Version: 0.5.5
 Depends: R (>= 3.0)
@@ -2865,7 +2849,7 @@ License: Apache License (== 2.0) | file LICENSE
 Archs: x64
 
 Package: XML
-Version: 3.99-0.24
+Version: 3.99-0.25
 Depends: R (>= 4.0.0), methods, utils
 Suggests: bitops, RCurl
 License: BSD_3_clause + file LICENSE
