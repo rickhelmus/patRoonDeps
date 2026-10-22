@@ -425,7 +425,7 @@ LinkingTo: Rcpp, BH, RcppArmadillo
 Suggests: BiocParallel, knitr, rmarkdown, testthat, CAMERA
 License: GPL (>= 2)
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-09-30 15:50:13 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-10-22 11:09:38 UTC; windows
 File: cliqueMS_1.19.3.zip
 
 Package: clock
@@ -474,7 +474,7 @@ Built: R 4.6.0; ; 2026-04-23 22:39:43 UTC; windows
 File: codetools_0.2-20.zip
 
 Package: colorspace
-Version: 2.1-3
+Version: 2.1-4
 Depends: R (>= 3.0.0), methods
 Imports: graphics, grDevices, stats
 Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
@@ -483,8 +483,8 @@ Suggests: datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
         wesanderson
 License: BSD_3_clause + file LICENSE
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-07-13 05:39:15 UTC; windows
-File: colorspace_2.1-3.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-09 06:18:51 UTC; windows
+File: colorspace_2.1-4.zip
 
 Package: combinat
 Version: 0.0-9
@@ -560,14 +560,14 @@ Built: R 4.6.0; ; 2026-04-23 22:58:19 UTC; windows
 File: crosstalk_1.2.2.zip
 
 Package: curl
-Version: 8.0.0
+Version: 8.1.0
 Depends: R (>= 3.0.0)
 Suggests: spelling, testthat (>= 1.0.0), knitr, jsonlite, later,
         rmarkdown, httpuv (>= 1.4.4), webutils
 License: MIT + file LICENSE
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-08-26 05:04:12 UTC; windows
-File: curl_8.0.0.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-15 04:36:11 UTC; windows
+File: curl_8.1.0.zip
 
 Package: data.table
 Version: 1.18.6.1
@@ -609,16 +609,16 @@ Built: R 4.6.0; ; 2026-06-18 12:18:03 UTC; windows
 File: dbplyr_2.6.0.zip
 
 Package: dbscan
-Version: 1.2.6
-Depends: R (>= 3.2.0)
-Imports: generics, graphics, Rcpp (>= 1.0.0), stats
+Version: 1.2.7
+Depends: R (>= 4.3.0)
+Imports: generics, graphics, Rcpp (>= 1.0.11), stats
 LinkingTo: Rcpp
-Suggests: dendextend, fpc, igraph, knitr, microbenchmark, rmarkdown,
-        testthat (>= 3.0.0), tibble
-License: GPL (>= 2)
+Suggests: dendextend, fpc, igraph, knitr, microbenchmark, reticulate
+        (>= 1.41), rmarkdown, testthat (>= 3.0.0), tibble, tidyverse
+License: GPL (>= 3)
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-08-26 05:03:50 UTC; windows
-File: dbscan_1.2.6.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-06 04:48:44 UTC; windows
+File: dbscan_1.2.7.zip
 
 Package: DelayedArray
 Version: 0.38.2
@@ -971,23 +971,23 @@ Built: R 4.6.0; ; 2026-04-24 17:40:15 UTC; windows
 File: futile.options_1.0.1.zip
 
 Package: future.apply
-Version: 1.20.2
-Depends: R (>= 3.2.0), future (>= 1.49.0)
-Imports: globals, parallel, utils
-Suggests: datasets, stats, tools, listenv, R.rsp, markdown
+Version: 1.21.0
+Depends: R (>= 3.2.0), future (>= 1.80.0)
+Imports: globals, parallel, stats, utils
+Suggests: datasets, tools, listenv, R.rsp, markdown
 License: GPL (>= 2)
-Built: R 4.6.0; ; 2026-04-23 23:01:36 UTC; windows
-File: future.apply_1.20.2.zip
+Built: R 4.6.0; ; 2026-10-17 05:16:27 UTC; windows
+File: future.apply_1.21.0.zip
 
 Package: future
-Version: 1.76.0
+Version: 1.80.0
 Depends: R (>= 3.2.0)
 Imports: digest, globals (>= 0.18.0), listenv (>= 0.8.0), parallel,
         parallelly (>= 1.44.0), tools, utils
 Suggests: methods, RhpcBLASctl, R.rsp, markdown
 License: Apache License (>= 2)
-Built: R 4.6.0; ; 2026-09-25 04:40:45 UTC; windows
-File: future_1.76.0.zip
+Built: R 4.6.0; ; 2026-10-16 04:32:43 UTC; windows
+File: future_1.80.0.zip
 
 Package: GA
 Version: 3.2.5
@@ -1108,12 +1108,12 @@ Built: R 4.6.0; ; 2026-04-24 17:04:47 UTC; windows
 File: GlobalOptions_0.1.4.zip
 
 Package: globals
-Version: 0.19.1
+Version: 0.20.0
 Depends: R (>= 3.1.2)
 Imports: codetools
 License: LGPL (>= 2.1)
-Built: R 4.6.0; ; 2026-04-23 22:48:36 UTC; windows
-File: globals_0.19.1.zip
+Built: R 4.6.0; ; 2026-10-12 04:49:31 UTC; windows
+File: globals_0.20.0.zip
 
 Package: glue
 Version: 1.8.1
@@ -1367,7 +1367,7 @@ Built: R 4.6.0; ; 2026-04-24 18:24:39 UTC; windows
 File: ids_1.0.1.zip
 
 Package: igraph
-Version: 2.3.3
+Version: 2.3.4
 Depends: methods, R (>= 3.5.0)
 Imports: cli, graphics, grDevices, lifecycle, magrittr, Matrix,
         pkgconfig (>= 2.0.0), rlang (>= 1.1.0), stats, utils, vctrs
@@ -1378,8 +1378,8 @@ Suggests: ape (>= 5.7-0.1), callr, decor, digest, igraphdata, knitr,
 Enhances: graph
 License: GPL (>= 2)
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-06-27 06:09:22 UTC; windows
-File: igraph_2.3.3.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-01 05:29:06 UTC; windows
+File: igraph_2.3.4.zip
 
 Package: impute
 Version: 1.86.0
@@ -1563,13 +1563,13 @@ Built: R 4.6.0; ; 2026-08-21 04:30:13 UTC; windows
 File: labelled_2.16.1.zip
 
 Package: lambda.r
-Version: 1.2.4
+Version: 1.2.6
 Depends: R (>= 3.0.0)
 Imports: formatR
 Suggests: testit
 License: LGPL-3
-Built: R 4.6.0; ; 2026-04-24 17:41:17 UTC; windows
-File: lambda.r_1.2.4.zip
+Built: R 4.6.0; ; 2026-10-14 04:46:35 UTC; windows
+File: lambda.r_1.2.6.zip
 
 Package: later
 Version: 1.4.8
@@ -1641,12 +1641,12 @@ Built: R 4.6.1; x86_64-w64-mingw32; 2026-09-09 09:27:06 UTC; windows
 File: limma_3.68.5.zip
 
 Package: listenv
-Version: 1.0.0
+Version: 1.1.0
 Depends: R (>= 3.1.2)
 Suggests: R.utils, R.rsp, markdown
 License: Apache License (>= 2)
-Built: R 4.6.0; ; 2026-06-23 05:31:25 UTC; windows
-File: listenv_1.0.0.zip
+Built: R 4.6.0; ; 2026-10-05 04:32:40 UTC; windows
+File: listenv_1.1.0.zip
 
 Package: lubridate
 Version: 1.9.5
@@ -2087,7 +2087,7 @@ Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR,
         InterpretMSSpectrum, RSirius
 License: GPL-3
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-09-30 15:51:42 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-10-22 11:10:53 UTC; windows
 File: patRoon_3.1.0.zip
 
 Package: pcaMethods
@@ -2100,16 +2100,6 @@ License: GPL (>= 3)
 Archs: x64
 Built: R 4.6.0; x86_64-w64-mingw32; 2026-05-04 09:08:55 UTC; windows
 File: pcaMethods_2.4.0.zip
-
-Package: permute
-Version: 0.9-10
-Depends: R (>= 3.6.0)
-Imports: stats
-Suggests: vegan (>= 2.0-0), testthat (>= 0.5), parallel, knitr,
-        rmarkdown, bookdown, sessioninfo
-License: GPL-2
-Built: R 4.6.0; ; 2026-04-23 22:39:44 UTC; windows
-File: permute_0.9-10.zip
 
 Package: pillar
 Version: 1.11.1
@@ -2238,16 +2228,16 @@ Built: R 4.6.0; ; 2026-04-23 23:07:40 UTC; windows
 File: progress_1.2.3.zip
 
 Package: progressr
-Version: 1.0.0
+Version: 1.1.0
 Depends: R (>= 3.5.0)
-Imports: digest, utils
-Suggests: graphics, tcltk, beepr, cli, crayon, pbmcapply, progress,
-        purrr, foreach, plyr, doFuture, future, future.apply, furrr,
-        ntfy, RPushbullet, rstudioapi, shiny, commonmark, base64enc,
-        tools
+Imports: tools, utils
+Suggests: graphics, tcltk, beepr, cli, crayon, digest, pbmcapply,
+        progress, purrr, foreach, plyr, doFuture, future, future.apply,
+        furrr, ntfy, RPushbullet, rstudioapi, shiny, commonmark,
+        base64enc
 License: Apache License (>= 2)
-Built: R 4.6.0; ; 2026-07-04 05:31:34 UTC; windows
-File: progressr_1.0.0.zip
+Built: R 4.6.0; ; 2026-10-19 04:44:11 UTC; windows
+File: progressr_1.1.0.zip
 
 Package: promises
 Version: 1.5.0
@@ -2325,12 +2315,12 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 23:01:43 UTC; windows
 File: purrr_1.2.2.zip
 
 Package: qap
-Version: 0.1-2
+Version: 0.1-3
 Suggests: testthat
 License: GPL-3
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-24 18:08:39 UTC; windows
-File: qap_0.1-2.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-02 05:27:22 UTC; windows
+File: qap_0.1-3.zip
 
 Package: QFeatures
 Version: 1.22.0
@@ -2525,15 +2515,15 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-07-06 15:29:05 UTC; windows
 File: Rcpp_1.1.2.zip
 
 Package: RcppArmadillo
-Version: 15.6.0-1
+Version: 15.6.2-1
 Depends: R (>= 3.3.0)
 Imports: Rcpp (>= 1.1.1), stats, utils, methods
 LinkingTo: Rcpp
 Suggests: tinytest, Matrix (>= 1.3.0), pkgKitten, reticulate, slam
 License: GPL (>= 2)
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-09 10:43:10 UTC; windows
-File: RcppArmadillo_15.6.0-1.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-18 12:09:36 UTC; windows
+File: RcppArmadillo_15.6.2-1.zip
 
 Package: RcppEigen
 Version: 0.3.4.0.2
@@ -2637,15 +2627,15 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-05-07 07:33:27 UTC; windows
 File: readr_2.2.0.zip
 
 Package: readxl
-Version: 1.5.0.1
-Depends: R (>= 4.1)
-Imports: cellranger, tibble (>= 2.0.1), utils
+Version: 1.6.0
+Depends: R (>= 4.2)
+Imports: cellranger, cli, rlang, tibble (>= 2.0.1), utils
 LinkingTo: cpp11 (>= 0.5.5), progress
-Suggests: covr, knitr, rmarkdown, testthat (>= 3.1.6), withr
+Suggests: askpass, covr, knitr, rmarkdown, testthat (>= 3.1.6), withr
 License: MIT + file LICENSE
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-17 04:47:02 UTC; windows
-File: readxl_1.5.0.1.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-18 12:09:52 UTC; windows
+File: readxl_1.6.0.zip
 
 Package: recipes
 Version: 1.4.0
@@ -3006,16 +2996,18 @@ Built: R 4.6.0; ; 2026-05-04 08:56:19 UTC; windows
 File: Seqinfo_1.2.0.zip
 
 Package: seriation
-Version: 1.5.8
-Depends: R (>= 2.14.0)
+Version: 1.6.0
+Depends: R (>= 4.3.0)
 Imports: ca, cluster, colorspace, foreach, gclus, grDevices, grid,
-        MASS, qap, registry, stats, TSP, vegan
-Suggests: dbscan, DendSer, dendextend, doParallel, GA, ggplot2, keras,
-        Rtsne, scales, smacof, tensorflow, testthat, umap
+        MASS, qap, registry, stats, TSP
+Suggests: cba, corrgram, corrplot, corrr, dbscan (>= 1.2.7), DendSer,
+        dendextend, doParallel, DT, dplyr, GA, ggplot2, heatmaply,
+        keras, Rtsne, scales, smacof, tensorflow, testthat (>= 3.0.0),
+        umap, vegan, viridis, knitr, rmarkdown
 License: GPL-3
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-24 18:18:46 UTC; windows
-File: seriation_1.5.8.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-07 05:06:32 UTC; windows
+File: seriation_1.6.0.zip
 
 Package: shape
 Version: 1.4.6.1
@@ -3407,16 +3399,6 @@ Archs: x64
 Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 22:56:13 UTC; windows
 File: vctrs_0.7.3.zip
 
-Package: vegan
-Version: 2.7-6
-Depends: permute (>= 0.9-0), R (>= 4.1.0)
-Imports: MASS, cluster, lattice, mgcv
-Suggests: parallel, knitr, markdown
-License: GPL-2
-Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-01 04:32:57 UTC; windows
-File: vegan_2.7-6.zip
-
 Package: VennDiagram
 Version: 1.8.2
 Depends: R (>= 3.5.0), grid (>= 2.14.1), futile.logger
@@ -3523,17 +3505,16 @@ Built: R 4.6.1; x86_64-w64-mingw32; 2026-07-05 15:29:04 UTC; windows
 File: xcms_4.10.1.zip
 
 Package: xfun
-Version: 0.61
+Version: 0.62
 Depends: R (>= 3.2.0)
 Imports: grDevices, stats, tools
 Suggests: testit, parallel, codetools, methods, rstudioapi, tinytex (>=
-        0.30), mime, litedown (>= 0.6), commonmark, knitr (>= 1.50),
-        remotes, pak, curl, xml2, jsonlite, magick, yaml, data.table,
-        qs2
+        0.30), mime, litedown (>= 0.6), knitr (>= 1.50), remotes, pak,
+        curl, xml2, jsonlite, magick, yaml, data.table, qs2
 License: MIT + file LICENSE
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-17 04:46:18 UTC; windows
-File: xfun_0.61.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-17 05:16:17 UTC; windows
+File: xfun_0.62.zip
 
 Package: xgboost
 Version: 3.2.1.1

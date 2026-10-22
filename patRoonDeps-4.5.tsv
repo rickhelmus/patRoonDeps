@@ -43,7 +43,7 @@ clock	0.7.4
 clue	0.3-68	
 cluster	2.1.8.3	
 codetools	0.2-20	
-colorspace	2.1-3	
+colorspace	2.1-4	
 combinat	0.0-9	
 commonmark	2.0.0	
 conflicted	1.2.0	
@@ -52,11 +52,11 @@ coop	0.6-3
 cpp11	0.5.5	
 crayon	1.5.3	
 crosstalk	1.2.2	
-curl	8.0.0	
+curl	8.1.0	
 data.table	1.18.6.1	
 DBI	1.3.0	
 dbplyr	2.6.0	
-dbscan	1.2.6	
+dbscan	1.2.7	
 DelayedArray	0.36.1	
 dendextend	1.19.1	
 diagram	1.6.5	
@@ -83,7 +83,7 @@ fmcsR	1.52.0
 fontawesome	0.5.3	
 forcats	1.0.1	
 foreach	1.5.2	
-foreign	0.8-91	
+foreign	0.8-92	
 formatR	1.14	
 Formula	1.2-6	
 fs	2.1.0	
@@ -91,8 +91,8 @@ fst	0.9.8
 fstcore	0.10.0	
 futile.logger	1.4.9	
 futile.options	1.0.1	
-future	1.76.0	
-future.apply	1.20.2	
+future	1.80.0	
+future.apply	1.21.0	
 GA	3.2.5	
 gargle	1.6.1	
 gclus	1.3.3	
@@ -103,7 +103,7 @@ getPass	0.2-4
 ggplot2	4.0.3	
 ggrepel	0.9.8	
 GlobalOptions	0.1.4	
-globals	0.19.1	
+globals	0.20.0	
 glue	1.8.1	
 googledrive	2.1.2	
 googlesheets4	1.1.2	
@@ -127,7 +127,7 @@ httpuv	1.6.17
 httr	1.4.9	
 httr2	1.3.0	
 ids	1.0.1	
-igraph	2.3.3	
+igraph	2.3.4	
 impute	1.84.0	
 InterpretMSSpectrum	1.5.3	
 ipred	0.9-16	
@@ -146,14 +146,14 @@ knitr	1.52
 KPIC	2.4.0	5f638051693b13345445d79837a99744c34607a5
 labeling	0.4.3	
 labelled	2.16.1	
-lambda.r	1.2.4	
+lambda.r	1.2.6	
 later	1.4.8	
 lattice	0.23-1	
 lava	1.9.3	
 lazyeval	0.2.3	
 lifecycle	1.0.5	
 limma	3.66.0	
-listenv	1.0.0	
+listenv	1.1.0	
 lubridate	1.9.5	
 lzstring	0.2.0	
 magick	2.9.1	
@@ -195,9 +195,8 @@ numDeriv	2016.8-1.1
 openssl	2.4.2	
 otel	0.2.0	
 parallelly	1.48.0	
-patRoon	3.1.0	d8b732f5721349ec50b8802a1f0e3d11d5e4b12b
+patRoon	3.1.0	d7f636cc23860cc886d3c97e44762fc7b85ed147
 pcaMethods	2.2.0	
-permute	0.9-10	
 pillar	1.11.1	
 pkgconfig	2.0.3	
 plotly	4.12.1	
@@ -210,14 +209,14 @@ pROC	1.19.1
 processx	3.9.0	
 prodlim	2026.03.11	
 progress	1.2.3	
-progressr	1.0.0	
+progressr	1.1.0	
 promises	1.5.0	
 ProtGenerics	1.42.0	
 proxy	0.4-29	
 ps	1.9.3	
 PSMatch	1.14.0	
 purrr	1.2.2	
-qap	0.1-2	
+qap	0.1-3	
 QFeatures	1.20.0	
 qqman	0.1.9	
 questionr	0.8.2	
@@ -238,7 +237,7 @@ rcdk	3.8.2
 rcdklibs	2.9	
 RColorBrewer	1.1-3	
 Rcpp	1.1.2	
-RcppArmadillo	15.6.0-1	
+RcppArmadillo	15.6.2-1	
 RcppEigen	0.3.4.0.2	
 RcppTOML	0.2.3	
 RCurl	1.98-1.20	
@@ -249,7 +248,7 @@ reactable	0.4.5
 reactR	0.6.1	
 readMzXmlData	2.8.4	
 readr	2.2.0	
-readxl	1.5.0.1	
+readxl	1.6.0	
 recipes	1.4.0	
 registry	0.5-1	
 rematch	2.0.0	
@@ -285,7 +284,7 @@ sass	0.4.10
 scales	1.4.0	
 selectr	0.8-0	
 Seqinfo	1.0.0	
-seriation	1.5.8	
+seriation	1.6.0	
 shape	1.4.6.1	
 shiny	1.14.0	
 shinyjs	2.1.1	
@@ -321,7 +320,6 @@ UpSetR	1.4.1
 utf8	1.2.6	
 uuid	1.2-2	
 vctrs	0.7.3	
-vegan	2.7-6	
 VennDiagram	1.8.2	
 viridis	0.6.5	
 viridisLite	0.4.3	
@@ -331,7 +329,7 @@ vsn	3.78.1
 webshot	0.5.5	
 withr	3.0.3	
 xcms	4.8.0	
-xfun	0.61	
+xfun	0.62	
 xgboost	3.2.1.1	
 XML	3.99-0.25	
 xml2	1.6.0	
