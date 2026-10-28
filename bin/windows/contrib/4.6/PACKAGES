@@ -198,6 +198,15 @@ License: GPL-3
 Built: R 4.6.0; ; 2026-08-29 04:30:33 UTC; windows
 File: bookdown_0.48.zip
 
+Package: brio
+Version: 1.1.5
+Depends: R (>= 3.6)
+Suggests: covr, testthat (>= 3.0.0)
+License: MIT + file LICENSE
+Archs: x64
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 22:38:03 UTC; windows
+File: brio_1.1.5.zip
+
 Package: broom
 Version: 1.0.13
 Depends: R (>= 4.1)
@@ -425,7 +434,7 @@ LinkingTo: Rcpp, BH, RcppArmadillo
 Suggests: BiocParallel, knitr, rmarkdown, testthat, CAMERA
 License: GPL (>= 2)
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-10-22 11:09:38 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-10-28 14:44:59 UTC; windows
 File: cliqueMS_1.19.3.zip
 
 Package: clock
@@ -511,17 +520,19 @@ Built: R 4.6.0; ; 2026-04-24 18:11:49 UTC; windows
 File: conflicted_1.2.0.zip
 
 Package: constructive
-Version: 1.3.0
+Version: 1.4.0
+Depends: R (>= 4.0.0)
 Imports: cli (>= 3.1.0), diffobj, methods, rlang (>= 1.0.0), waldo
-Suggests: bit64, blob, clipr, data.table, DiagrammeR, DiagrammeRsvg,
-        dm, dplyr, ellmer, forcats, ggplot2, jsonlite, knitr,
-        lubridate, pixarfilms, R6, reprex, rmarkdown, roxygen2,
-        rstudioapi, S7, scales, sf, testthat (>= 3.0.0), tibble,
-        tidyselect, vctrs, withr, xml2, xts, zoo
+Suggests: bit64, blob, clock, clipr, data.table, DiagrammeR,
+        DiagrammeRsvg, dm, dplyr, ellmer, forcats, fs, ggplot2, glue,
+        haven, hms, htmltools, jsonlite, knitr, lubridate, Matrix, R6,
+        readr, reprex, rmarkdown, roxygen2, rstudioapi, S7, scales, sf,
+        survival, testthat (>= 3.0.0), tibble, tidyselect, tsibble,
+        units, vctrs, withr, xml2, xts, zoo
 License: MIT + file LICENSE
 Archs: x64
-Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-24 18:13:52 UTC; windows
-File: constructive_1.3.0.zip
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-10-23 04:41:30 UTC; windows
+File: constructive_1.4.0.zip
 
 Package: coop
 Version: 0.6-3
@@ -648,6 +659,15 @@ License: GPL-2 | GPL-3
 Built: R 4.6.0; ; 2026-04-24 19:09:11 UTC; windows
 File: dendextend_1.19.1.zip
 
+Package: desc
+Version: 1.4.3
+Depends: R (>= 3.4)
+Imports: cli, R6, utils
+Suggests: callr, covr, gh, spelling, testthat, whoami, withr
+License: MIT + file LICENSE
+Built: R 4.6.0; ; 2026-04-23 22:46:42 UTC; windows
+File: desc_1.4.3.zip
+
 Package: diagram
 Version: 1.6.5
 Depends: R (>= 2.01), shape
@@ -655,6 +675,16 @@ Imports: stats, graphics
 License: GPL (>= 2)
 Built: R 4.6.0; ; 2026-04-23 22:50:37 UTC; windows
 File: diagram_1.6.5.zip
+
+Package: diffobj
+Version: 0.3.9
+Depends: R (>= 4.1.0)
+Imports: crayon (>= 1.3.2), tools, methods, utils, stats
+Suggests: knitr, rmarkdown
+License: GPL-2 | GPL-3
+Archs: x64
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-09-12 04:46:08 UTC; windows
+File: diffobj_0.3.9.zip
 
 Package: digest
 Version: 0.6.39
@@ -1595,7 +1625,7 @@ Built: R 4.6.0; x86_64-w64-mingw32; 2026-08-13 04:23:10 UTC; windows
 File: lattice_0.23-1.zip
 
 Package: lava
-Version: 1.9.3
+Version: 1.10
 Depends: R (>= 3.5.0)
 Imports: cli, future.apply, graphics, grDevices, methods, numDeriv,
         progressr, stats, survival, SQUAREM, utils
@@ -1603,10 +1633,10 @@ Suggests: KernSmooth, Rgraphviz, data.table, ellipse, fields, future,
         geepack, graph, knitr, rmarkdown, igraph (>= 0.6), lavaSearch2,
         lme4 (>= 1.1.35.1), MASS, Matrix (>= 1.6.3), mets (>= 1.1),
         nlme, optimx, polycor, quantreg, quarto, rgl, svglite, targeted
-        (>= 0.4), testthat (>= 0.11), vdiffr, visNetwork
+        (>= 0.4), testthat (>= 3.0.0), vdiffr, visNetwork
 License: Apache License (== 2.0)
-Built: R 4.6.0; ; 2026-08-21 04:32:57 UTC; windows
-File: lava_1.9.3.zip
+Built: R 4.6.0; ; 2026-10-23 04:45:44 UTC; windows
+File: lava_1.10.zip
 
 Package: lazyeval
 Version: 0.2.3
@@ -2087,7 +2117,7 @@ Suggests: RDCOMClient, metfRag, enviPick, nontarget, RAMClustR,
         InterpretMSSpectrum, RSirius
 License: GPL-3
 Archs: x64
-Built: R 4.6.1; x86_64-w64-mingw32; 2026-10-22 11:10:53 UTC; windows
+Built: R 4.6.1; x86_64-w64-mingw32; 2026-10-28 14:46:09 UTC; windows
 File: patRoon_3.1.0.zip
 
 Package: pcaMethods
@@ -2113,6 +2143,16 @@ License: MIT + file LICENSE
 Built: R 4.6.0; ; 2026-04-23 23:01:43 UTC; windows
 File: pillar_1.11.1.zip
 
+Package: pkgbuild
+Version: 1.4.8
+Depends: R (>= 3.5)
+Imports: callr (>= 3.2.0), cli (>= 3.4.0), desc, processx, R6
+Suggests: covr, cpp11, knitr, Rcpp, rmarkdown, testthat (>= 3.2.0),
+        withr (>= 2.3.0)
+License: MIT + file LICENSE
+Built: R 4.6.0; ; 2026-04-23 23:07:15 UTC; windows
+File: pkgbuild_1.4.8.zip
+
 Package: pkgconfig
 Version: 2.0.3
 Imports: utils
@@ -2120,6 +2160,17 @@ Suggests: covr, testthat, disposables (>= 1.0.3)
 License: MIT + file LICENSE
 Built: R 4.6.0; ; 2026-04-23 22:39:45 UTC; windows
 File: pkgconfig_2.0.3.zip
+
+Package: pkgload
+Version: 1.5.3
+Depends: R (>= 3.4.0)
+Imports: cli (>= 3.3.0), desc, fs, glue, lifecycle, methods, pkgbuild,
+        processx, rlang (>= 1.1.1), rprojroot, utils
+Suggests: bitops, jsonlite, mathjaxr, pak, Rcpp, remotes, rstudioapi,
+        testthat (>= 3.2.1.1), usethis, withr
+License: MIT + file LICENSE
+Built: R 4.6.0; ; 2026-06-16 05:38:59 UTC; windows
+File: pkgload_1.5.3.zip
 
 Package: plotly
 Version: 4.12.1
@@ -2165,6 +2216,13 @@ License: GPL-2 | GPL-3
 Archs: x64
 Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 22:39:43 UTC; windows
 File: png_0.1-9.zip
+
+Package: praise
+Version: 1.0.0
+Suggests: testthat
+License: MIT + file LICENSE
+Built: R 4.6.0; ; 2026-04-23 22:43:55 UTC; windows
+File: praise_1.0.0.zip
 
 Package: preprocessCore
 Version: 1.74.0
@@ -3126,7 +3184,7 @@ Version: 0.0.4
 Depends: R (>= 3.2.0), digest
 Suggests: testthat
 License: BSD_3_clause + file LICENSE
-Built: R 4.6.0; ; 2026-06-23 12:43:20 UTC; windows
+Built: R 4.6.1; ; 2026-10-28 14:45:47 UTC; windows
 File: splashR_0.0.4.zip
 
 Package: SQUAREM
@@ -3239,6 +3297,23 @@ License: MIT + file LICENSE
 Archs: x64
 Built: R 4.6.0; x86_64-w64-mingw32; 2026-05-07 07:27:49 UTC; windows
 File: systemfonts_1.3.2.zip
+
+Package: testthat
+Version: 3.3.2
+Depends: R (>= 4.1.0)
+Imports: brio (>= 1.1.5), callr (>= 3.7.6), cli (>= 3.6.5), desc (>=
+        1.4.3), evaluate (>= 1.0.4), jsonlite (>= 2.0.0), lifecycle (>=
+        1.0.4), magrittr (>= 2.0.3), methods, pkgload (>= 1.4.0),
+        praise (>= 1.0.0), processx (>= 3.8.6), ps (>= 1.9.1), R6 (>=
+        2.6.1), rlang (>= 1.1.6), utils, waldo (>= 0.6.2), withr (>=
+        3.0.2)
+Suggests: covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), digest (>=
+        0.6.33), gh, knitr, otel, otelsdk, rmarkdown, rstudioapi, S7,
+        shiny, usethis, vctrs (>= 0.1.0), xml2
+License: MIT + file LICENSE
+Archs: x64
+Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-23 23:21:46 UTC; windows
+File: testthat_3.3.2.zip
 
 Package: textshaping
 Version: 1.0.5
@@ -3465,6 +3540,15 @@ License: Artistic-2.0
 Archs: x64
 Built: R 4.6.0; x86_64-w64-mingw32; 2026-04-29 13:10:17 UTC; windows
 File: vsn_3.80.0.zip
+
+Package: waldo
+Version: 0.6.2
+Depends: R (>= 4.0)
+Imports: cli, diffobj (>= 0.3.4), glue, methods, rlang (>= 1.1.0)
+Suggests: bit64, R6, S7, testthat (>= 3.0.0), withr, xml2
+License: MIT + file LICENSE
+Built: R 4.6.0; ; 2026-04-23 22:53:42 UTC; windows
+File: waldo_0.6.2.zip
 
 Package: webshot
 Version: 0.5.5

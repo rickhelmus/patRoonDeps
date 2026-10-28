@@ -19,6 +19,7 @@ bit64	4.8.6
 bitops	1.1-0	
 blob	1.3.0	
 bookdown	0.48	
+brio	1.1.5	
 broom	1.0.13	
 bsicons	0.1.2	
 bslib	0.12.0	
@@ -47,7 +48,7 @@ colorspace	2.1-4
 combinat	0.0-9	
 commonmark	2.0.0	
 conflicted	1.2.0	
-constructive	1.3.0	
+constructive	1.4.0	
 coop	0.6-3	
 cpp11	0.5.5	
 crayon	1.5.3	
@@ -59,7 +60,9 @@ dbplyr	2.6.0
 dbscan	1.2.7	
 DelayedArray	0.36.1	
 dendextend	1.19.1	
+desc	1.4.3	
 diagram	1.6.5	
+diffobj	0.3.9	
 digest	0.6.39	
 doParallel	1.0.17	
 doRNG	1.8.6.3	
@@ -149,7 +152,7 @@ labelled	2.16.1
 lambda.r	1.2.6	
 later	1.4.8	
 lattice	0.23-1	
-lava	1.9.3	
+lava	1.10	
 lazyeval	0.2.3	
 lifecycle	1.0.5	
 limma	3.66.0	
@@ -195,14 +198,17 @@ numDeriv	2016.8-1.1
 openssl	2.4.2	
 otel	0.2.0	
 parallelly	1.48.0	
-patRoon	3.1.0	d7f636cc23860cc886d3c97e44762fc7b85ed147
+patRoon	3.1.0	88ec73d3608dbab76eab1480bde91b82b39979db
 pcaMethods	2.2.0	
 pillar	1.11.1	
+pkgbuild	1.4.8	
 pkgconfig	2.0.3	
+pkgload	1.5.3	
 plotly	4.12.1	
 plotrix	3.8-14	
 plyr	1.8.9	
 png	0.1-9	
+praise	1.0.0	
 preprocessCore	1.72.0	
 prettyunits	1.2.0	
 pROC	1.19.1	
@@ -295,7 +301,7 @@ sourcetools	0.1.7-2
 SparseArray	1.10.10	
 sparsevctrs	0.3.6	
 Spectra	1.20.1	
-splashR	0.0.4	8e09ab1f4178757bdbbd4bd959c2d9c6dd04da36
+splashR	0.0.4	6b7cbb52c6ce1e2fab2ab64767bc1e34778d0ad5
 SQUAREM	2026.1	
 statmod	1.5.2	
 stringi	1.8.9	
@@ -306,6 +312,7 @@ survival	3.8-12
 svglite	2.2.2	
 sys	3.4.3	
 systemfonts	1.3.2	
+testthat	3.3.2	
 textshaping	1.0.5	
 tibble	3.3.1	
 tidyr	1.3.2	
@@ -326,6 +333,7 @@ viridisLite	0.4.3
 visNetwork	2.1.4	
 vroom	1.7.1	
 vsn	3.78.1	
+waldo	0.6.2	
 webshot	0.5.5	
 withr	3.0.3	
 xcms	4.8.0	
